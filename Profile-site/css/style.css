@@ -1,0 +1,250 @@
+@font-face {
+  font-family: 'JNRfont_n';
+  src: url('../fonts/JNRfont_n.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: 'JNRfont_n', sans-serif;
+}
+
+.circle {
+  position: relative;
+  flex-direction: column;
+  top:0px;
+  left: auto;
+  width: 280px;
+  height: 280px;
+  background: black;
+  border-radius: 50%;
+  z-index: 0;
+  color: #fff;
+
+  display: flex;               
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.top-page{
+  display: flex;
+  justify-content: center;     
+  align-items: flex-start;    
+  height: 100vh;               
+  padding-top: 100px;        
+}
+
+.circle p{
+  margin: 5px;
+  text-decoration: none;
+}
+
+img{
+  position: relative;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  gap: 20px;
+  width: fit-content;
+  margin: 20px auto 0 auto;            
+}
+ 
+
+.name{
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 0px;
+
+}
+.label{
+  display: inline-block;
+  border-bottom: 1px solid black;
+  width: fit-content;
+  font-size: 10px;
+}
+.value{
+  display: inline-block;
+  border-bottom: 1px solid black;
+  width: fit-content;
+  font-size: 20px;
+}
+
+.Birthday{
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.birthday{
+  display: inline-block;
+  border-bottom: 1px solid black;
+  width: fit-content;
+  font-size: 10px;
+}
+.data{
+  display: inline-block;
+  border-bottom: 1px solid black;
+  width: fit-content;
+  font-size: 20px;
+}
+
+.my-circle{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.circle1{
+  display: flex;
+  gap: 10px;
+}
+.circle2{
+  display: flex;
+  gap: 10px;
+
+}
+.hello {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background: black;
+  border-radius: 50%;
+  z-index: 1;
+  color: #fff;
+}
+
+.hobby {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background: black;
+  border-radius: 50%;
+  z-index: 1;
+  color: #fff;
+}
+
+.gallery {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background: black;
+  border-radius: 50%;
+  z-index: 1;
+  color: #fff;
+}
+
+.infomation {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background: black;
+  border-radius: 50%;
+  z-index: 1;
+  color: #fff;
+}
+
+h1{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  background: black;
+  border-radius: 50%;
+  z-index: 1;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.hello-text{
+  text-align: center;
+  line-height: 0;
+  font-size: clamp(12px, 5vw, 12px);
+}
+
+.return{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background: black;
+  border-radius: 50%;
+  z-index: 1;
+  color: #fff;
+}
+
+
+@media only screen and (min-width: 600px) {
+  .circle {
+    width: 350px;
+    height: 350px;
+    font-size: 24px;
+    margin-top: 50px;
+  }
+  img{
+    width: 300px;
+    height: 300px;
+  }
+.label{
+  display: inline-block;
+  border-bottom: 1px solid black;
+  width: fit-content;
+  font-size: 20px;
+}
+.value{
+  display: inline-block;
+  border-bottom: 1px solid black;
+  width: fit-content;
+  font-size: 30px;
+}
+.birthday{
+  display: inline-block;
+  border-bottom: 1px solid black;
+  width: fit-content;
+  font-size: 20px;
+}
+.data{
+  display: inline-block;
+  border-bottom: 1px solid black;
+  width: fit-content;
+  font-size: 30px;
+}
+.my-circle{
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+}
