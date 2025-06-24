@@ -6,6 +6,7 @@
 }
 body {
   font-family: 'JNRfont_n', sans-serif;
+  font-size: 18px;
 }
 
 .circle {
@@ -35,7 +36,6 @@ body {
   height: 100vh;               
   padding-top: 100px;        
 }
-
 .circle p{
   margin: 5px;
   text-decoration: none;
@@ -50,37 +50,30 @@ img{
   border-radius: 50%;
   z-index: 1;
 }
-
 .main{
   display: flex;
   justify-content: center;
   align-items: center; 
   gap: 20px;
   width: fit-content;
-  margin: 20px auto 0 auto;            
+  margin: 50px auto 0 auto;         
 }
- 
-
 .name{
   display: flex;
   flex-direction: column;
-  width: fit-content;
-  gap: 0px;
-
 }
 .label{
   display: inline-block;
   border-bottom: 1px solid black;
   width: fit-content;
-  font-size: 10px;
+  font-size: 15px;
 }
 .value{
   display: inline-block;
   border-bottom: 1px solid black;
   width: fit-content;
-  font-size: 20px;
+  font-size: 25px;
 }
-
 .Birthday{
   display: flex;
   flex-direction: column;
@@ -90,34 +83,85 @@ img{
   display: inline-block;
   border-bottom: 1px solid black;
   width: fit-content;
-  font-size: 10px;
+  font-size: 15px;
 }
 .data{
   display: inline-block;
   border-bottom: 1px solid black;
   width: fit-content;
-  font-size: 20px;
+  font-size: 25px;
 }
-
+.border1{
+  border: none;
+  background-color: gray;
+  height: 3px;
+  width: 270px;
+  margin: 35px auto;
+}
 .my-circle{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  margin-top: 10px;
+  gap: 20px;
 }
 .circle1{
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 .circle2{
   display: flex;
-  gap: 10px;
-
+  gap: 20px;
 }
-.hello {
-  position: relative;
+.Hello {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background: rgb(238, 79, 79);
+  border-radius: 50%;
+  z-index: 1;
+  color: black;
+}
+.Hobby {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background: rgb(68, 241, 135);
+  border-radius: 50%;
+  z-index: 1;
+  color: black;
+}
+.Gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background: rgb(241, 56, 180);
+  border-radius: 50%;
+  z-index: 1;
+  color: black;
+}
+.Infomation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background: rgb(248, 246, 96);
+  border-radius: 50%;
+  z-index: 1;
+  color: black;
+}
+.stepback{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -129,82 +173,31 @@ img{
   z-index: 1;
   color: #fff;
 }
+.Stepback{
+  display: flex;
+  justify-content: center;
+}
 
-.hobby {
-  position: relative;
+.hello{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100px;
   height: 100px;
-  background: black;
+  background: rgb(238, 79, 79);
   border-radius: 50%;
   z-index: 1;
-  color: #fff;
+  color: black;
+  margin left: 10px;
+  font-size: 1rem;
 }
-
-.gallery {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 100px;
-  background: black;
-  border-radius: 50%;
-  z-index: 1;
-  color: #fff;
-}
-
-.infomation {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 100px;
-  background: black;
-  border-radius: 50%;
-  z-index: 1;
-  color: #fff;
-}
-
-h1{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-  height: 150px;
-  background: black;
-  border-radius: 50%;
-  z-index: 1;
-  color: #fff;
-  margin-left: 10px;
-}
-
 .hello-text{
   text-align: center;
   line-height: 0;
   font-size: clamp(12px, 5vw, 12px);
 }
 
-.return{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 100px;
-  background: black;
-  border-radius: 50%;
-  z-index: 1;
-  color: #fff;
-}
 
 
 @media only screen and (min-width: 600px) {
@@ -245,6 +238,35 @@ h1{
 .my-circle{
   display: flex;
   flex-direction: row;
-  margin-top: 50px;
+  margin-top: 40px;
+}
+.border1{
+  border: none;
+  background-color: gray;
+  height: 3px;
+  width: 476px;
+  margin: 50px auto;
+}
+.hello-text{
+  text-align: center;
+  line-height: 0;
+  font-size: 1.5rem;
+  margin-top: -100px;
+}
+.main{
+  margin-top: 10px;
+}
+.border1{
+  margin: 40px auto;
+}
+.hello{
+  width: 200px;
+  height: 200px;
+  background: rgb(238, 79, 79);
+  border-radius: 50%;
+  z-index: 1;
+  color: black;
+  margin-left:  100px;
+  font-size: 2rem;
 }
 }
