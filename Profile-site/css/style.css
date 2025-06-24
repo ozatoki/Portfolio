@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'JNRfont_n';
-  src: url('../fonts/JNRfont_n.ttf') format('truetype');
+  src: url('/Profile-site/fonts/JNRfont_n.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -95,7 +95,7 @@ img{
   border: none;
   background-color: gray;
   height: 3px;
-  width: 270px;
+  width:320px;
   margin: 35px auto;
 }
 .my-circle{
@@ -189,7 +189,7 @@ img{
   border-radius: 50%;
   z-index: 1;
   color: black;
-  margin left: 10px;
+  margin-left: 10px;
   font-size: 1rem;
 }
 .hello-text{
@@ -241,9 +241,6 @@ img{
   margin-top: 40px;
 }
 .border1{
-  border: none;
-  background-color: gray;
-  height: 3px;
   width: 476px;
   margin: 50px auto;
 }
