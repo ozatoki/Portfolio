@@ -5,7 +5,7 @@
   font-style: normal;
 }
 body {
-  font-family: 'JNRfont_n', sans-serif;
+  font-family: 'JNRfont_n', 'Kiwi Maru', sans-serif;
   font-size: 18px;
 }
 
@@ -58,6 +58,11 @@ img{
   width: fit-content;
   margin: 50px auto 0 auto;         
 }
+.info{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 .name{
   display: flex;
   flex-direction: column;
@@ -77,7 +82,6 @@ img{
 .Birthday{
   display: flex;
   flex-direction: column;
-  gap: 0;
 }
 .birthday{
   display: inline-block;
@@ -144,7 +148,7 @@ img{
   align-items: center;
   width: 100px;
   height: 100px;
-  background: rgb(241, 56, 180);
+  background: rgb(83, 241, 234);
   border-radius: 50%;
   z-index: 1;
   color: black;
@@ -211,6 +215,11 @@ img{
     width: 300px;
     height: 300px;
   }
+  .info{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .label{
   display: inline-block;
   border-bottom: 1px solid black;
