@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'JNRfont_n';
-  src: url('/Profile-site/fonts/JNRfont_n.ttf') format('truetype');
+  src: url('../fonts/JNRfont_n.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
