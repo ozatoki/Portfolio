@@ -5,7 +5,7 @@
   font-style: normal;
 }
 body {
-  font-family: 'JNRfont_n', 'Kiwi Maru', sans-serif;
+  font-family: 'JNRfont_n', sans-serif;
   font-size: 18px;
 }
 
@@ -117,6 +117,11 @@ img{
   display: flex;
   gap: 20px;
 }
+.circle3{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
 .Hello {
   display: flex;
   flex-direction: column;
@@ -165,6 +170,19 @@ img{
   z-index: 1;
   color: black;
 }
+.ct-comment{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  border: black solid 3px; 
+  border-radius: 50%;
+  z-index: 1;
+  color: black;
+}
 .stepback{
   display: flex;
   flex-direction: column;
@@ -177,11 +195,6 @@ img{
   z-index: 1;
   color: #fff;
 }
-.Stepback{
-  display: flex;
-  justify-content: center;
-}
-
 .hello{
   display: flex;
   flex-direction: column;
@@ -226,15 +239,20 @@ img{
   height: 3px;
   width:320px;
   margin: 35px auto;
-
 }
 .hobby-content{
  text-align: center;
   line-height: 0;
 }
+.Stepback{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   .circle {
     width: 350px;
     height: 350px;
@@ -274,14 +292,15 @@ img{
   width: fit-content;
   font-size: 30px;
 }
+}
 .my-circle{
   display: flex;
   flex-direction: row;
-  margin-top: 40px;
+  margin: 65px;
 }
 .border1{
   width: 476px;
-  margin: 50px auto;
+  margin: 75px auto;
 }
 .hello-text{
   text-align: center;
@@ -304,6 +323,20 @@ img{
   color: black;
   margin-left:  100px;
   font-size: 2rem;
+}
+.hobby{
+  width: 200px;
+  height: 200px;
+  background: rgb(68, 241, 135);
+  border-radius: 50%;
+  z-index: 1;
+  color: black;
+  margin-left:  100px;
+  font-size: 2rem;
+}
+.hobby-page{
+  margin-top: 100px;
+  height: 500px;
 }
 }
 
