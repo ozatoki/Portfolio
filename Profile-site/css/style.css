@@ -292,7 +292,6 @@ img{
   width: fit-content;
   font-size: 30px;
 }
-}
 .my-circle{
   display: flex;
   flex-direction: row;
@@ -337,6 +336,7 @@ img{
 .hobby-page{
   margin-top: 100px;
   height: 500px;
+}
 }
 @keyframes heartbeat {
   0% {
