@@ -251,6 +251,54 @@ img{
   align-items: center;
 }
 
+.infomation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background: rgb(248, 246, 96);
+  border-radius: 50%;
+  z-index: 1;
+  color: black;
+  margin-left: 10px;
+  font-size: 1rem;
+}
+.inquiry{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.border3{
+  border: none;
+  background-color: gray;
+  height: 3px;
+  width:320px;
+  margin: 35px auto;
+}
+.contact-form{
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact-form input, .contact-form textarea{
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+}
+.comtact-form button{
+  padding: 10px;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+
 
 @media only screen and (min-width: 768px) {
   .circle {
@@ -308,17 +356,17 @@ img{
   margin-top: -100px;
 }
 .main{
-  margin-top: 10px;
+  margin-top: 80px;
 }
 .border1{
   margin: 40px auto;
 }
+
 .hello{
   width: 200px;
   height: 200px;
   background: rgb(238, 79, 79);
   border-radius: 50%;
-  z-index: 1;
   color: black;
   margin-left:  100px;
   font-size: 2rem;
@@ -328,14 +376,32 @@ img{
   height: 200px;
   background: rgb(68, 241, 135);
   border-radius: 50%;
-  z-index: 1;
   color: black;
   margin-left:  100px;
   font-size: 2rem;
 }
+.hobby-text{
+  font-size: 1.5rem;
+  width: fit-content;
+}
+.border2{
+  width: 530px;
+}
+.hobby-content{
+  font-size: 1.5rem;
+}
 .hobby-page{
-  margin-top: 100px;
-  height: 500px;
+  align-items: center;
+  margin-top: -100px;
+}
+
+.infomation {
+  width: 200px;
+  height: 200px;
+  background: rgb(248, 246, 96);
+  color: black;
+  margin-left: 100px;
+  font-size: 2rem;
 }
 }
 @keyframes heartbeat {

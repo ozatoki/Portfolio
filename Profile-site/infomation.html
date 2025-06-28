@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>問い合わせ</title>
+    <link rel="stylesheet" href="css/sanitize.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+        
+<h1 class="infomation">問合わせ</h1>
+<p class="inquiry">お気軽にお問い合わせください。</p>
+<hr class="border3">
+<section class="contact-form">
+<form id="fake-mail-form">
+    <label for="name">お名前:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">メールアドレス:</label>
+    <input type="text" id="email" name="email" required>
+
+    <label for="subject">件名:</label>
+    <input type="text" id="subject" name="subject" required>
+
+    <label for="message">メッセージ:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+</form>
+    <button type="submit">送信</button>
+
+<div id="form-output" style="margin-top: 20px;"></div>
+</section>
+<div class="Stepback">
+    <a href="top-page.html" class="stepback">Step Back</a>
+    </div>
+</body>
+</html>
