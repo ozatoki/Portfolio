@@ -109,15 +109,7 @@ img{
   align-items: center;
   gap: 20px;
 }
-.circle1{
-  display: flex;
-  gap: 20px;
-}
-.circle2{
-  display: flex;
-  gap: 20px;
-}
-.circle3{
+.circle1, .circle2, .circle3{
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -170,7 +162,7 @@ img{
   z-index: 1;
   color: black;
 }
-.ct-comment{
+.creator-comment{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -298,20 +290,19 @@ img{
   border: none;
 }
 
-.ct-comment{
-   display: flex;
+.Creator-comment{
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100px;
   height: 100px;
-  background: white;
+  background: #fff;
+  border: black solid 3px; 
   border-radius: 50%;
   z-index: 1;
   color: black;
   margin: 10px 0 0 10px;
-  font-size: 1rem;
-
 }
 
 
