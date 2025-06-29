@@ -290,12 +290,28 @@ img{
   padding: 8px;
   font-size: 16px;
 }
-.comtact-form button{
+.contact-form button{
   padding: 10px;
   font-size: 16px;
   background-color: black;
   color: white;
   border: none;
+}
+
+.ct-comment{
+   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background: white;
+  border-radius: 50%;
+  z-index: 1;
+  color: black;
+  margin: 10px 0 0 10px;
+  font-size: 1rem;
+
 }
 
 
@@ -403,6 +419,12 @@ img{
   margin-left: 100px;
   font-size: 2rem;
 }
+.info-content{
+margin-top: -150px;
+}
+.inquiry{
+  font-size: 1.5rem;
+}
 }
 @keyframes heartbeat {
   0% {
@@ -423,4 +445,5 @@ img{
   100% {
     transform: scale(1);
   }
+  
 }
