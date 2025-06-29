@@ -304,6 +304,24 @@ img{
   color: black;
   margin: 10px 0 0 10px;
 }
+.comment{
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+  line-height: 0;
+}
+.term{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.language-text{
+  width: fit-content;
+  margin-left: 0px;
+  line-height: 0;
+}
+
 
 
 
