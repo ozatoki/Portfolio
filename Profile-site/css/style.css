@@ -311,10 +311,9 @@ img{
   max-width: 700px;
   line-height: 1;
   margin: 0 auto;
+  font-family: sans-serif;
 }
-.creator-comment-all{
-  font-style: unset;
-}
+
 
 @media only screen and (min-width: 768px) {
   .circle {
