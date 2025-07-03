@@ -424,6 +424,13 @@ margin-top: -150px;
 .inquiry{
   font-size: 1.5rem;
 }
+.Creator-comment{
+  
+  width: 200px;
+  height: 200px;
+  margin-left: 100px;
+  font-size: 2rem;
+}
 }
 @keyframes heartbeat {
   0% {
