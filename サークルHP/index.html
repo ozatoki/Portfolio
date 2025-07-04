@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/sanitize.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ゆる☆ばすのHP</title>
+</head>
+<body>
+    <div class="humburger-menu">
+    <img src="icon/ハンバーガーメニュー.png" alt="メニュー">
+    <p>Menu</p>
+    </div>
+    <div class="circle-logo">
+    <img src="photo/サークルロゴ.png" alt="サークルロゴ">
+    </div>
+<h3 class="subject">～先生！<span>ゆるく</span>バスケがしたいです！～</h3>
+
+<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+      <img src="photo/slide1.jpeg" alt="画像1">
+    </div>
+      <div class="swiper-slide">
+      <img src="photo/slide2.jpeg" alt="画像2">
+      </div>
+      <div class="swiper-slide">
+      <img src="photo/slide3.jpeg" alt="画像3">
+      </div>
+      <div class="swiper-slide">
+      <img src="photo/slide4.jpeg" alt="画像4">
+    </div>
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    hide: true,
+  },
+});</script>
+<script src="js/script.js"></script>
+</body>
+</html>

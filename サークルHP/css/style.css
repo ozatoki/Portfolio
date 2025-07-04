@@ -1,0 +1,46 @@
+@font-face{
+    font-family: 'HachiMaruPop-Regular';
+    src: url(../fonts/HachiMaruPop-Regular.ttf) format('truetype');
+}
+span{
+    font-family:'HachiMaruPop-Regular',sans-serif;
+}
+body{
+    background-color: #A8E6CF;
+}
+img{
+  margin-left: 30px;
+  width: 300px;
+  height: auto;
+}
+.humburger-menu img{
+    width: 50px;
+    height: 50px;
+    margin: 0;
+}
+.humburger-menu{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    margin: 15px 0 0 15px;
+}
+.humburger-menu p{
+    margin: -10px 0 0 5px ;
+}
+.circle-logo img{
+    width: 202px;
+    height: 135px;
+    margin: 0;
+}
+.circle-logo{
+    display: flex;
+    justify-content: center;
+    margin-top: -70px;
+}
+.subject{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10px;
+}
+
