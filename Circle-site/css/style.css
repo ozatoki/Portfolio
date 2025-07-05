@@ -2,12 +2,17 @@
     font-family: 'HachiMaruPop-Regular';
     src: url(../fonts/HachiMaruPop-Regular.ttf) format('truetype');
 }
+body{
+    font-size: 16px;
+}
 span{
     font-family:'HachiMaruPop-Regular',sans-serif;
+    font-size: 18px;
 }
 body{
     background-color: #A8E6CF;
 }
+
 img{
   margin-left: 30px;
   width: 300px;
@@ -43,4 +48,41 @@ img{
   align-items: center;
   margin-top: -10px;
 }
+.ball1, .ball2, .ball3, .ball4, .ball5, .ball6, .ball7{
+    width: 34px;
+    height: 34px;
+}
+.hello{
+    display: flex;
+    justify-content: center;
+    margin: 34px auto 0 auto;
+    gap: 5px;   
+}
+.hello-text{ 
+    margin-top: -20px;
+}
+.hello-text-content{
+    margin: -18px 0 0 -34px;
+}
+.hello-text-content p{
+    margin: 0;
+    max-width: 90%;
+}
 
+.menber{
+    display: flex;
+    margin: 34px auto 0 auto;
+    gap: 5px;   
+}
+.menber-text{ 
+    margin-top: -20px;
+}
+.menber-content{
+    display: flex;
+    gap: 10px;
+    margin: -18px 0 0 -34px;
+}
+.menber-content p{
+    margin: 0;
+    max-width: 90%;
+}
