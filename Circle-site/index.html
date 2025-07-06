@@ -6,19 +6,36 @@
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/sanitize.css">
     <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/hamburger-menu.css">
     <link rel="stylesheet" href="css/style.css">
     <title>ゆる☆ばすのHP</title>
 </head>
-<body>
-    <div class="humburger-menu">
-    <img src="icon/ハンバーガーメニュー.png" alt="メニュー">
-    <p>Menu</p>
+<body id="top">
+  <header>
+    <div class="hamburger" id="hamburger">
+    <img src="icon/ハンバーガーメニュー.png" alt="メニュー" class="hamburger-icon">
+    <p class="menu">Menu</p>
     </div>
     <div class="circle-logo">
+      <a href="#top">
     <img src="photo/サークルロゴ.png" alt="サークルロゴ">
+    </a>
     </div>
 <h3 class="subject">～先生！<span class="null">ゆるく</span>バスケがしたいです！～</h3>
-
+</header>
+<nav class="nav-menu" id="navMenu">
+  <button class="close-btn" id="closeBtn">×</button>
+  <ul>
+    <li><a href="#hello">ご挨拶</a></li>
+    <li><a href="#menber">メンバー構成</a></li>
+    <li><a href="#location">活動場所</a></li>
+    <li><a href="#time">活動日時</a></li>
+    <li><a href="#cost">参加費</a></li>
+    <li><a href="#infomation">お知らせ</a></li>
+    <li><a href="#inquiry">メンバー募集・お問合せ</a></li>
+    <li><a href="#gallery">活動風景</a></li>
+  </ul>
+</nav>
 <!-- Slider main container -->
 <div class="swiper">
   <!-- Additional required wrapper -->
@@ -48,7 +65,7 @@
   <div class="swiper-scrollbar"></div>
 </div>
 
-<div class="hello">
+<div class="hello" id="hello">
 <img src="photo/バスケットボール.png" alt="ボール" class="ball1">
 <section class="hello-text">
 <h2>ご挨拶</h2>
@@ -61,7 +78,7 @@
 </section>
 </div>
 
-<div class="menber">
+<div class="menber" id="menber">
   <img src="photo/バスケットボール.png" alt="ボール" class="ball2">
   <section class="menber-text">
     <h2>メンバー構成</h2>
@@ -71,7 +88,7 @@
   </section>
 </div>
 
-<div class="location">
+<div class="location" id="location">
   <img src="photo/バスケットボール.png" alt="ボール" class="ball3">
   <section class="location-text">
     <h2>活動場所</h2>
@@ -82,7 +99,7 @@
   </section>
 </div>
 
-<div class="time">
+<div class="time" id="time">
   <img src="photo/バスケットボール.png" alt="ボール" class="ball3">
   <section class="time-text">
     <h2>活動日時</h2>
@@ -93,7 +110,7 @@
   </section>
 </div>
 
-<div class="cost">
+<div class="cost" id="cost">
   <img src="photo/バスケットボール.png" alt="ボール" class="ball4">
   <section class="cost-text">
     <h2>参加費</h2>
@@ -103,7 +120,7 @@
   </section>
 </div>
 
-<div class="infomation">
+<div class="infomation" id="infomation">
   <img src="photo/バスケットボール.png" alt="ボール" class="ball5">
   <section class="infomation-text">
     <h2>お知らせ</h2>
@@ -114,7 +131,53 @@
     </section>
   </section>
 </div>
+
+<div class="inquiry" id="inquiry">
+  <img src="photo/バスケットボール.png" alt="ボール" class="ball6">
+  <section class="inquiry-text">
+    <h2>メンバー募集・お問合せ</h2>
+    <section class="inquiry-content">
+      <form id="contactForm">
+    <input type="text" name="name" placeholder="お名前" required>
+    <input type="email" name="email" placeholder="メールアドレス" required>
+    <textarea name="message" placeholder="お問い合わせ内容" required></textarea>
+    <button type="submit">送信</button>
+  </form>
+    </section>
+  </section>
+</div>
+
+<div class="gallery" id="gallery">
+  <img src="photo/バスケットボール.png" alt="ボール" class="ball7">
+  <section class="gallery-text">
+    <h2>活動風景</h2>
+  </section>
+</div>
+
+
+<div class="swiper">
+<div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+      <img src="photo/NoImage1.png" alt="画像1">
+    </div>
+    <div class="swiper-slide">
+      <img src="photo/NoImage2.png" alt="画像2">
+    </div>
+    </div>
+  
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+
+
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="js/swiper.js"></script>
+<script src="js/hamburger-menu.js"></script>
 </body>
 </html>
