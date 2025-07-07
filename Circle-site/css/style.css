@@ -4,14 +4,12 @@
 }
 body{
     font-size: 16px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
+    background-color: #A8E6CF;
 }
 span{
     font-family:'HachiMaruPop-Regular',sans-serif;
     font-size: 18px;
-}
-body{
-    background-color: #A8E6CF;
 }
 header{
     position: sticky;
@@ -145,7 +143,7 @@ h3{
     flex-direction: column;
     gap: 10px;
     margin: -18px 0 0 -34px;
-    width: 250px;
+    width: 300px;
 }
 .time-content p{
     margin: 0;
@@ -249,4 +247,102 @@ h3{
 }
 .gallery-text{ 
     margin-top: -20px;
+}
+
+@media only screen and (min-width: 768px){
+.menu, p{
+    font-size: 1rem;
+}
+span, h2, p{
+    font-size: 2rem;
+  }
+ .ball1, .ball2, .ball3, .ball4, .ball5, .ball6, .ball7{
+    width: 68px;
+    height: 68px;
+}
+  .menber{
+   display: flex;
+   justify-content: center;
+   margin:100px 911px 0 0;
+}
+  .location{
+   display: flex;
+   justify-content: center;
+   margin:100px 750px 0 0;
+  }
+  .location-content{
+    width: 400px;
+  }
+  .time{
+   display: flex;
+   justify-content: center;
+   margin:100px 565px 0 0;
+  }
+  .time-content{
+    width: 590px;
+  }  
+  .cost{
+   display: flex;
+   justify-content: center;
+   margin:100px 565px 0 0;
+  }
+  .cost-content{
+    width: 590px;
+  }  
+  .infomation{
+   display: flex;
+   justify-content: center;
+   margin:100px 565px 0 0;
+  }
+  .infomation-content{
+    width: 590px;
+  }  
+  .infomation-content{
+    margin: 10px 0 0 -34px;
+    width: 500x;
+    height: 200px;
+    overflow-y: auto; 
+    border: 1px solid #ccc;
+    padding: 10px;  
+    direction: rtl;
+    padding-left: 0;
+    background-color: white;
+}
+.inquiry{
+   display: flex;
+   justify-content: center;
+   margin:100px 565px 0 0;
+  }
+ .inquiry-content {
+    width: 600px;
+    height: 500px;
+    padding: 40px 60px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+  }
+form{
+    display: flex;
+    flex-direction: column;
+  }
+  .inquiry-content input,
+  .inquiry-content button {
+    font-size: 1.1rem;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  .inquiry-content textarea{
+    font-size: 1.1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    height: 250px;
+  }
+  .inquiry-text {
+    margin-top: 0;
+  }
+   .gallery{
+   display: flex;
+   justify-content: center;
+   margin:100px 1010px 0 0;
+}
+
 }

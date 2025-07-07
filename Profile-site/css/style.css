@@ -315,6 +315,41 @@ img{
   font-family: sans-serif;
 }
 
+.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background: rgb(83, 241, 234);
+  border-radius: 50%;
+  z-index: 1;
+  color: black;
+  font-size: 1rem;
+  margin: 10px 0 0 10px;
+}
+.gallery-content1{
+  display: flex;
+  margin:10px 0 0 10px;
+}
+ .circle-site{
+ display: inline-block;
+ width: auto;
+ height: auto;
+ border: 1px solid black;
+}
+.circle-site p{
+  margin: -5px 0 0 10px ;
+  font-size: 0.7rem;
+}
+.circle-site img{
+  width: auto;
+  height: 70px;
+}
+
+
+
 
 @media only screen and (min-width: 768px) {
   .circle {
@@ -430,6 +465,26 @@ margin-top: -150px;
   height: 200px;
   margin-left: 100px;
   font-size: 2rem;
+}
+
+.gallery {
+  width: 200px;
+  height: 200px;
+  font-size: 2rem;
+  margin: 20px 0 0 100px;
+}
+
+.gallery-content1{
+  margin:20px 0 0 100px;
+}
+ 
+.circle-site p{
+  margin: -5px 5px 0 12px ;
+  font-size: 1.8rem;
+}
+.circle-site img{
+  width: auto;
+  height: 140px;
 }
 }
 @keyframes heartbeat {
