@@ -1,6 +1,12 @@
-window.onload = () => {
+const memo = document.getElementById('memo');
+    const contentKey = 'memoContent';
+    const timeKey = 'memoTimestamp';
+    const expireMinutes = 30;
+
+    // ページ読み込み時：保存データをチェック
+    window.onload = () => {
       const savedTime = localStorage.getItem(timeKey);
-      const savedContent = localStorage.getItem(storageKey);
+      const savedContent = localStorage.getItem(contentKey);
 
       if (savedTime && savedContent) {
         const savedDate = new Date(savedTime);
@@ -8,18 +14,18 @@ window.onload = () => {
         const diffMinutes = (now - savedDate) / 1000 / 60;
 
         if (diffMinutes < expireMinutes) {
-          // 期限内なので内容を表示
+          // 30分以内なら内容を復元
           memo.value = savedContent;
         } else {
-          // 期限切れなので消す
-          localStorage.removeItem(storageKey);
+          // 30分以上経過 → 削除
+          localStorage.removeItem(contentKey);
           localStorage.removeItem(timeKey);
         }
       }
     };
 
-    // 書いたら保存＆時間も更新
+    // 入力時に保存（＋現在時刻も）
     memo.addEventListener('input', () => {
-      localStorage.setItem(storageKey, memo.value);
+      localStorage.setItem(contentKey, memo.value);
       localStorage.setItem(timeKey, new Date().toISOString());
     });
