@@ -1,0 +1,14 @@
+textarea{
+   width: fit-content;
+   width: 350px; 
+   height: 600px;
+   font-size: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  textarea{
+   width: fit-content;
+   width: 1900px; 
+   height: 1000px;
+}
+}
