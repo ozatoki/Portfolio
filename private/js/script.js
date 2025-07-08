@@ -1,7 +1,7 @@
 const memo = document.getElementById('memo');
     const contentKey = 'memoContent';
     const timeKey = 'memoTimestamp';
-    const expireMinutes = 30;
+    const expireMinutes = 5;
 
     // ページ読み込み時：保存データをチェック
     window.onload = () => {
@@ -14,10 +14,10 @@ const memo = document.getElementById('memo');
         const diffMinutes = (now - savedDate) / 1000 / 60;
 
         if (diffMinutes < expireMinutes) {
-          // 30分以内なら内容を復元
+          // 5分以内なら内容を復元
           memo.value = savedContent;
         } else {
-          // 30分以上経過 → 削除
+          // 5分以上経過 → 削除
           localStorage.removeItem(contentKey);
           localStorage.removeItem(timeKey);
         }
