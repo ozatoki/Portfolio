@@ -1,0 +1,178 @@
+body{
+  margin-bottom: 50px;
+}
+.cafe-header-mobile-only{
+  width: 100%;
+}
+.cafe-header-pc-only{
+  display: none;
+  width: 100%;
+}
+
+/* ====================
+   フードメニュー
+==================== */
+.food-menu1 p, .food-menu2 p{
+  margin: 0;
+}
+.food-menu h2{
+  margin: 15px  0 0 18.75px;
+}
+.food-menu1 {
+  display: flex;
+}
+.salmon, .pizza {
+  text-align: center; 
+  /* ブロック要素の中にあるインライン要素やインラインブロック要素を中央に揃える */
+  width: 100%;
+}
+.food-menu1 img {
+  width: 80%; 
+  display: block;
+  margin: 0 auto;
+}
+.food-menu2 {
+  display: flex;
+  padding-top: 15px;
+}
+.pilaf, .hashimaki {
+  text-align: center; 
+  /* ブロック要素の中にあるインライン要素やインラインブロック要素を中央に揃える */
+  width: 100%;
+}
+.food-menu2 img {
+  width: 80%; 
+  display: block;
+  margin: 0 auto;
+}
+
+/* ====================
+   ドリンクメニュー
+==================== */
+.drink-menu1 p, .drink-menu2 p{
+  margin: 0;
+}
+.drink-menu h2{
+  margin: 15px  0 0 18.75px;
+}
+.drink-menu1 {
+  display: flex;
+}
+.ice-coffee, .hot-coffee {
+  text-align: center; 
+  /* ブロック要素の中にあるインライン要素やインラインブロック要素を中央に揃える */
+  width: 100%;
+}
+.drink-menu1 img {
+  width: 80%; 
+}
+.drink-menu2 {
+  display: flex;
+  padding-top: 15px;
+}
+.coke, .orange {
+  text-align: center; 
+  /* ブロック要素の中にあるインライン要素やインラインブロック要素を中央に揃える */
+  width: 100%;
+}
+.drink-menu2 img {
+  width: 80%; 
+}
+/* ====================
+   デザートメニュー
+==================== */
+.desert-menu1 p{
+  margin: 0;
+}
+.desert-menu h2{
+  margin: 15px  0 0 18.75px;
+}
+.desert-menu1 {
+  display: flex;
+}
+.cream-cake, .cake {
+  text-align: center; 
+  /* ブロック要素の中にあるインライン要素やインラインブロック要素を中央に揃える */
+  width: 100%;
+}
+.desert-menu1 img {
+  width: 80%; 
+}
+
+@media only screen and (min-width: 768px){
+  .cafe-header-pc-only{
+    display: block;
+  }
+  .cafe-header-mobile-only{
+    display: none;
+  }
+
+/* ====================
+   フードメニュー
+==================== */
+.food-menu1 p, .food-menu2 p{
+  margin: 0;
+  font-size: 3rem;
+}
+.food-menu h2{
+  margin: 45px  0 0 240px;
+  width: fit-content;
+  font-size: 5rem;
+}
+.food-menu1 img {
+  width: 50%; 
+}
+.food-menu2 {
+  padding: 50px 0;
+}
+.food-menu2 img {
+  width: 50%; 
+}
+/* ====================
+   ドリンクメニュー
+==================== */
+.drink-menu1 p, .drink-menu2 p{
+  margin: 0;
+  font-size: 3rem;
+}
+.drink-menu h2{
+  margin: 45px  0 0 240px;
+  width: fit-content;
+  font-size: 5rem;
+}
+.drink-menu1 img {
+  width: 50%; 
+}
+.drink-menu2 {
+  padding: 50px 0;
+}
+.drink-menu2 img {
+  width: 50%; 
+}
+/* ====================
+   デザートメニュー
+==================== */
+.desert-menu1 p{
+  margin: 0;
+  font-size: 3rem;
+}
+.desert-menu h2{
+  margin: 45px  0 0 240px;
+  width: fit-content;
+  font-size: 5rem;
+}
+.desert-menu1 {
+  padding: 0 0 50px 0;
+}
+.desert-menu1 img {
+  width: 50%; 
+}
+
+}
+
+
+
+
+
+
+  

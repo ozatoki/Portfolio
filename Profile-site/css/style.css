@@ -41,7 +41,7 @@ body {
   text-decoration: none;
 }
 
-img{
+.myimage{
   position: relative;
   width: 150px;
   height: 150px;
@@ -335,19 +335,33 @@ img{
 }
  .circle-site{
  display: inline-block;
- width: auto;
- height: auto;
+ width: 27.4%;
+ height: 100%;
  border: 1px solid black;
 }
 .circle-site p{
-  margin: -5px 0 0 10px ;
+  margin: -10px 0 0 10px ;
   font-size: 0.7rem;
 }
 .circle-site img{
-  width: auto;
+  width: 100px;
   height: 70px;
 }
 
+.cafe-site{
+ display: inline-block;
+ width: 27.4%;
+ height: 100%;
+ border: 1px solid black;
+}
+.cafe-site p{
+  margin: 0px 0 0 10px ;
+  font-size: 0.5rem;
+}
+.cafe-site img{
+  width: 100px;
+  height: 70px;
+}
 
 
 
@@ -357,7 +371,7 @@ img{
     height: 350px;
     font-size: 24px
   }
-  img{
+  .myimage{
     width: 300px;
     height: 300px;
   }
@@ -480,11 +494,14 @@ margin-top: -150px;
  
 .circle-site p{
   margin: -5px 5px 0 12px ;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 .circle-site img{
   width: auto;
   height: 140px;
+}
+.circle-site{
+ width: 12%;
 }
 }
 @keyframes heartbeat {
