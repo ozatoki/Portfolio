@@ -350,17 +350,18 @@ body {
 
 .cafe-site{
  display: inline-block;
- width: 27.4%;
- height: 100%;
+ width: 100px;
+ height: 78.8px;
  border: 1px solid black;
 }
 .cafe-site p{
-  margin: 0px 0 0 10px ;
+  margin: -10px 0 0 10px ;
   font-size: 0.5rem;
 }
 .cafe-site img{
-  width: 100px;
-  height: 70px;
+  width: 95px;
+  height: 65px;
+  margin-top: 10px;
 }
 
 
