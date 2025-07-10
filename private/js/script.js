@@ -1,7 +1,7 @@
 const memo = document.getElementById('memo');
     const contentKey = 'memoContent';
     const timeKey = 'memoTimestamp';
-    const expireMinutes = 5;
+    const expireMinutes = 1;
 
     // ページ読み込み時：保存データをチェック
     window.onload = () => {

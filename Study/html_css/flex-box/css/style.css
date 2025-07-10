@@ -1,0 +1,28 @@
+li{
+    list-style: none;
+}
+.flexContainer{
+    display: flex;
+    align-items: flex-end;
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
+}
+
+.flexItem_a{background-color: #eea;}
+.flexItem_b{background-color: #eaa;}
+.flexItem_c{background-color: #aae;}
+.flexItem_d{background-color: #cce;}
+
+.flexItem{
+    box-sizing: border-box;
+    padding: 10px;
+    height: 170px;
+}
+
+.flexItem_a{
+    flex: 0 0 300px;
+    margin-right: auto;
+}
+.flexItem_b{
+    flex: 0 0 200px;
+}
