@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    src: url();
+}
 header{
     background-color: white;
     width: 100%;
@@ -29,79 +33,99 @@ header img{
     width: 250px;
     height: 120px;
 }
-.infocontentA{
-    width: 90%;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 94px;
-}
-
-
-.shopinfomation{
-    width: 100%;
-    height: 520px;
+.kirikabu{
     position: relative;
 }
-.shop{
+/* ====================
+   お店情報
+==================== */
+.shopinfomation{
     position: absolute;
     top: 40px;
-    left: 30px;
-    bottom: 10px;
-}
-.infowrapperA{
-    position: absolute;
-    top: 0px;
-    left: 0px;
     width: 100%;
-    height: 138px;
-    display: flex;
-    justify-content: center;
-}    
-.infoA{
-    width: 90%;
-    height: 138px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    gap: 20px;
 }
-.shopaddress p, .shoptel p{
-    margin-left: 20px;
+.shopinfomation h2{
+    width: 90%;
 }
-.infowrapperB{
-    position: absolute;
-    top: 255px;
-    left: 9.5%;
-    right: 9.5%;
+.shopinfoA{
     width: 90%;
     height: 138px;
-}    
-.infoB{
-    width: 90%;
-    height: 138px;
+    position: relative;
+}
+.shopcontent{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    height: 100%;
+    margin-left: 30px;
+    gap: 10px;
 }
-.time{
+.address p, .tel p{
+    margin-left: 18px;
+}
+.shopinfoB{
+    width: 90%;
+    height: 138px;
+    position: relative;
+}
+.shoptime{
     display: flex;
-}
-.opentime{
-    display: flex;
-    flex-direction: column;
-}
-.lasttime{
-    display: flex;
-    flex-direction: column;
-}
-.opentime p, .lasttime p{
-    padding-left: 20px;
+    gap: 20px;
 }
 .holiday{
     display: flex;
+    gap: 5px;
+}
+.shoptime p{
+    margin-left: 18px;
+}
+/* ====================
+   フードメニュー
+==================== */
+.foodmenu{
+    width: 100%;
+    height: 310px;
+    position: absolute;
+    top: 428px;
+    
+}
+.foodcontent{
+    width: 90%;
+    height: 250px;
+    position: absolute;
+    margin: 20px auto 0 auto;
+    position: relative;
+}
+.foodimage{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pizza, .sandwich{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+/* ====================
+   ドリンクメニュー
+==================== */
+.drinkmenu{
+    width: 100%;
+    position: absolute;
+    top: 778px;
+}
+.drinkcontent{
+    position: relative;
+    width: 90%;
+    height: 250px;
+    margin-top: 20px;
+    margin: 20px auto 0 auto;
 }
 /* 共通 */
 h1{
@@ -109,8 +133,11 @@ h1{
 }
 h2{
     font-size: 36px;
+    line-height: 1;
     color: white;
     text-shadow: 1px 4px 5px black;
+    width: 90%;
+    margin: 0 auto;
 }
 h3{
     font-size: 18px;
@@ -124,7 +151,7 @@ p{
     height: 20px;
     background-image: url('/img/bolt.png');
     position: absolute;
-    z-index: 30;
+    z-index: 10;
     background-size: cover;
 }
 .top-left{
@@ -144,11 +171,39 @@ p{
     background-color: #F8DDDD;
     border-radius: 10px;
     box-shadow: 1px 4px 5px black;
-    position: relative;
-    z-index: 10;
+    z-index: 20;
 }
-.background2{
+.otherbox{
+    background-color: #95B952;
+    border-radius: 30px;
+    width: 200px;
+    height: 30px;
+    box-shadow: 1px 4px 5px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    top: 200px;
+    left: 20%;
+}
+.kirikabu img{
     width: 100%;
     height: 520px;
+}
+.menuimg img{
+    width: 120px;
+    height: 120px;
     object-fit: cover;
+    box-shadow: 1px 4px 5px black;
+    margin-top: 20px;   
+}
+.menuimg{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 8%;
+}
+.label{
+    margin-top: 5px;
 }
