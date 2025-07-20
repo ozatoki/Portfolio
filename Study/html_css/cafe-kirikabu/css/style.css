@@ -51,6 +51,7 @@ header img{
     width: 90%;
     height: 138px;
     position: relative;
+    z-index: 0;
 }
 .shopcontent{
     display: flex;
@@ -67,6 +68,7 @@ header img{
     width: 90%;
     height: 138px;
     position: relative;
+    z-index: 0;
 }
 .shoptime{
     display: flex;
@@ -123,6 +125,74 @@ header img{
     margin-top: 20px;
     margin: 20px auto 0 auto;
 }
+/* ====================
+   デザートメニュー
+==================== */
+.desertmenu{
+    width: 100%;
+    position: absolute;
+    top: 1124px;
+}
+.desertcontent{
+    position: relative;
+    width: 90%;
+    height: 250px;
+    margin-top: 20px;
+    margin: 20px auto 0 auto;
+}
+
+/* ====================
+   きりかぶからのお知らせ
+==================== */
+.shopannounce h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.shopannounce{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 1470px;
+    width: 100%;
+}
+.announcecontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 260px;
+    position: relative;
+    gap: 20px;
+}
+.announcebox{
+    background-color: #D9D9D9;
+    width: 90%;
+    height: 70px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.announcebox p, .announcebox h3{
+    margin-left: 20px;
+}
+.announcetext{
+    width: 80%;
+}
+.otherannounce{
+    background-color: #95B952;
+    border-radius: 30px;
+    width: 200px;
+    height: 30px;
+    box-shadow: 1px 4px 5px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: -5px;
+}
 /* 共通 */
 h1{
     margin: 0;
@@ -145,9 +215,9 @@ p{
 .bolt{
     width: 18px;
     height: 20px;
-    background-image: url('/img/bolt.png');
+    background-image: url('../img/bolt.png');
     position: absolute;
-    z-index: 10;
+    z-index: 100;
     background-size: cover;
 }
 .top-left{
@@ -167,7 +237,8 @@ p{
     background-color: #F8DDDD;
     border-radius: 10px;
     box-shadow: 1px 4px 5px black;
-    z-index: 20;
+    z-index: 0;
+    position: relative;
 }
 .otherbox{
     background-color: #95B952;
@@ -183,9 +254,12 @@ p{
     top: 200px;
     left: 20%;
 }
-.kirikabu img{
+.kirikabu{
     width: 100%;
-    height: 520px;
+    height: 3000px;
+    background-image: url(../img/background2.jpg);
+    background-repeat: repeat-y;
+    background-size: 100% 520px;
 }
 .menuimg img{
     width: 120px;
