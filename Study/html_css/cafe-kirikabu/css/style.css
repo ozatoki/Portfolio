@@ -59,8 +59,6 @@ header img{
 .shopinfoA{
     width: 90%;
     height: 138px;
-    position: relative;
-    z-index: 0;
 }
 .shopcontent{
     display: flex;
@@ -70,6 +68,10 @@ header img{
     margin-left: 30px;
     gap: 10px;
 }
+.shopcontent p{
+    font-size: 16px;
+}
+
 .address p, .tel p{
     margin-left: 18px;
 }
@@ -229,6 +231,10 @@ footer{
     text-align: center;
 }
 /* 共通 */
+body {
+  font-family: 'Noto Sans JP', 'Arial', sans-serif;
+}
+
 h1{
     margin: 0;
 }
@@ -245,8 +251,7 @@ h3{
     font-weight: bold;
 }
 p{
-    font-size: 14px;
-    display: block;
+    font-size: 16px;
 }
 .bolt{
     width: 18px;
@@ -286,6 +291,7 @@ p{
     justify-content: center;
     align-items: center;
     gap: 5px;
+    margin: 15px 0 0 0;
 }
 .kirikabu{
     width: 100%;
@@ -305,8 +311,10 @@ p{
     display: flex;
     justify-content: center;
     text-align: center;
-    gap: 8%;
+    gap: 5%;
 }
 .label{
     margin-top: 10px;
+    width: 136px;
+    line-height: 1;
 }
