@@ -1,19 +1,28 @@
+/* ====================
+   ヘッダー
+==================== */
 header{
     background-color: white;
     width: 100%;
     height: 80px;
     box-shadow: 1px 4px 5px black;
+    position: relative;
+    z-index: 10;
 }
 header img{
     width: 158px;
     height: 50px;
     margin: 15px 0 15px 30px;
 }
+/* ====================
+   トップ
+==================== */
 .top{
     width: 100%;
     height: 220px;
     overflow: hidden;
     position: relative;
+    background-image: url(../img/background1.jpg);
 }
 .background1{
     width: 100%;
@@ -42,7 +51,7 @@ header img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 .shopinfomation h2{
     width: 90%;
@@ -88,57 +97,50 @@ header img{
     width: 100%;
     height: 310px;
     position: absolute;
-    top: 428px;
+    top: 415px;
     
 }
 .foodcontent{
     width: 90%;
     height: 250px;
-    position: absolute;
-    margin: 20px auto 0 auto;
-    position: relative;
-}
-.foodimage{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.pizza, .sandwich{
+    margin: 10px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
 }
+
 /* ====================
    ドリンクメニュー
 ==================== */
 .drinkmenu{
     width: 100%;
     position: absolute;
-    top: 778px;
+    top: 750px;
 }
 .drinkcontent{
-    position: relative;
     width: 90%;
     height: 250px;
-    margin-top: 20px;
-    margin: 20px auto 0 auto;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 /* ====================
    デザートメニュー
 ==================== */
 .desertmenu{
     width: 100%;
     position: absolute;
-    top: 1124px;
+    top: 1089px;
 }
 .desertcontent{
-    position: relative;
     width: 90%;
     height: 250px;
-    margin-top: 20px;
-    margin: 20px auto 0 auto;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* ====================
@@ -146,14 +148,14 @@ header img{
 ==================== */
 .shopannounce h2{
     font-size: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .shopannounce{
     display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: 1470px;
+    top: 1430px;
     width: 100%;
 }
 .announcecontent{
@@ -193,6 +195,39 @@ header img{
     gap: 5px;
     margin-top: -5px;
 }
+
+/* ====================
+   よくある質問
+==================== */
+.QandA{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 1780px;
+    width: 100%;
+    height: auto;
+}
+.QandAcontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    height: 230px;
+    gap: 10px;
+}
+dl{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 7%;
+}
+/* ====================
+   フッター
+==================== */
+footer{
+    text-align: center;
+}
 /* 共通 */
 h1{
     margin: 0;
@@ -210,7 +245,8 @@ h3{
     font-weight: bold;
 }
 p{
-    font-size: 16px;
+    font-size: 14px;
+    display: block;
 }
 .bolt{
     width: 18px;
@@ -250,13 +286,10 @@ p{
     justify-content: center;
     align-items: center;
     gap: 5px;
-    position: absolute;
-    top: 200px;
-    left: 20%;
 }
 .kirikabu{
     width: 100%;
-    height: 3000px;
+    height: 2140px;
     background-image: url(../img/background2.jpg);
     background-repeat: repeat-y;
     background-size: 100% 520px;
@@ -275,5 +308,5 @@ p{
     gap: 8%;
 }
 .label{
-    margin-top: 5px;
+    margin-top: 10px;
 }
