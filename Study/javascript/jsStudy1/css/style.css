@@ -1,0 +1,35 @@
+.hamburger{
+    position: relative;
+    width: 30px;
+    height: 25px;
+    top: 20px;
+    left: 300px;
+}
+.hamburger span{
+    height: 3px;
+    display: block;
+    background: #333;
+    margin: 5px 0;
+}
+.nav{
+    position: absolute;
+    top: 70px;
+    left: 230px;
+    display: none;
+}
+.nav ul{
+    margin: 0;
+    padding: 0;
+}
+.nav li{
+    list-style: none;
+    border-bottom: 1px solid gray;
+    width: 50%;
+    width: fit-content;
+}
+.nav.active{
+    display: block;
+}
+p{
+    margin: 300px auto;
+}
