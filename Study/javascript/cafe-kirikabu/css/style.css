@@ -10,7 +10,7 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 100;
+    z-index: 1000;
 }
 header img{
     width: 158px;
@@ -27,6 +27,9 @@ header img{
     position: relative;
     background-image: url(../img/background1.jpg);
     margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .background1{
     width: 100%;
@@ -104,7 +107,7 @@ header img{
     height: 310px;
     position: absolute;
     top: 415px;
-    
+    z-index: 100;    
 }
 .foodcontent{
     width: 90%;
@@ -115,6 +118,9 @@ header img{
     align-items: center;
 }
 
+/* .mainmenu{
+    display: flex;
+} */
 /* ====================
    ドリンクメニュー
 ==================== */
@@ -122,6 +128,7 @@ header img{
     width: 100%;
     position: absolute;
     top: 750px;
+    z-index: 50;
 }
 .drinkcontent{
     width: 90%;
@@ -320,4 +327,7 @@ p{
     margin-top: 10px;
     width: 136px;
     line-height: 1;
+}
+button{
+    all: unset;
 }

@@ -7,12 +7,17 @@
     <link rel="stylesheet" href="css/sanitize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hamburger.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/otherbox.css">
     <title>喫茶きりかぶ</title>
 </head>
 <body>
     <header>
-        <h1> 
-            <img src="img/kirikabu-logo.png" alt="喫茶きりかぶlogo">
+        <h1>
+            <a href="#">
+                <img src="img/kirikabu-logo.png" alt="喫茶きりかぶlogo">
+            </a>
         </h1>
         <div class="hamburger" id="hamburger">
             <span></span>
@@ -32,7 +37,24 @@
         </div>       
     </header>
     <div class="top">
-        <img src="img/noimage.png" alt="" class="slider">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/slider/slider1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/slider/slider2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/slider/slider3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/slider/slider4.jpg" alt=""></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div> 
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>  
+        </div>
     </div>
     <div class="kirikabu">
          <div class="shopinfomation">
@@ -85,22 +107,26 @@
             <div class="bolt bottom-right"></div>
             <div class="menuimg">
                 <figure><img src="img/food/pizza-food.jpg" alt="">
-                    <figcaption class="label"><p>イタリアンピザ</p>
-                                <p>780円</p>
-                    </figcaption>
+                    <figcaption class="label"><p>イタリアンピザ</p><p>780円</p></figcaption>
                 </figure>
                 <figure><img src="img/food/sandwich-food.jpg" alt="">
-                    <figcaption class="label"><p>サンドウィッチ</p>
-                                <p>780円</p>
-                    </figcaption>
+                    <figcaption class="label"><p>サンドウィッチ</p><p>780円</p></figcaption>
                 </figure>
             </div>
-            <div class="otherbox otherfood">
-                <p>他に見る</p>
-                <p>▼</p>
-            </div>
+                <div class="menuimg othermenu" id="othermenu">
+                    <figure><img src="img/food/hamburg-food.jpg" alt="">
+                        <figcaption><p>ハンバーグ定食</p><p>1,480円</p></figcaption>
+                    </figure>
+                    <figure><img src="img/food/syougayaki-food.jpg" alt="">
+                        <figcaption><p>生姜焼き定食</p><p>1,480円</p></figcaption>
+                    </figure>
+                </div>
+            <button class="otherbox food-opne" id="food-open">
+                <p id="text">他に見る</p><p id="figure">▼</p>
+            </button>
         </div>
     </div>
+
     <div class="drinkmenu">
         <h2 id="drink">ドリンクメニュー</h2>
         <div class="contentbox drinkcontent">
@@ -193,6 +219,9 @@
 </div>
 <footer><p>&copy; 2025 Tokito Ozawa. All rights reserved.</p></footer>
     
-<script src="js/hamburger.js"></script>    
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>   
+<script src="js/hamburger.js"></script> 
+<script src="js/swiper.js"></script>
+<script src="js/otherbox.js"></script>
 </body>
 </html>
