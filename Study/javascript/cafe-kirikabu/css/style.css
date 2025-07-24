@@ -146,6 +146,7 @@ header img{
     width: 100%;
     position: absolute;
     top: 1089px;
+    z-index: 30;
 }
 .desertcontent{
     width: 90%;
@@ -167,9 +168,10 @@ header img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    top: 1430px;
+    position: relative;
+    top: 1440px;
     width: 100%;
+    z-index: 20;
 }
 .announcecontent{
     display: flex;
@@ -178,7 +180,6 @@ header img{
     align-items: center;
     width: 90%;
     height: 260px;
-    position: relative;
     gap: 20px;
 }
 .announcebox{
@@ -221,6 +222,7 @@ header img{
     top: 1780px;
     width: 100%;
     height: auto;
+    z-index: 10;
 }
 .QandAcontent{
     display: flex;

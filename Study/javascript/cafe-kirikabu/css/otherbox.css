@@ -1,10 +1,13 @@
-.othermenu{
+/* ====================
+   フードメニュー
+==================== */
+.otherfood{
     display: none;
     gap: 30px;
     position: relative;
     z-index: 100;
 }
-.othermenu.active{
+.otherfood.active{
     display: flex;
     z-index: 100;
 }
@@ -16,4 +19,59 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.otherfood p{
+    margin: 20px 0 10px 0;
+    line-height: 0
+}
+
+/* ====================
+   ドリンクメニュー
+==================== */
+.otherdrink{
+    display: none;
+    gap: 30px;
+    position: relative;
+    
+}
+.otherdrink.active{
+    display: flex;
+}
+
+.drinkcontent.active{
+    width: 90%;
+    height: 440px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.otherdrink p{
+    margin: 20px 0 10px 0;
+    line-height: 0
+}
+/* ====================
+   デザートメニュー
+==================== */
+.otherdesert{
+    display: none;
+    gap: 30px;
+    position: relative;
+    z-index: 50;
+}
+.otherdesert.active{
+    display: flex;
+}
+
+.desertcontent.active{
+    width: 90%;
+    height: 440px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.otherdesert p{
+    margin: 20px 0 10px 0;
+    line-height: 0
 }
