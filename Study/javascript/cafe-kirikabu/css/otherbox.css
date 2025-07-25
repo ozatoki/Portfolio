@@ -75,3 +75,28 @@
     margin: 20px 0 10px 0;
     line-height: 0
 }
+
+/* ====================
+   きりかぶからのお知らせ
+==================== */
+.announce3{
+    display: none;
+}
+.announce4{
+    display: none;
+}
+.announce3.active{
+    display: block;
+}
+.announce4.active{
+    display: block;
+}
+.announcecontent.active{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 440px;
+    gap: 20px;
+}

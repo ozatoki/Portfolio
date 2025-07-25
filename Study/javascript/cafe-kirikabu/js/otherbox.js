@@ -54,3 +54,24 @@ desertopen.addEventListener('click', () => {
         desertfigure.textContent = '▼';
     }
 });
+
+// きりかぶからのおしらせ
+const announce3 = document.querySelector('.announce3');
+const announce4 = document.querySelector('.announce4');
+const announceopen = document.getElementById("announce-open");
+const announcecontent = document.querySelector('.announcecontent')
+const announcetext = document.getElementById('announcetext');
+const announcefigure = document.getElementById('announcefigure')
+announceopen.addEventListener('click',() => {
+    announce3.classList.toggle('active')
+    announce4.classList.toggle('active')
+    announcecontent.classList.toggle('active')
+    if (announcetext.textContent === '詳しく見る') {
+        announcetext.textContent = '戻る';
+        announcefigure.textContent = '▲';
+    } else {
+        announcetext.textContent = '詳しく見る';
+        announcefigure.textContent = '▼';
+    }
+    
+});
