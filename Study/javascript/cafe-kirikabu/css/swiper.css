@@ -2,7 +2,17 @@
   width: 70%;
   height: auto;
 }
-.swiper-slide img{
+.swiper-slide img {
   width: 100%;
   height: auto;
+}
+@media only screen and (min-width: 768px) {
+  .swiper {
+    width: 50%;
+    height: auto;
+  }
+  .swiper-slide img {
+    width: 100%;
+    height: auto;
+  }
 }

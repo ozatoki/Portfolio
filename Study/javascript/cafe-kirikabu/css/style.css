@@ -1,121 +1,105 @@
 /* ====================
    ヘッダー
 ==================== */
-header{
-    background-color: white;
-    width: 100%;
-    height: 80px;
-    box-shadow: 1px 4px 5px black;
-    z-index: 10;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
+header {
+  background-color: white;
+  width: 100%;
+  height: 80px;
+  box-shadow: 1px 4px 5px black;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
-header img{
-    width: 158px;
-    height: 50px;
-    margin: 15px 0 15px 30px;
+header img {
+  width: 158px;
+  height: 50px;
+  margin: 15px 0 15px 30px;
 }
 /* ====================
    トップ
 ==================== */
-.top{
-    width: 100%;
-    height: 220px;
-    overflow: hidden;
-    position: relative;
-    background-image: url(../img/background1.jpg);
-    margin-top: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.top {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+  background-image: url(../img/background1.jpg);
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.background1{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    margin-top: 3px;
-}
-.slider{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 250px;
-    height: 120px;
-}
-.kirikabu{
-    position: relative;
+.kirikabu {
+  position: relative;
 }
 /* ====================
    お店情報
 ==================== */
-.shopinfomation{
-    position: absolute;
-    top: 40px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+.shopinfomation {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 40px 0 0 0;
 }
-.shopinfomation h2{
-    width: 90%;
+.shopinfomation h2 {
+  width: 90%;
 }
-.shopinfoA{
-    width: 90%;
-    height: 138px;
+.shopinfoA {
+  width: 90%;
+  height: 138px;
 }
-.shopcontent{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    margin-left: 30px;
-    gap: 10px;
+.shopcontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin-left: 30px;
+  gap: 10px;
 }
-.shopcontent p{
-    font-size: 16px;
+.shopcontent p {
+  font-size: 16px;
 }
 
-.address p, .tel p{
-    margin-left: 18px;
+.address p,
+.tel p {
+  margin-left: 18px;
 }
-.shopinfoB{
-    width: 90%;
-    height: 138px;
-    position: relative;
-    z-index: 0;
+.shopinfoB {
+  width: 90%;
+  height: 138px;
 }
-.shoptime{
-    display: flex;
-    gap: 20px;
+.shoptime {
+  display: flex;
+  gap: 20px;
 }
-.holiday{
-    display: flex;
-    gap: 5px;
+.holiday {
+  display: flex;
+  gap: 5px;
 }
-.shoptime p{
-    margin-left: 18px;
+.shoptime p {
+  margin-left: 18px;
 }
 /* ====================
    フードメニュー
 ==================== */
-.foodmenu{
-    width: 100%;
-    height: 310px;
-    position: absolute;
-    top: 415px;
-    z-index: 100;    
+.foodmenu {
+  width: 100%;
+  height: 310px;
+  position: absolute;
+  top: 415px;
+  z-index: 100;
 }
-.foodcontent{
-    width: 90%;
-    height: 250px;
-    margin: 10px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.foodcontent {
+  width: 90%;
+  height: 250px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* .mainmenu{
@@ -124,217 +108,465 @@ header img{
 /* ====================
    ドリンクメニュー
 ==================== */
-.drinkmenu{
-    width: 100%;
-    position: absolute;
-    top: 750px;
-    z-index: 50;
+.drinkmenu {
+  width: 100%;
+  position: absolute;
+  top: 750px;
+  z-index: 50;
 }
-.drinkcontent{
-    width: 90%;
-    height: 250px;
-    margin: 10px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.drinkcontent {
+  width: 90%;
+  height: 250px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* ====================
    デザートメニュー
 ==================== */
-.desertmenu{
-    width: 100%;
-    position: absolute;
-    top: 1089px;
-    z-index: 30;
+.desertmenu {
+  width: 100%;
+  position: absolute;
+  top: 1089px;
+  z-index: 30;
 }
-.desertcontent{
-    width: 90%;
-    height: 250px;
-    margin: 10px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.desertcontent {
+  width: 90%;
+  height: 250px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* ====================
    きりかぶからのお知らせ
 ==================== */
-.shopannounce h2{
-    font-size: 30px;
-    margin-bottom: 10px;
+.shopannounce h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
 }
-.shopannounce{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    top: 1440px;
-    width: 100%;
-    z-index: 20;
+.shopannounce {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 1440px;
+  width: 100%;
+  z-index: 20;
 }
-.announcecontent{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    height: 260px;
-    gap: 20px;
+.announcecontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 260px;
+  gap: 20px;
 }
-.announcetext{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+.announcetext {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
-.announcebox{
-    background-color: #D9D9D9;
-    width: 90%;
-    height: 70px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.announcebox {
+  background-color: #d9d9d9;
+  width: 90%;
+  height: 70px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.announcebox p, .announcebox h3{
-    margin-left: 20px;
+.announcebox p,
+.announcebox h3 {
+  margin-left: 20px;
 }
 
-.announce-open{
-    background-color: #95B952;
-    border-radius: 30px;
-    width: 200px;
-    height: 30px;
-    box-shadow: 1px 4px 5px black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    margin-top: -5px;
+.announce-open {
+  background-color: #95b952;
+  border-radius: 30px;
+  width: 200px;
+  height: 30px;
+  box-shadow: 1px 4px 5px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: -5px;
 }
 
 /* ====================
    よくある質問
 ==================== */
-.QandA{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    position: absolute;
-    top: 1780px;
-    width: 100%;
-    height: auto;
-    z-index: 10;
+.QandA {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: 1780px;
+  width: 100%;
+  height: auto;
+  z-index: 10;
 }
-.QandAcontent{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 90%;
-    height: 230px;
-    gap: 10px;
+.QandAcontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  height: 230px;
+  gap: 10px;
 }
-dl{
-    font-size: 18px;
-    font-weight: bold;
-    margin-left: 7%;
+dl {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 7%;
 }
 /* ====================
    フッター
 ==================== */
-footer{
-    text-align: center;
+footer {
+  text-align: center;
 }
 /* 共通 */
 body {
-  font-family: 'Noto Sans JP', 'Arial', sans-serif;
+  font-family: "Noto Sans JP", "Arial", sans-serif;
 }
-h1{
-    margin: 0;
+h1 {
+  margin: 0;
 }
-h2{
-    font-size: 36px;
-    line-height: 1;
-    color: white;
-    text-shadow: 1px 4px 5px black;
-    width: 90%;
-    margin: 0 auto;
+h2 {
+  font-size: 36px;
+  line-height: 1;
+  color: white;
+  text-shadow: 1px 4px 5px black;
+  width: 90%;
+  margin: 0 auto;
 }
-h3{
-    font-size: 18px;
-    font-weight: bold;
+h3 {
+  font-size: 18px;
+  font-weight: bold;
 }
-p{
-    font-size: 16px;
+p {
+  font-size: 16px;
 }
-.bolt{
-    width: 18px;
-    height: 20px;
-    background-image: url('../img/bolt.png');
-    position: absolute;
-    z-index: 100;
-    background-size: cover;
+.bolt {
+  width: 18px;
+  height: 20px;
+  background-image: url("../img/bolt.png");
+  position: absolute;
+  z-index: 100;
+  background-size: cover;
 }
-.top-left{
-    top: 5px; left: 5px;
+.top-left {
+  top: 5px;
+  left: 5px;
 }
-.top-right{
-    top: 5px; right: 5px;
+.top-right {
+  top: 5px;
+  right: 5px;
 }
-.bottom-left{
-    bottom: 5px; left: 5px;
+.bottom-left {
+  bottom: 5px;
+  left: 5px;
 }
-.bottom-right{
-    bottom: 5px; right: 5px;
+.bottom-right {
+  bottom: 5px;
+  right: 5px;
 }
 
-.contentbox{
-    background-color: #F8DDDD;
-    border-radius: 10px;
-    box-shadow: 1px 4px 5px black;
-    z-index: 0;
-    position: relative;
+.contentbox {
+  background-color: #f8dddd;
+  border-radius: 10px;
+  box-shadow: 1px 4px 5px black;
+  z-index: 0;
+  position: relative;
 }
-.otherbox{
-    background-color: #95B952;
-    border-radius: 30px;
-    width: 200px;
-    height: 30px;
-    box-shadow: 1px 4px 5px black;
+.otherbox {
+  background-color: #95b952;
+  border-radius: 30px;
+  width: 200px;
+  height: 30px;
+  box-shadow: 1px 4px 5px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin: 15px 0 0 0;
+}
+.kirikabu {
+  width: 100%;
+  height: 2140px;
+  background-image: url(../img/background2.jpg);
+  background-repeat: repeat-y;
+  background-size: 100% 520px;
+}
+.menuimg img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  box-shadow: 1px 4px 5px black;
+  margin-top: 20px;
+}
+.menuimg {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 5%;
+}
+.label {
+  margin-top: 10px;
+  width: 136px;
+  line-height: 1;
+}
+button {
+  all: unset;
+}
+
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 72px;
+    line-height: 1.5;
+    text-shadow: 2px 8px 10px black;
+  }
+  h3 {
+    font-size: 36px;
+  }
+  p {
+    font-size: 32px;
+  }
+  .bolt {
+    width: 36px;
+    height: 40px;
+    z-index: 100;
+  }
+  .top-left {
+    top: 10px;
+    left: 10px;
+  }
+  .top-right {
+    top: 10px;
+    right: 10px;
+  }
+  .bottom-left {
+    bottom: 10px;
+    left: 10px;
+  }
+  .bottom-right {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .contentbox {
+    border-radius: 20px;
+    box-shadow: 2px 8px 10px black;
+  }
+  .otherbox {
+    border-radius: 20px;
+    width: 350px;
+    height: 50px;
+    box-shadow: 2px 8px 10px black;
+    gap: 10px;
+  }
+  .kirikabu {
+    height: 3800px;
+    background-size: 100% 1040px;
+  }
+  .menuimg img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 2px 8px 10px black;
+    margin-top: 40px;
+  }
+  .menuimg {
+    gap: 10%;
+  }
+  .label {
+    margin: 20px auto 0 auto;
+    width: 272px;
+    line-height: 1;
+  }
+  /* ====================
+     ヘッダー
+  ==================== */
+  header {
+    height: 160px;
+  }
+  header img {
+    width: 300px;
+    height: 100px;
+    margin: 30px 0 30px 60px;
+  }
+  /* ====================
+     トップ
+  ==================== */
+  .top {
+    height: 700px;
+    margin-top: 160px;
+  }
+  /* ====================
+     お店情報
+  ==================== */
+  .shopinfomation {
+    align-items: center;
+    display: block;
+    top: 80px;
+    width: 100%;
+    padding: 200px 0 0 0;
+  }
+  .shopinfoA,
+  .shopinfoB {
+    display: inline-block;
+    width: 810px;
+    height: 310px;
+    vertical-align: top;
+    margin: 0 0 0 100px;
+  }
+
+  .shopcontent {
+    margin-left: 60px;
+    gap: 20px;
+  }
+  .shopcontent p {
+    font-size: 32px;
+  }
+  .address p,
+  .tel p {
+    margin-left: 36px;
+  }
+  .shoptime {
+    gap: 40px;
+  }
+  .holiday {
+    gap: 10px;
+  }
+  .shoptime p {
+    margin-left: 36px;
+  }
+  /* ====================
+   フードメニュー
+==================== */
+  .foodmenu {
+    width: 810px;
+    height: 650px;
+    position: absolute;
+    top: 800px;
+    left: 60px;
+    z-index: 100;
+  }
+  .foodcontent {
+    width: 810px;
+    height: 450px;
+    left: 40px;
+  }
+  /* ====================
+   ドリンクメニュー
+==================== */
+  .drinkmenu {
+    width: 810px;
+    height: 650px;
+    top: 800px;
+    left: 980px;
+  }
+  .drinkcontent {
+    width: 810px;
+    height: 450px;
+    margin: 10px auto;
+    left: 40px;
+  }
+  /* ====================
+   デザートメニュー
+==================== */
+  .desertmenu {
+    top: 1550px;
+  }
+  .desertcontent {
+    width: 90%;
+    height: 480px;
+    margin: 10px auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
-    margin: 15px 0 0 0;
-}
-.kirikabu{
+    flex-wrap: wrap;
+  }
+  .desert-open {
+    display: none;
+  }
+  .desertmenu img {
+    width: 365px;
+    height: 265px;
+  }
+  .desertxcontent,
+  .menuimg {
+    margin: 0 0 30px 30px;
+  }
+  /* ====================
+   きりかぶからのお知らせ
+==================== */
+  .shopannounce h2 {
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+  .shopannounce {
+    top: 1720px;
+  }
+  .announcecontent {
+    height: 500px;
+    gap: 20px;
+  }
+  .announcetext {
     width: 100%;
-    height: 2140px;
-    background-image: url(../img/background2.jpg);
-    background-repeat: repeat-y;
-    background-size: 100% 520px;
-}
-.menuimg img{
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    box-shadow: 1px 4px 5px black;
-    margin-top: 20px;   
-}
-.menuimg{
     display: flex;
-    justify-content: center;
-    text-align: center;
-    gap: 5%;
-}
-.label{
+    gap: 40px;
+  }
+  .announcebox {
+    height: 140px;
+    border-radius: 20px;
+  }
+  .announcebox p,
+  .announcebox h3 {
+    margin-left: 40px;
+  }
+
+  .announce-open {
+    border-radius: 20px;
+    width: 300px;
+    height: 50px;
+    box-shadow: 2px 8px 10px black;
+    gap: 10px;
     margin-top: 10px;
-    width: 136px;
-    line-height: 1;
-}
-button{
-    all: unset;
+  }
+  /* ====================
+   よくある質問
+==================== */
+  .QandA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 3120px;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+  }
+  .QandAcontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    height: 400px;
+    gap: 20px;
+  }
+  dl {
+    font-size: 36px;
+    font-weight: bold;
+    margin-left: 7%;
+  }
 }

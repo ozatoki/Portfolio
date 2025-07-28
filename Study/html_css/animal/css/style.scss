@@ -1,0 +1,34 @@
+$imagesize-width: 250px;
+$imagesize-height: auto;    
+body{
+    background-image: url(../img/background.jpg);
+    background-size: 100% 1000px;
+}
+.animal1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: $imagesize-width;
+        height: $imagesize-height;
+    }
+    p{
+        font-size: 24px;
+        margin: 0;
+    }
+}
+.animal2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: $imagesize-width;
+        height: $imagesize-height;
+    }
+    p{
+        font-size: 24px;
+        margin: 0;
+    }
+}

@@ -1,102 +1,179 @@
 /* ====================
    フードメニュー
 ==================== */
-.otherfood{
-    display: none;
-    gap: 30px;
-    position: relative;
-    z-index: 100;
+.otherfood {
+  display: none;
+  gap: 30px;
+  position: relative;
+  z-index: 100;
 }
-.otherfood.active{
-    display: flex;
-    z-index: 100;
+.otherfood.active {
+  display: flex;
+  z-index: 100;
 }
 
-.foodcontent.active{
-    width: 90%;
-    height: 440px;
-    margin: 10px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.foodcontent.active {
+  width: 90%;
+  height: 440px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.otherfood p{
-    margin: 20px 0 10px 0;
-    line-height: 0
+.otherfood p {
+  margin: 20px 0 10px 0;
+  line-height: 0;
 }
 
 /* ====================
    ドリンクメニュー
 ==================== */
-.otherdrink{
-    display: none;
-    gap: 30px;
-    position: relative;
-    
+.otherdrink {
+  display: none;
+  gap: 30px;
+  position: relative;
 }
-.otherdrink.active{
-    display: flex;
+.otherdrink.active {
+  display: flex;
 }
 
-.drinkcontent.active{
-    width: 90%;
-    height: 440px;
-    margin: 10px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.drinkcontent.active {
+  width: 90%;
+  height: 440px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.otherdrink p{
-    margin: 20px 0 10px 0;
-    line-height: 0
+.otherdrink p {
+  margin: 20px 0 10px 0;
+  line-height: 0;
 }
 /* ====================
    デザートメニュー
 ==================== */
-.otherdesert{
-    display: none;
-    gap: 30px;
-    position: relative;
-    z-index: 50;
+.otherdesert {
+  display: none;
+  gap: 30px;
+  position: relative;
+  z-index: 50;
 }
-.otherdesert.active{
-    display: flex;
+.otherdesert.active {
+  display: flex;
 }
 
-.desertcontent.active{
-    width: 90%;
-    height: 440px;
-    margin: 10px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.desertcontent.active {
+  width: 90%;
+  height: 440px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.otherdesert p{
-    margin: 20px 0 10px 0;
-    line-height: 0
+.otherdesert p {
+  margin: 20px 0 10px 0;
+  line-height: 0;
 }
 
 /* ====================
    きりかぶからのお知らせ
 ==================== */
-.announce3{
-    display: none;
+.announce3 {
+  display: none;
 }
-.announce4{
-    display: none;
+.announce4 {
+  display: none;
 }
-.announce3.active{
-    display: block;
+.announce3.active {
+  display: block;
 }
-.announce4.active{
-    display: block;
+.announce4.active {
+  display: block;
 }
-.announcecontent.active{
+.announcecontent.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 440px;
+  gap: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  /* ====================
+   フードメニュー
+==================== */
+  .otherfood {
+    gap: 60px;
+  }
+  .foodcontent.active {
+    width: 810px;
+    height: 780px;
+    margin: 10px auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+  }
+  .otherfood p {
+    margin: 20px 0 10px 0;
+    line-height: 0.5;
+  }
+
+  /* ====================
+   ドリンクメニュー
+==================== */
+  .otherdrink {
+    display: none;
+    gap: 30px;
+    position: relative;
+  }
+  .otherdrink.active {
+    display: flex;
+  }
+
+  .drinkcontent.active {
     width: 90%;
     height: 440px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .otherdrink p {
+    margin: 20px 0 10px 0;
+    line-height: 0;
+  }
+  /* ====================
+   デザートメニュー
+==================== */
+  .otherdesert {
+    display: flex;
+    gap: 60px;
+    position: relative;
+    z-index: 50;
+    margin-top: 0px;
+  }
+  .otherdesert p {
+    padding-top: 10px;
+  }
+  /* ====================
+   きりかぶからのお知らせ
+==================== */
+  .announce3 {
+    display: none;
+  }
+  .announce4 {
+    display: none;
+  }
+  .announce3.active {
+    display: block;
+  }
+  .announce4.active {
+    display: block;
+  }
+  .announcecontent.active {
+    height: 900px;
     gap: 20px;
+  }
 }

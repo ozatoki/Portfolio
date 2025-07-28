@@ -1,256 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="喫茶きりかぶでゆっくりと流れる時間を堪能してください。">
-    <link rel="stylesheet" href="css/sanitize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/hamburger.css">
-    <link rel="stylesheet" href="css/swiper.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="css/otherbox.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="喫茶きりかぶでゆっくりと流れる時間を堪能してください。"
+    />
+    <link rel="stylesheet" href="css/sanitize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/hamburger.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/otherbox.css" />
     <title>喫茶きりかぶ</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>
-            <a href="#">
-                <img src="img/kirikabu-logo.png" alt="喫茶きりかぶlogo">
-            </a>
-        </h1>
-        <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-            <p>menu</p>
-        </div>
-        <div class="nav" id="nav">
-            <ul>
-                <li id="shopinfo">お店情報</li>
-                <li id="foodmenu">フードメニュー</li>
-                <li id="drinkmenu">ドリンクメニュー</li>
-                <li id="desertmenu">デザートメニュー</li>
-                <li id="shopannounce">きりかぶからのお知らせ</li>
-                <li id="shopQandA">よくある質問</li>
-            </ul>
-        </div>       
+      <h1>
+        <a href="#">
+          <img src="img/kirikabu-logo.png" alt="喫茶きりかぶlogo" />
+        </a>
+      </h1>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+        <p>menu</p>
+      </div>
+      <div class="nav" id="nav">
+        <ul>
+          <li id="shopinfo">お店情報</li>
+          <li id="foodmenu">フードメニュー</li>
+          <li id="drinkmenu">ドリンクメニュー</li>
+          <li id="desertmenu">デザートメニュー</li>
+          <li id="shopannounce">きりかぶからのお知らせ</li>
+          <li id="shopQandA">よくある質問</li>
+        </ul>
+      </div>
     </header>
     <div class="top">
-        <!-- Slider main container -->
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img src="img/slider/slider1.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="img/slider/slider2.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="img/slider/slider3.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="img/slider/slider4.jpg" alt=""></div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div> 
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>  
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="img/slider/slider1.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/slider/slider2.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/slider/slider3.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/slider/slider4.jpg" alt="" />
+          </div>
         </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
     </div>
     <div class="kirikabu">
-         <div class="shopinfomation">
-            <h2 id="infomation">お店情報</h2>
-             <div class="contentbox shopinfoA">
-                 <div class="bolt top-left"></div>
-                 <div class="bolt top-right"></div>
-                 <div class="bolt bottom-left"></div>
-                 <div class="bolt bottom-right"></div>
-                  <section class="shopcontent">
-                    <section class="address">
-                        <h3>・お店住所</h3>
-                        <p>千葉県東金市北之幸谷000-000</p>
-                    </section>      
-                    <section class="tel">
-                        <h3>・電話番号</h3>
-                        <p>0475-00-0000</p>
-                    </section>
-                  </section>
-             </div>
-             <div class="contentbox shopinfoB">
-                <div class="bolt top-left"></div>
-                <div class="bolt top-right"></div>
-                <div class="bolt bottom-left"></div>
-                <div class="bolt bottom-right"></div>
-                <section class="shopcontent">
-                    <section class="shoptime">
-                        <section class="opentime">
-                            <h3>・営業時間</h3>
-                            <p>7:00-19:30</p>
-                        </section>
-                        <section class="lasttime">
-                            <h3>・ラストオーダー</h3>
-                            <p>19:00</p>
-                        </section>
-                    </section>                 
-                    <section class="holiday">
-                        <h3>休日:なし</h3>
-                        <p>※お知らせをご覧ください。</p>
-                    </section>
-                </section>
-             </div>
-         </div>
-         <div class="foodmenu">
-            <h2 id="food">フードメニュー</h2>
-            <div class="contentbox foodcontent">
-            <div class="bolt top-left"></div>
-            <div class="bolt top-right"></div>
-            <div class="bolt bottom-left"></div>
-            <div class="bolt bottom-right"></div>
-            <div class="menuimg">
-                <figure><img src="img/food/pizza-food.jpg" alt="">
-                    <figcaption class="label"><p>イタリアンピザ</p><p>780円</p></figcaption>
-                </figure>
-                <figure><img src="img/food/sandwich-food.jpg" alt="">
-                    <figcaption class="label"><p>サンドウィッチ</p><p>780円</p></figcaption>
-                </figure>
-            </div>
-                <div class="menuimg otherfood" id="otherfood">
-                    <figure><img src="img/food/hamburg-food.jpg" alt="">
-                        <figcaption><p>ハンバーグ定食</p><p>1,480円</p></figcaption>
-                    </figure>
-                    <figure><img src="img/food/syougayaki-food.jpg" alt="">
-                        <figcaption><p>生姜焼き定食</p><p>1,480円</p></figcaption>
-                    </figure>
-                </div>
-            <button class="otherbox food-opne" id="food-open">
-                <p id="foodtext">他に見る</p><p id="foodfigure">▼</p>
-            </button>
+      <div class="shopinfomation">
+        <h2 id="infomation">お店情報</h2>
+        <div class="contentbox shopinfoA">
+          <div class="bolt top-left"></div>
+          <div class="bolt top-right"></div>
+          <div class="bolt bottom-left"></div>
+          <div class="bolt bottom-right"></div>
+          <section class="shopcontent">
+            <section class="address">
+              <h3>・お店住所</h3>
+              <p>千葉県東金市北之幸谷000-000</p>
+            </section>
+            <section class="tel">
+              <h3>・電話番号</h3>
+              <p>0475-00-0000</p>
+            </section>
+          </section>
         </div>
-    </div>
-    <div class="drinkmenu">
+        <div class="contentbox shopinfoB">
+          <div class="bolt top-left"></div>
+          <div class="bolt top-right"></div>
+          <div class="bolt bottom-left"></div>
+          <div class="bolt bottom-right"></div>
+          <section class="shopcontent">
+            <section class="shoptime">
+              <section class="opentime">
+                <h3>・営業時間</h3>
+                <p>7:00-19:30</p>
+              </section>
+              <section class="lasttime">
+                <h3>・ラストオーダー</h3>
+                <p>19:00</p>
+              </section>
+            </section>
+            <section class="holiday">
+              <h3>休日:なし</h3>
+              <p>※お知らせをご覧ください。</p>
+            </section>
+          </section>
+        </div>
+      </div>
+      <div class="foodmenu">
+        <h2 id="food">フードメニュー</h2>
+        <div class="contentbox foodcontent">
+          <div class="bolt top-left"></div>
+          <div class="bolt top-right"></div>
+          <div class="bolt bottom-left"></div>
+          <div class="bolt bottom-right"></div>
+          <div class="menuimg">
+            <figure>
+              <img src="img/food/pizza-food.jpg" alt="" />
+              <figcaption class="label">
+                <p>イタリアンピザ</p>
+                <p>780円</p>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="img/food/sandwich-food.jpg" alt="" />
+              <figcaption class="label">
+                <p>サンドウィッチ</p>
+                <p>780円</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="menuimg otherfood" id="otherfood">
+            <figure>
+              <img src="img/food/hamburg-food.jpg" alt="" />
+              <figcaption>
+                <p>ハンバーグ定食</p>
+                <p>1,480円</p>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="img/food/syougayaki-food.jpg" alt="" />
+              <figcaption>
+                <p>生姜焼き定食</p>
+                <p>1,480円</p>
+              </figcaption>
+            </figure>
+          </div>
+          <button class="otherbox food-opne" id="food-open">
+            <p id="foodtext">他に見る</p>
+            <p id="foodfigure">▼</p>
+          </button>
+        </div>
+      </div>
+      <div class="drinkmenu">
         <h2 id="drink">ドリンクメニュー</h2>
         <div class="contentbox drinkcontent">
-            <div class="bolt top-left"></div>
-            <div class="bolt top-right"></div>
-            <div class="bolt bottom-left"></div>
-            <div class="bolt bottom-right"></div>
-            <div class="menuimg">
-                <figure><img src="img/drink/hotcoffee-drink.jpg" alt="">
-                    <figcaption class="label"><p>ホットコーヒー</p>
-                                              <p>480円</p>
-                    </figcaption>
-                </figure>
-                <figure><img src="img/drink/orangedeuce-drink.jpg" alt="">
-                    <figcaption class="label"><p>オレンジジュース</p><p>480円</p></figcaption>
-                </figure>
-            </div>
-            <div class="menuimg otherdrink" id="otherdrink">
-                <figure><img src="img/drink/icecoffee-drink.jpg" alt="">
-                    <figcaption><p>アイスコーヒー</p><p>480円</p></figcaption>
-                </figure>
-                <figure><img src="img/drink/applejuice-drink.jpg" alt="">
-                    <figcaption><p>アップルジュース</p><p>480円</p></figcaption>
-                </figure>
-            </div>
-            <button class="otherbox drink-open" id="drink-open">
-                <p id="drinktext">他に見る</p><p id="drinkfigure">▼</p>
-            </button>
+          <div class="bolt top-left"></div>
+          <div class="bolt top-right"></div>
+          <div class="bolt bottom-left"></div>
+          <div class="bolt bottom-right"></div>
+          <div class="menuimg">
+            <figure>
+              <img src="img/drink/hotcoffee-drink.jpg" alt="" />
+              <figcaption class="label">
+                <p>ホットコーヒー</p>
+                <p>480円</p>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="img/drink/orangedeuce-drink.jpg" alt="" />
+              <figcaption class="label">
+                <p>オレンジジュース</p>
+                <p>480円</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="menuimg otherdrink" id="otherdrink">
+            <figure>
+              <img src="img/drink/icecoffee-drink.jpg" alt="" />
+              <figcaption>
+                <p>アイスコーヒー</p>
+                <p>480円</p>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="img/drink/applejuice-drink.jpg" alt="" />
+              <figcaption>
+                <p>アップルジュース</p>
+                <p>480円</p>
+              </figcaption>
+            </figure>
+          </div>
+          <button class="otherbox drink-open" id="drink-open">
+            <p id="drinktext">他に見る</p>
+            <p id="drinkfigure">▼</p>
+          </button>
         </div>
-    </div>
-        <div class="desertmenu">
-            <h2 id="desert">デザートメニュー</h2>
-            <div class="contentbox desertcontent">
-                <div class="bolt top-left"></div>
-                <div class="bolt top-right"></div>
-                <div class="bolt bottom-left"></div>
-                <div class="bolt bottom-right"></div>
-                <div class="menuimg">
-                    <figure><img src="img/desert/chocolatecake.jpg" alt="">
-                        <figcaption class="label"><p>チョコケーキ</p><p>480円</p></figcaption>
-                    </figure>
-                    <figure><img src="img/desert/ice.jpg" alt="">
-                        <figcaption class="label"><p>アイス盛り合わせ</p><p>480円</p></figcaption>
-                    </figure>
-                </div>
-                <div class="menuimg otherdesert" id="otherdesert">
-                    <figure><img src="img/desert/muffin.jpg" alt="">
-                        <figcaption><p>マフィン</p><p>480円</p></figcaption>
-                    </figure>
-                    <figure><img src="img/desert/waffles.jpg" alt="">
-                        <figcaption><p>ワッフル</p><p>480円</p></figcaption>
-                    </figure>
-                </div>
-                <button class="otherbox desert-open" id="desert-open">
-                    <p id="deserttext">他に見る</p><p id="desertfigure">▼</p>
-                </button>  
-           </div>
+      </div>
+      <div class="desertmenu">
+        <h2 id="desert">デザートメニュー</h2>
+        <div class="contentbox desertcontent">
+          <div class="bolt top-left"></div>
+          <div class="bolt top-right"></div>
+          <div class="bolt bottom-left"></div>
+          <div class="bolt bottom-right"></div>
+          <div class="menuimg">
+            <figure>
+              <img src="img/desert/chocolatecake.jpg" alt="" />
+              <figcaption class="label">
+                <p>チョコケーキ</p>
+                <p>480円</p>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="img/desert/ice.jpg" alt="" />
+              <figcaption class="label">
+                <p>アイス盛り合わせ</p>
+                <p>480円</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="menuimg otherdesert" id="otherdesert">
+            <figure>
+              <img src="img/desert/muffin.jpg" alt="" />
+              <figcaption>
+                <p>マフィン</p>
+                <p>480円</p>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="img/desert/waffles.jpg" alt="" />
+              <figcaption>
+                <p>ワッフル</p>
+                <p>480円</p>
+              </figcaption>
+            </figure>
+          </div>
+          <button class="otherbox desert-open" id="desert-open">
+            <p id="deserttext">他に見る</p>
+            <p id="desertfigure">▼</p>
+          </button>
         </div>
-    <div class="shopannounce">
+      </div>
+      <div class="shopannounce">
         <h2 id="announce">きりかぶからのお知らせ</h2>
         <div class="contentbox announcecontent">
-             <div class="bolt top-left"></div>
-             <div class="bolt top-right"></div>
-             <div class="bolt bottom-left"></div>
-             <div class="bolt bottom-right"></div>
-             <div class="announcetext">
-                <div class="announcebox announce1">
-                    <p>2025/07/17</p>
-                    <h3>営業時間短縮のお知らせ</h3>
-                </div>
-                <div class="announcebox announce2">
-                    <p>2025/01/22</p>
-                    <h3>臨時休業のお知らせ</h3>
-                </div>
-                <div class="announcebox announce3">
-                    <div class="announcebox">
-                        <p>2025/**/**</p>
-                        <h3>テスト1</h3>
-                    </div>
-                </div>
-                <div class="announcebox announce4">
-                    <div class="announcebox">
-                        <p>2025/**/**</p>
-                        <h3>テスト2</h3>
-                    </div>
-                </div>
-             </div>
-             <button class="announce-open" id="announce-open">
-                <p id="announcetext">詳しく見る</p><p id="announcefigure">▼</p>
-             </button>
+          <div class="bolt top-left"></div>
+          <div class="bolt top-right"></div>
+          <div class="bolt bottom-left"></div>
+          <div class="bolt bottom-right"></div>
+          <div class="announcetext">
+            <div class="announcebox announce1">
+              <p>2025/07/17</p>
+              <h3>営業時間短縮のお知らせ</h3>
+            </div>
+            <div class="announcebox announce2">
+              <p>2025/01/22</p>
+              <h3>臨時休業のお知らせ</h3>
+            </div>
+            <div class="announcebox announce3">
+              <div class="announcebox">
+                <p>2025/**/**</p>
+                <h3>テスト1</h3>
+              </div>
+            </div>
+            <div class="announcebox announce4">
+              <div class="announcebox">
+                <p>2025/**/**</p>
+                <h3>テスト2</h3>
+              </div>
+            </div>
+          </div>
+          <button class="announce-open" id="announce-open">
+            <p id="announcetext">詳しく見る</p>
+            <p id="announcefigure">▼</p>
+          </button>
         </div>
-    </div>
-    <div class="QandA">
+      </div>
+      <div class="QandA">
         <h2 id="QandA">よくある質問</h2>
         <div class="contentbox QandAcontent">
-            <div class="bolt top-left"></div>
-            <div class="bolt top-right"></div>
-            <div class="bolt bottom-left"></div>
-            <div class="bolt bottom-right"></div>
-            <section class="QandAtext1">
-                <dl>
-                    <td>Q:クレジットカードは使えますか？</td>
-                    <dd>A:ご利用いただけます。</dd>
-                </dl>
-            </section>
-            <section class="QandAtext2">
-                <dl>
-                    <td>Q:Wi-Fiはありますか？</td>
-                    <dd>A:ご利用いただけます。</dd>
-                </dl>
-            </section>
-            <section class="QandAtext3">
-                <dl>
-                    <td>Q:喫煙席はありますか？</td>
-                    <dd>A:全席禁煙になります。</dd>
-                </dl>
-            </section>
+          <div class="bolt top-left"></div>
+          <div class="bolt top-right"></div>
+          <div class="bolt bottom-left"></div>
+          <div class="bolt bottom-right"></div>
+          <section class="QandAtext1">
+            <dl>
+              <td>Q:クレジットカードは使えますか？</td>
+              <dd>A:ご利用いただけます。</dd>
+            </dl>
+          </section>
+          <section class="QandAtext2">
+            <dl>
+              <td>Q:Wi-Fiはありますか？</td>
+              <dd>A:ご利用いただけます。</dd>
+            </dl>
+          </section>
+          <section class="QandAtext3">
+            <dl>
+              <td>Q:喫煙席はありますか？</td>
+              <dd>A:全席禁煙になります。</dd>
+            </dl>
+          </section>
         </div>
+      </div>
     </div>
-</div>
-<footer><p>&copy; 2025 Tokito Ozawa. All rights reserved.</p></footer>
-    
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>   
-<script src="js/hamburger.js"></script> 
-<script src="js/swiper.js"></script>
-<script src="js/otherbox.js"></script>
-</body>
+    <footer><p>&copy; 2025 Tokito Ozawa. All rights reserved.</p></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/otherbox.js"></script>
+  </body>
 </html>
