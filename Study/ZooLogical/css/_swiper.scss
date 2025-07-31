@@ -1,0 +1,20 @@
+.swiper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-67%, -115%);
+  width: clamp(300px, 50vw, 1000px);
+  height: calc(clamp(300px, 50vw, 1000px) * 0.664);
+  img {
+    width: clamp(300px, 50vw, 1000px);
+    height: calc(clamp(300px, 50vw, 1000px) * 0.664);
+    object-fit: cover;
+  }
+}
+@media (min-width: 768px) {
+  .swiper {
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -115%);
+  }
+}
