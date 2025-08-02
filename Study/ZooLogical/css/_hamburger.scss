@@ -1,20 +1,9 @@
 .hamburger {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  top: clamp(14px, 2vh, 35px);
-  right: 5.2vw;
-  span {
-    display: block;
-    background-color: black;
-    width: clamp(25px, 7vw, 75px);
-    height: clamp(3px, 0.5vh, 6px);
-    margin: 0.5vw auto;
-  }
-  p {
-    font-size: clamp(12px, 4.3vw, 20px);
-    line-height: 1.2;
-    margin: 0;
+  img {
+    width: clamp(60px, 16vw, 150px);
+    aspect-ratio: 1/1;
+    position: absolute;
+    top: 0;
+    right: clamp(25px, 6.65vw, 300px);
   }
 }

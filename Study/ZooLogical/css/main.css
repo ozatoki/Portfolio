@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Document
  * ========================================================================== */
 /**
@@ -63,10 +64,6 @@ h2 {
 
 h3 {
   font-size: 1.13em;
-}
-
-P {
-  font-size: 1em;
 }
 
 /* Grouping content
@@ -520,7 +517,7 @@ textarea,
 .background {
   background-color: #4a9b60;
   width: clamp(375px, 100%, 100%);
-  height: clamp(60px, 13.6vw, 153px);
+  height: clamp(60px, 13.6vw, 150px);
 }
 .background img {
   width: clamp(94px, 20vw, 259px);
@@ -530,59 +527,32 @@ textarea,
 }
 
 .top {
+  position: relative;
   width: 100%;
+  aspect-ratio: 192/85;
   background-image: url(../img/top/top.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  aspect-ratio: 375/250;
 }
 
-@media (min-width: 768px) {
-  .top {
-    aspect-ratio: 1920/788;
-  }
-}
-.hamburger {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.hamburger img {
+  width: clamp(60px, 16vw, 150px);
+  aspect-ratio: 1/1;
   position: absolute;
-  top: clamp(14px, 2vh, 35px);
-  right: 5.2vw;
-}
-.hamburger span {
-  display: block;
-  background-color: black;
-  width: clamp(25px, 7vw, 75px);
-  height: clamp(3px, 0.5vh, 6px);
-  margin: 0.5vw auto;
-}
-.hamburger p {
-  font-size: clamp(12px, 4.3vw, 20px);
-  line-height: 1.2;
-  margin: 0;
+  top: 0;
+  right: clamp(25px, 6.65vw, 300px);
 }
 
 .swiper {
+  width: clamp(200px, 52.1vw, 52.5%); /*最大値は今後他コンテンツに合わせ柔軟に変更する*/
+  height: auto;
+  aspect-ratio: 80/53;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-67%, -115%);
-  width: clamp(300px, 50vw, 1000px);
-  height: calc(clamp(300px, 50vw, 1000px) * 0.664);
+  top: 10%;
 }
 .swiper img {
-  width: clamp(300px, 50vw, 1000px);
-  height: calc(clamp(300px, 50vw, 1000px) * 0.664);
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-@media (min-width: 768px) {
-  .swiper {
-    top: 50%;
-    left: 50%;
-    transform: translate(-100%, -115%);
-  }
+  width: clamp(200px, 52.1vw, 100%); /*最大値は今後他コンテンツに合わせ柔軟に変更する*/
+  height: auto;
+  aspect-ratio: 80/53;
 }/*# sourceMappingURL=main.css.map */
