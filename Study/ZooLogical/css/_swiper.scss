@@ -3,7 +3,6 @@
   height: auto;
   aspect-ratio: 80/53;
   position: absolute;
-  top: 10%;
 
   img {
     width: clamp(200px, 52.1vw, 100%); /*最大値は今後他コンテンツに合わせ柔軟に変更する*/

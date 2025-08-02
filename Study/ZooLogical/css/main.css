@@ -527,13 +527,18 @@ textarea,
 }
 
 .top {
+  height: 100vh;
   position: relative;
-  width: 100%;
+}
+.top .container {
+  position: relative;
+  width: 100vw;
   aspect-ratio: 192/85;
   background-image: url(../img/top/top.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding-top: 4.4270833333%;
 }
 
 .hamburger img {
@@ -549,7 +554,6 @@ textarea,
   height: auto;
   aspect-ratio: 80/53;
   position: absolute;
-  top: 10%;
 }
 .swiper img {
   width: clamp(200px, 52.1vw, 100%); /*最大値は今後他コンテンツに合わせ柔軟に変更する*/
