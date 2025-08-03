@@ -34,3 +34,5 @@ width: clamp(250px, 66.67vw, 1280px);
    background-repeat: no-repeat; /* 繰り返し表示しない */
 
 
+※padding-top: calc(85 / 192 * 10%); = /* 1920の時に85px */
+
