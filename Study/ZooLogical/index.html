@@ -3,43 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="東金市動物公園のホームページです。皆様のおこしを心よりお待ちしております。" />
-    <link rel="stylesheet" href="css/sanitize.css" />
+    <meta
+      name="description"
+      content="東金市動物公園のホームページです。皆様のおこしを心よりお待ちしております。"
+    />
+
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>東金市動物公園</title>
   </head>
   <body>
     <header class="background">
       <img src="img/logo/logo.png" alt="東金市動物公園のロゴ" />
-      <div class="hamburger"><img src="icon/icon.png" alt="" /></div>
+      <div class="hamburger">
+        <img src="icon/icon.png" alt="" id="hamburger" />
+        <div class="nav" id="nav">
+          <div class="triangle-out"></div>
+          <div class="navImg">
+            <img src="img/hamburger/home.png" alt="" />
+            <img src="img/hamburger/infomation.png" alt="" />
+            <img src="img/hamburger/event.png" alt="" />
+            <img src="img/hamburger/introdaction.png" alt="" />
+            <img src="img/hamburger/service.png" alt="" />
+          </div>
+        </div>
+      </div>
     </header>
     <div class="top">
       <div class="container">
-      <!-- Slider main container -->
-      <div class="swiper">
-        <!-- Additional required wßrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide"><img src="img/top/swiper/logo.jpg" alt="" /></div>
-          <div class="swiper-slide"><img src="img/top/swiper/animals-5184509_1280.png" alt="" /></div>
-          <div class="swiper-slide"><img src="img/top/swiper/horse.jpg" alt="" /></div>
-          <div class="swiper-slide"><img src="img/top/swiper/lemur.jpg" alt="" /></div>
-          <div class="swiper-slide"><img src="img/top/swiper/llama.jpg" alt="" /></div>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wßrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="img/top/swiper/logo.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/top/swiper/animals-5184509_1280.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/top/swiper/horse.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/top/swiper/lemur.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/top/swiper/llama.jpg" alt="" />
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
         </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
       </div>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/swiper.js"></script>
+    <script src="js/hamburger.js"></script>
   </body>
 </html>

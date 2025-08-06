@@ -514,6 +514,10 @@ textarea,
   box-sizing: border-box;
 }
 
+header {
+  position: relative;
+}
+
 .background {
   background-color: #4a9b60;
   width: clamp(375px, 100%, 100%);
@@ -527,11 +531,12 @@ textarea,
 }
 
 .top {
-  height: 100vh;
+  aspect-ratio: 192/85;
   position: relative;
+  z-index: 0;
 }
 .top .container {
-  width: 100vw;
+  width: 100%;
   aspect-ratio: 192/85;
   background-image: url(../img/top/top.png);
   background-repeat: no-repeat;
@@ -540,18 +545,67 @@ textarea,
   padding-top: 4.4270833333%;
 }
 
+.hamburger {
+  width: 100%;
+  height: clamp(100px, 26vw, 500px);
+}
 .hamburger img {
+  cursor: pointer;
   width: clamp(60px, 16vw, 150px);
   aspect-ratio: 1/1;
   position: absolute;
+  z-index: 100;
   top: 0;
   right: clamp(25px, 6.65vw, 300px);
 }
+.hamburger .nav {
+  display: none;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 150;
+  width: 100%;
+  height: 150px;
+}
+.hamburger .nav .triangle-out {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #4a9b60;
+}
+.hamburger .nav .navImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(5px, 1.2vw, 10px);
+  background-color: #4a9b60;
+  border-radius: 10px;
+  width: clamp(350px, 93vw, 1050px);
+  height: clamp(53px, 13vw, 159px);
+  position: absolute;
+  top: clamp(10px, 1.5vw, 20px);
+  right: clamp(25px, 6.65vw, 127.68px);
+}
+.hamburger .nav .navImg img {
+  cursor: pointer;
+  height: auto;
+  width: clamp(64px, 16vw, 192px);
+  aspect-ratio: 192/129;
+  margin: 0;
+  z-index: 250;
+  position: static;
+}
+.hamburger .nav.active {
+  display: block;
+}
 
 .swiper {
+  position: relative;
   width: clamp(200px, 52.1vw, 52.5%); /*最大値は今後他コンテンツに合わせ柔軟に変更する*/
-  height: auto;
-  aspect-ratio: 80/53;
 }
 .swiper img {
   width: clamp(200px, 52.1vw, 100%); /*最大値は今後他コンテンツに合わせ柔軟に変更する*/

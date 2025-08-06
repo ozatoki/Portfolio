@@ -1,3 +1,6 @@
+header {
+  position: relative;
+}
 .background {
   background-color: #4a9b60;
   width: clamp(375px, 100%, 100%);
@@ -11,10 +14,11 @@
 }
 
 .top {
-  height: 100vh;
+  aspect-ratio: 192/85;
   position: relative;
+  z-index: 0;
   .container {
-    width: 100vw;
+    width: 100%;
     aspect-ratio: 192/85;
     background-image: url(../img/top/top.png);
     background-repeat: no-repeat;
