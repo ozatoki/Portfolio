@@ -520,7 +520,7 @@ header {
   height: clamp(60px, 13.6vw, 150px);
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 111;
 }
 
 .background {
@@ -552,7 +552,7 @@ header {
 
 .menu {
   position: relative;
-  width: 100vw;
+  width: 100%;
   aspect-ratio: 375/309;
   background-image: url(../img/menu/zigzag-lines-7957807_1280.png);
   background-size: cover;
@@ -586,6 +586,7 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  z-index: 110;
 }
 .infomationcontent .infomation {
   position: absolute;
@@ -593,7 +594,7 @@ header {
   height: auto;
 }
 .infomationcontent .infomation .infoWrapper {
-  background-image: url(../img/infomation/checks-blue.png);
+  background-image: url(../img/infomation/plate.png);
   width: 40vw;
   height: auto;
   background-size: cover;
@@ -606,11 +607,12 @@ header {
   align-items: center;
   box-shadow: 4px 4px 4px black;
   position: relative;
-  z-index: 100;
+  z-index: 120;
 }
 .infomationcontent .infomation .infoWrapper .info {
   font-size: 18px;
   font-weight: bold;
+  color: white;
 }
 .infomationcontent .infomation .infocomment {
   display: flex;
@@ -623,7 +625,7 @@ header {
   background-color: white;
   border-radius: 10px;
   position: relative;
-  z-index: 90;
+  z-index: 115;
 }
 .infomationcontent .infomation .infocomment hr {
   width: 80vw;
@@ -654,7 +656,7 @@ header {
   height: auto;
 }
 .infomationcontent .animalinfomation .animalWrapper {
-  background-image: url(../img/infomation/checks-pink.png);
+  background-image: url(../img/infomation/plate.png);
   width: 40vw;
   height: auto;
   background-size: cover;
@@ -668,11 +670,12 @@ header {
   margin-left: 40vw;
   box-shadow: 4px 4px 4px black;
   position: relative;
-  z-index: 20;
+  z-index: 95;
 }
 .infomationcontent .animalinfomation .animalWrapper .animal {
   font-size: 18px;
   font-weight: bold;
+  color: white;
 }
 .infomationcontent .animalinfomation .animalcomment {
   display: flex;
@@ -711,6 +714,24 @@ header {
   align-items: center;
 }
 
+.zooattempt {
+  background-image: url(../img/zooattempt/strype.png);
+  width: 100%;
+  aspect-ratio: 375/282;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.zooattempt img {
+  width: 80%;
+  height: auto;
+  box-shadow: 4px 4px 4px black;
+  cursor: pointer;
+}
+
 h2 {
   font-size: 16px;
   font-weight: bold;
@@ -722,6 +743,14 @@ h2 {
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-top: 16px solid #4a9b60;
+}
+
+body {
+  font-family: "Noto Sans JP", "Arial", sans-serif;
+}
+
+footer {
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -745,17 +774,120 @@ h2 {
     height: auto;
     cursor: pointer;
   }
-}
-.hamburger {
-  width: 100%;
-  height: clamp(100px, 26vw, 500px);
+  .infomationcontent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    background-image: url(../img/background/background-dot.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+  }
+  .infomationcontent * {
+    all: unset;
+  }
+  .infomationcontent .infomation {
+    position: relative;
+    width: 40vw;
+  }
+  .infomationcontent .infomation .infoWrapper {
+    width: 20vw;
+    height: auto;
+    border-radius: 1.3vw;
+    box-shadow: 8px 8px 8px black;
+    aspect-ratio: 384/128;
+  }
+  .infomationcontent .infomation .infoWrapper .info {
+    font-size: clamp(24px, 2.4vw, 50px);
+  }
+  .infomationcontent .infomation .infocomment {
+    width: 40vw;
+    height: 60.15vh;
+    border-radius: 30px;
+    background-color: #928d8d;
+  }
+  .infomationcontent .infomation .infocomment h2 {
+    font-size: clamp(18px, 1.75vw, 32px);
+    font-weight: bold;
+    margin-left: 8%;
+  }
+  .infomationcontent .infomation .infocomment p {
+    font-size: clamp(18px, 1.75vw, 32px);
+    display: block;
+    width: 80%;
+    margin-left: 8%;
+  }
+  .infomationcontent .infomation .infocomment hr {
+    width: 100%;
+    height: 1px;
+    background-color: #777373;
+  }
+  .infomationcontent .infomation .infocomment .infolist {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 2.5% 0 0 35%;
+    font-size: clamp(18px, 2.3vw, 32px);
+  }
+  .infomationcontent .animalinfomation {
+    position: relative;
+    width: 40vw;
+  }
+  .infomationcontent .animalinfomation .animalWrapper {
+    width: 20vw;
+    height: auto;
+    border-radius: 1.3vw;
+    box-shadow: 8px 8px 8px black;
+    aspect-ratio: 384/128;
+    margin: 0;
+  }
+  .infomationcontent .animalinfomation .animalWrapper .animal {
+    font-size: clamp(20px, 1.9vw, 50px);
+  }
+  .infomationcontent .animalinfomation .animalcomment {
+    width: 40vw;
+    height: 60.15vh;
+    border-radius: 30px;
+    background-color: #c8dd9b;
+  }
+  .infomationcontent .animalinfomation .animalcomment h2 {
+    font-size: clamp(18px, 1.75vw, 32px);
+    font-weight: bold;
+    margin-left: 8%;
+  }
+  .infomationcontent .animalinfomation .animalcomment p {
+    font-size: clamp(18px, 1.75vw, 32px);
+    display: block;
+    width: 80%;
+    margin-left: 8%;
+  }
+  .infomationcontent .animalinfomation .animalcomment hr {
+    width: 100%;
+    height: 1px;
+    background-color: #777373;
+  }
+  .infomationcontent .animalinfomation .animalcomment .animallist {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 2.5% 0 0 35%;
+    font-size: clamp(18px, 2.3vw, 32px);
+  }
+  .infotriangle {
+    width: 0;
+    height: 0;
+    border-left: clamp(15px, 1.9vw, 30px) solid transparent;
+    border-right: clamp(15px, 1.9vw, 30px) solid transparent;
+    border-top: clamp(24px, 3.1vw, 48px) solid #4a9b60;
+  }
 }
 .hamburger img {
   cursor: pointer;
   width: clamp(60px, 16vw, 150px);
   aspect-ratio: 1/1;
   position: absolute;
-  z-index: 100;
+  z-index: 10;
   top: 0;
   right: clamp(25px, 6.65vw, 300px);
 }
@@ -767,6 +899,9 @@ h2 {
   z-index: 150;
   width: 100%;
   height: 150px;
+}
+.hamburger .nav.active {
+  display: block;
 }
 .hamburger .nav .triangle {
   position: absolute;
@@ -799,9 +934,6 @@ h2 {
   margin: 0;
   z-index: 250;
   position: static;
-}
-.hamburger .nav.active {
-  display: block;
 }
 
 .swiper {
