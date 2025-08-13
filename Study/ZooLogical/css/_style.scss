@@ -303,17 +303,17 @@ footer {
 
       .infocomment {
         width: 40vw;
-        height: 60.15vh;
+        height: 70vh;
         border-radius: 30px;
         background-color: #928d8d;
+        font-size: clamp(18px, 1.7vw, 32px);
 
         h2 {
-          font-size: clamp(18px, 1.75vw, 32px);
           font-weight: bold;
           margin-left: 8%;
         }
+
         p {
-          font-size: clamp(18px, 1.75vw, 32px);
           display: block;
           width: 80%;
           margin-left: 8%;
@@ -327,8 +327,8 @@ footer {
 
         .infolist {
           width: fit-content;
-          margin: 2.5% 0 0 35%;
-          font-size: clamp(18px, 2.3vw, 32px);
+          // margin: 45px 0 0 150px;
+          // margin: 30px 0 0 250px;
         }
       }
     }
@@ -351,18 +351,16 @@ footer {
 
       .animalcomment {
         width: 40vw;
-        height: 60.15vh;
+        height: 70vh;
         border-radius: 30px;
         background-color: #c8dd9b;
-
+        font-size: clamp(18px, 1.7vw, 32px);
         h2 {
-          font-size: clamp(18px, 1.75vw, 32px);
           font-weight: bold;
           margin-left: 8%;
         }
 
         p {
-          font-size: clamp(18px, 1.75vw, 32px);
           display: block;
           width: 80%;
           margin-left: 8%;
@@ -376,8 +374,6 @@ footer {
 
         .animallist {
           width: fit-content;
-          margin: 2.5% 0 0 35%;
-          font-size: clamp(18px, 2.3vw, 32px);
         }
       }
     }
@@ -385,8 +381,8 @@ footer {
   .infotriangle {
     width: 0;
     height: 0;
-    border-left: clamp(15px, 1.9vw, 30px) solid transparent;
-    border-right: clamp(15px, 1.9vw, 30px) solid transparent;
-    border-top: clamp(24px, 3.1vw, 48px) solid #4a9b60;
+    border-left: clamp(9px, 0.8vw, 15px) solid transparent;
+    border-right: clamp(9px, 0.8vw, 15px) solid transparent;
+    border-top: clamp(18px, 1.6vw, 30px) solid #4a9b60;
   }
 }
