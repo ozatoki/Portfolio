@@ -528,7 +528,7 @@ header {
   width: 100%;
   height: clamp(60px, 13.6vw, 150px);
 }
-.background img {
+.background .logo {
   width: clamp(94px, 20vw, 259px);
   height: clamp(60px, 13.6vw, 150px);
   margin-left: 5.2vw;
@@ -630,7 +630,7 @@ header {
 .infomationcontent .infomation .infocomment hr {
   width: 80vw;
   height: 1px;
-  background-color: #777373;
+  border-color: #777373;
 }
 .infomationcontent .infomation .infocomment h2 {
   margin: 0 0 0 5.3vw;
@@ -693,7 +693,7 @@ header {
 .infomationcontent .animalinfomation .animalcomment hr {
   width: 80vw;
   height: 1px;
-  background-color: #777373;
+  border-color: #777373;
 }
 .infomationcontent .animalinfomation .animalcomment h2 {
   margin: 0 0 0 5.3vw;
@@ -717,16 +717,17 @@ header {
 .zooattempt {
   background-image: url(../img/zooattempt/strype.png);
   width: 100%;
-  aspect-ratio: 375/282;
+  aspect-ratio: 375/150;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 5%;
 }
 .zooattempt img {
-  width: 80%;
+  width: 40%;
   height: auto;
   box-shadow: 4px 4px 4px black;
   cursor: pointer;
@@ -773,6 +774,7 @@ footer {
     width: clamp(75px, 15.5vw, 300px);
     height: auto;
     cursor: pointer;
+    box-shadow: 8px 8px 8px black;
   }
   .infomationcontent {
     display: flex;
@@ -807,7 +809,7 @@ footer {
     width: 40vw;
     height: 70vh;
     border-radius: 30px;
-    background-color: #928d8d;
+    background-color: #9bdff0;
     font-size: clamp(18px, 1.7vw, 32px);
   }
   .infomationcontent .infomation .infocomment h2 {
@@ -827,6 +829,9 @@ footer {
   .infomationcontent .infomation .infocomment .infolist {
     width: -moz-fit-content;
     width: fit-content;
+    position: relative;
+    top: 5%;
+    left: 30%;
   }
   .infomationcontent .animalinfomation {
     position: relative;
@@ -867,6 +872,9 @@ footer {
   .infomationcontent .animalinfomation .animalcomment .animallist {
     width: -moz-fit-content;
     width: fit-content;
+    position: relative;
+    top: 5%;
+    left: 30%;
   }
   .infotriangle {
     width: 0;
@@ -875,21 +883,45 @@ footer {
     border-right: clamp(9px, 0.8vw, 15px) solid transparent;
     border-top: clamp(18px, 1.6vw, 30px) solid #4a9b60;
   }
+  .zooattempt {
+    background-image: url(../img/zooattempt/strype.png);
+    width: 100%;
+    aspect-ratio: 375/150;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .zooattempt img {
+    width: 40%;
+    height: auto;
+    box-shadow: 8px 8px 8px black;
+    cursor: pointer;
+  }
 }
-.hamburger img {
-  cursor: pointer;
-  width: clamp(60px, 16vw, 150px);
-  aspect-ratio: 1/1;
+.hamburger {
   position: absolute;
-  z-index: 10;
+  width: clamp(60px, 13.6vw, 150px);
+  height: clamp(60px, 13.6vw, 150px);
+  aspect-ratio: 1/1;
   top: 0;
   right: clamp(25px, 6.65vw, 300px);
+}
+.hamburger .icon {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0;
 }
 .hamburger .nav {
   display: none;
   position: relative;
   top: 0;
-  left: 0;
+  left: clamp(25px, 6.6vw, 125px);
   z-index: 150;
   width: 100%;
   height: 150px;
@@ -900,7 +932,7 @@ footer {
 .hamburger .nav .triangle {
   position: absolute;
   top: 0;
-  right: 10%;
+  right: clamp(35px, 9.2vw, 175px);
   width: 0;
   height: 0;
   border-left: 20px solid transparent;
@@ -938,4 +970,87 @@ footer {
   width: clamp(200px, 52.1vw, 100%); /*最大値は今後他コンテンツに合わせ柔軟に変更する*/
   height: auto;
   aspect-ratio: 80/53;
+}
+
+header {
+  position: sticky;
+  width: 100%;
+  height: clamp(60px, 13.6vw, 150px);
+  top: 0;
+  left: 0;
+  z-index: 111;
+}
+
+.background {
+  background-color: #4a9b60;
+  width: 100%;
+  height: clamp(60px, 13.6vw, 150px);
+}
+.background img {
+  width: clamp(94px, 20vw, 259px);
+  height: clamp(60px, 13.6vw, 150px);
+  margin-left: 5.2vw;
+  aspect-ratio: 259/150;
+}
+
+.pass {
+  width: 150px;
+  aspect-ratio: 100/63;
+}
+
+.zooMap {
+  width: 150px;
+}
+
+.infomation {
+  display: flex;
+  flex-direction: column;
+  background-color: #ade4f5;
+}
+.infomation .useinfo {
+  background-color: #d9d9d9;
+  width: 90vw;
+  aspect-ratio: 338/50;
+  border: 3px solid #4a9b60;
+  border-radius: 10px;
+  margin: 4.5vh auto 0 auto;
+  background-image: url(../img/infocontent/infocontent.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 90vw;
+  aspect-ratio: 338/50;
+}
+.infomation .useinfo h1 {
+  font-size: 18px;
+  color: #1e4f2b;
+  margin: 1.5vh 0 0 8vw;
+}
+.infomation .infomationContent {
+  background-color: white;
+  width: 90vw;
+  margin: 1.5vh auto 0 auto;
+  border-radius: 10px;
+}
+li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #1e4f2b;
+  background-image: url(../img/infocontent/contentbox/contentbox.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 80vw;
+  aspect-ratio: 300/50;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 14px solid #1e4f2b;
 }/*# sourceMappingURL=main.css.map */
