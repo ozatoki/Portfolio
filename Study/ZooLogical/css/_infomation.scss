@@ -17,10 +17,7 @@ header {
     aspect-ratio: 259/150;
   }
 }
-.pass {
-  width: 150px;
-  aspect-ratio: 100/63;
-}
+
 .zooMap {
   width: 150px;
 }
@@ -55,38 +52,293 @@ header {
     border-radius: 10px;
   }
   .infocontent {
-    .infocontent-left ul {
+    align-items: center;
+    margin: 2vh 0 0 0;
+  }
+  .infocontent-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5vh;
+  }
+  .infocontent-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5vh;
+    margin: 1.5vh 0 0 0;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4.5vh;
+    margin: 7.5vh 0 0 0;
+    .timeSection {
+      .timeDetail {
+      }
+      .openTime {
+        h3.opentime {
+          color: #5c7e4b;
+          font-size: 14px;
+          width: fit-content;
+          display: flex;
+          line-height: 1;
+          margin: 3vh 0 0 0;
+          gap: 2.6vw;
+
+          &::before {
+            content: "";
+            @extend .circle;
+            display: inline-block;
+          }
+        }
+        p.opentime-content {
+          display: flex;
+          line-height: 1;
+          margin: 1vh 0 0 6vw;
+          gap: 2.6vw;
+          &::before {
+            content: "";
+            @extend .Wcircle;
+            display: inline-block;
+          }
+        }
+      }
+      .closedDay {
+        h3.closed-Day {
+          color: #5c7e4b;
+          font-size: 14px;
+          width: fit-content;
+          display: flex;
+          line-height: 1;
+          margin: 3vh 0 0 0;
+          gap: 2.6vw;
+
+          &::before {
+            content: "";
+            @extend .circle;
+            display: inline-block;
+          }
+        }
+        p.close {
+          display: flex;
+          line-height: 1;
+          margin: 1vh 0 0 6vw;
+          gap: 2.6vw;
+          &::before {
+            content: "";
+            @extend .Wcircle;
+            display: inline-block;
+          }
+        }
+        p.offSeason {
+          display: flex;
+          line-height: 1;
+          margin: 1vh 0 0 6vw;
+          gap: 2.6vw;
+          &::before {
+            content: "";
+            @extend .Wcircle;
+            display: inline-block;
+          }
+        }
+      }
+    }
+    .priceSection {
+      .priceDetail {
+      }
+      table.priceTable {
+        border: 1px solid #918e8e;
+        width: 54vw;
+        height: 17.5vh;
+        text-align: left;
+        margin: 3vh 0 0 0;
+        th {
+          padding: 0 0 0 2.6vw;
+          background-color: #b8d8c1;
+        }
+        tr {
+          border: 1px solid #918e8e;
+          td {
+            border: 1px solid #918e8e;
+            padding: 0 0 0 2.6vw;
+          }
+          td.childPrice {
+            padding-left: 5vw;
+          }
+        }
+      }
+      table.parkingTable {
+        border: 1px solid #918e8e;
+        width: 54vw;
+        height: 17.5vh;
+        text-align: left;
+        margin: 3vh 0 0 0;
+        th {
+          padding: 0 0 0 2.6vw;
+          background-color: #b8d8c1;
+        }
+        tr {
+          border: 1px solid #918e8e;
+          td {
+            border: 1px solid #918e8e;
+            padding: 0 0 0 2.6vw;
+          }
+          td.ordinaryPrice,
+          .largePrice,
+          .bikePrice {
+            text-align: right;
+            padding: 0 2.6vw 0 0;
+          }
+        }
+      }
+    }
+    .passportSection {
+      .passportDetail {
+      }
+      img.pass {
+        width: 150px;
+        aspect-ratio: 100/63;
+        display: block;
+        margin: 3vh auto 0 auto;
+      }
+      p.passPrice {
+        display: flex;
+        line-height: 1;
+        margin: 2.5vh 0 0 6vw;
+        gap: 2.6vw;
+        &::before {
+          content: "";
+          @extend .Wcircle;
+          display: inline-block;
+        }
+      }
+      p.passExpiry {
+        display: flex;
+        line-height: 1;
+        margin: 1vh 0 0 6vw;
+        gap: 2.6vw;
+        &::before {
+          content: "";
+          @extend .Wcircle;
+          display: inline-block;
+        }
+      }
+    }
+    .accessSection {
+      .accessDetail {
+      }
+      dl {
+        display: grid;
+        grid-template-columns: 6em 1fr;
+        margin: 1.5vh 0 0 0;
+        color: #5c7e4b;
+        dt {
+          font-weight: bold;
+        }
+      }
+      dl.tell {
+        dd {
+          line-height: 2;
+        }
+      }
+      .tips p {
+        display: flex;
+        line-height: 1;
+        margin: 1vh 0 0 6vw;
+        gap: 2.6vw;
+        &::before {
+          content: "";
+          @extend .Wcircle;
+          display: inline-block;
+        }
+      }
+    }
+    .announceSection {
+      .announceDetail {
+        margin: 0 auto;
+      }
+      ul {
+        list-style: none;
+        width: 80vw;
+        li {
+          display: flex;
+          align-items: flex-start;
+          margin: 2.5vh 0 0 6vw;
+          gap: 2.6vw;
+          line-height: 1;
+          &::before {
+            content: "";
+            @extend .Wcircle;
+          }
+        }
+      }
     }
   }
 }
 
-// .contentBox {
-//   background-image: url(../img/infocontent/contentbox/contentbox.png);
-//   background-size: cover;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   width: 80vw;
-//   aspect-ratio: 300/50;
-// }
-
-li {
+// 共通
+li.box {
   display: flex;
   align-items: center;
   list-style: none;
   font-size: 14px;
   font-weight: bold;
-  color: #1e4f2b;
   background-image: url(../img/infocontent/contentbox/contentbox.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 80vw;
   aspect-ratio: 300/50;
+  a {
+    text-decoration: none;
+    color: #1e4f2b;
+    margin: 0 0 0 4vw;
+  }
 }
 .triangle {
-  width: 0;
-  height: 0;
-  border-top: 7px solid transparent;
-  border-bottom: 7px solid transparent;
-  border-left: 14px solid #1e4f2b;
+  width: 14px;
+  height: 14px;
+  background: #1e4f2b;
+  clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+  margin: 0 0 0 4vw;
+}
+
+.detailBox {
+  background-image: url(../img/infocontent/contentbox/detailcontent.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 80vw;
+  aspect-ratio: 300/50;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h2 {
+    color: white;
+    font-size: 18px;
+    margin: 0 0 0 8vw;
+  }
+}
+
+.circle {
+  background-color: #5c7e4b;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+}
+
+p {
+  font-size: 14px;
+}
+
+.Wcircle {
+  background-image: url(../icon/icon.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 14px;
 }

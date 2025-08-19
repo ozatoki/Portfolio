@@ -23,6 +23,7 @@
         </div>
       </div>
     </header>
+
     <div class="infomation">
       <div class="useinfo">
         <h1>ご利用案内</h1>
@@ -30,129 +31,141 @@
       <div class="infomationContent">
         <div class="infocontent">
           <ul class="infocontent-left">
-            <li class="time">開園時間･休園日</li>
-            <li class="price">料金</li>
-            <li class="passport">年間パスポート</li>
+            <li class="box time">
+              <div class="triangle"></div>
+              <a href="">開園時間･休園日</a>
+            </li>
+            <li class="box price">
+              <div class="triangle"></div>
+              <a href="">料金</a>
+            </li>
+            <li class="box passport">
+              <div class="triangle"></div>
+              <a href="">年間パスポート</a>
+            </li>
           </ul>
           <ul class="infocontent-right">
-            <li class="access">アクセス</li>
-            <li class="anounce">ご来園の皆様へのお願い</li>
-            <li class="map">園内マップ</li>
+            <li class="box access">
+              <div class="triangle"></div>
+              <a href="">アクセス</a>
+            </li>
+            <li class="box anounce">
+              <div class="triangle"></div>
+              <a href="">ご来園の皆様へのお願い</a>
+            </li>
+            <li class="box map">
+              <div class="triangle"></div>
+              <a href="">園内マップ</a>
+            </li>
           </ul>
         </div>
-        <div class="timeSection">
-          <div class="timeDetail">
-            <h3>開園時間･休園日</h3>
+        <div class="section">
+          <div class="timeSection">
+            <div class="detailBox timeDetail">
+              <h2>開園時間･休園日</h2>
+            </div>
+            <div class="openTime">
+              <h3 class="opentime">開園時間</h3>
+              <p class="opentime-content">午前9時から午後5時まで</p>
+            </div>
+            <div class="closedDay">
+              <h3 class="closed-Day">休園日</h3>
+              <p class="close">毎週水曜日</p>
+              <p class="offSeason">年末年始(12月29日から1月3日まで)</p>
+            </div>
           </div>
-          <div class="openTime">
-            <h3 class="opentime">開園時間</h3>
-            <p class="opentime-content">午前9時から午後5時まで</p>
+          <div class="priceSection">
+            <div class="detailBox priceDetail">
+              <h2>料金</h2>
+            </div>
+            <table class="priceTable">
+              <tr>
+                <th colspan="2" class="priceContent">入園料</th>
+              </tr>
+              <tr>
+                <td class="adult">大人(高校生以上)</td>
+                <td class="adultPrice">800円</td>
+              </tr>
+              <tr>
+                <td class="child">中学生以下</td>
+                <td class="childPrice">無料</td>
+              </tr>
+              <tr>
+                <td class="sinior">65歳以上</td>
+                <td class="siniorPrice">400円</td>
+              </tr>
+            </table>
+            <table class="parkingTable">
+              <tr>
+                <th colspan="2" class="parkingContent">駐車料金</th>
+              </tr>
+              <tr>
+                <td class="ordinary">普通車</td>
+                <td class="ordinaryPrice">800円</td>
+              </tr>
+              <tr>
+                <td class="large">大型車</td>
+                <td class="largePrice">3,200円</td>
+              </tr>
+              <tr>
+                <td class="bike">バイク･自転車</td>
+                <td class="bikePrice">無料</td>
+              </tr>
+            </table>
           </div>
-          <div class="closedDay">
-            <h3 class="closed-Day">休園日</h3>
-            <p class="close">毎週水曜日</p>
-            <p class="offSeason">年末年始(12月29日から1月3日まで)</p>
+          <div class="passportSection">
+            <div class="detailBox passportDtail">
+              <h2>年間パスポート</h2>
+            </div>
+            <img
+              class="pass"
+              src="img/infocontent/contentbox/passport.png"
+              alt="年鑑パスポートの写真"
+            />
+            <p class="passPrice">販売価格:3,000円</p>
+            <p class="passExpiry">有効期限:発行から1年間</p>
           </div>
-        </div>
-        <div class="priceSection">
-          <div class="priceDtail">
-            <h3>料金</h3>
+          <div class="accessSection">
+            <div class="detailBox accessDetail">
+              <h2>アクセス</h2>
+            </div>
+            <dl class="name">
+              <dt>［施設名］</dt>
+              <dd>東金市動物公園</dd>
+            </dl>
+            <dl class="address">
+              <dt>［住所］</dt>
+              <dd>千葉県東金市東金0-0-0</dd>
+            </dl>
+            <dl class="tell">
+              <dt>［電話番号］</dt>
+              <dd>0475-00-0000</dd>
+            </dl>
+            <div class="tips">
+              <p>東金駅より徒歩15分</p>
+            </div>
           </div>
-          <table class="priseTable">
-            <tr>
-              <th colspan="2" class="priceContent">入園料</th>
-            </tr>
-            <tr>
-              <td class="adult">大人(高校生以上)</td>
-              <td class="adultPrice">800円</td>
-            </tr>
-            <tr>
-              <td class="child">中学生以下</td>
-              <td class="childPrice">無料</td>
-            </tr>
-            <tr>
-              <td class="sinior">65歳以上</td>
-              <td class="siniorPrice">無料</td>
-            </tr>
-          </table>
-          <table class="parkingtable">
-            <tr>
-              <th colspan="2" class="parkingContent">駐車料金</th>
-            </tr>
-            <tr>
-              <td class="ordinary">普通車</td>
-              <td class="ordinaryPrice">800円</td>
-            </tr>
-            <tr>
-              <td class="large">大型車</td>
-              <td class="largePrice">3,200円</td>
-            </tr>
-            <tr>
-              <td class="bike">バイク･自転車</td>
-              <td class="bikePrice">無料</td>
-            </tr>
-          </table>
-        </div>
-        <div class="passportSection">
-          <div class="passportDtail">
-            <h3>年鑑パスポート</h3>
+          <div class="announceSection">
+            <div class="detailBox announceDetail">
+              <h2>ご来園おみなさまへのお願い</h2>
+            </div>
+            <ul>
+              <li>動物に食べ物をあげないでください。</li>
+              <li>動物に大きな声で呼びかけないでください。</li>
+              <li>カメラのフラッシュ禁止</li>
+              <li>落とし物をしても展示場に入らないでください。</li>
+              <li>展示場の中に物を投げないでください。</li>
+              <li>柵に座ったり登らないでください。</li>
+              <li>園内の木の枝や草木をとらないでください。</li>
+            </ul>
           </div>
-          <img
-            class="pass"
-            src="img/infocontent/contentbox/passport.png"
-            alt="年鑑パスポートの写真"
-          />
-          <p class="passPrice">販売価格:3,000円</p>
-          <p class="passExpiry">有効期限:発行から1年間</p>
-        </div>
-        <div class="accessSection">
-          <div class="accessDetail">
-            <h3>アクセス</h3>
-          </div>
-          <div class="name">
-            <p>[施設名]</p>
-            <p>東金市動物公園</p>
-          </div>
-          <div class="address">
-            <p>[住所]</p>
-            <p>千葉県東金市東金0-0-0</p>
-          </div>
-          <div class="tell">
-            <p>[電話番号]</p>
-            <p>0475-00-0000</p>
-          </div>
-          <div class="tips">
-            <p>東金駅より徒歩15分</p>
-          </div>
-        </div>
-        <div class="announceSection">
-          <div class="announceDetail">
-            <h3>ご来園おみなさまへのお願い</h3>
-          </div>
-          <div class="announce1">
-            <p>動物に食べ物をあげないでください。</p>
-          </div>
-          <div class="announce2">
-            <p>動物に大きな声で呼びかけないでください。</p>
-          </div>
-          <div class="announce3">
-            <p>カメラのフラッシュ禁止</p>
-          </div>
-          <div class="announce4">
-            <p>落とし物をしても展示場に入らないでください。</p>
-          </div>
-          <div class="announce5">
-            <p>展示場の中に物を投げないでください。</p>
-          </div>
-          <div class="announce6">
-            <p>柵に座ったり登らないでください。</p>
-          </div>
-          <div class="announce7">
-            <p>園内の木の枝や草木をとらないでください。</p>
+          <div class="mapSection">
+            <div class="detailBox map">
+              <h2>園内マップ</h2>
+            </div>
+            <img class="zooMap" src="img/infocontent/map/map1.png" alt="" />
           </div>
         </div>
-        <div class="mapSection"></div>
-        <img class="zooMap" src="img/infocontent/map/map1.png" alt="" />
       </div>
     </div>
   </body>
