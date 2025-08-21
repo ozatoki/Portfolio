@@ -993,16 +993,12 @@ header {
   aspect-ratio: 259/150;
 }
 
-.zooMap {
-  width: 150px;
-}
-
-.infomation {
+.infoMation {
   display: flex;
   flex-direction: column;
   background-color: #ade4f5;
 }
-.infomation .useinfo {
+.infoMation .useinfo {
   background-color: #d9d9d9;
   width: 90vw;
   aspect-ratio: 338/50;
@@ -1016,42 +1012,43 @@ header {
   width: 90vw;
   aspect-ratio: 338/50;
 }
-.infomation .useinfo h1 {
+.infoMation .useinfo h1 {
   font-size: 18px;
   color: #1e4f2b;
   margin: 1.5vh 0 0 8vw;
 }
-.infomation .infomationContent {
+.infoMation .infomationContent {
   background-color: white;
   width: 90vw;
-  margin: 1.5vh auto 0 auto;
+  margin: 1.5vh auto 1.5vh auto;
+  padding: 0 0 2vh 0;
   border-radius: 10px;
 }
-.infomation .infocontent {
+.infoMation .infocontent {
   align-items: center;
   margin: 2vh 0 0 0;
 }
-.infomation .infocontent-left {
+.infoMation .infocontent-left {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.5vh;
 }
-.infomation .infocontent-right {
+.infoMation .infocontent-right {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.5vh;
   margin: 1.5vh 0 0 0;
 }
-.infomation .section {
+.infoMation .section {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 4.5vh;
   margin: 7.5vh 0 0 0;
 }
-.infomation .section .timeSection .openTime h3.opentime {
+.infoMation .section .timeSection .openTime h3.opentime {
   color: #5c7e4b;
   font-size: 14px;
   width: -moz-fit-content;
@@ -1061,21 +1058,21 @@ header {
   margin: 3vh 0 0 0;
   gap: 2.6vw;
 }
-.infomation .section .timeSection .openTime h3.opentime::before {
+.infoMation .section .timeSection .openTime h3.opentime::before {
   content: "";
   display: inline-block;
 }
-.infomation .section .timeSection .openTime p.opentime-content {
+.infoMation .section .timeSection .openTime p.opentime-content {
   display: flex;
   line-height: 1;
   margin: 1vh 0 0 6vw;
   gap: 2.6vw;
 }
-.infomation .section .timeSection .openTime p.opentime-content::before {
+.infoMation .section .timeSection .openTime p.opentime-content::before {
   content: "";
   display: inline-block;
 }
-.infomation .section .timeSection .closedDay h3.closed-Day {
+.infoMation .section .timeSection .closedDay h3.closed-Day {
   color: #5c7e4b;
   font-size: 14px;
   width: -moz-fit-content;
@@ -1085,139 +1082,143 @@ header {
   margin: 3vh 0 0 0;
   gap: 2.6vw;
 }
-.infomation .section .timeSection .closedDay h3.closed-Day::before {
+.infoMation .section .timeSection .closedDay h3.closed-Day::before {
   content: "";
   display: inline-block;
 }
-.infomation .section .timeSection .closedDay p.close {
+.infoMation .section .timeSection .closedDay p.close {
   display: flex;
   line-height: 1;
   margin: 1vh 0 0 6vw;
   gap: 2.6vw;
 }
-.infomation .section .timeSection .closedDay p.close::before {
+.infoMation .section .timeSection .closedDay p.close::before {
   content: "";
   display: inline-block;
 }
-.infomation .section .timeSection .closedDay p.offSeason {
+.infoMation .section .timeSection .closedDay p.offSeason {
   display: flex;
   line-height: 1;
   margin: 1vh 0 0 6vw;
   gap: 2.6vw;
 }
-.infomation .section .timeSection .closedDay p.offSeason::before {
+.infoMation .section .timeSection .closedDay p.offSeason::before {
   content: "";
   display: inline-block;
 }
-.infomation .section .priceSection table.priceTable {
+.infoMation .section .priceSection table.priceTable {
   border: 1px solid #918e8e;
   width: 54vw;
   height: 17.5vh;
   text-align: left;
   margin: 3vh 0 0 0;
 }
-.infomation .section .priceSection table.priceTable th {
+.infoMation .section .priceSection table.priceTable th {
   padding: 0 0 0 2.6vw;
   background-color: #b8d8c1;
 }
-.infomation .section .priceSection table.priceTable tr {
+.infoMation .section .priceSection table.priceTable tr {
   border: 1px solid #918e8e;
 }
-.infomation .section .priceSection table.priceTable tr td {
+.infoMation .section .priceSection table.priceTable tr td {
   border: 1px solid #918e8e;
   padding: 0 0 0 2.6vw;
 }
-.infomation .section .priceSection table.priceTable tr td.childPrice {
+.infoMation .section .priceSection table.priceTable tr td.childPrice {
   padding-left: 5vw;
 }
-.infomation .section .priceSection table.parkingTable {
+.infoMation .section .priceSection table.parkingTable {
   border: 1px solid #918e8e;
   width: 54vw;
   height: 17.5vh;
   text-align: left;
   margin: 3vh 0 0 0;
 }
-.infomation .section .priceSection table.parkingTable th {
+.infoMation .section .priceSection table.parkingTable th {
   padding: 0 0 0 2.6vw;
   background-color: #b8d8c1;
 }
-.infomation .section .priceSection table.parkingTable tr {
+.infoMation .section .priceSection table.parkingTable tr {
   border: 1px solid #918e8e;
 }
-.infomation .section .priceSection table.parkingTable tr td {
+.infoMation .section .priceSection table.parkingTable tr td {
   border: 1px solid #918e8e;
   padding: 0 0 0 2.6vw;
 }
-.infomation .section .priceSection table.parkingTable tr td.ordinaryPrice,
-.infomation .section .priceSection table.parkingTable tr .largePrice,
-.infomation .section .priceSection table.parkingTable tr .bikePrice {
+.infoMation .section .priceSection table.parkingTable tr td.ordinaryPrice,
+.infoMation .section .priceSection table.parkingTable tr .largePrice,
+.infoMation .section .priceSection table.parkingTable tr .bikePrice {
   text-align: right;
   padding: 0 2.6vw 0 0;
 }
-.infomation .section .passportSection img.pass {
+.infoMation .section .passportSection img.pass {
   width: 150px;
   aspect-ratio: 100/63;
   display: block;
   margin: 3vh auto 0 auto;
 }
-.infomation .section .passportSection p.passPrice {
+.infoMation .section .passportSection p.passPrice {
   display: flex;
   line-height: 1;
   margin: 2.5vh 0 0 6vw;
   gap: 2.6vw;
 }
-.infomation .section .passportSection p.passPrice::before {
+.infoMation .section .passportSection p.passPrice::before {
   content: "";
   display: inline-block;
 }
-.infomation .section .passportSection p.passExpiry {
+.infoMation .section .passportSection p.passExpiry {
   display: flex;
   line-height: 1;
   margin: 1vh 0 0 6vw;
   gap: 2.6vw;
 }
-.infomation .section .passportSection p.passExpiry::before {
+.infoMation .section .passportSection p.passExpiry::before {
   content: "";
   display: inline-block;
 }
-.infomation .section .accessSection dl {
+.infoMation .section .accessSection dl {
   display: grid;
   grid-template-columns: 6em 1fr;
-  margin: 1.5vh 0 0 0;
+  margin: 3vh 0 0 0;
   color: #5c7e4b;
 }
-.infomation .section .accessSection dl dt {
+.infoMation .section .accessSection dl dt {
   font-weight: bold;
 }
-.infomation .section .accessSection dl.tell dd {
+.infoMation .section .accessSection dl.tell dd {
   line-height: 2;
 }
-.infomation .section .accessSection .tips p {
+.infoMation .section .accessSection .tips p {
   display: flex;
   line-height: 1;
   margin: 1vh 0 0 6vw;
   gap: 2.6vw;
 }
-.infomation .section .accessSection .tips p::before {
+.infoMation .section .accessSection .tips p::before {
   content: "";
   display: inline-block;
 }
-.infomation .section .announceSection .announceDetail {
-  margin: 0 auto;
-}
-.infomation .section .announceSection ul {
+.infoMation .section .announceSection ul {
   list-style: none;
   width: 80vw;
+  padding: 1vh 0 0 0;
 }
-.infomation .section .announceSection ul li {
+.infoMation .section .announceSection ul li {
+  font-size: 14px;
   display: flex;
   align-items: flex-start;
   margin: 2.5vh 0 0 6vw;
   gap: 2.6vw;
   line-height: 1;
 }
-.infomation .section .announceSection ul li::before {
-  content: "";
+.infoMation .section .announceSection ul li .Wcircle, .infoMation .section .announceSection ul li .timeSection .openTime p.opentime-content::before, .infoMation .section .timeSection .openTime .announceSection ul li p.opentime-content::before, .infoMation .section .announceSection ul li .timeSection .closedDay p.close::before, .infoMation .section .timeSection .closedDay .announceSection ul li p.close::before, .infoMation .section .announceSection ul li .timeSection .closedDay p.offSeason::before, .infoMation .section .timeSection .closedDay .announceSection ul li p.offSeason::before, .infoMation .section .announceSection ul li .passportSection p.passPrice::before, .infoMation .section .passportSection .announceSection ul li p.passPrice::before, .infoMation .section .announceSection ul li .passportSection p.passExpiry::before, .infoMation .section .passportSection .announceSection ul li p.passExpiry::before, .infoMation .section .announceSection ul li .accessSection .tips p::before, .infoMation .section .accessSection .tips .announceSection ul li p::before {
+  flex-shrink: 0;
+}
+.infoMation .section .mapSection img {
+  width: 80vw;
+  height: auto;
+  margin: 1.5vh 0 0 0;
 }
 
 li.box {
@@ -1239,7 +1240,7 @@ li.box a {
   margin: 0 0 0 4vw;
 }
 
-.triangle {
+.Triangle {
   width: 14px;
   height: 14px;
   background: #1e4f2b;
@@ -1264,7 +1265,7 @@ li.box a {
   margin: 0 0 0 8vw;
 }
 
-.circle, .infomation .section .timeSection .openTime h3.opentime::before, .infomation .section .timeSection .closedDay h3.closed-Day::before {
+.circle, .infoMation .section .timeSection .openTime h3.opentime::before, .infoMation .section .timeSection .closedDay h3.closed-Day::before {
   background-color: #5c7e4b;
   border-radius: 50%;
   width: 14px;
@@ -1275,9 +1276,9 @@ p {
   font-size: 14px;
 }
 
-.Wcircle, .infomation .section .timeSection .openTime p.opentime-content::before, .infomation .section .timeSection .closedDay p.close::before, .infomation .section .timeSection .closedDay p.offSeason::before, .infomation .section .passportSection p.passPrice::before, .infomation .section .passportSection p.passExpiry::before, .infomation .section .accessSection .tips p::before, .infomation .section .announceSection ul li::before {
+.Wcircle, .infoMation .section .timeSection .openTime p.opentime-content::before, .infoMation .section .timeSection .closedDay p.close::before, .infoMation .section .timeSection .closedDay p.offSeason::before, .infoMation .section .passportSection p.passPrice::before, .infoMation .section .passportSection p.passExpiry::before, .infoMation .section .accessSection .tips p::before {
   background-image: url(../icon/icon.svg);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   width: 14px;

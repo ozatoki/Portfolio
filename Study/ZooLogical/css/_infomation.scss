@@ -18,11 +18,7 @@ header {
   }
 }
 
-.zooMap {
-  width: 150px;
-}
-
-.infomation {
+.infoMation {
   display: flex;
   flex-direction: column;
   background-color: #ade4f5;
@@ -48,7 +44,8 @@ header {
   .infomationContent {
     background-color: white;
     width: 90vw;
-    margin: 1.5vh auto 0 auto;
+    margin: 1.5vh auto 1.5vh auto;
+    padding: 0 0 2vh 0;
     border-radius: 10px;
   }
   .infocontent {
@@ -233,7 +230,7 @@ header {
       dl {
         display: grid;
         grid-template-columns: 6em 1fr;
-        margin: 1.5vh 0 0 0;
+        margin: 3vh 0 0 0;
         color: #5c7e4b;
         dt {
           font-weight: bold;
@@ -258,22 +255,32 @@ header {
     }
     .announceSection {
       .announceDetail {
-        margin: 0 auto;
       }
       ul {
         list-style: none;
         width: 80vw;
+        padding: 1vh 0 0 0;
         li {
+          font-size: 14px;
           display: flex;
           align-items: flex-start;
           margin: 2.5vh 0 0 6vw;
           gap: 2.6vw;
           line-height: 1;
-          &::before {
-            content: "";
-            @extend .Wcircle;
+          .Wcircle {
+            flex-shrink: 0;
           }
         }
+      }
+    }
+    .mapSection {
+      .map {
+      }
+
+      & img {
+        width: 80vw;
+        height: auto;
+        margin: 1.5vh 0 0 0;
       }
     }
   }
@@ -298,7 +305,7 @@ li.box {
     margin: 0 0 0 4vw;
   }
 }
-.triangle {
+.Triangle {
   width: 14px;
   height: 14px;
   background: #1e4f2b;
@@ -336,7 +343,7 @@ p {
 
 .Wcircle {
   background-image: url(../icon/icon.svg);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   width: 14px;
