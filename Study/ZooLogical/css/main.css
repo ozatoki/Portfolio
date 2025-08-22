@@ -522,13 +522,12 @@ header {
   left: 0;
   z-index: 111;
 }
-
-.background {
+header .background {
   background-color: #4a9b60;
   width: 100%;
   height: clamp(60px, 13.6vw, 150px);
 }
-.background .logo {
+header .background .logo {
   width: clamp(94px, 20vw, 259px);
   height: clamp(60px, 13.6vw, 150px);
   margin-left: 5.2vw;
@@ -752,6 +751,17 @@ body {
 
 footer {
   text-align: center;
+}
+
+a.returnTop {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 1000;
+}
+a.returnTop img.return-top {
+  width: 60px;
+  height: 60px;
 }
 
 @media (min-width: 768px) {
