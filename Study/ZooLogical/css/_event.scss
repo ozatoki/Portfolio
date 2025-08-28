@@ -1,0 +1,162 @@
+header {
+  position: sticky;
+  width: 100%;
+  height: clamp(60px, 13.6vw, 150px);
+  top: 0;
+  left: 0;
+  z-index: 111;
+}
+.background {
+  background-color: #4a9b60;
+  width: 100%;
+  height: clamp(60px, 13.6vw, 150px);
+  img {
+    width: clamp(94px, 20vw, 259px);
+    height: clamp(60px, 13.6vw, 150px);
+    margin-left: 5.2vw;
+    aspect-ratio: 259/150;
+  }
+}
+
+.event {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffc4f3;
+  .eventInfo {
+  }
+  .eventContent {
+    .eventcontent {
+      align-items: center;
+      margin: 2vh 0 0 0;
+      .event-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5vh;
+      }
+      .event-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5vh;
+        margin: 1.5vh 0 0 0;
+      }
+    }
+  }
+  .eventSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4.5vh;
+    margin: 7.5vh 0 0 0;
+    .ridingSection {
+      .ridingDetail {
+      }
+      img.ridingImg {
+        width: 45vw;
+        display: block;
+        margin: 3vh auto 0 auto;
+      }
+      dl.ridingTime {
+        margin: 1.5vh 0 0 0;
+      }
+    }
+    .feedingSection {
+      .feedingDetail {
+      }
+      .feedingImg {
+        display: flex;
+        justify-content: center;
+        gap: 2.6vw;
+        margin: 3vh auto 0 auto;
+        img {
+          width: 36vw;
+        }
+      }
+      dl.feedingTime {
+        margin: 1.5vh 0 0 0;
+      }
+    }
+    .interactingSection {
+      .interactingDetail {
+      }
+      .interactingImg {
+        display: flex;
+        justify-content: center;
+        gap: 2.6vw;
+        margin: 3vh auto 0 auto;
+        img {
+          width: 36vw;
+        }
+      }
+      dl.interactingTime {
+        margin: 1.5vh 0 0 0;
+      }
+    }
+    .explanationSection {
+      .explanationDetil {
+      }
+      .explanationImg {
+        display: flex;
+        justify-content: center;
+        gap: 2.6vw;
+        margin: 3vh auto 0 auto;
+        img {
+          width: 36vw;
+        }
+      }
+      dl.ExplanationTime {
+        margin: 1.5vh 0 0 0;
+      }
+    }
+  }
+}
+
+// 共通
+dl.a {
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  dt.b {
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: #5c7e4b;
+    display: flex;
+    gap: 2.7vw;
+    margin: 1.5vh 0 0 0;
+    &::before {
+      content: "";
+      @extend .circle;
+      display: inline-block;
+    }
+  }
+  dd.c {
+    font-size: 0.875rem;
+    display: flex;
+    gap: 2.7vw;
+    margin: 1.5vh 0 0 7vw;
+    &::before {
+      content: "";
+      @extend .Wcircle;
+      display: inline-block;
+    }
+  }
+}
+
+/* ----------------------
+   PC（1200px）以上
+----------------------- */
+@media (min-width: 1200px) {
+}
+
+/* ----------------------
+   タブレット横向き（900px）以上
+----------------------- */
+@media (min-width: 900px) {
+}
+
+/* ----------------------
+   タブレット縦向き（600px）以上
+----------------------- */
+@media (min-width: 600px) {
+}

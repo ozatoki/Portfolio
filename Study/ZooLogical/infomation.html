@@ -16,7 +16,9 @@
           <div class="navImg" id="navImg">
             <a href="index.html"><img src="img/hamburger/home.png" alt="" /></a>
             <img src="img/hamburger/infomation.png" alt="" />
-            <img src="img/hamburger/event.png" alt="" />
+            <a href="event.html"
+              ><img src="img/hamburger/event.png" alt=""
+            /></a>
             <img src="img/hamburger/introdaction.png" alt="" />
             <img src="img/hamburger/service.png" alt="" />
           </div>
@@ -33,35 +35,35 @@
           <ul class="infocontent-left">
             <li class="box time">
               <div class="Triangle"></div>
-              <a href="">開園時間･休園日</a>
+              <a href="#time">開園時間･休園日</a>
             </li>
             <li class="box price">
               <div class="Triangle"></div>
-              <a href="">料金</a>
+              <a href="#price">料金</a>
             </li>
             <li class="box passport">
               <div class="Triangle"></div>
-              <a href="">年間パスポート</a>
+              <a href="#pass">年間パスポート</a>
             </li>
           </ul>
           <ul class="infocontent-right">
             <li class="box access">
               <div class="Triangle"></div>
-              <a href="">アクセス</a>
+              <a href="#accesse">アクセス</a>
             </li>
-            <li class="box anounce">
+            <li class="box announce">
               <div class="Triangle"></div>
-              <a href="">ご来園の皆様へのお願い</a>
+              <a href="#announce">ご来園の皆様へのお願い</a>
             </li>
             <li class="box map">
               <div class="Triangle"></div>
-              <a href="">園内マップ</a>
+              <a href="#map">園内マップ</a>
             </li>
           </ul>
         </div>
-        <div class="section">
+        <div class="infomationSection">
           <div class="timeSection">
-            <div class="detailBox timeDetail">
+            <div class="detailBox timeDetail" id="time">
               <h2>開園時間･休園日</h2>
             </div>
             <div class="openTime">
@@ -75,8 +77,8 @@
             </div>
           </div>
           <div class="priceSection">
-            <div class="detailBox priceDetail">
-              <h2>料金</h2>
+            <div class="detailBox priceDetail" id="price">
+              <h2 id="price">料金</h2>
             </div>
             <table class="priceTable">
               <tr>
@@ -114,8 +116,8 @@
             </table>
           </div>
           <div class="passportSection">
-            <div class="detailBox passportDtail">
-              <h2>年間パスポート</h2>
+            <div class="detailBox passportDtail" id="pass">
+              <h2 id="passport">年間パスポート</h2>
             </div>
             <img
               class="pass"
@@ -126,28 +128,28 @@
             <p class="passExpiry">有効期限:発行から1年間</p>
           </div>
           <div class="accessSection">
-            <div class="detailBox accessDetail">
-              <h2>アクセス</h2>
+            <div class="detailBox accessDetail" id="access">
+              <h2 id="access">アクセス</h2>
             </div>
-            <dl class="name">
-              <dt>［施設名］</dt>
-              <dd>東金市動物公園</dd>
+            <dl class="Name">
+              <dt class="facility">［施設名］</dt>
+              <dd class="name">東金市動物公園</dd>
             </dl>
-            <dl class="address">
-              <dt>［住所］</dt>
-              <dd>千葉県東金市東金0-0-0</dd>
+            <dl class="Address">
+              <dt class="FacilityAddress">［住所］</dt>
+              <dd class="address">千葉県東金市東金0-0-0</dd>
             </dl>
-            <dl class="tell">
-              <dt>［電話番号］</dt>
-              <dd>0475-00-0000</dd>
+            <dl class="Tell">
+              <dt class="FacilityTell">［電話番号］</dt>
+              <dd class="tell">0475-00-0000</dd>
             </dl>
             <div class="tips">
               <p>東金駅より徒歩15分</p>
             </div>
           </div>
           <div class="announceSection">
-            <div class="detailBox announceDetail">
-              <h2>ご来園おみなさまへのお願い</h2>
+            <div class="detailBox announceDetail" id="announce">
+              <h2 id="announce">ご来園おみなさまへのお願い</h2>
             </div>
             <ul>
               <li>
@@ -181,7 +183,7 @@
             </ul>
           </div>
           <div class="mapSection">
-            <div class="detailBox map">
+            <div class="detailBox map" id="map">
               <h2>園内マップ</h2>
             </div>
             <img class="zooMap" src="img/infocontent/map/map1.png" alt="" />
