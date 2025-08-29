@@ -22,8 +22,6 @@ header {
   display: flex;
   flex-direction: column;
   background-color: #ffc4f3;
-  .eventInfo {
-  }
   .eventContent {
     .eventcontent {
       align-items: center;
@@ -50,8 +48,6 @@ header {
     gap: 4.5vh;
     margin: 7.5vh 0 0 0;
     .ridingSection {
-      .ridingDetail {
-      }
       img.ridingImg {
         width: 45vw;
         display: block;
@@ -62,8 +58,6 @@ header {
       }
     }
     .feedingSection {
-      .feedingDetail {
-      }
       .feedingImg {
         display: flex;
         justify-content: center;
@@ -78,8 +72,6 @@ header {
       }
     }
     .interactingSection {
-      .interactingDetail {
-      }
       .interactingImg {
         display: flex;
         justify-content: center;
@@ -94,8 +86,6 @@ header {
       }
     }
     .explanationSection {
-      .explanationDetil {
-      }
       .explanationImg {
         display: flex;
         justify-content: center;
@@ -142,13 +132,81 @@ dl.a {
     }
   }
 }
-
+a {
+  cursor: pointer;
+  font-weight: normal;
+}
 /* ----------------------
    PC（1200px）以上
 ----------------------- */
 @media (min-width: 1200px) {
+  .event {
+    .eventInfo {
+      h1 {
+        margin: 2.5vh 0 0 8vw;
+        font-size: clamp(2rem, 2.5vw, 3rem);
+      }
+    }
+    .eventContent {
+      width: 50vw;
+      margin: 5.5vh auto 5.5vh auto;
+      border-radius: clamp(20px, 1.6vw, 30px);
+      .eventcontent {
+        display: flex;
+        justify-content: center;
+        margin: 5.5vh 0 0 0;
+        gap: 2vw;
+        .event-right {
+          margin: 0;
+        }
+      }
+    }
+    .eventSection {
+      gap: 9.2vh;
+      .ridingSection {
+        img.ridingImg {
+          width: 31vw;
+        }
+      }
+      .feedingSection {
+        .feedingImg {
+          gap: 1vw;
+          img {
+            width: 15vw;
+          }
+        }
+      }
+      .interactingSection {
+        .interactingImg {
+          gap: 1vw;
+          img {
+            width: 15vw;
+          }
+        }
+      }
+      .explanationSection {
+        .explanationImg {
+          gap: 1vw;
+          img {
+            width: 15vw;
+          }
+        }
+      }
+    }
+  }
 }
-
+// 共通
+dl.a {
+  dt.b {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    gap: 1.6vw;
+  }
+  dd.c {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    margin: 1.5vh 0 0 3vw;
+    gap: 1.5vw;
+  }
+}
 /* ----------------------
    タブレット横向き（900px）以上
 ----------------------- */
