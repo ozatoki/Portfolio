@@ -315,7 +315,6 @@ li.box {
   display: flex;
   align-items: center;
   list-style: none;
-  font-weight: bold;
   background-image: url(../img/infocontent/contentbox/contentbox.png);
   background-size: cover;
   background-position: center;
@@ -328,6 +327,7 @@ li.box {
     color: #1e4f2b;
     margin: 0 0 0 4vw;
     font-size: 0.875rem;
+    font-weight: bold;
   }
 }
 .Triangle {

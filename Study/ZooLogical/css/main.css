@@ -1275,7 +1275,6 @@ li.box {
   display: flex;
   align-items: center;
   list-style: none;
-  font-weight: bold;
   background-image: url(../img/infocontent/contentbox/contentbox.png);
   background-size: cover;
   background-position: center;
@@ -1289,6 +1288,7 @@ li.box a {
   color: #1e4f2b;
   margin: 0 0 0 4vw;
   font-size: 0.875rem;
+  font-weight: bold;
 }
 
 .Triangle {
@@ -1695,4 +1695,93 @@ dl.a dd.c {
 ----------------------- */
 /* ----------------------
    タブレット縦向き（600px）以上
------------------------ *//*# sourceMappingURL=main.css.map */
+----------------------- */
+header {
+  position: sticky;
+  width: 100%;
+  height: clamp(60px, 13.6vw, 150px);
+  top: 0;
+  left: 0;
+  z-index: 111;
+}
+
+.background {
+  background-color: #4a9b60;
+  width: 100%;
+  height: clamp(60px, 13.6vw, 150px);
+}
+.background img {
+  width: clamp(94px, 20vw, 259px);
+  height: clamp(60px, 13.6vw, 150px);
+  margin-left: 5.2vw;
+  aspect-ratio: 259/150;
+}
+
+main .intoroduction {
+  background-color: #caf0bb;
+  display: flex;
+  flex-direction: column;
+}
+main .intoroduction .intoroductionContent img {
+  width: 80vw;
+  margin: 2vh auto 0 auto;
+  display: block;
+}
+main .intoroduction .intoroductionContent nav.intoroductionNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  margin: 2vh 0 0 0;
+}
+main .intoroduction .intoroductionContent nav.intoroductionNav ul.intoroduction-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+main .intoroduction .intoroductionContent nav.intoroductionNav ul.intoroduction-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+main .intoroduction .intoroductionContent .intoroductionSection .mammalianSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.6vw;
+  margin: 7.5vh 0 0 0;
+}
+main .intoroduction .intoroductionContent .intoroductionSection .bridsSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.6vw;
+  margin: 7.5vw 0 0 0;
+}
+main .intoroduction .intoroductionContent .intoroductionSection .reptilesSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.6vw;
+  margin: 7.5vw 0 0 0;
+}
+main .intoroduction .intoroductionContent .intoroductionSection .interactSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.6vw;
+  margin: 7.5vw 0 0 0;
+}
+
+figure.introFigure img.introImg {
+  width: 38vw;
+}
+figure.introFigure figcaption.introFigcaption h3.introH3 {
+  color: #5c7e4b;
+  font-size: 1rem;
+  text-align: center;
+}
+figure.introFigure figcaption.introFigcaption p.introP {
+  font: 0.75rem;
+  text-align: center;
+}/*# sourceMappingURL=main.css.map */
