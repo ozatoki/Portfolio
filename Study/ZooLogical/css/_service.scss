@@ -1,0 +1,205 @@
+$P-color: #5c7e4b;
+
+header {
+  position: sticky;
+  width: 100%;
+  height: clamp(60px, 13.6vw, 150px);
+  top: 0;
+  left: 0;
+  z-index: 111;
+}
+.background {
+  background-color: #4a9b60;
+  width: 100%;
+  height: clamp(60px, 13.6vw, 150px);
+  img {
+    width: clamp(94px, 20vw, 259px);
+    height: clamp(60px, 13.6vw, 150px);
+    margin-left: 5.2vw;
+    aspect-ratio: 259/150;
+  }
+}
+
+main {
+  .service {
+    background-color: #f3ec8b;
+    display: flex;
+    flex-direction: column;
+    .serviceContent {
+      img.serviceMap {
+        width: 80vw;
+        margin: 2vh auto 0 auto;
+        display: block;
+      }
+      nav.serviceNav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+        margin: 2vh 0 0 0;
+        ul.service-left {
+          display: flex;
+          flex-direction: column;
+          gap: 2vh;
+        }
+        ul.service-right {
+          display: flex;
+          flex-direction: column;
+          gap: 2vh;
+        }
+      }
+      .serviceSection {
+        .facilitySection {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 7.5vh 0 0 0;
+          .facilityImg {
+            .Foutain {
+              .foutainComment {
+                display: flex;
+                margin: 2.25vh 0 0 0;
+                p {
+                  color: $P-color;
+                  font-weight: bold;
+                  display: flex;
+                  align-items: center;
+                  margin: 0 0 2.25vh 0;
+                  gap: 2.7vw;
+                  &::before {
+                    content: "";
+                    @extend .green;
+                    display: inline-block;
+                  }
+                }
+              }
+              img.fountain {
+                width: 80vw;
+              }
+            }
+            .Playing {
+              margin: 7.5vh 0 0 0;
+              .playingComment {
+                display: flex;
+                p {
+                  color: $P-color;
+                  font-weight: bold;
+                  display: flex;
+                  align-items: center;
+                  margin: 0 0 2.25vh 0;
+                  gap: 2.7vw;
+                  &::before {
+                    content: "";
+                    @extend .green;
+                    display: inline-block;
+                  }
+                }
+              }
+              img.playing {
+                width: 80vw;
+              }
+            }
+          }
+        }
+        .foodSection {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 7.5vh 0 0 0;
+          .foodImg {
+            .Restaurant {
+              .restaurantComment {
+                display: flex;
+                margin: 2.25vh 0 0 0;
+                p {
+                  color: $P-color;
+                  font-weight: bold;
+                  display: flex;
+                  align-items: center;
+                  margin: 0 0 2.25vh 0;
+                  gap: 2.7vw;
+                  &::before {
+                    content: "";
+                    @extend .blue;
+                    display: inline-block;
+                  }
+                }
+              }
+              img.restaurant {
+                width: 80vw;
+              }
+              .restaurantRefer {
+                display: flex;
+                justify-content: center;
+                gap: 2.8vw;
+                margin: 1.6vh 0 0 0;
+                img.internal {
+                  width: 38.6vw;
+                }
+                img.food {
+                  width: 38.6vw;
+                }
+              }
+            }
+            .Kitchencar {
+              margin: 7.5vh 0 0 0;
+              .kitchencarComment {
+                display: flex;
+                margin: 2.25vh 0 0 0;
+                p {
+                  color: $P-color;
+                  font-weight: bold;
+                  display: flex;
+                  align-items: center;
+                  margin: 0 0 2.25vh 0;
+                  gap: 2.7vw;
+                  &::before {
+                    content: "";
+                    @extend .blue;
+                    display: inline-block;
+                  }
+                }
+              }
+              img.stall {
+                width: 80vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 共通
+.green {
+  border-radius: 50%;
+  background-color: #1be84b;
+  margin: 0;
+  width: 1rem;
+  height: 1rem;
+}
+
+.blue {
+  border-radius: 50%;
+  background-color: #4c62f1;
+  margin: 0;
+  width: 1rem;
+  height: 1rem;
+}
+
+.orange {
+  border-radius: 50%;
+  background-color: #f28a14;
+  margin: 0;
+  width: 1rem;
+  height: 1rem;
+}
+
+.pink {
+  border-radius: 50%;
+  background-color: #ef85e1;
+  margin: 0;
+  width: 1rem;
+  height: 1rem;
+}

@@ -32,7 +32,8 @@
 html {
   cursor: default; /* 1 */
   -moz-tab-size: 4; /* 3 */
-  tab-size: 4; /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4; /* 3 */
   -webkit-tap-highlight-color: transparent;
   -ms-text-size-adjust: 100%; /* 5 */
   -webkit-text-size-adjust: 100%; /* 5 */
@@ -136,7 +137,8 @@ a {
  */
 abbr[title] {
   text-decoration: underline;
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
 }
 
 /**
@@ -405,7 +407,6 @@ dialog {
   color: black;
   display: block;
   height: -moz-fit-content;
-  height: -webkit-fit-content;
   height: fit-content;
   left: 0;
   margin: auto;
@@ -413,7 +414,6 @@ dialog {
   position: absolute;
   right: 0;
   width: -moz-fit-content;
-  width: -webkit-fit-content;
   width: fit-content;
 }
 
@@ -459,8 +459,7 @@ label,
 select,
 summary,
 textarea,
-[tabindex] {
-  -ms-touch-action: manipulation; /* 1 */
+[tabindex] { /* 1 */
   touch-action: manipulation; /* 2 */
 }
 
@@ -842,6 +841,7 @@ a.returnTop img.return-top {
     background-color: #777373;
   }
   .infomationcontent .infomation .infocomment .infolist {
+    width: -moz-fit-content;
     width: fit-content;
     position: relative;
     top: 5%;
@@ -884,6 +884,7 @@ a.returnTop img.return-top {
     background-color: #777373;
   }
   .infomationcontent .animalinfomation .animalcomment .animallist {
+    width: -moz-fit-content;
     width: fit-content;
     position: relative;
     top: 5%;
@@ -930,7 +931,8 @@ a.returnTop img.return-top {
   cursor: pointer;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin: 0;
 }
 .hamburger .nav {
@@ -1068,6 +1070,7 @@ header {
 .infoMation .infomationSection .timeSection .openTime h3.opentime {
   color: #5c7e4b;
   font-size: 0.875rem;
+  width: -moz-fit-content;
   width: fit-content;
   display: flex;
   line-height: 1;
@@ -1091,6 +1094,7 @@ header {
 .infoMation .infomationSection .timeSection .closedDay h3.closed-Day {
   color: #5c7e4b;
   font-size: 0.875rem;
+  width: -moz-fit-content;
   width: fit-content;
   display: flex;
   line-height: 1;
@@ -1443,6 +1447,7 @@ p {
     width: 30vw;
   }
   .infoMation .infomationSection .announceSection ul {
+    width: -moz-fit-content;
     width: fit-content;
   }
   .infoMation .infomationSection .announceSection ul li {
@@ -1804,25 +1809,207 @@ figure.introFigure figcaption.introFigcaption p.introP {
     justify-content: center;
     margin: 5.5vh 0 0 0;
   }
+  figure.introFigure img.introImg {
+    width: 31vw;
+  }
+  figure.introFigure figcaption.introFigcaption h3.introH3 {
+    color: #5c7e4b;
+    font-size: clamp(2rem, 2.5vw, 2.5rem);
+    text-align: center;
+  }
+  figure.introFigure figcaption.introFigcaption p.introP {
+    font-size: clamp(1.5rem, 1.875vw, 2rem);
+    text-align: center;
+  }
 }
-figure.introFigure img.introImg {
-  width: 31vw;
-}
-figure.introFigure figcaption.introFigcaption h3.introH3 {
-  color: #5c7e4b;
-  font-size: clamp(2rem, 2.5vw, 2.5rem);
-  text-align: center;
-}
-figure.introFigure figcaption.introFigcaption p.introP {
-  font-size: clamp(1.5rem, 1.875vw, 2rem);
-  text-align: center;
-}
-
 /* ----------------------
    タブレット横向き（900px）以上
 ----------------------- */
 /* ----------------------
    タブレット縦向き（600px）以上
 ----------------------- */
+header {
+  position: sticky;
+  width: 100%;
+  height: clamp(60px, 13.6vw, 150px);
+  top: 0;
+  left: 0;
+  z-index: 111;
+}
 
-/*# sourceMappingURL=main.css.map */
+.background {
+  background-color: #4a9b60;
+  width: 100%;
+  height: clamp(60px, 13.6vw, 150px);
+}
+.background img {
+  width: clamp(94px, 20vw, 259px);
+  height: clamp(60px, 13.6vw, 150px);
+  margin-left: 5.2vw;
+  aspect-ratio: 259/150;
+}
+
+main .service {
+  background-color: #f3ec8b;
+  display: flex;
+  flex-direction: column;
+}
+main .service .serviceContent img.serviceMap {
+  width: 80vw;
+  margin: 2vh auto 0 auto;
+  display: block;
+}
+main .service .serviceContent nav.serviceNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  margin: 2vh 0 0 0;
+}
+main .service .serviceContent nav.serviceNav ul.service-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+main .service .serviceContent nav.serviceNav ul.service-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+main .service .serviceContent .serviceSection .facilitySection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 7.5vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .facilitySection .facilityImg .Foutain .foutainComment {
+  display: flex;
+  margin: 2.25vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .facilitySection .facilityImg .Foutain .foutainComment p {
+  color: #5c7e4b;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin: 0 0 2.25vh 0;
+  gap: 2.7vw;
+}
+main .service .serviceContent .serviceSection .facilitySection .facilityImg .Foutain .foutainComment p::before {
+  content: "";
+  display: inline-block;
+}
+main .service .serviceContent .serviceSection .facilitySection .facilityImg .Foutain img.fountain {
+  width: 80vw;
+}
+main .service .serviceContent .serviceSection .facilitySection .facilityImg .Playing {
+  margin: 7.5vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .facilitySection .facilityImg .Playing .playingComment {
+  display: flex;
+}
+main .service .serviceContent .serviceSection .facilitySection .facilityImg .Playing .playingComment p {
+  color: #5c7e4b;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin: 0 0 2.25vh 0;
+  gap: 2.7vw;
+}
+main .service .serviceContent .serviceSection .facilitySection .facilityImg .Playing .playingComment p::before {
+  content: "";
+  display: inline-block;
+}
+main .service .serviceContent .serviceSection .facilitySection .facilityImg .Playing img.playing {
+  width: 80vw;
+}
+main .service .serviceContent .serviceSection .foodSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 7.5vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .foodSection .foodImg .Restaurant .restaurantComment {
+  display: flex;
+  margin: 2.25vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .foodSection .foodImg .Restaurant .restaurantComment p {
+  color: #5c7e4b;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin: 0 0 2.25vh 0;
+  gap: 2.7vw;
+}
+main .service .serviceContent .serviceSection .foodSection .foodImg .Restaurant .restaurantComment p::before {
+  content: "";
+  display: inline-block;
+}
+main .service .serviceContent .serviceSection .foodSection .foodImg .Restaurant img.restaurant {
+  width: 80vw;
+}
+main .service .serviceContent .serviceSection .foodSection .foodImg .Restaurant .restaurantRefer {
+  display: flex;
+  justify-content: center;
+  gap: 2.8vw;
+  margin: 1.6vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .foodSection .foodImg .Restaurant .restaurantRefer img.internal {
+  width: 38.6vw;
+}
+main .service .serviceContent .serviceSection .foodSection .foodImg .Restaurant .restaurantRefer img.food {
+  width: 38.6vw;
+}
+main .service .serviceContent .serviceSection .foodSection .foodImg .Kitchencar {
+  margin: 7.5vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .foodSection .foodImg .Kitchencar .kitchencarComment {
+  display: flex;
+  margin: 2.25vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .foodSection .foodImg .Kitchencar .kitchencarComment p {
+  color: #5c7e4b;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin: 0 0 2.25vh 0;
+  gap: 2.7vw;
+}
+main .service .serviceContent .serviceSection .foodSection .foodImg .Kitchencar .kitchencarComment p::before {
+  content: "";
+  display: inline-block;
+}
+main .service .serviceContent .serviceSection .foodSection .foodImg .Kitchencar img.stall {
+  width: 80vw;
+}
+
+.green, main .service .serviceContent .serviceSection .facilitySection .facilityImg .Foutain .foutainComment p::before, main .service .serviceContent .serviceSection .facilitySection .facilityImg .Playing .playingComment p::before {
+  border-radius: 50%;
+  background-color: #1be84b;
+  margin: 0;
+  width: 1rem;
+  height: 1rem;
+}
+
+.blue, main .service .serviceContent .serviceSection .foodSection .foodImg .Restaurant .restaurantComment p::before, main .service .serviceContent .serviceSection .foodSection .foodImg .Kitchencar .kitchencarComment p::before {
+  border-radius: 50%;
+  background-color: #4c62f1;
+  margin: 0;
+  width: 1rem;
+  height: 1rem;
+}
+
+.orange {
+  border-radius: 50%;
+  background-color: #f28a14;
+  margin: 0;
+  width: 1rem;
+  height: 1rem;
+}
+
+.pink {
+  border-radius: 50%;
+  background-color: #ef85e1;
+  margin: 0;
+  width: 1rem;
+  height: 1rem;
+}/*# sourceMappingURL=main.css.map */
