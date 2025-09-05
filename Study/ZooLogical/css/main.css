@@ -1888,6 +1888,7 @@ main .service .serviceContent .serviceSection .facilitySection .facilityImg .Fou
 }
 main .service .serviceContent .serviceSection .facilitySection .facilityImg .Foutain .foutainComment p {
   color: #5c7e4b;
+  font-size: 1rem;
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -1909,6 +1910,7 @@ main .service .serviceContent .serviceSection .facilitySection .facilityImg .Pla
 }
 main .service .serviceContent .serviceSection .facilitySection .facilityImg .Playing .playingComment p {
   color: #5c7e4b;
+  font-size: 1rem;
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -1934,6 +1936,7 @@ main .service .serviceContent .serviceSection .foodSection .foodImg .Restaurant 
 }
 main .service .serviceContent .serviceSection .foodSection .foodImg .Restaurant .restaurantComment p {
   color: #5c7e4b;
+  font-size: 1rem;
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -1968,6 +1971,7 @@ main .service .serviceContent .serviceSection .foodSection .foodImg .Kitchencar 
 }
 main .service .serviceContent .serviceSection .foodSection .foodImg .Kitchencar .kitchencarComment p {
   color: #5c7e4b;
+  font-size: 1rem;
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -1980,6 +1984,194 @@ main .service .serviceContent .serviceSection .foodSection .foodImg .Kitchencar 
 }
 main .service .serviceContent .serviceSection .foodSection .foodImg .Kitchencar img.stall {
   width: 80vw;
+}
+main .service .serviceContent .serviceSection .souvenirShopSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 7.5vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirShopComment {
+  display: flex;
+  margin: 2.25vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirShopComment p {
+  color: #5c7e4b;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin: 0 0 2.25vh 0;
+  gap: 2.7vw;
+}
+main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirShopComment p::before {
+  content: "";
+  display: inline-block;
+}
+main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop img.shop {
+  width: 80vw;
+}
+main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirA {
+  display: flex;
+  justify-content: center;
+  gap: 2.8vw;
+  margin: 1.6vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirA img.souvenir1,
+main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirA .souvenir2 {
+  width: 38.6vw;
+}
+main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirB {
+  display: flex;
+  justify-content: center;
+  gap: 2.8vw;
+  margin: 1.6vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirB img.souvenir3,
+main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirB .souvenir4 {
+  width: 38.6vw;
+}
+main .service .serviceContent .serviceSection .rentalSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 7.5vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .rentalSection .rentalImg .Wheelchair .wheelchairComment {
+  display: flex;
+  margin: 2.25vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .rentalSection .rentalImg .Wheelchair .wheelchairComment p {
+  color: #5c7e4b;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin: 0 0 2.25vh 0;
+  gap: 2.7vw;
+}
+main .service .serviceContent .serviceSection .rentalSection .rentalImg .Wheelchair .wheelchairComment p::before {
+  content: "";
+  display: inline-block;
+}
+main .service .serviceContent .serviceSection .rentalSection .rentalImg .Wheelchair figure.wheelchair {
+  display: flex;
+  flex-direction: column;
+}
+main .service .serviceContent .serviceSection .rentalSection .rentalImg .Wheelchair figure.wheelchair img.wheelchairImg {
+  width: 80vw;
+}
+main .service .serviceContent .serviceSection .rentalSection .rentalImg .Wheelchair figure.wheelchair figcaption.wheelchairRent {
+  font-weight: bold;
+  text-align: center;
+  margin: 1.5vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .rentalSection .rentalImg .Stroller {
+  margin: 7.5vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .rentalSection .rentalImg .Stroller .strollerComment {
+  display: flex;
+  margin: 2.25vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .rentalSection .rentalImg .Stroller .strollerComment p {
+  color: #5c7e4b;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin: 0 0 2.25vh 0;
+  gap: 2.7vw;
+}
+main .service .serviceContent .serviceSection .rentalSection .rentalImg .Stroller .strollerComment p::before {
+  content: "";
+  display: inline-block;
+}
+main .service .serviceContent .serviceSection .rentalSection .rentalImg .Stroller figure.stroller {
+  display: flex;
+  flex-direction: column;
+}
+main .service .serviceContent .serviceSection .rentalSection .rentalImg .Stroller figure.stroller img.strollerImg {
+  width: 80vw;
+}
+main .service .serviceContent .serviceSection .rentalSection .rentalImg .Stroller figure.stroller figcaption.strollerRent {
+  font-weight: bold;
+  text-align: center;
+  margin: 1.5vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .receptionSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 7.5vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .receptionSection .receptionImg .Reception .receptionComment {
+  display: flex;
+  margin: 2.25vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .receptionSection .receptionImg .Reception .receptionComment p {
+  color: #5c7e4b;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin: 0 0 2.25vh 0;
+  gap: 2.7vw;
+}
+main .service .serviceContent .serviceSection .receptionSection .receptionImg .Reception .receptionComment p::before {
+  content: "";
+  display: inline-block;
+}
+main .service .serviceContent .serviceSection .receptionSection .receptionImg .Reception figure.reception {
+  display: flex;
+  flex-direction: column;
+}
+main .service .serviceContent .serviceSection .receptionSection .receptionImg .Reception figure.reception img.receptionImg {
+  width: 80vw;
+}
+main .service .serviceContent .serviceSection .receptionSection .receptionImg .Reception figure.reception figcaption.receptionContent ul {
+  padding: 1.5vh 0 0 1.5rem;
+}
+main .service .serviceContent .serviceSection .receptionSection .receptionImg .Reception figure.reception figcaption.receptionContent ul li {
+  font-weight: bold;
+}
+main .service .serviceContent .serviceSection .medicalSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 7.5vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical .medicalComment {
+  display: flex;
+  margin: 2.25vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical .medicalComment p {
+  color: #5c7e4b;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin: 0 0 2.25vh 0;
+  gap: 2.7vw;
+}
+main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical .medicalComment p::before {
+  content: "";
+  display: inline-block;
+}
+main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical figure.medical .medicalofficeImg {
+  display: flex;
+  justify-content: center;
+  gap: 2.8vw;
+}
+main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical figure.medical .medicalofficeImg img.medicalOffice1 {
+  width: 38.6vw;
+}
+main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical figure.medical .medicalofficeImg img.medicalOffice2 {
+  width: 38.6vw;
+}
+main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical figure.medical figcaption.medicalImportant {
+  font-weight: bold;
+  text-align: center;
+  margin: 1.6vh 0 0 0;
 }
 
 .green, main .service .serviceContent .serviceSection .facilitySection .facilityImg .Foutain .foutainComment p::before, main .service .serviceContent .serviceSection .facilitySection .facilityImg .Playing .playingComment p::before {
@@ -1998,7 +2190,7 @@ main .service .serviceContent .serviceSection .foodSection .foodImg .Kitchencar 
   height: 1rem;
 }
 
-.orange {
+.orange, main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirShopComment p::before {
   border-radius: 50%;
   background-color: #f28a14;
   margin: 0;
@@ -2006,7 +2198,7 @@ main .service .serviceContent .serviceSection .foodSection .foodImg .Kitchencar 
   height: 1rem;
 }
 
-.pink {
+.pink, main .service .serviceContent .serviceSection .rentalSection .rentalImg .Wheelchair .wheelchairComment p::before, main .service .serviceContent .serviceSection .rentalSection .rentalImg .Stroller .strollerComment p::before, main .service .serviceContent .serviceSection .receptionSection .receptionImg .Reception .receptionComment p::before, main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical .medicalComment p::before {
   border-radius: 50%;
   background-color: #ef85e1;
   margin: 0;
