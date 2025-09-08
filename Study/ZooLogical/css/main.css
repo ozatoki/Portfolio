@@ -652,6 +652,7 @@ header .background .logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .infomationcontent .animalinfomation {
   position: relative;
@@ -715,6 +716,7 @@ header .background .logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .zooattempt {
@@ -1882,11 +1884,11 @@ main .service .serviceContent .serviceSection .facilitySection {
   align-items: center;
   margin: 7.5vh 0 0 0;
 }
-main .service .serviceContent .serviceSection .facilitySection .facilityImg .Foutain .foutainComment {
+main .service .serviceContent .serviceSection .facilitySection .facilityImg .Fountain .fountainComment {
   display: flex;
   margin: 2.25vh 0 0 0;
 }
-main .service .serviceContent .serviceSection .facilitySection .facilityImg .Foutain .foutainComment p {
+main .service .serviceContent .serviceSection .facilitySection .facilityImg .Fountain .fountainComment p {
   color: #5c7e4b;
   font-size: 1rem;
   font-weight: bold;
@@ -1895,11 +1897,11 @@ main .service .serviceContent .serviceSection .facilitySection .facilityImg .Fou
   margin: 0 0 2.25vh 0;
   gap: 2.7vw;
 }
-main .service .serviceContent .serviceSection .facilitySection .facilityImg .Foutain .foutainComment p::before {
+main .service .serviceContent .serviceSection .facilitySection .facilityImg .Fountain .fountainComment p::before {
   content: "";
   display: inline-block;
 }
-main .service .serviceContent .serviceSection .facilitySection .facilityImg .Foutain img.fountain {
+main .service .serviceContent .serviceSection .facilitySection .facilityImg .Fountain img.fountain {
   width: 80vw;
 }
 main .service .serviceContent .serviceSection .facilitySection .facilityImg .Playing {
@@ -2104,11 +2106,11 @@ main .service .serviceContent .serviceSection .receptionSection {
   align-items: center;
   margin: 7.5vh 0 0 0;
 }
-main .service .serviceContent .serviceSection .receptionSection .receptionImg .Reception .receptionComment {
+main .service .serviceContent .serviceSection .receptionSection .ReceptionImg .Reception .receptionComment {
   display: flex;
   margin: 2.25vh 0 0 0;
 }
-main .service .serviceContent .serviceSection .receptionSection .receptionImg .Reception .receptionComment p {
+main .service .serviceContent .serviceSection .receptionSection .ReceptionImg .Reception .receptionComment p {
   color: #5c7e4b;
   font-size: 1rem;
   font-weight: bold;
@@ -2117,21 +2119,21 @@ main .service .serviceContent .serviceSection .receptionSection .receptionImg .R
   margin: 0 0 2.25vh 0;
   gap: 2.7vw;
 }
-main .service .serviceContent .serviceSection .receptionSection .receptionImg .Reception .receptionComment p::before {
+main .service .serviceContent .serviceSection .receptionSection .ReceptionImg .Reception .receptionComment p::before {
   content: "";
   display: inline-block;
 }
-main .service .serviceContent .serviceSection .receptionSection .receptionImg .Reception figure.reception {
+main .service .serviceContent .serviceSection .receptionSection .ReceptionImg .Reception figure.reception {
   display: flex;
   flex-direction: column;
 }
-main .service .serviceContent .serviceSection .receptionSection .receptionImg .Reception figure.reception img.receptionImg {
+main .service .serviceContent .serviceSection .receptionSection .ReceptionImg .Reception figure.reception img.receptionImg {
   width: 80vw;
 }
-main .service .serviceContent .serviceSection .receptionSection .receptionImg .Reception figure.reception figcaption.receptionContent ul {
+main .service .serviceContent .serviceSection .receptionSection .ReceptionImg .Reception figure.reception figcaption.receptionContent ul {
   padding: 1.5vh 0 0 1.5rem;
 }
-main .service .serviceContent .serviceSection .receptionSection .receptionImg .Reception figure.reception figcaption.receptionContent ul li {
+main .service .serviceContent .serviceSection .receptionSection .ReceptionImg .Reception figure.reception figcaption.receptionContent ul li {
   font-weight: bold;
 }
 main .service .serviceContent .serviceSection .medicalSection {
@@ -2174,7 +2176,7 @@ main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medic
   margin: 1.6vh 0 0 0;
 }
 
-.green, main .service .serviceContent .serviceSection .facilitySection .facilityImg .Foutain .foutainComment p::before, main .service .serviceContent .serviceSection .facilitySection .facilityImg .Playing .playingComment p::before {
+.green, main .service .serviceContent .serviceSection .facilitySection .facilityImg .Fountain .fountainComment p::before, main .service .serviceContent .serviceSection .facilitySection .facilityImg .Playing .playingComment p::before {
   border-radius: 50%;
   background-color: #1be84b;
   margin: 0;
@@ -2198,10 +2200,239 @@ main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medic
   height: 1rem;
 }
 
-.pink, main .service .serviceContent .serviceSection .rentalSection .rentalImg .Wheelchair .wheelchairComment p::before, main .service .serviceContent .serviceSection .rentalSection .rentalImg .Stroller .strollerComment p::before, main .service .serviceContent .serviceSection .receptionSection .receptionImg .Reception .receptionComment p::before, main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical .medicalComment p::before {
+.pink, main .service .serviceContent .serviceSection .rentalSection .rentalImg .Wheelchair .wheelchairComment p::before, main .service .serviceContent .serviceSection .rentalSection .rentalImg .Stroller .strollerComment p::before, main .service .serviceContent .serviceSection .receptionSection .ReceptionImg .Reception .receptionComment p::before, main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical .medicalComment p::before {
   border-radius: 50%;
   background-color: #ef85e1;
   margin: 0;
   width: 1rem;
   height: 1rem;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/* ----------------------
+   PC（1200px）以上
+----------------------- */
+@media (min-width: 1200px) {
+  main .service .serviceInfo h1 {
+    margin: 2.5vh 0 0 8vw;
+    font-size: clamp(2rem, 2.5vw, 3rem);
+  }
+  main .service .serviceContent {
+    width: 50vw;
+    margin: 5.5vh auto 5.5vh auto;
+    border-radius: clamp(20px, 1.6vw, 30px);
+  }
+  main .service .serviceContent img.serviceMap {
+    width: 40vw;
+    margin: 5.5vh auto 0 auto;
+  }
+  main .service .serviceContent nav.serviceNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5.5vh 0 0 0;
+  }
+  main .service .serviceContent .serviceSection .facilitySection .facilityImg {
+    margin: 0 auto;
+  }
+  main .service .serviceContent .serviceSection .facilitySection .facilityImg .Fountain .fountainComment p {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    font-weight: bold;
+  }
+  main .service .serviceContent .serviceSection .facilitySection .facilityImg .Fountain img.fountain {
+    width: 31vw;
+  }
+  main .service .serviceContent .serviceSection .facilitySection .facilityImg .Playing .playingComment p {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    font-weight: bold;
+  }
+  main .service .serviceContent .serviceSection .facilitySection .facilityImg .Playing img.playing {
+    width: 31vw;
+  }
+  main .service .serviceContent .serviceSection .foodSection .foodImg {
+    margin: 0 auto;
+  }
+  main .service .serviceContent .serviceSection .foodSection .foodImg .Restaurant .restaurantComment p {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    font-weight: bold;
+  }
+  main .service .serviceContent .serviceSection .foodSection .foodImg .Restaurant img.restaurant {
+    width: 31vw;
+  }
+  main .service .serviceContent .serviceSection .foodSection .foodImg .Restaurant .restaurantRefer {
+    gap: 1vw;
+  }
+  main .service .serviceContent .serviceSection .foodSection .foodImg .Restaurant .restaurantRefer img.internal {
+    width: 15vw;
+  }
+  main .service .serviceContent .serviceSection .foodSection .foodImg .Restaurant .restaurantRefer img.food {
+    width: 15vw;
+  }
+  main .service .serviceContent .serviceSection .foodSection .foodImg .Kitchencar .kitchencarComment p {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    font-weight: bold;
+  }
+  main .service .serviceContent .serviceSection .foodSection .foodImg .Kitchencar img.stall {
+    width: 31vw;
+  }
+  main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg {
+    margin: 0 auto;
+  }
+  main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirShopComment p {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    font-weight: bold;
+  }
+  main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop img.shop {
+    width: 31vw;
+  }
+  main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirA {
+    gap: 1vw;
+  }
+  main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirA img.souvenir1 {
+    width: 15vw;
+  }
+  main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirA img.souvenir2 {
+    width: 15vw;
+  }
+  main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirB {
+    gap: 1vw;
+  }
+  main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirB img.souvenir3 {
+    width: 15vw;
+  }
+  main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirB img.souvenir4 {
+    width: 15vw;
+  }
+  main .service .serviceContent .serviceSection .rentalSection .rentalImg .Wheelchair .wheelchairComment p {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    font-weight: bold;
+  }
+  main .service .serviceContent .serviceSection .rentalSection .rentalImg .Wheelchair figure.wheelchair img.wheelchairImg {
+    width: 31vw;
+  }
+  main .service .serviceContent .serviceSection .rentalSection .rentalImg .Wheelchair figure.wheelchair figcaption.wheelchairRent {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    font-weight: bold;
+  }
+  main .service .serviceContent .serviceSection .rentalSection .rentalImg .Stroller .strollerComment p {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    font-weight: bold;
+  }
+  main .service .serviceContent .serviceSection .rentalSection .rentalImg .Stroller figure.stroller img.strollerImg {
+    width: 31vw;
+  }
+  main .service .serviceContent .serviceSection .rentalSection .rentalImg .Stroller figure.stroller figcaption.strollerRent {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    font-weight: bold;
+  }
+  main .service .serviceContent .serviceSection .receptionSection .ReceptionImg .Reception .receptionComment p {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    font-weight: bold;
+  }
+  main .service .serviceContent .serviceSection .receptionSection .ReceptionImg .Reception figure.reception img.receptionImg {
+    width: 31vw;
+  }
+  main .service .serviceContent .serviceSection .receptionSection .ReceptionImg .Reception figure.reception figcaption.receptionContent ul {
+    margin: 0 0 0 1.5rem;
+  }
+  main .service .serviceContent .serviceSection .receptionSection .ReceptionImg .Reception figure.reception figcaption.receptionContent ul li {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    font-weight: bold;
+  }
+  main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical .medicalComment p {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    font-weight: bold;
+  }
+  main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical figure.medical .medicalofficeImg {
+    gap: 1vw;
+  }
+  main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical figure.medical .medicalofficeImg img.medicalOffice1 {
+    width: 15vw;
+  }
+  main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical figure.medical .medicalofficeImg img.medicalOffice2 {
+    width: 15vw;
+  }
+  main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical figure.medical figcaption.medicalImportant {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    font-weight: bold;
+  }
+}
+.green, main .service .serviceContent .serviceSection .facilitySection .facilityImg .Fountain .fountainComment p::before, main .service .serviceContent .serviceSection .facilitySection .facilityImg .Playing .playingComment p::before {
+  border-radius: 50%;
+  background-color: #1be84b;
+  margin: 0;
+  width: clamp(1rem, 1.25vw, 1.5rem);
+  height: clamp(1rem, 1.25vw, 1.5rem);
+}
+
+.blue, main .service .serviceContent .serviceSection .foodSection .foodImg .Restaurant .restaurantComment p::before, main .service .serviceContent .serviceSection .foodSection .foodImg .Kitchencar .kitchencarComment p::before {
+  border-radius: 50%;
+  background-color: #4c62f1;
+  margin: 0;
+  width: clamp(1rem, 1.25vw, 1.5rem);
+  height: clamp(1rem, 1.25vw, 1.5rem);
+}
+
+.orange, main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirShopComment p::before {
+  border-radius: 50%;
+  background-color: #f28a14;
+  margin: 0;
+  width: clamp(1rem, 1.25vw, 1.5rem);
+  height: clamp(1rem, 1.25vw, 1.5rem);
+}
+
+.pink, main .service .serviceContent .serviceSection .rentalSection .rentalImg .Wheelchair .wheelchairComment p::before, main .service .serviceContent .serviceSection .rentalSection .rentalImg .Stroller .strollerComment p::before, main .service .serviceContent .serviceSection .receptionSection .ReceptionImg .Reception .receptionComment p::before, main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical .medicalComment p::before {
+  border-radius: 50%;
+  background-color: #ef85e1;
+  margin: 0;
+  width: clamp(1rem, 1.25vw, 1.5rem);
+  height: clamp(1rem, 1.25vw, 1.5rem);
+}
+
+/* ----------------------
+   タブレット横向き（900px）以上
+----------------------- */
+/* ----------------------
+   タブレット縦向き（600px）以上
+----------------------- */
+header {
+  position: sticky;
+  width: 100%;
+  height: clamp(60px, 13.6vw, 150px);
+  top: 0;
+  left: 0;
+  z-index: 111;
+}
+
+.background {
+  background-color: #4a9b60;
+  width: 100%;
+  height: clamp(60px, 13.6vw, 150px);
+}
+.background img {
+  width: clamp(94px, 20vw, 259px);
+  height: clamp(60px, 13.6vw, 150px);
+  margin-left: 5.2vw;
+  aspect-ratio: 259/150;
+}
+
+img {
+  width: 80vw;
+  margin: 10vh auto;
+  display: block;
+}
+
+/* ----------------------
+   PC（1200px）以上
+----------------------- */
+@media (min-width: 1200px) {
+  img {
+    width: 35vw;
+    margin: 5vh auto;
+  }
+}
+/* ----------------------
+   タブレット横向き（900px）以上
+----------------------- */
+/* ----------------------
+   タブレット縦向き（600px）以上
+----------------------- *//*# sourceMappingURL=main.css.map */

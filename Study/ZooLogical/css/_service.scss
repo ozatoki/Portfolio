@@ -55,8 +55,8 @@ main {
           align-items: center;
           margin: 7.5vh 0 0 0;
           .facilityImg {
-            .Foutain {
-              .foutainComment {
+            .Fountain {
+              .fountainComment {
                 display: flex;
                 margin: 2.25vh 0 0 0;
                 p {
@@ -299,7 +299,7 @@ main {
           flex-direction: column;
           align-items: center;
           margin: 7.5vh 0 0 0;
-          .receptionImg {
+          .ReceptionImg {
             .Reception {
               .receptionComment {
                 display: flex;
@@ -419,4 +419,270 @@ main {
   margin: 0;
   width: 1rem;
   height: 1rem;
+}
+
+/* ----------------------
+   PC（1200px）以上
+----------------------- */
+$pc-fontsize-h1: clamp(2rem, 2.5vw, 3rem);
+$pc-fontsize-txt: clamp(1rem, 1.25vw, 1.5rem);
+@media (min-width: 1200px) {
+  main {
+    .service {
+      .serviceInfo {
+        h1 {
+          margin: 2.5vh 0 0 8vw;
+          font-size: $pc-fontsize-h1;
+        }
+      }
+      .serviceContent {
+        width: 50vw;
+        margin: 5.5vh auto 5.5vh auto;
+        border-radius: clamp(20px, 1.6vw, 30px);
+        img.serviceMap {
+          width: 40vw;
+          margin: 5.5vh auto 0 auto;
+        }
+        nav.serviceNav {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          margin: 5.5vh 0 0 0;
+        }
+        .serviceSection {
+          .facilitySection {
+            .facilityImg {
+              margin: 0 auto;
+              .Fountain {
+                .fountainComment {
+                  p {
+                    font-size: $pc-fontsize-txt;
+                    font-weight: bold;
+                  }
+                }
+                img.fountain {
+                  width: 31vw;
+                }
+              }
+              .Playing {
+                .playingComment {
+                  p {
+                    font-size: $pc-fontsize-txt;
+                    font-weight: bold;
+                  }
+                }
+                img.playing {
+                  width: 31vw;
+                }
+              }
+            }
+          }
+          .foodSection {
+            .foodImg {
+              margin: 0 auto;
+              .Restaurant {
+                .restaurantComment {
+                  p {
+                    font-size: $pc-fontsize-txt;
+                    font-weight: bold;
+                  }
+                }
+                img.restaurant {
+                  width: 31vw;
+                }
+                .restaurantRefer {
+                  gap: 1vw;
+                  img.internal {
+                    width: 15vw;
+                  }
+                  img.food {
+                    width: 15vw;
+                  }
+                }
+              }
+              .Kitchencar {
+                .kitchencarComment {
+                  p {
+                    font-size: $pc-fontsize-txt;
+                    font-weight: bold;
+                  }
+                }
+                img.stall {
+                  width: 31vw;
+                }
+              }
+            }
+          }
+          .souvenirShopSection {
+            .souvenirShopImg {
+              margin: 0 auto;
+              .SouvenirShop {
+                .souvenirShopComment {
+                  p {
+                    font-size: $pc-fontsize-txt;
+                    font-weight: bold;
+                  }
+                }
+                img.shop {
+                  width: 31vw;
+                }
+                .souvenirA {
+                  gap: 1vw;
+                  img.souvenir1 {
+                    width: 15vw;
+                  }
+                  img.souvenir2 {
+                    width: 15vw;
+                  }
+                }
+                .souvenirB {
+                  gap: 1vw;
+                  img.souvenir3 {
+                    width: 15vw;
+                  }
+                  img.souvenir4 {
+                    width: 15vw;
+                  }
+                }
+              }
+            }
+          }
+          .rentalSection {
+            .rentalImg {
+              .Wheelchair {
+                .wheelchairComment {
+                  p {
+                    font-size: $pc-fontsize-txt;
+                    font-weight: bold;
+                  }
+                }
+                figure.wheelchair {
+                  img.wheelchairImg {
+                    width: 31vw;
+                  }
+                  figcaption.wheelchairRent {
+                    font-size: $pc-fontsize-txt;
+                    font-weight: bold;
+                  }
+                }
+              }
+              .Stroller {
+                .strollerComment {
+                  p {
+                    font-size: $pc-fontsize-txt;
+                    font-weight: bold;
+                  }
+                }
+                figure.stroller {
+                  img.strollerImg {
+                    width: 31vw;
+                  }
+                  figcaption.strollerRent {
+                    font-size: $pc-fontsize-txt;
+                    font-weight: bold;
+                  }
+                }
+              }
+            }
+          }
+          .receptionSection {
+            .ReceptionImg {
+              .Reception {
+                .receptionComment {
+                  p {
+                    font-size: $pc-fontsize-txt;
+                    font-weight: bold;
+                  }
+                }
+                figure.reception {
+                  img.receptionImg {
+                    width: 31vw;
+                  }
+                  figcaption.receptionContent {
+                    ul {
+                      margin: 0 0 0 1.5rem;
+                      li {
+                        font-size: $pc-fontsize-txt;
+                        font-weight: bold;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .medicalSection {
+            .medicalImg {
+              .Medical {
+                .medicalComment {
+                  p {
+                    font-size: $pc-fontsize-txt;
+                    font-weight: bold;
+                  }
+                }
+                figure.medical {
+                  .medicalofficeImg {
+                    gap: 1vw;
+                    img.medicalOffice1 {
+                      width: 15vw;
+                    }
+                    img.medicalOffice2 {
+                      width: 15vw;
+                    }
+                  }
+                  figcaption.medicalImportant {
+                    font-size: $pc-fontsize-txt;
+                    font-weight: bold;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.green {
+  border-radius: 50%;
+  background-color: #1be84b;
+  margin: 0;
+  width: $pc-fontsize-txt;
+  height: $pc-fontsize-txt;
+}
+
+.blue {
+  border-radius: 50%;
+  background-color: #4c62f1;
+  margin: 0;
+  width: $pc-fontsize-txt;
+  height: $pc-fontsize-txt;
+}
+
+.orange {
+  border-radius: 50%;
+  background-color: #f28a14;
+  margin: 0;
+  width: $pc-fontsize-txt;
+  height: $pc-fontsize-txt;
+}
+
+.pink {
+  border-radius: 50%;
+  background-color: #ef85e1;
+  margin: 0;
+  width: $pc-fontsize-txt;
+  height: $pc-fontsize-txt;
+}
+/* ----------------------
+   タブレット横向き（900px）以上
+----------------------- */
+@media (min-width: 900px) {
+}
+
+/* ----------------------
+   タブレット縦向き（600px）以上
+----------------------- */
+@media (min-width: 600px) {
 }

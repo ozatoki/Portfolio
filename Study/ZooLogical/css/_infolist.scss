@@ -1,0 +1,45 @@
+header {
+  position: sticky;
+  width: 100%;
+  height: clamp(60px, 13.6vw, 150px);
+  top: 0;
+  left: 0;
+  z-index: 111;
+}
+.background {
+  background-color: #4a9b60;
+  width: 100%;
+  height: clamp(60px, 13.6vw, 150px);
+  img {
+    width: clamp(94px, 20vw, 259px);
+    height: clamp(60px, 13.6vw, 150px);
+    margin-left: 5.2vw;
+    aspect-ratio: 259/150;
+  }
+}
+img {
+  width: 80vw;
+  margin: 10vh auto;
+  display: block;
+}
+/* ----------------------
+   PC（1200px）以上
+----------------------- */
+@media (min-width: 1200px) {
+  img {
+    width: 35vw;
+    margin: 5vh auto;
+  }
+}
+
+/* ----------------------
+   タブレット横向き（900px）以上
+----------------------- */
+@media (min-width: 900px) {
+}
+
+/* ----------------------
+   タブレット縦向き（600px）以上
+----------------------- */
+@media (min-width: 600px) {
+}
