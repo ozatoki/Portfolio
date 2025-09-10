@@ -1,5 +1,4 @@
 .swiper {
-  position: relative;
   width: clamp(
     200px,
     52.1vw,
@@ -14,5 +13,36 @@
     ); /*最大値は今後他コンテンツに合わせ柔軟に変更する*/
     height: auto;
     aspect-ratio: 80/53;
+    margin: 3vh auto 0 auto;
+  }
+}
+/* ----------------------
+    PC（1200px）以上
+ ----------------------- */
+@media (min-width: 1200px) {
+  .swiper {
+    img {
+      margin: 5vh auto 0 auto;
+    }
+  }
+}
+
+/* ----------------------
+    タブレット横向き（900px）以上
+ ----------------------- */
+@media (min-width: 900px) {
+  .swiper {
+    img {
+    }
+  }
+}
+
+/* ----------------------
+    タブレット縦向き（600px）以上
+ ----------------------- */
+@media (min-width: 600px) {
+  .swiper {
+    img {
+    }
   }
 }

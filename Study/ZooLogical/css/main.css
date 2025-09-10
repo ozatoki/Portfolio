@@ -518,39 +518,37 @@ html {
   scroll-behavior: smooth;
 }
 
-header {
+header.background {
   position: sticky;
-  width: 100%;
-  height: clamp(60px, 13.6vw, 150px);
   top: 0;
   left: 0;
   z-index: 111;
-}
-header .background {
+  display: flex;
+  align-items: center;
   background-color: #4a9b60;
   width: 100%;
   height: clamp(60px, 13.6vw, 150px);
 }
-header .background .logo {
+header.background img.logo {
   width: clamp(94px, 20vw, 259px);
   height: clamp(60px, 13.6vw, 150px);
-  margin-left: 5.2vw;
+  margin: 0 0 0 5.2vw;
   aspect-ratio: 259/150;
+  display: block;
 }
 
 .top {
-  aspect-ratio: 192/85;
   position: relative;
   z-index: 0;
 }
 .top .container {
-  width: 100%;
-  aspect-ratio: 192/85;
+  width: 100vw;
+  height: 25vh;
   background-image: url(../img/top/top.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-top: 4.4270833333%;
+  display: block;
 }
 
 .menu {
@@ -570,10 +568,11 @@ header .background .logo {
   gap: 5.5vw;
   top: 8vw;
 }
-.menu .menu-content img {
+.menu .menu-content a img {
   width: 40vw;
   aspect-ratio: 150/115;
   box-shadow: 4px 4px 5px black;
+  margin: 0;
 }
 
 .infomationcontent {
@@ -720,7 +719,7 @@ header .background .logo {
 }
 
 .zooattempt {
-  background-image: url(../img/zooattempt/strype.png);
+  background-image: url(../img/zooattempt/background/strype.png);
   width: 100%;
   aspect-ratio: 375/150;
   background-size: cover;
@@ -771,6 +770,10 @@ a.returnTop img.return-top {
 }
 
 @media (min-width: 768px) {
+  .top .container {
+    width: 100%;
+    height: 79vh;
+  }
   .menu {
     width: 100%;
     background-image: url(../img/menu/background-zigzag.png);
@@ -786,7 +789,7 @@ a.returnTop img.return-top {
     align-items: center;
     gap: 3.9vw;
   }
-  .menu .menu-content img {
+  .menu .menu-content a img {
     width: clamp(75px, 15.5vw, 300px);
     height: auto;
     cursor: pointer;
@@ -900,7 +903,7 @@ a.returnTop img.return-top {
     border-top: clamp(18px, 1.6vw, 30px) solid #4a9b60;
   }
   .zooattempt {
-    background-image: url(../img/zooattempt/strype.png);
+    background-image: url(../img/zooattempt/background/strype.png);
     width: 100%;
     aspect-ratio: 375/150;
     background-size: cover;
@@ -910,8 +913,8 @@ a.returnTop img.return-top {
     justify-content: center;
     align-items: center;
   }
-  .zooattempt img {
-    width: 40%;
+  .zooattempt a img {
+    width: 80%;
     height: auto;
     box-shadow: 8px 8px 8px black;
     cursor: pointer;
@@ -983,36 +986,29 @@ a.returnTop img.return-top {
 }
 
 .swiper {
-  position: relative;
   width: clamp(200px, 52.1vw, 52.5%); /*最大値は今後他コンテンツに合わせ柔軟に変更する*/
 }
 .swiper img {
   width: clamp(200px, 52.1vw, 100%); /*最大値は今後他コンテンツに合わせ柔軟に変更する*/
   height: auto;
   aspect-ratio: 80/53;
+  margin: 3vh auto 0 auto;
 }
 
-header {
-  position: sticky;
-  width: 100%;
-  height: clamp(60px, 13.6vw, 150px);
-  top: 0;
-  left: 0;
-  z-index: 111;
+/* ----------------------
+    PC（1200px）以上
+ ----------------------- */
+@media (min-width: 1200px) {
+  .swiper img {
+    margin: 5vh auto 0 auto;
+  }
 }
-
-.background {
-  background-color: #4a9b60;
-  width: 100%;
-  height: clamp(60px, 13.6vw, 150px);
-}
-.background img {
-  width: clamp(94px, 20vw, 259px);
-  height: clamp(60px, 13.6vw, 150px);
-  margin-left: 5.2vw;
-  aspect-ratio: 259/150;
-}
-
+/* ----------------------
+    タブレット横向き（900px）以上
+ ----------------------- */
+/* ----------------------
+    タブレット縦向き（600px）以上
+ ----------------------- */
 .infoMation {
   display: flex;
   flex-direction: column;
@@ -1507,27 +1503,6 @@ p {
 /* ----------------------
    タブレット縦向き（600px）以上
 ----------------------- */
-header {
-  position: sticky;
-  width: 100%;
-  height: clamp(60px, 13.6vw, 150px);
-  top: 0;
-  left: 0;
-  z-index: 111;
-}
-
-.background {
-  background-color: #4a9b60;
-  width: 100%;
-  height: clamp(60px, 13.6vw, 150px);
-}
-.background img {
-  width: clamp(94px, 20vw, 259px);
-  height: clamp(60px, 13.6vw, 150px);
-  margin-left: 5.2vw;
-  aspect-ratio: 259/150;
-}
-
 .event {
   display: flex;
   flex-direction: column;
@@ -1698,27 +1673,6 @@ dl.a dd.c {
 /* ----------------------
    タブレット縦向き（600px）以上
 ----------------------- */
-header {
-  position: sticky;
-  width: 100%;
-  height: clamp(60px, 13.6vw, 150px);
-  top: 0;
-  left: 0;
-  z-index: 111;
-}
-
-.background {
-  background-color: #4a9b60;
-  width: 100%;
-  height: clamp(60px, 13.6vw, 150px);
-}
-.background img {
-  width: clamp(94px, 20vw, 259px);
-  height: clamp(60px, 13.6vw, 150px);
-  margin-left: 5.2vw;
-  aspect-ratio: 259/150;
-}
-
 main .intoroduction {
   background-color: #caf0bb;
   display: flex;
@@ -2394,27 +2348,6 @@ main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medic
 /* ----------------------
    タブレット縦向き（600px）以上
 ----------------------- */
-header {
-  position: sticky;
-  width: 100%;
-  height: clamp(60px, 13.6vw, 150px);
-  top: 0;
-  left: 0;
-  z-index: 111;
-}
-
-.background {
-  background-color: #4a9b60;
-  width: 100%;
-  height: clamp(60px, 13.6vw, 150px);
-}
-.background img {
-  width: clamp(94px, 20vw, 259px);
-  height: clamp(60px, 13.6vw, 150px);
-  margin-left: 5.2vw;
-  aspect-ratio: 259/150;
-}
-
 img {
   width: 80vw;
   margin: 10vh auto;
