@@ -728,10 +728,9 @@ header.background img.logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5%;
 }
-.zooattempt img {
-  width: 40%;
+.zooattempt a img {
+  width: 80%;
   height: auto;
   box-shadow: 4px 4px 4px black;
   cursor: pointer;
@@ -995,20 +994,6 @@ a.returnTop img.return-top {
   margin: 3vh auto 0 auto;
 }
 
-/* ----------------------
-    PC（1200px）以上
- ----------------------- */
-@media (min-width: 1200px) {
-  .swiper img {
-    margin: 5vh auto 0 auto;
-  }
-}
-/* ----------------------
-    タブレット横向き（900px）以上
- ----------------------- */
-/* ----------------------
-    タブレット縦向き（600px）以上
- ----------------------- */
 .infoMation {
   display: flex;
   flex-direction: column;
@@ -1315,7 +1300,7 @@ li.box a {
   margin: 0 0 0 8vw;
 }
 
-.circle, dl.a dt.b::before, .infoMation .infomationSection .timeSection .openTime h3.opentime::before, .infoMation .infomationSection .timeSection .closedDay h3.closed-Day::before {
+.circle, main .attempt .attemptContent .attemptSection article.enrichmentSection .enrichment dl.enrichmentContent dt.Enrichment h3::before, dl.a dt.b::before, .infoMation .infomationSection .timeSection .openTime h3.opentime::before, .infoMation .infomationSection .timeSection .closedDay h3.closed-Day::before {
   background-color: #5c7e4b;
   border-radius: 50%;
   width: 0.875rem;
@@ -1485,7 +1470,7 @@ p {
     font-size: clamp(1.5rem, 1.7vw, 2rem);
     margin: 0 0 0 3.1vw;
   }
-  .circle, dl.a dt.b::before, .infoMation .infomationSection .timeSection .openTime h3.opentime::before, .infoMation .infomationSection .timeSection .closedDay h3.closed-Day::before {
+  .circle, main .attempt .attemptContent .attemptSection article.enrichmentSection .enrichment dl.enrichmentContent dt.Enrichment h3::before, dl.a dt.b::before, .infoMation .infomationSection .timeSection .openTime h3.opentime::before, .infoMation .infomationSection .timeSection .closedDay h3.closed-Day::before {
     width: clamp(1rem, 1.25vw, 1.5rem);
     height: clamp(1rem, 1.25vw, 1.5rem);
   }
@@ -1731,6 +1716,7 @@ main .intoroduction .intoroductionContent .intoroductionSection .interactSection
 
 figure.introFigure img.introImg {
   width: 38vw;
+  margin: 0;
 }
 figure.introFigure figcaption.introFigcaption h3.introH3 {
   color: #5c7e4b;
@@ -2368,4 +2354,62 @@ img {
 ----------------------- */
 /* ----------------------
    タブレット縦向き（600px）以上
------------------------ *//*# sourceMappingURL=main.css.map */
+----------------------- */
+main .attempt {
+  background-color: #edece6;
+  display: flex;
+  flex-direction: column;
+}
+main .attempt .attemptContent nav.attemptNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  margin: 2vh 0 0 0;
+}
+main .attempt .attemptContent nav.attemptNav ul.attempt-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+main .attempt .attemptContent nav.attemptNav ul.attempt-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+main .attempt .attemptContent .attemptSection article.enrichmentSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vh;
+  margin: 7.5vh 0 0 0;
+}
+main .attempt .attemptContent .attemptSection article.enrichmentSection .enrichment dl.enrichmentContent dt.Enrichment {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75vh;
+}
+main .attempt .attemptContent .attemptSection article.enrichmentSection .enrichment dl.enrichmentContent dt.Enrichment h3 {
+  color: #5c7e4b;
+  font-size: 1rem;
+  line-height: 1;
+  display: flex;
+  gap: 2.7vw;
+}
+main .attempt .attemptContent .attemptSection article.enrichmentSection .enrichment dl.enrichmentContent dt.Enrichment h3::before {
+  content: "";
+  display: inline-block;
+}
+main .attempt .attemptContent .attemptSection article.enrichmentSection .enrichment dl.enrichmentContent dd.enrichmentComment {
+  margin: 1.2vh 0 0 0;
+}
+main .attempt .attemptContent .attemptSection article.enrichmentSection .enrichment dl.enrichmentContent dd.enrichmentComment p {
+  font-size: 0.875rem;
+}
+main .attempt .attemptContent .attemptSection article.enrichmentSection .enrichment img {
+  margin: 2.25vh 0 0 0;
+}
+
+.border {
+  border-bottom: 3px solid #e5a829;
+}/*# sourceMappingURL=main.css.map */

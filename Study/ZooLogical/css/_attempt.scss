@@ -1,0 +1,70 @@
+main {
+  .attempt {
+    background-color: #edece6;
+    display: flex;
+    flex-direction: column;
+    .attemptContent {
+      nav.attemptNav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+        margin: 2vh 0 0 0;
+        ul.attempt-left {
+          display: flex;
+          flex-direction: column;
+          gap: 2vh;
+        }
+        ul.attempt-right {
+          display: flex;
+          flex-direction: column;
+          gap: 2vh;
+        }
+      }
+      .attemptSection {
+        article.enrichmentSection {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 3vh;
+          margin: 7.5vh 0 0 0;
+          .enrichment {
+            dl.enrichmentContent {
+              dt.Enrichment {
+                display: flex;
+                flex-direction: column;
+                gap: 0.75vh;
+                h3 {
+                  color: #5c7e4b;
+                  font-size: 1rem;
+                  line-height: 1;
+                  display: flex;
+                  gap: 2.7vw;
+                  &::before {
+                    content: "";
+                    @extend.circle;
+                    display: inline-block;
+                  }
+                }
+              }
+              dd.enrichmentComment {
+                margin: 1.2vh 0 0 0;
+                p {
+                  font-size: 0.875rem;
+                }
+              }
+            }
+            img {
+              margin: 2.25vh 0 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 共通
+.border {
+  border-bottom: 3px solid #e5a829;
+}

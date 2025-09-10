@@ -230,12 +230,13 @@ header.background {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5%;
-  img {
-    width: 40%;
-    height: auto;
-    box-shadow: 4px 4px 4px black;
-    cursor: pointer;
+  a {
+    img {
+      width: 80%;
+      height: auto;
+      box-shadow: 4px 4px 4px black;
+      cursor: pointer;
+    }
   }
 }
 h2 {
