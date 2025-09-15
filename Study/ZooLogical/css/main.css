@@ -1219,7 +1219,7 @@ a.returnTop img.return-top {
   gap: 2.6vw;
   line-height: 1;
 }
-.infoMation .infomationSection .announceSection ul li .Wcircle, .infoMation .infomationSection .announceSection ul li dl.a dd.c::before, dl.a .infoMation .infomationSection .announceSection ul li dd.c::before, .infoMation .infomationSection .announceSection ul li .timeSection .openTime p.opentime-content::before, .infoMation .infomationSection .timeSection .openTime .announceSection ul li p.opentime-content::before, .infoMation .infomationSection .announceSection ul li .timeSection .closedDay p.close::before, .infoMation .infomationSection .timeSection .closedDay .announceSection ul li p.close::before, .infoMation .infomationSection .announceSection ul li .timeSection .closedDay p.offSeason::before, .infoMation .infomationSection .timeSection .closedDay .announceSection ul li p.offSeason::before, .infoMation .infomationSection .announceSection ul li .passportSection p.passPrice::before, .infoMation .infomationSection .passportSection .announceSection ul li p.passPrice::before, .infoMation .infomationSection .announceSection ul li .passportSection p.passExpiry::before, .infoMation .infomationSection .passportSection .announceSection ul li p.passExpiry::before, .infoMation .infomationSection .announceSection ul li .accessSection .tips p::before, .infoMation .infomationSection .accessSection .tips .announceSection ul li p::before {
+.infoMation .infomationSection .announceSection ul li .Wcircle, .infoMation .infomationSection .announceSection ul li main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.actionContent dt.Action h4::before, main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.actionContent dt.Action .infoMation .infomationSection .announceSection ul li h4::before, .infoMation .infomationSection .announceSection ul li main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.intentionContent dt.Intention h4::before, main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.intentionContent dt.Intention .infoMation .infomationSection .announceSection ul li h4::before, .infoMation .infomationSection .announceSection ul li dl.a dd.c::before, dl.a .infoMation .infomationSection .announceSection ul li dd.c::before, .infoMation .infomationSection .announceSection ul li .timeSection .openTime p.opentime-content::before, .infoMation .infomationSection .timeSection .openTime .announceSection ul li p.opentime-content::before, .infoMation .infomationSection .announceSection ul li .timeSection .closedDay p.close::before, .infoMation .infomationSection .timeSection .closedDay .announceSection ul li p.close::before, .infoMation .infomationSection .announceSection ul li .timeSection .closedDay p.offSeason::before, .infoMation .infomationSection .timeSection .closedDay .announceSection ul li p.offSeason::before, .infoMation .infomationSection .announceSection ul li .passportSection p.passPrice::before, .infoMation .infomationSection .passportSection .announceSection ul li p.passPrice::before, .infoMation .infomationSection .announceSection ul li .passportSection p.passExpiry::before, .infoMation .infomationSection .passportSection .announceSection ul li p.passExpiry::before, .infoMation .infomationSection .announceSection ul li .accessSection .tips p::before, .infoMation .infomationSection .accessSection .tips .announceSection ul li p::before {
   flex-shrink: 0;
 }
 .infoMation .infomationSection .mapSection img {
@@ -1300,7 +1300,7 @@ li.box a {
   margin: 0 0 0 8vw;
 }
 
-.circle, main .attempt .attemptContent .attemptSection article.enrichmentSection .enrichment dl.enrichmentContent dt.Enrichment h3::before, dl.a dt.b::before, .infoMation .infomationSection .timeSection .openTime h3.opentime::before, .infoMation .infomationSection .timeSection .closedDay h3.closed-Day::before {
+.circle, main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .parkingFee dl.Parking dt.parking h3::before, main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .admissionFee dl.Fee dt.fee h3::before, main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeMap h3::before, main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.ed-reContent dt.Ed-Re h3::before, main .attempt .attemptContent .attemptSection article.welfareSection .welfare dl.welfareContent dt.Welfare h3::before, main .attempt .attemptContent .attemptSection article.enrichmentSection .enrichment dl.enrichmentContent dt.Enrichment h3::before, dl.a dt.b::before, .infoMation .infomationSection .timeSection .openTime h3.opentime::before, .infoMation .infomationSection .timeSection .closedDay h3.closed-Day::before {
   background-color: #5c7e4b;
   border-radius: 50%;
   width: 0.875rem;
@@ -1311,7 +1311,7 @@ p {
   font-size: 0.875rem;
 }
 
-.Wcircle, dl.a dd.c::before, .infoMation .infomationSection .timeSection .openTime p.opentime-content::before, .infoMation .infomationSection .timeSection .closedDay p.close::before, .infoMation .infomationSection .timeSection .closedDay p.offSeason::before, .infoMation .infomationSection .passportSection p.passPrice::before, .infoMation .infomationSection .passportSection p.passExpiry::before, .infoMation .infomationSection .accessSection .tips p::before {
+.Wcircle, main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.actionContent dt.Action h4::before, main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.intentionContent dt.Intention h4::before, dl.a dd.c::before, .infoMation .infomationSection .timeSection .openTime p.opentime-content::before, .infoMation .infomationSection .timeSection .closedDay p.close::before, .infoMation .infomationSection .timeSection .closedDay p.offSeason::before, .infoMation .infomationSection .passportSection p.passPrice::before, .infoMation .infomationSection .passportSection p.passExpiry::before, .infoMation .infomationSection .accessSection .tips p::before {
   background-image: url(../icon/icon.svg);
   background-size: contain;
   background-position: center;
@@ -1470,14 +1470,14 @@ p {
     font-size: clamp(1.5rem, 1.7vw, 2rem);
     margin: 0 0 0 3.1vw;
   }
-  .circle, main .attempt .attemptContent .attemptSection article.enrichmentSection .enrichment dl.enrichmentContent dt.Enrichment h3::before, dl.a dt.b::before, .infoMation .infomationSection .timeSection .openTime h3.opentime::before, .infoMation .infomationSection .timeSection .closedDay h3.closed-Day::before {
+  .circle, main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .parkingFee dl.Parking dt.parking h3::before, main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .admissionFee dl.Fee dt.fee h3::before, main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeMap h3::before, main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.ed-reContent dt.Ed-Re h3::before, main .attempt .attemptContent .attemptSection article.welfareSection .welfare dl.welfareContent dt.Welfare h3::before, main .attempt .attemptContent .attemptSection article.enrichmentSection .enrichment dl.enrichmentContent dt.Enrichment h3::before, dl.a dt.b::before, .infoMation .infomationSection .timeSection .openTime h3.opentime::before, .infoMation .infomationSection .timeSection .closedDay h3.closed-Day::before {
     width: clamp(1rem, 1.25vw, 1.5rem);
     height: clamp(1rem, 1.25vw, 1.5rem);
   }
   p {
     font-size: clamp(1rem, 1.25vw, 1.5rem);
   }
-  .Wcircle, dl.a dd.c::before, .infoMation .infomationSection .timeSection .openTime p.opentime-content::before, .infoMation .infomationSection .timeSection .closedDay p.close::before, .infoMation .infomationSection .timeSection .closedDay p.offSeason::before, .infoMation .infomationSection .passportSection p.passPrice::before, .infoMation .infomationSection .passportSection p.passExpiry::before, .infoMation .infomationSection .accessSection .tips p::before {
+  .Wcircle, main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.actionContent dt.Action h4::before, main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.intentionContent dt.Intention h4::before, dl.a dd.c::before, .infoMation .infomationSection .timeSection .openTime p.opentime-content::before, .infoMation .infomationSection .timeSection .closedDay p.close::before, .infoMation .infomationSection .timeSection .closedDay p.offSeason::before, .infoMation .infomationSection .passportSection p.passPrice::before, .infoMation .infomationSection .passportSection p.passExpiry::before, .infoMation .infomationSection .accessSection .tips p::before {
     width: clamp(1rem, 1.25vw, 1.5rem);
     height: clamp(1rem, 1.25vw, 1.5rem);
   }
@@ -2140,7 +2140,7 @@ main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medic
   height: 1rem;
 }
 
-.pink, main .service .serviceContent .serviceSection .rentalSection .rentalImg .Wheelchair .wheelchairComment p::before, main .service .serviceContent .serviceSection .rentalSection .rentalImg .Stroller .strollerComment p::before, main .service .serviceContent .serviceSection .receptionSection .ReceptionImg .Reception .receptionComment p::before, main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical .medicalComment p::before {
+.pink, main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeWheelchair dl.b-FreeWheelchair dt.wheelchair h3::before, main .service .serviceContent .serviceSection .rentalSection .rentalImg .Wheelchair .wheelchairComment p::before, main .service .serviceContent .serviceSection .rentalSection .rentalImg .Stroller .strollerComment p::before, main .service .serviceContent .serviceSection .receptionSection .ReceptionImg .Reception .receptionComment p::before, main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical .medicalComment p::before {
   border-radius: 50%;
   background-color: #ef85e1;
   margin: 0;
@@ -2320,7 +2320,7 @@ main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medic
   height: clamp(1rem, 1.25vw, 1.5rem);
 }
 
-.pink, main .service .serviceContent .serviceSection .rentalSection .rentalImg .Wheelchair .wheelchairComment p::before, main .service .serviceContent .serviceSection .rentalSection .rentalImg .Stroller .strollerComment p::before, main .service .serviceContent .serviceSection .receptionSection .ReceptionImg .Reception .receptionComment p::before, main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical .medicalComment p::before {
+.pink, main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeWheelchair dl.b-FreeWheelchair dt.wheelchair h3::before, main .service .serviceContent .serviceSection .rentalSection .rentalImg .Wheelchair .wheelchairComment p::before, main .service .serviceContent .serviceSection .rentalSection .rentalImg .Stroller .strollerComment p::before, main .service .serviceContent .serviceSection .receptionSection .ReceptionImg .Reception .receptionComment p::before, main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical .medicalComment p::before {
   border-radius: 50%;
   background-color: #ef85e1;
   margin: 0;
@@ -2356,7 +2356,7 @@ img {
    タブレット縦向き（600px）以上
 ----------------------- */
 main .attempt {
-  background-color: #edece6;
+  background-color: #e5a829;
   display: flex;
   flex-direction: column;
 }
@@ -2394,7 +2394,7 @@ main .attempt .attemptContent .attemptSection article.enrichmentSection .enrichm
   font-size: 1rem;
   line-height: 1;
   display: flex;
-  gap: 2.7vw;
+  gap: 2.7vh;
 }
 main .attempt .attemptContent .attemptSection article.enrichmentSection .enrichment dl.enrichmentContent dt.Enrichment h3::before {
   content: "";
@@ -2406,10 +2406,372 @@ main .attempt .attemptContent .attemptSection article.enrichmentSection .enrichm
 main .attempt .attemptContent .attemptSection article.enrichmentSection .enrichment dl.enrichmentContent dd.enrichmentComment p {
   font-size: 0.875rem;
 }
+main .attempt .attemptContent .attemptSection article.enrichmentSection .enrichment dl.enrichmentContent dd.enrichmentComment p span {
+  font-size: 0.875rem;
+  font-weight: bold;
+}
 main .attempt .attemptContent .attemptSection article.enrichmentSection .enrichment img {
   margin: 2.25vh 0 0 0;
+}
+main .attempt .attemptContent .attemptSection article.welfareSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vh;
+  margin: 7.5vh 0 0 0;
+}
+main .attempt .attemptContent .attemptSection article.welfareSection .welfare dl.welfareContent dt.Welfare {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75vh;
+}
+main .attempt .attemptContent .attemptSection article.welfareSection .welfare dl.welfareContent dt.Welfare h3 {
+  color: #5c7e4b;
+  font-size: 1rem;
+  line-height: 1;
+  display: flex;
+  gap: 2.7vh;
+}
+main .attempt .attemptContent .attemptSection article.welfareSection .welfare dl.welfareContent dt.Welfare h3::before {
+  content: "";
+  display: inline-block;
+}
+main .attempt .attemptContent .attemptSection article.welfareSection .welfare dl.welfareContent dd.welfareComment {
+  margin: 1.2vh 0 0 0;
+}
+main .attempt .attemptContent .attemptSection article.welfareSection .welfare dl.welfareContent dd.welfareComment p {
+  font-size: 0.875rem;
+}
+main .attempt .attemptContent .attemptSection article.welfareSection .welfare dl.welfareContent dd.welfareComment p span {
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+main .attempt .attemptContent .attemptSection article.welfareSection .welfare img {
+  margin: 2.25vh 0 0 0;
+}
+main .attempt .attemptContent .attemptSection article.ed-reSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vh;
+  margin: 7.5vh 0 0 0;
+}
+main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.ed-reContent dt.Ed-Re {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75vh;
+}
+main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.ed-reContent dt.Ed-Re h3 {
+  color: #5c7e4b;
+  font-size: 1rem;
+  line-height: 1;
+  display: flex;
+  gap: 2.7vh;
+}
+main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.ed-reContent dt.Ed-Re h3::before {
+  content: "";
+  display: inline-block;
+}
+main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.ed-reContent dd.ed-reComment {
+  margin: 1.2vh 0 0 0;
+}
+main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.ed-reContent dd.ed-reComment p {
+  font-size: 0.875rem;
+}
+main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.intentionContent {
+  margin: 2.5vh 0 0 0;
+}
+main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.intentionContent dt.Intention {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75vh;
+}
+main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.intentionContent dt.Intention h4 {
+  color: #5c7e4b;
+  font-size: 0.875rem;
+  line-height: 1;
+  font-weight: bold;
+  display: flex;
+  gap: 2.7vh;
+}
+main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.intentionContent dt.Intention h4::before {
+  content: "";
+  display: inline-block;
+}
+main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.intentionContent dd.intentionComment {
+  font-size: 0.875rem;
+}
+main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.actionContent {
+  margin: 2.5vh 0 0 0;
+}
+main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.actionContent dt.Action {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75vh;
+}
+main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.actionContent dt.Action h4 {
+  color: #5c7e4b;
+  font-size: 0.875rem;
+  line-height: 1;
+  font-weight: bold;
+  display: flex;
+  gap: 2.7vh;
+}
+main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.actionContent dt.Action h4::before {
+  content: "";
+  display: inline-block;
+}
+main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re .ed-reImg img {
+  margin: 2.25vh 0 0 0;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vh;
+  margin: 7.5vh 0 0 0;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeMap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75vh;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeMap h3 {
+  color: #5c7e4b;
+  font-size: 1rem;
+  line-height: 1;
+  display: flex;
+  gap: 2.7vh;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeMap h3::before {
+  content: "";
+  display: inline-block;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeMap img.universalMap {
+  margin: 0.75vh 0 0 0;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeToilet {
+  margin: 3vh 0 0 0;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeToilet h3 {
+  color: #5c7e4b;
+  font-size: 1rem;
+  line-height: 1;
+  display: flex;
+  gap: 2.7vh;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeToilet h3::before {
+  content: "";
+  display: inline-block;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeToilet .border {
+  margin: 0.75vh 0;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeToilet img {
+  margin: 0.75vh 0 0 0;
+  display: inline-block;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeWheelchair {
+  margin: 3vh 0 0 0;
+  display: flex;
+  flex-direction: column;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeWheelchair dl.b-FreeWheelchair dt.wheelchair {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75vw;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeWheelchair dl.b-FreeWheelchair dt.wheelchair h3 {
+  font-size: 1rem;
+  color: #5c7e4b;
+  line-height: 1;
+  display: flex;
+  gap: 2.7vh;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeWheelchair dl.b-FreeWheelchair dt.wheelchair h3::before {
+  content: "";
+  display: inline-block;
+  margin: 0 0 0 0.35rem;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeWheelchair dl.b-FreeWheelchair dd.rentalComment {
+  font-size: 0.875rem;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeWheelchair .border {
+  margin: 0.75vh 0;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .admissionFee dl.Fee dt.fee h3 {
+  font-size: 1rem;
+  color: #5c7e4b;
+  line-height: 1;
+  display: flex;
+  gap: 2.7vh;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .admissionFee dl.Fee dt.fee h3::before {
+  content: "";
+  display: inline-block;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .admissionFee dl.Fee {
+  margin: 2.7vh 0 0 0;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .admissionFee dl.Fee dt.fee .border {
+  margin: 0.75vh 0;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .parkingFee dl.Parking {
+  margin: 2.7vh 0 0 0;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .parkingFee dl.Parking dt.parking h3 {
+  color: #5c7e4b;
+  font-size: 1rem;
+  line-height: 1;
+  display: flex;
+  gap: 2.7vh;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .parkingFee dl.Parking dt.parking h3::before {
+  content: "";
+  display: inline-block;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .parkingFee dl.Parking dt.parking .border {
+  margin: 0.75vh 0;
 }
 
 .border {
   border-bottom: 3px solid #e5a829;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.red, main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeToilet h3::before {
+  border-radius: 50%;
+  background-color: red;
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.pink, main .service .serviceContent .serviceSection .rentalSection .rentalImg .Wheelchair .wheelchairComment p::before, main .service .serviceContent .serviceSection .rentalSection .rentalImg .Stroller .strollerComment p::before, main .service .serviceContent .serviceSection .receptionSection .ReceptionImg .Reception .receptionComment p::before, main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical .medicalComment p::before, main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeWheelchair dl.b-FreeWheelchair dt.wheelchair h3::before {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+/* ----------------------
+   PC（1200px）以上
+----------------------- */
+@media (min-width: 1200px) {
+  main .attempt .attemptInfo h1 {
+    margin: 2.5vh 0 0 8vw;
+    font-size: clamp(2rem, 2.5vw, 3rem);
+  }
+  main .attempt .attemptContent {
+    width: 50vw;
+    margin: 5.5vh auto 5.5vh auto;
+    border-radius: clamp(20px, 1.6vw, 30px);
+  }
+  main .attempt .attemptContent nav.attemptNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5.5vh 0 0 0;
+  }
+  main .attempt .attemptContent .attemptSection article.enrichmentSection .enrichment dl.enrichmentContent dt.Enrichment h3 {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    line-height: 1.2;
+  }
+  main .attempt .attemptContent .attemptSection article.enrichmentSection .enrichment dl.enrichmentContent dd.enrichmentComment p {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+  main .attempt .attemptContent .attemptSection article.enrichmentSection .enrichment dl.enrichmentContent dd.enrichmentComment p span {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+  main .attempt .attemptContent .attemptSection article.enrichmentSection .enrichment img {
+    width: 31vw;
+  }
+  main .attempt .attemptContent .attemptSection article.welfareSection .welfare dl.welfareContent dt.Welfare h3 {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    line-height: 1.2;
+  }
+  main .attempt .attemptContent .attemptSection article.welfareSection .welfare dl.welfareContent dd.welfareComment {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+  main .attempt .attemptContent .attemptSection article.welfareSection .welfare dl.welfareContent dd.welfareComment p {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+  main .attempt .attemptContent .attemptSection article.welfareSection .welfare dl.welfareContent dd.welfareComment p span {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+  main .attempt .attemptContent .attemptSection article.welfareSection .welfare dl.welfareContent img {
+    width: 55vh;
+  }
+  main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.ed-reContent dt.Ed-Re h3 {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    line-height: 1.2;
+  }
+  main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.ed-reContent dd.ed-reComment p {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+  main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.intentionContent dt.Intention h4 {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+  main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.intentionContent dd.intentionComment p {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+  main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.actionContent dt.Action h4 {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+  main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.actionContent dd.actionComment {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+  main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re .ed-reImg img {
+    width: 31vw;
+  }
+  main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeMap h3 {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    line-height: 1.2;
+  }
+  main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeMap img.universalMap {
+    width: 31vw;
+  }
+  main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeToilet h3 {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    line-height: 1.2;
+  }
+  main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeToilet img {
+    width: 31vw;
+  }
+  main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeWheelchair dl.b-FreeWheelchair dt.wheelchair h3 {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+  main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeWheelchair dl.b-FreeWheelchair dd.rentalComment {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+  main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .admissionFee dl.Fee dt.fee h3 {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+  main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .admissionFee dl.Fee dd.feeComment p {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+  main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .parkingFee dl.Parking dt.parking h3 {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    line-height: 1.2;
+  }
+  main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .parkingFee dl.Parking dd.parkingComment p {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+}
+.red, main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeToilet h3::before {
+  width: clamp(1rem, 1.25vw, 1.5rem);
+  height: clamp(1rem, 1.25vw, 1.5rem);
+}
+
+.pink, main .service .serviceContent .serviceSection .rentalSection .rentalImg .Wheelchair .wheelchairComment p::before, main .service .serviceContent .serviceSection .rentalSection .rentalImg .Stroller .strollerComment p::before, main .service .serviceContent .serviceSection .receptionSection .ReceptionImg .Reception .receptionComment p::before, main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical .medicalComment p::before, main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeWheelchair dl.b-FreeWheelchair dt.wheelchair h3::before {
+  width: clamp(1rem, 1.25vw, 1.5rem);
+  height: clamp(1rem, 1.25vw, 1.5rem);
+}
+
+/* ----------------------
+   タブレット横向き（900px）以上
+----------------------- */
+/* ----------------------
+   タブレット縦向き（600px）以上
+----------------------- *//*# sourceMappingURL=main.css.map */

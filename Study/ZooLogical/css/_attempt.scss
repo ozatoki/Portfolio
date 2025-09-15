@@ -1,6 +1,6 @@
 main {
   .attempt {
-    background-color: #edece6;
+    background-color: #e5a829;
     display: flex;
     flex-direction: column;
     .attemptContent {
@@ -39,7 +39,7 @@ main {
                   font-size: 1rem;
                   line-height: 1;
                   display: flex;
-                  gap: 2.7vw;
+                  gap: 2.7vh;
                   &::before {
                     content: "";
                     @extend.circle;
@@ -51,11 +51,276 @@ main {
                 margin: 1.2vh 0 0 0;
                 p {
                   font-size: 0.875rem;
+                  span {
+                    font-size: 0.875rem;
+                    font-weight: bold;
+                  }
                 }
               }
             }
             img {
               margin: 2.25vh 0 0 0;
+            }
+          }
+        }
+        article.welfareSection {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 3vh;
+          margin: 7.5vh 0 0 0;
+          .welfare {
+            dl.welfareContent {
+              dt.Welfare {
+                display: flex;
+                flex-direction: column;
+                gap: 0.75vh;
+                h3 {
+                  color: #5c7e4b;
+                  font-size: 1rem;
+                  line-height: 1;
+                  display: flex;
+                  gap: 2.7vh;
+                  &::before {
+                    content: "";
+                    @extend.circle;
+                    display: inline-block;
+                  }
+                }
+              }
+              dd.welfareComment {
+                margin: 1.2vh 0 0 0;
+                p {
+                  font-size: 0.875rem;
+                  span {
+                    font-size: 0.875rem;
+                    font-weight: bold;
+                  }
+                }
+              }
+            }
+            img {
+              margin: 2.25vh 0 0 0;
+            }
+          }
+        }
+        article.ed-reSection {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 3vh;
+          margin: 7.5vh 0 0 0;
+          .ed-re {
+            dl.ed-reContent {
+              dt.Ed-Re {
+                display: flex;
+                flex-direction: column;
+                gap: 0.75vh;
+                h3 {
+                  color: #5c7e4b;
+                  font-size: 1rem;
+                  line-height: 1;
+                  display: flex;
+                  gap: 2.7vh;
+                  &::before {
+                    content: "";
+                    @extend .circle;
+                    display: inline-block;
+                  }
+                }
+              }
+              dd.ed-reComment {
+                margin: 1.2vh 0 0 0;
+                p {
+                  font-size: 0.875rem;
+                }
+              }
+            }
+            dl.intentionContent {
+              margin: 2.5vh 0 0 0;
+              dt.Intention {
+                display: flex;
+                flex-direction: column;
+                gap: 0.75vh;
+                h4 {
+                  color: #5c7e4b;
+                  font-size: 0.875rem;
+                  line-height: 1;
+                  font-weight: bold;
+                  display: flex;
+                  gap: 2.7vh;
+                  &::before {
+                    content: "";
+                    @extend .Wcircle;
+                    display: inline-block;
+                  }
+                }
+              }
+              dd.intentionComment {
+                font-size: 0.875rem;
+              }
+            }
+            dl.actionContent {
+              margin: 2.5vh 0 0 0;
+              dt.Action {
+                display: flex;
+                flex-direction: column;
+                gap: 0.75vh;
+                h4 {
+                  color: #5c7e4b;
+                  font-size: 0.875rem;
+                  line-height: 1;
+                  font-weight: bold;
+                  display: flex;
+                  gap: 2.7vh;
+                  &::before {
+                    content: "";
+                    @extend .Wcircle;
+                    display: inline-block;
+                  }
+                }
+              }
+            }
+            .ed-reImg {
+              img {
+                margin: 2.25vh 0 0 0;
+              }
+            }
+          }
+        }
+        article.b-freeSection {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 3vh;
+          margin: 7.5vh 0 0 0;
+          .b-free {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .b-freeMap {
+              display: flex;
+              flex-direction: column;
+              gap: 0.75vh;
+              h3 {
+                color: #5c7e4b;
+                font-size: 1rem;
+                line-height: 1;
+                display: flex;
+                gap: 2.7vh;
+                &::before {
+                  content: "";
+                  @extend .circle;
+                  display: inline-block;
+                }
+              }
+              img.universalMap {
+                margin: 0.75vh 0 0 0;
+              }
+            }
+            .b-freeToilet {
+              margin: 3vh 0 0 0;
+              h3 {
+                color: #5c7e4b;
+                font-size: 1rem;
+                line-height: 1;
+                display: flex;
+                gap: 2.7vh;
+                &::before {
+                  content: "";
+                  @extend .red;
+                  display: inline-block;
+                }
+              }
+              .border {
+                margin: 0.75vh 0;
+              }
+              img {
+                margin: 0.75vh 0 0 0;
+                display: inline-block;
+              }
+            }
+            .b-freeWheelchair {
+              margin: 3vh 0 0 0;
+              display: flex;
+              flex-direction: column;
+
+              dl.b-FreeWheelchair {
+                dt.wheelchair {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 0.75vw;
+                  h3 {
+                    font-size: 1rem;
+                    color: #5c7e4b;
+                    line-height: 1;
+                    display: flex;
+                    gap: 2.7vh;
+                    &::before {
+                      content: "";
+                      @extend .pink;
+                      display: inline-block;
+                      margin: 0 0 0 0.35rem;
+                    }
+                  }
+                }
+                dd.rentalComment {
+                  font-size: 0.875rem;
+                }
+              }
+              .border {
+                margin: 0.75vh 0;
+              }
+            }
+            .admissionFee {
+              dl.Fee {
+                dt.fee {
+                  h3 {
+                    font-size: 1rem;
+                    color: #5c7e4b;
+                    line-height: 1;
+                    display: flex;
+                    gap: 2.7vh;
+                    &::before {
+                      content: "";
+                      @extend .circle;
+                      display: inline-block;
+                    }
+                  }
+                }
+              }
+            }
+            .admissionFee {
+              dl.Fee {
+                margin: 2.7vh 0 0 0;
+                dt.fee {
+                  .border {
+                    margin: 0.75vh 0;
+                  }
+                }
+              }
+            }
+            .parkingFee {
+              dl.Parking {
+                margin: 2.7vh 0 0 0;
+                dt.parking {
+                  h3 {
+                    color: #5c7e4b;
+                    font-size: 1rem;
+                    line-height: 1;
+                    display: flex;
+                    gap: 2.7vh;
+                    &::before {
+                      content: "";
+                      @extend .circle;
+                      display: inline-block;
+                    }
+                  }
+                  .border {
+                    margin: 0.75vh 0;
+                  }
+                }
+              }
             }
           }
         }
@@ -67,4 +332,219 @@ main {
 // 共通
 .border {
   border-bottom: 3px solid #e5a829;
+}
+.red {
+  border-radius: 50%;
+  background-color: red;
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.pink {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+/* ----------------------
+   PC（1200px）以上
+----------------------- */
+@media (min-width: 1200px) {
+  main {
+    .attempt {
+      .attemptInfo {
+        h1 {
+          margin: 2.5vh 0 0 8vw;
+          font-size: $pc-fontsize-h1;
+        }
+      }
+      .attemptContent {
+        width: 50vw;
+        margin: 5.5vh auto 5.5vh auto;
+        border-radius: clamp(20px, 1.6vw, 30px);
+        nav.attemptNav {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          margin: 5.5vh 0 0 0;
+        }
+        .attemptSection {
+          article.enrichmentSection {
+            .enrichment {
+              dl.enrichmentContent {
+                dt.Enrichment {
+                  h3 {
+                    font-size: $pc-fontsize-txt;
+                    line-height: 1.2;
+                  }
+                }
+                dd.enrichmentComment {
+                  p {
+                    font-size: $pc-fontsize-txt;
+                    span {
+                      font-size: $pc-fontsize-txt;
+                    }
+                  }
+                }
+              }
+              img {
+                width: 31vw;
+              }
+            }
+          }
+          article.welfareSection {
+            .welfare {
+              dl.welfareContent {
+                dt.Welfare {
+                  h3 {
+                    font-size: $pc-fontsize-txt;
+                    line-height: 1.2;
+                  }
+                }
+                dd.welfareComment {
+                  font-size: $pc-fontsize-txt;
+                  p {
+                    font-size: $pc-fontsize-txt;
+                    span {
+                      font-size: $pc-fontsize-txt;
+                    }
+                  }
+                }
+                img {
+                  width: 55vh;
+                }
+              }
+            }
+          }
+          article.ed-reSection {
+            .ed-re {
+              dl.ed-reContent {
+                dt.Ed-Re {
+                  h3 {
+                    font-size: $pc-fontsize-txt;
+                    line-height: 1.2;
+                  }
+                }
+                dd.ed-reComment {
+                  p {
+                    font-size: $pc-fontsize-txt;
+                  }
+                }
+              }
+              dl.intentionContent {
+                dt.Intention {
+                  h4 {
+                    font-size: $pc-fontsize-txt;
+                  }
+                }
+                dd.intentionComment {
+                  p {
+                    font-size: $pc-fontsize-txt;
+                  }
+                }
+              }
+              dl.actionContent {
+                dt.Action {
+                  h4 {
+                    font-size: $pc-fontsize-txt;
+                  }
+                }
+                dd.actionComment {
+                  font-size: $pc-fontsize-txt;
+                }
+              }
+              .ed-reImg {
+                img {
+                  width: 31vw;
+                }
+              }
+            }
+          }
+          article.b-freeSection {
+            .b-free {
+              .b-freeMap {
+                h3 {
+                  font-size: $pc-fontsize-txt;
+                  line-height: 1.2;
+                }
+                img.universalMap {
+                  width: 31vw;
+                }
+              }
+              .b-freeToilet {
+                h3 {
+                  font-size: $pc-fontsize-txt;
+                  line-height: 1.2;
+                }
+                img {
+                  width: 31vw;
+                }
+              }
+              .b-freeWheelchair {
+                dl.b-FreeWheelchair {
+                  dt.wheelchair {
+                    h3 {
+                      font-size: $pc-fontsize-txt;
+                    }
+                  }
+                  dd.rentalComment {
+                    font-size: $pc-fontsize-txt;
+                  }
+                }
+              }
+              .admissionFee {
+                dl.Fee {
+                  dt.fee {
+                    h3 {
+                      font-size: $pc-fontsize-txt;
+                    }
+                  }
+                  dd.feeComment {
+                    p {
+                      font-size: $pc-fontsize-txt;
+                    }
+                  }
+                }
+              }
+              .parkingFee {
+                dl.Parking {
+                  dt.parking {
+                    h3 {
+                      font-size: $pc-fontsize-txt;
+                      line-height: 1.2;
+                    }
+                  }
+                  dd.parkingComment {
+                    p {
+                      font-size: $pc-fontsize-txt;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 共通
+.red {
+  width: $pc-fontsize-txt;
+  height: $pc-fontsize-txt;
+}
+.pink {
+  width: $pc-fontsize-txt;
+  height: $pc-fontsize-txt;
+}
+/* ----------------------
+   タブレット横向き（900px）以上
+----------------------- */
+@media (min-width: 900px) {
+}
+
+/* ----------------------
+   タブレット縦向き（600px）以上
+----------------------- */
+@media (min-width: 600px) {
 }
