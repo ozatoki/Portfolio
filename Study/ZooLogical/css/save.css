@@ -1,0 +1,19 @@
+@charset "UTF-8";
+main .save {
+  background-color: #ecdab3;
+  display: flex;
+  flex-direction: column;
+}
+main .save .saveContent img {
+  width: 80vw;
+}
+
+/* ----------------------
+   PC（1200px）以上
+----------------------- */
+/* ----------------------
+   タブレット横向き（900px）以上
+----------------------- */
+/* ----------------------
+   タブレット縦向き（600px）以上
+----------------------- *//*# sourceMappingURL=save.css.map */
