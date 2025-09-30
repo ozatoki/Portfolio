@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="38.99231"
+   height="37.993725"
+   viewBox="0 0 10.316715 10.052506"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-8.0493467e-4,-1.0141206)">
+    <path
+       style="fill:#000000;stroke:#000000;stroke-width:0.264583"
+       id="path1"
+       d="M 5.4140244,4.9306662 4.0224917,4.1296717 2.6194093,4.9102578 2.9511931,3.3393107 1.7752352,2.2461144 3.3718216,2.0762102 4.0481221,0.61999151 4.7030829,2.0859321 6.2970175,2.2791358 5.1052192,3.3550411 Z"
+       transform="translate(1.1225285,0.71321903)" />
+    <rect
+       style="fill:#000000;stroke:#000000;stroke-width:0.0872759"
+       id="rect4"
+       width="10.229439"
+       height="0.0033731246"
+       x="0.044442885"
+       y="6.535399" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.7625px;line-height:5.95312px;font-family:sans-serif;-inkscape-font-specification:sans-serif;text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke:#000000;stroke-width:0.264583"
+       x="5.1407714"
+       y="10.871549"
+       id="text4"><tspan
+         id="tspan4"
+         style="stroke-width:0.264583"
+         x="5.1407714"
+         y="10.871549">S</tspan></text>
+  </g>
+</svg>
