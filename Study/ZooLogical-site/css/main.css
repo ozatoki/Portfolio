@@ -2120,32 +2120,32 @@ main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medic
   border-radius: 50%;
   background-color: #1be84b;
   margin: 0;
-  width: 1rem;
-  height: 1rem;
+  width: 0.875rem;
+  height: 0.875rem;
 }
 
 .blue, main .service .serviceContent .serviceSection .foodSection .foodImg .Restaurant .restaurantComment p::before, main .service .serviceContent .serviceSection .foodSection .foodImg .Kitchencar .kitchencarComment p::before {
   border-radius: 50%;
   background-color: #4c62f1;
   margin: 0;
-  width: 1rem;
-  height: 1rem;
+  width: 0.875rem;
+  height: 0.875rem;
 }
 
 .orange, main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirShopComment p::before {
   border-radius: 50%;
   background-color: #f28a14;
   margin: 0;
-  width: 1rem;
-  height: 1rem;
+  width: 0.875rem;
+  height: 0.875rem;
 }
 
 .pink, main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeWheelchair dl.b-FreeWheelchair dt.wheelchair h3::before, main .service .serviceContent .serviceSection .rentalSection .rentalImg .Wheelchair .wheelchairComment p::before, main .service .serviceContent .serviceSection .rentalSection .rentalImg .Stroller .strollerComment p::before, main .service .serviceContent .serviceSection .receptionSection .ReceptionImg .Reception .receptionComment p::before, main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical .medicalComment p::before {
   border-radius: 50%;
   background-color: #ef85e1;
   margin: 0;
-  width: 1rem;
-  height: 1rem;
+  width: 0.875rem;
+  height: 0.875rem;
 }
 
 /* ----------------------
@@ -2646,11 +2646,6 @@ main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .par
 .red, main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeToilet h3::before {
   border-radius: 50%;
   background-color: red;
-  width: 0.875rem;
-  height: 0.875rem;
-}
-
-.pink, main .service .serviceContent .serviceSection .rentalSection .rentalImg .Wheelchair .wheelchairComment p::before, main .service .serviceContent .serviceSection .rentalSection .rentalImg .Stroller .strollerComment p::before, main .service .serviceContent .serviceSection .receptionSection .ReceptionImg .Reception .receptionComment p::before, main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical .medicalComment p::before, main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeWheelchair dl.b-FreeWheelchair dt.wheelchair h3::before {
   width: 0.875rem;
   height: 0.875rem;
 }

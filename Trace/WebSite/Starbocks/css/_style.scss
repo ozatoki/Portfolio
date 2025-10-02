@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+
+  header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 64px;
+    box-shadow: 0px 1px 3px rgb(0 0 0/ 10%), 0 2px 2px rgb(0 0 0/ 6%),
+      0 0 2px rgb(0 0 0 /7%);
+    position: relative;
+    img.logo {
+      width: 40px;
+      margin: 12px 16px;
+    }
+    .header-nav-left {
+      height: 64px;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      right: 0;
+      ul.header-nav {
+        display: flex;
+        align-items: center;
+        height: 64px;
+        margin: 0;
+        li.search {
+          list-style: none;
+          width: 24px;
+          height: 24px;
+          display: inline;
+        }
+        li.cart {
+          list-style: none;
+          width: 24px;
+          height: 24px;
+          display: inline;
+          margin: 0 0 0 32px;
+        }
+      }
+      .hamburger-button {
+        width: 100px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        span.span1 {
+          position: absolute;
+          width: 20px;
+          height: 2px;
+          background: rgba(0, 0, 0, 0.87);
+          display: block;
+          top: 12.5px;
+        }
+        span.span2 {
+          position: absolute;
+          width: 20px;
+          height: 2px;
+          background: rgba(0, 0, 0, 0.87);
+          display: block;
+          top: 19px;
+        }
+        span.span3 {
+          position: absolute;
+          width: 20px;
+          height: 2px;
+          background: rgba(0, 0, 0, 0.87);
+          display: block;
+          top: 25.5px;
+        }
+      }
+    }
+  }
+  h1.visually-hidden {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+  }
+  main.top-wrapper {
+    width: 100%;
+    article.bonner-wrapper {
+      background-color: #edebe9;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      img.drink-img {
+        width: 100vw;
+      }
+      .bonner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 4px;
+        // display: flex;
+        // gap: 0.25rem;
+        img.hand-img {
+          width: 49.46vw;
+        }
+        img.imgs-img {
+          width: 49.46vw;
+        }
+      }
+    }
+    article.whats-brewing {
+      padding-left: 16px;
+      box-sizing: content-box;
+      h2 {
+        font-size: 1.125rem;
+        text-align: center;
+        margin: 55px 0 40px 0;
+      }
+      .brewing-swiper {
+        .swiper {
+          .swiper-wrapper {
+            .swiper-slide {
+              .brewing-text {
+                position: relative;
+                z-index: 10;
+              }
+            }
+          }
+        }
+      }
+    }
+    article.other-service {
+      height: 170px;
+      display: flex;
+      flex-direction: column;
+      margin: 32px 16px 0 16px;
+      gap: 16px;
+      figure.cache-less {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin: 0 0 0 0;
+        img.cache-less-img {
+          width: 77px;
+          height: 77px;
+        }
+        figcaption.cache-less-text {
+          p.cache-less-comment {
+            font-size: 13px;
+          }
+        }
+      }
+      figure.arbeit {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin: 0;
+        img.arbeit-img {
+          width: 77px;
+          height: 77px;
+        }
+        figcaption.arbeit-text {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
