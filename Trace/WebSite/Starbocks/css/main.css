@@ -149,6 +149,181 @@ body main.top-wrapper article.other-service figure.arbeit img.arbeit-img {
 body main.top-wrapper article.other-service figure.arbeit figcaption.arbeit-text {
   font-size: 13px;
 }
+body main.top-wrapper .online-store-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100vw;
+  height: 13px;
+  margin: 55px 0 0 0;
+}
+body main.top-wrapper article.online-store {
+  background-color: #d4e9e2;
+  padding: 0 0 64px 0;
+}
+body main.top-wrapper article.online-store .online-store-title {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 24px;
+  text-align: center;
+  padding: 56px 0 0 0;
+  margin: 0;
+}
+body main.top-wrapper article.online-store .online-store-comment {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.04px;
+  line-height: 22.75px;
+  text-align: center;
+  margin: 8px 0 0 0;
+}
+body main.top-wrapper article.online-store .online-store-img-1of2 {
+  margin: 38px 16px 0 16px;
+  display: flex;
+  gap: 4px;
+}
+body main.top-wrapper article.online-store .online-store-img-1of2 figure.online-store-1of4 {
+  margin: 0;
+}
+body main.top-wrapper article.online-store .online-store-img-1of2 figure.online-store-1of4 img.tumbler {
+  width: 45.2vw;
+  border-radius: 12px;
+  margin: 0 0 10px 0;
+}
+body main.top-wrapper article.online-store .online-store-img-1of2 figure.online-store-1of4 figcaption.tumbler-comment p.goods-1of4 {
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 17px;
+  width: 39.6vw;
+  height: 7.6vh;
+  margin: 0 0 13px 0;
+}
+body main.top-wrapper article.online-store .online-store-img-1of2 figure.online-store-1of4 figcaption.tumbler-comment p.tumbler-price {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 17px;
+  width: 39.6vw;
+  height: 17px;
+}
+body main.top-wrapper article.online-store .online-store-img-1of2 figure.online-store-2of4 {
+  margin: 0;
+}
+body main.top-wrapper article.online-store .online-store-img-1of2 figure.online-store-2of4 img.bag {
+  width: 45.2vw;
+  border-radius: 12px;
+  margin: 0 0 10px 0;
+}
+body main.top-wrapper article.online-store .online-store-img-1of2 figure.online-store-2of4 figcaption.bag-comment p.goods-2of4 {
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 17px;
+  width: 39.6vw;
+  height: 7.6vh;
+  margin: 0 0 13px 0;
+}
+body main.top-wrapper article.online-store .online-store-img-1of2 figure.online-store-2of4 figcaption.bag-comment p.bag-price {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 17px;
+  width: 39.6vw;
+  height: 17px;
+}
+body main.top-wrapper article.online-store .online-store-img-2of2 {
+  margin: 38px 16px 0 16px;
+  display: flex;
+  gap: 4px;
+}
+body main.top-wrapper article.online-store .online-store-img-2of2 figure.online-store-3of4 {
+  margin: 0;
+}
+body main.top-wrapper article.online-store .online-store-img-2of2 figure.online-store-3of4 img.mag-cap {
+  width: 45.2vw;
+  border-radius: 12px;
+  margin: 0 0 10px 0;
+}
+body main.top-wrapper article.online-store .online-store-img-2of2 figure.online-store-3of4 figcaption.mag-cap-comment p.goods-3of4 {
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 17px;
+  width: 39.6vw;
+  height: 7.6vh;
+  margin: 0 0 13px 0;
+}
+body main.top-wrapper article.online-store .online-store-img-2of2 figure.online-store-3of4 figcaption.mag-cap-comment p.mag-cap-price {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 17px;
+  width: 39.6vw;
+  height: 17px;
+}
+body main.top-wrapper article.online-store .online-store-img-2of2 figure.online-store-4of4 {
+  margin: 0;
+}
+body main.top-wrapper article.online-store .online-store-img-2of2 figure.online-store-4of4 img.gift-card {
+  width: 45.2vw;
+  border-radius: 12px;
+  margin: 0 0 10px 0;
+}
+body main.top-wrapper article.online-store .online-store-img-2of2 figure.online-store-4of4 figcaption.gift-card-comment p.goods-4of4 {
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 17px;
+  width: 39.6vw;
+  height: 7.6vh;
+  margin: 0 0 13px 0;
+}
+body main.top-wrapper article.online-store .online-store-img-2of2 figure.online-store-4of4 figcaption.gift-card-comment p.gift-card-price {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 17px;
+  width: 39.6vw;
+  height: 17px;
+}
+body main.top-wrapper article.online-store .online-store-list {
+  margin: 24px 16px 0 0;
+  display: flex;
+  justify-content: end;
+  gap: 12px;
+  width: 100vw;
+}
+body main.top-wrapper article.online-store .online-store-list p.online-text-list {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1.04px;
+  line-height: 24px;
+  color: #00754a;
+  margin: 0;
+}
+body main.top-wrapper .stories-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100vw;
+  height: 13px;
+}
+body main.top-wrapper button.online-store {
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 5px 0 6px 0;
+  width: 39.5vw;
+  height: 4.8vh;
+  background-color: #fff;
+  border: 1px solid rgb(0, 117, 74);
+  font-weight: 500;
+  color: rgb(0, 117, 74);
+  padding: 5px 0 6px 0;
+  margin: 0 0 10px 0;
+}
 
 .swiper {
   width: 100%;
