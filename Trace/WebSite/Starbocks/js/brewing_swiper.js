@@ -1,22 +1,22 @@
-const prevBtn = document.querySelector(".swiper-prev");
-const nextBtn = document.querySelector(".swiper-next");
+const prevBtn = document.querySelector(".brewing-prev");
+const nextBtn = document.querySelector(".brewing-next");
 
-const swiper = new Swiper(".swiper", {
+const swiperBrewing = new Swiper(".swiperBrewing", {
   slidesPerView: "auto",
   spaceBetween: 4,
   loop: false,
   navigation: {
-    nextEl: ".swiper-next",
-    prevEl: ".swiper-prev",
+    nextEl: ".brewing-next",
+    prevEl: ".brewing-prev",
   },
 });
 
 // 初期表示
 prevBtn.style.display = "none";
 
-swiper.on("slideChange", () => {
-  const lastIndex = swiper.slides.length - 1;
-  const currentIndex = swiper.activeIndex;
+swiperBrewing.on("slideChange", () => {
+  const lastIndex = swiperBrewing.slides.length - 1;
+  const currentIndex = swiperBrewing.activeIndex;
 
   // 左ボタン
   prevBtn.style.display = currentIndex === 0 ? "none" : "block";

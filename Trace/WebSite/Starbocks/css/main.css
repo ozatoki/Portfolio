@@ -105,7 +105,7 @@ body main.top-wrapper article.bonner-wrapper .bonner img.imgs-img {
 }
 body main.top-wrapper article.whats-brewing {
   padding-left: 16px;
-  box-sizing: content-box;
+  padding-bottom: 20px;
 }
 body main.top-wrapper article.whats-brewing h2 {
   font-size: 1.125rem;
@@ -122,6 +122,7 @@ body main.top-wrapper article.other-service {
   flex-direction: column;
   margin: 32px 16px 0 16px;
   gap: 16px;
+  background: transparent;
 }
 body main.top-wrapper article.other-service figure.cache-less {
   display: flex;
@@ -307,6 +308,67 @@ body main.top-wrapper .stories-line {
   width: 100vw;
   height: 13px;
 }
+body main.top-wrapper article.stories-swiper {
+  margin: 56px 0 56px 16px;
+}
+body main.top-wrapper article.stories-swiper img.stories {
+  width: 139.781px;
+  margin: 0 auto 40px auto;
+  display: block;
+}
+body main.top-wrapper article.stories-swiper img.stories-img {
+  width: 224px;
+  height: 224px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+body main.top-wrapper article.stories-swiper .stories-text {
+  width: 196px;
+  height: 89px;
+  padding: 12px 14px 16px 14px;
+  display: flex;
+  flex-direction: column;
+}
+body main.top-wrapper article.stories-swiper .stories-text p.stories-description {
+  font-size: 13px;
+  width: 196px;
+  height: 60px;
+  margin: 0;
+  text-align: start;
+}
+body main.top-wrapper article.stories-swiper .stories-text .stories-text-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+body main.top-wrapper article.stories-swiper .stories-text .stories-text-bottom p.stories-people-community {
+  font-size: 10px;
+  color: #499a5f;
+  margin: 0;
+}
+body main.top-wrapper article.stories-swiper .stories-text .stories-text-bottom p.stories-date {
+  text-align: end;
+  font-size: 10px;
+  margin: 0;
+}
+body main.top-wrapper article.stories-swiper .stories-list {
+  color: #499a5f;
+  display: flex;
+  justify-content: end;
+  gap: 4px;
+  margin: 32px 16px 0 16px;
+}
+body main.top-wrapper article.stories-swiper .stories-list .stories-text-list {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+}
+body main.top-wrapper article.notice .notice-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100vw;
+  height: 8px;
+}
 body main.top-wrapper button.online-store {
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -325,11 +387,12 @@ body main.top-wrapper button.online-store {
   margin: 0 0 10px 0;
 }
 
-.swiper {
+.swiper.swiperBrewing {
   width: 100%;
   padding: 20px 0;
+  overflow: visible !important;
 }
-.swiper .swiper-slide {
+.swiper.swiperBrewing .swiper-slide {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -339,33 +402,33 @@ body main.top-wrapper button.online-store {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16);
   border-radius: 12px;
 }
-.swiper .swiper-slide img.brewing-img {
+.swiper.swiperBrewing .swiper-slide img.brewing-img {
   width: 224px;
   height: 224px;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   margin: 0;
 }
-.swiper .swiper-slide .brewing-text {
+.swiper.swiperBrewing .swiper-slide .brewing-text {
   width: 224px;
   height: 159px;
 }
-.swiper .swiper-slide .brewing-text p.brewing-description {
+.swiper.swiperBrewing .swiper-slide .brewing-text p.brewing-description {
   font-size: 13px;
   padding: 12px 14px 20px 7px;
   margin: 0;
   text-align: start;
 }
-.swiper .swiper-slide .brewing-text p.brewing-date {
+.swiper.swiperBrewing .swiper-slide .brewing-text p.brewing-date {
   text-align: end;
   font-size: 10px;
   margin: 0 22px 20px 0;
 }
-.swiper .swiper-button {
+.swiper.swiperBrewing .swiper-button {
   display: flex;
   gap: 50px;
 }
-.swiper .swiper-button button {
+.swiper.swiperBrewing .swiper-button button {
   all: unset;
   cursor: pointer;
   border-radius: 50%;
@@ -373,7 +436,7 @@ body main.top-wrapper button.online-store {
   margin: 0;
   padding: 0;
 }
-.swiper .swiper-button button .swiper-prev {
+.swiper.swiperBrewing .swiper-button button .swiper-prev {
   width: 40px;
   height: 40px;
   background-color: #fff;
@@ -385,7 +448,59 @@ body main.top-wrapper button.online-store {
   top: 164px;
   left: 16px;
 }
-.swiper .swiper-button button .swiper-next {
+.swiper.swiperBrewing .swiper-button button .swiper-next {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  z-index: 20;
+  top: 164px;
+  right: 16px;
+}
+
+.swiper.swiper-stories {
+  width: 100%;
+  padding: 20px 0 0 0;
+  overflow: visible !important;
+}
+.swiper.swiper-stories .swiper-slide.stories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 224px;
+  height: 341px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16);
+  border-radius: 12px;
+}
+.swiper.swiper-stories .swiper-button {
+  display: flex;
+  gap: 50px;
+}
+.swiper.swiper-stories .swiper-button button {
+  all: unset;
+  cursor: pointer;
+  border-radius: 50%;
+  border-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+.swiper.swiper-stories .swiper-button button .swiper-prev {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  z-index: 20;
+  top: 164px;
+  left: 16px;
+}
+.swiper.swiper-stories .swiper-button button .swiper-next {
   width: 40px;
   height: 40px;
   background-color: #fff;
