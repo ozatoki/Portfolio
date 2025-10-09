@@ -442,6 +442,7 @@ body {
         }
       }
     }
+
     // 共通
     button.online-store {
       border-bottom-left-radius: 50px;
@@ -460,6 +461,11 @@ body {
       padding: 5px 0 6px 0;
       margin: 0 0 10px 0;
     }
+  }
+  .line2 {
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100vw;
+    height: 8px;
   }
   footer {
     margin: 40px 16px;
