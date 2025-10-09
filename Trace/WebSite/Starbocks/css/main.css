@@ -303,6 +303,9 @@ body main.top-wrapper article.online-store .online-store-list p.online-text-list
   color: #00754a;
   margin: 0;
 }
+body main.top-wrapper article.online-store .online-store-list .online-store-svg img {
+  margin: 0 16px 0 0;
+}
 body main.top-wrapper .stories-line {
   background-color: rgba(0, 0, 0, 0.1);
   width: 100vw;
