@@ -398,11 +398,48 @@ body {
         }
       }
     }
-    article.notice {
-      .notice-line {
-        background-color: rgba(0, 0, 0, 0.1);
-        width: 100vw;
-        height: 8px;
+    .line {
+      background-color: rgba(0, 0, 0, 0.1);
+      width: 100vw;
+      height: 8px;
+    }
+    article.notice-wrapper {
+      margin: 56px 16px 56px 16px;
+      .notice {
+        h2.important-notice {
+          font-size: 16px;
+          font-weight: 700;
+          letter-spacing: 1.5px;
+          line-height: 21px;
+          text-align: center;
+          margin: 0 0 40px 0;
+        }
+        .notice-content {
+          margin: 0 0 32px 0;
+          .date {
+            font-size: 13px;
+            font-weight: 400;
+            letter-spacing: 0.4px;
+            line-height: 21px;
+            margin: 0 0 16px 0;
+          }
+          .content {
+            font-size: 13px;
+            font-weight: 400;
+            letter-spacing: 1.5px;
+            line-height: 21px;
+          }
+        }
+        .notice-list {
+          .notice-list-text {
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #499a5f;
+            margin: 0;
+            text-align: end;
+          }
+        }
       }
     }
     // 共通
@@ -422,6 +459,149 @@ body {
       color: rgb(0, 117, 74);
       padding: 5px 0 6px 0;
       margin: 0 0 10px 0;
+    }
+  }
+  footer {
+    margin: 40px 16px;
+    .footer-nav {
+      nav {
+        p.company {
+          font-size: 18px;
+          font-weight: 600;
+          letter-spacing: -0.288px;
+          line-height: 24px;
+          margin: 0 0 32px 0;
+          position: relative;
+          &::after {
+            content: "";
+            display: inline-block;
+            text-align: end;
+            width: 30px;
+            height: 30px;
+            background-image: url("../img/icon/stat_minu.png");
+            background-size: cover;
+            background-position: center;
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: -0.288px;
+            line-height: 24px;
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+        p.recruiting {
+          font-size: 18px;
+          font-weight: 600;
+          letter-spacing: -0.288px;
+          line-height: 24px;
+          margin: 0 0 32px 0;
+          position: relative;
+          &::after {
+            content: "";
+            display: inline-block;
+            text-align: end;
+            width: 30px;
+            height: 30px;
+            background-image: url("../img/icon/stat_minu.png");
+            background-size: cover;
+            background-position: center;
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: -0.288px;
+            line-height: 24px;
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+        p.social-impact {
+          font-size: 18px;
+          font-weight: 600;
+          letter-spacing: -0.288px;
+          line-height: 24px;
+          margin: 0 0 32px 0;
+          position: relative;
+          &::after {
+            content: "";
+            display: inline-block;
+            text-align: end;
+            width: 30px;
+            height: 30px;
+            background-image: url("../img/icon/stat_minu.png");
+            background-size: cover;
+            background-position: center;
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: -0.288px;
+            line-height: 24px;
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+      }
+    }
+    .footer-list {
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 32px 0;
+      ul {
+        padding: 0;
+        margin: 0;
+        li.infomation {
+          list-style: none;
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 19.5px;
+          margin: 0 0 16px 0;
+        }
+        li.terms-of-use {
+          list-style: none;
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 19.5px;
+          margin: 0 0 16px 0;
+        }
+        li.policy {
+          list-style: none;
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 19.5px;
+          margin: 0 0 16px 0;
+        }
+        li.site-map {
+          list-style: none;
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 19.5px;
+          margin: 0;
+        }
+      }
+    }
+    .social-link {
+      ul {
+        display: flex;
+        gap: 8px;
+        margin: 0 0 32px 0;
+        padding: 0;
+        li.x,
+        .instagram,
+        .facebook,
+        .line {
+          list-style: none;
+        }
+      }
+    }
+    .footer-copyright {
+      .copyright {
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: -0.208px;
+        line-height: 22.75px;
+        white-space: nowrap;
+        margin: 0;
+        height: 22.75px;
+      }
     }
   }
 }
