@@ -1526,6 +1526,7 @@ p {
   margin: 1.5vh 0 0 0;
 }
 .event .eventSection .feedingSection .feedingImg {
+  width: 72vw;
   display: flex;
   justify-content: center;
   gap: 2.6vw;
@@ -1533,11 +1534,13 @@ p {
 }
 .event .eventSection .feedingSection .feedingImg img {
   width: 36vw;
+  margin: 0;
 }
 .event .eventSection .feedingSection dl.feedingTime {
   margin: 1.5vh 0 0 0;
 }
 .event .eventSection .interactingSection .interactingImg {
+  width: 72vw;
   display: flex;
   justify-content: center;
   gap: 2.6vw;
@@ -1545,11 +1548,13 @@ p {
 }
 .event .eventSection .interactingSection .interactingImg img {
   width: 36vw;
+  margin: 0;
 }
 .event .eventSection .interactingSection dl.interactingTime {
   margin: 1.5vh 0 0 0;
 }
 .event .eventSection .explanationSection .explanationImg {
+  width: 72vw;
   display: flex;
   justify-content: center;
   gap: 2.6vw;
@@ -1557,6 +1562,7 @@ p {
 }
 .event .eventSection .explanationSection .explanationImg img {
   width: 36vw;
+  margin: 0;
 }
 .event .eventSection .explanationSection dl.ExplanationTime {
   margin: 1.5vh 0 0 0;
@@ -1623,19 +1629,31 @@ a {
   .event .eventSection .ridingSection img.ridingImg {
     width: 31vw;
   }
+  .event .eventSection .feedingSection .feedingDetail {
+    margin: 0 auto;
+  }
   .event .eventSection .feedingSection .feedingImg {
+    width: 25vw;
     gap: 1vw;
   }
   .event .eventSection .feedingSection .feedingImg img {
     width: 15vw;
   }
+  .event .eventSection .interactingSection .interactingDetail {
+    margin: 0 auto;
+  }
   .event .eventSection .interactingSection .interactingImg {
+    width: 25vw;
     gap: 1vw;
   }
   .event .eventSection .interactingSection .interactingImg img {
     width: 15vw;
   }
+  .event .eventSection .explanationSection .explanationDetail {
+    margin: 0 auto;
+  }
   .event .eventSection .explanationSection .explanationImg {
+    width: 25vw;
     gap: 1vw;
   }
   .event .eventSection .explanationSection .explanationImg img {
@@ -1843,6 +1861,7 @@ main .service .serviceContent .serviceSection .facilitySection .facilityImg .Fou
 }
 main .service .serviceContent .serviceSection .facilitySection .facilityImg .Fountain img.fountain {
   width: 80vw;
+  margin: 0 auto 10vh auto;
 }
 main .service .serviceContent .serviceSection .facilitySection .facilityImg .Playing {
   margin: 7.5vh 0 0 0;
@@ -1865,6 +1884,7 @@ main .service .serviceContent .serviceSection .facilitySection .facilityImg .Pla
 }
 main .service .serviceContent .serviceSection .facilitySection .facilityImg .Playing img.playing {
   width: 80vw;
+  margin: 0 auto 10vh auto;
 }
 main .service .serviceContent .serviceSection .foodSection {
   display: flex;
@@ -1891,6 +1911,7 @@ main .service .serviceContent .serviceSection .foodSection .foodImg .Restaurant 
 }
 main .service .serviceContent .serviceSection .foodSection .foodImg .Restaurant img.restaurant {
   width: 80vw;
+  margin: 0 auto 1.6vh auto;
 }
 main .service .serviceContent .serviceSection .foodSection .foodImg .Restaurant .restaurantRefer {
   display: flex;
@@ -1900,9 +1921,11 @@ main .service .serviceContent .serviceSection .foodSection .foodImg .Restaurant 
 }
 main .service .serviceContent .serviceSection .foodSection .foodImg .Restaurant .restaurantRefer img.internal {
   width: 38.6vw;
+  margin: 0;
 }
 main .service .serviceContent .serviceSection .foodSection .foodImg .Restaurant .restaurantRefer img.food {
   width: 38.6vw;
+  margin: 0;
 }
 main .service .serviceContent .serviceSection .foodSection .foodImg .Kitchencar {
   margin: 7.5vh 0 0 0;
@@ -1926,6 +1949,7 @@ main .service .serviceContent .serviceSection .foodSection .foodImg .Kitchencar 
 }
 main .service .serviceContent .serviceSection .foodSection .foodImg .Kitchencar img.stall {
   width: 80vw;
+  margin: 0 0 10vh 0;
 }
 main .service .serviceContent .serviceSection .souvenirShopSection {
   display: flex;
@@ -1952,6 +1976,7 @@ main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShop
 }
 main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop img.shop {
   width: 80vw;
+  margin: 0 0 1.6vh 0;
 }
 main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirA {
   display: flex;
@@ -1962,6 +1987,7 @@ main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShop
 main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirA img.souvenir1,
 main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirA .souvenir2 {
   width: 38.6vw;
+  margin: 0;
 }
 main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirB {
   display: flex;
@@ -1972,6 +1998,7 @@ main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShop
 main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirB img.souvenir3,
 main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirB .souvenir4 {
   width: 38.6vw;
+  margin: 0;
 }
 main .service .serviceContent .serviceSection .rentalSection {
   display: flex;
@@ -2002,6 +2029,7 @@ main .service .serviceContent .serviceSection .rentalSection .rentalImg .Wheelch
 }
 main .service .serviceContent .serviceSection .rentalSection .rentalImg .Wheelchair figure.wheelchair img.wheelchairImg {
   width: 80vw;
+  margin: 0;
 }
 main .service .serviceContent .serviceSection .rentalSection .rentalImg .Wheelchair figure.wheelchair figcaption.wheelchairRent {
   font-weight: bold;
@@ -2034,6 +2062,7 @@ main .service .serviceContent .serviceSection .rentalSection .rentalImg .Strolle
 }
 main .service .serviceContent .serviceSection .rentalSection .rentalImg .Stroller figure.stroller img.strollerImg {
   width: 80vw;
+  margin: 0;
 }
 main .service .serviceContent .serviceSection .rentalSection .rentalImg .Stroller figure.stroller figcaption.strollerRent {
   font-weight: bold;
@@ -2069,6 +2098,7 @@ main .service .serviceContent .serviceSection .receptionSection .ReceptionImg .R
 }
 main .service .serviceContent .serviceSection .receptionSection .ReceptionImg .Reception figure.reception img.receptionImg {
   width: 80vw;
+  margin: 0;
 }
 main .service .serviceContent .serviceSection .receptionSection .ReceptionImg .Reception figure.reception figcaption.receptionContent ul {
   padding: 1.5vh 0 0 1.5rem;
@@ -2106,9 +2136,11 @@ main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medic
 }
 main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical figure.medical .medicalofficeImg img.medicalOffice1 {
   width: 38.6vw;
+  margin: 0;
 }
 main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical figure.medical .medicalofficeImg img.medicalOffice2 {
   width: 38.6vw;
+  margin: 0;
 }
 main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical figure.medical figcaption.medicalImportant {
   font-weight: bold;

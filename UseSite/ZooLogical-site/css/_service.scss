@@ -76,6 +76,7 @@ main {
               }
               img.fountain {
                 width: 80vw;
+                margin: 0 auto 10vh auto;
               }
             }
             .Playing {
@@ -99,6 +100,7 @@ main {
               }
               img.playing {
                 width: 80vw;
+                margin: 0 auto 10vh auto;
               }
             }
           }
@@ -130,6 +132,7 @@ main {
               }
               img.restaurant {
                 width: 80vw;
+                margin: 0 auto 1.6vh auto;
               }
               .restaurantRefer {
                 display: flex;
@@ -138,9 +141,11 @@ main {
                 margin: 1.6vh 0 0 0;
                 img.internal {
                   width: 38.6vw;
+                  margin: 0;
                 }
                 img.food {
                   width: 38.6vw;
+                  margin: 0;
                 }
               }
             }
@@ -166,6 +171,7 @@ main {
               }
               img.stall {
                 width: 80vw;
+                margin: 0 0 10vh 0;
               }
             }
           }
@@ -197,6 +203,7 @@ main {
               }
               img.shop {
                 width: 80vw;
+                margin: 0 0 1.6vh 0;
               }
               .souvenirA {
                 display: flex;
@@ -206,6 +213,7 @@ main {
                 img.souvenir1,
                 .souvenir2 {
                   width: 38.6vw;
+                  margin: 0;
                 }
               }
               .souvenirB {
@@ -216,6 +224,7 @@ main {
                 img.souvenir3,
                 .souvenir4 {
                   width: 38.6vw;
+                  margin: 0;
                 }
               }
             }
@@ -251,6 +260,7 @@ main {
                 flex-direction: column;
                 img.wheelchairImg {
                   width: 80vw;
+                  margin: 0;
                 }
                 figcaption.wheelchairRent {
                   font-weight: bold;
@@ -284,6 +294,7 @@ main {
                 flex-direction: column;
                 img.strollerImg {
                   width: 80vw;
+                  margin: 0;
                 }
                 figcaption.strollerRent {
                   font-weight: bold;
@@ -324,6 +335,7 @@ main {
                 flex-direction: column;
                 img.receptionImg {
                   width: 80vw;
+                  margin: 0;
                 }
                 figcaption.receptionContent {
                   ul {
@@ -369,9 +381,11 @@ main {
                   gap: 2.8vw;
                   img.medicalOffice1 {
                     width: 38.6vw;
+                    margin: 0;
                   }
                   img.medicalOffice2 {
                     width: 38.6vw;
+                    margin: 0;
                   }
                 }
                 figcaption.medicalImportant {

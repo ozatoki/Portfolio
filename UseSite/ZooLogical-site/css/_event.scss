@@ -39,12 +39,14 @@
     }
     .feedingSection {
       .feedingImg {
+        width: 72vw;
         display: flex;
         justify-content: center;
         gap: 2.6vw;
         margin: 3vh auto 0 auto;
         img {
           width: 36vw;
+          margin: 0;
         }
       }
       dl.feedingTime {
@@ -53,12 +55,14 @@
     }
     .interactingSection {
       .interactingImg {
+        width: 72vw;
         display: flex;
         justify-content: center;
         gap: 2.6vw;
         margin: 3vh auto 0 auto;
         img {
           width: 36vw;
+          margin: 0;
         }
       }
       dl.interactingTime {
@@ -67,12 +71,14 @@
     }
     .explanationSection {
       .explanationImg {
+        width: 72vw;
         display: flex;
         justify-content: center;
         gap: 2.6vw;
         margin: 3vh auto 0 auto;
         img {
           width: 36vw;
+          margin: 0;
         }
       }
       dl.ExplanationTime {
@@ -149,7 +155,11 @@ a {
         }
       }
       .feedingSection {
+        .feedingDetail {
+          margin: 0 auto;
+        }
         .feedingImg {
+          width: 25vw;
           gap: 1vw;
           img {
             width: 15vw;
@@ -157,7 +167,11 @@ a {
         }
       }
       .interactingSection {
+        .interactingDetail {
+          margin: 0 auto;
+        }
         .interactingImg {
+          width: 25vw;
           gap: 1vw;
           img {
             width: 15vw;
@@ -165,7 +179,11 @@ a {
         }
       }
       .explanationSection {
+        .explanationDetail {
+          margin: 0 auto;
+        }
         .explanationImg {
+          width: 25vw;
           gap: 1vw;
           img {
             width: 15vw;
