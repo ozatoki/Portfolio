@@ -1,0 +1,560 @@
+.infoMation {
+  display: flex;
+  flex-direction: column;
+  background-color: #ade4f5;
+  .useinfo {
+    background-color: #d9d9d9;
+    width: 90vw;
+    aspect-ratio: 338/50;
+    border: 3px solid #4a9b60;
+    border-radius: 10px;
+    margin: 4.5vh auto 0 auto;
+    background-image: url(../img/infocontent/infocontent.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    h1 {
+      font-size: 1.12rem;
+      color: #1e4f2b;
+      margin: 1.5vh 0 0 8vw;
+    }
+  }
+  .infomationContent {
+    background-color: white;
+    width: 90vw;
+    margin: 1.5vh auto 1.5vh auto;
+    padding: 0 0 2vh 0;
+    border-radius: 10px;
+  }
+  .infocontent {
+    align-items: center;
+    margin: 2vh 0 0 0;
+
+    .infocontent-left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5vh;
+      li.time {
+        a {
+          display: inline-block;
+        }
+      }
+    }
+    .infocontent-right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5vh;
+      margin: 1.5vh 0 0 0;
+    }
+  }
+  .infomationSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4.5vh;
+    margin: 7.5vh 0 0 0;
+    .timeSection {
+      .openTime {
+        h3.opentime {
+          color: #5c7e4b;
+          font-size: 0.875rem;
+          width: fit-content;
+          display: flex;
+          line-height: 1;
+          margin: 3vh 0 0 0;
+          gap: 2.6vw;
+
+          &::before {
+            content: "";
+            @extend .circle;
+            display: inline-block;
+          }
+        }
+        p.opentime-content {
+          display: flex;
+          line-height: 1;
+          margin: 1vh 0 0 6vw;
+          gap: 2.6vw;
+          &::before {
+            content: "";
+            @extend .Wcircle;
+            display: inline-block;
+          }
+        }
+      }
+      .closedDay {
+        h3.closed-Day {
+          color: #5c7e4b;
+          font-size: 0.875rem;
+          width: fit-content;
+          display: flex;
+          line-height: 1;
+          margin: 3vh 0 0 0;
+          gap: 2.6vw;
+
+          &::before {
+            content: "";
+            @extend .circle;
+            display: inline-block;
+          }
+        }
+        p.close {
+          display: flex;
+          line-height: 1;
+          margin: 1vh 0 0 6vw;
+          gap: 2.6vw;
+          &::before {
+            content: "";
+            @extend .Wcircle;
+            display: inline-block;
+          }
+        }
+        p.offSeason {
+          display: flex;
+          line-height: 1;
+          margin: 1vh 0 0 6vw;
+          gap: 2.6vw;
+          &::before {
+            content: "";
+            @extend .Wcircle;
+            display: inline-block;
+          }
+        }
+      }
+    }
+    .priceSection {
+      table.priceTable {
+        border: 1px solid #918e8e;
+        width: 54vw;
+        height: 17.5vh;
+        text-align: left;
+        margin: 3vh 0 0 0;
+        th {
+          padding: 0 0 0 2.6vw;
+          background-color: #b8d8c1;
+          font-size: 0.875rem;
+        }
+        tr {
+          border: 1px solid #918e8e;
+          font-size: 0.875rem;
+          td {
+            border: 1px solid #918e8e;
+            padding: 0 0 0 2.6vw;
+          }
+          td.childPrice {
+            padding-left: 5vw;
+          }
+        }
+      }
+      table.parkingTable {
+        border: 1px solid #918e8e;
+        width: 54vw;
+        height: 17.5vh;
+        text-align: left;
+        margin: 3vh 0 0 0;
+        th {
+          padding: 0 0 0 2.6vw;
+          background-color: #b8d8c1;
+          font-size: 0.875rem;
+        }
+        tr {
+          border: 1px solid #918e8e;
+          font-size: 0.875rem;
+          td {
+            border: 1px solid #918e8e;
+            padding: 0 0 0 2.6vw;
+          }
+          td.ordinaryPrice,
+          .largePrice,
+          .bikePrice {
+            text-align: right;
+            padding: 0 2.6vw 0 0;
+          }
+        }
+      }
+    }
+    .passportSection {
+      img.pass {
+        width: 150px;
+        aspect-ratio: 100/63;
+        display: block;
+        margin: 3vh auto 0 auto;
+      }
+      p.passPrice {
+        display: flex;
+        line-height: 1;
+        margin: 2.5vh 0 0 6vw;
+        gap: 2.6vw;
+        &::before {
+          content: "";
+          @extend .Wcircle;
+          display: inline-block;
+        }
+      }
+      p.passExpiry {
+        display: flex;
+        line-height: 1;
+        margin: 1vh 0 0 6vw;
+        gap: 2.6vw;
+        &::before {
+          content: "";
+          @extend .Wcircle;
+          display: inline-block;
+        }
+      }
+    }
+    .accessSection {
+      dl {
+        display: grid;
+        grid-template-columns: 6em 1fr;
+        margin: 3vh 0 0 0;
+        color: #5c7e4b;
+        font-size: 0.875rem;
+        dt {
+          font-weight: bold;
+        }
+      }
+      dl.tell {
+        dd {
+          line-height: 2;
+        }
+      }
+      .tips p {
+        display: flex;
+        line-height: 1;
+        margin: 1vh 0 0 6vw;
+        gap: 2.6vw;
+        &::before {
+          content: "";
+          @extend .Wcircle;
+          display: inline-block;
+        }
+      }
+    }
+    .announceSection {
+      ul {
+        list-style: none;
+        width: 80vw;
+        padding: 1vh 0 0 0;
+        li {
+          font-size: 0.875rem;
+          display: flex;
+          align-items: flex-start;
+          margin: 2.5vh 0 0 6vw;
+          gap: 2.6vw;
+          line-height: 1;
+          .Wcircle {
+            flex-shrink: 0;
+          }
+        }
+      }
+    }
+    .mapSection {
+      & img {
+        width: 80vw;
+        height: auto;
+        margin: 1.5vh 0 0 0;
+      }
+    }
+  }
+}
+
+// 共通
+
+.Info {
+  background-color: #d9d9d9;
+  width: 90vw;
+  aspect-ratio: 338/50;
+  border: 3px solid #4a9b60;
+  border-radius: 10px;
+  margin: 4.5vh auto 0 auto;
+  background-image: url(../img/infocontent/infocontent.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  h1 {
+    font-size: 1.12rem;
+    color: #1e4f2b;
+    margin: 1.5vh 0 0 8vw;
+  }
+}
+
+.content {
+  background-color: white;
+  width: 90vw;
+  margin: 1.5vh auto 1.5vh auto;
+  padding: 0 0 2vh 0;
+  border-radius: 10px;
+}
+
+li.box {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  background-image: url(../img/infocontent/contentbox/contentbox.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 80vw;
+  aspect-ratio: 300/50;
+  cursor: pointer;
+  a {
+    text-decoration: none;
+    color: #1e4f2b;
+    margin: 0 0 0 4vw;
+    font-size: 0.875rem;
+    font-weight: bold;
+  }
+}
+.Triangle {
+  width: 0.875rem;
+  height: 0.875rem;
+  background: #1e4f2b;
+  clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+  margin: 0 0 0 4vw;
+}
+
+.detailBox {
+  background-image: url(../img/infocontent/contentbox/detailcontent.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 80vw;
+  aspect-ratio: 300/50;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  scroll-margin-top: clamp(60px, 13.6vw, 150px);
+  h2 {
+    color: white;
+    font-size: 1.12rem;
+    margin: 0 0 0 8vw;
+  }
+}
+
+.circle {
+  background-color: #5c7e4b;
+  border-radius: 50%;
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+p {
+  font-size: 0.875rem;
+}
+
+.Wcircle {
+  background-image: url(../icon/icon.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+/* ----------------------
+   PC（1200px）以上
+----------------------- */
+@media (min-width: 1200px) {
+  .infoMation {
+    .useinfo {
+      width: 50vw;
+      border: clamp(6px, 0.5vw, 10px) solid #4a9b60;
+      border-radius: clamp(20px, 1.6vw, 30px);
+      margin: 9.2vh auto 0 auto;
+      h1 {
+        margin: 2.5vh 0 0 8vw;
+        font-size: clamp(2rem, 2.5vw, 3rem);
+      }
+    }
+    .infomationContent {
+      width: 50vw;
+      margin: 5.5vh auto 5.5vh auto;
+      border-radius: clamp(20px, 1.6vw, 30px);
+      .infocontent {
+        display: flex;
+        justify-content: center;
+        margin: 5.5vh 0 0 0;
+        gap: 2vw;
+        .infocontent-left {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 3.7vh;
+          li.time {
+            a {
+              display: inline-block;
+            }
+          }
+        }
+        .infocontent-right {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 3.7vh;
+          margin: 0;
+        }
+      }
+    }
+    .infomationSection {
+      gap: 9.2vh;
+
+      .timeSection {
+        .openTime {
+          h3.opentime {
+            gap: 1.6vw;
+            font-size: clamp(1rem, 1.25vw, 1.5rem);
+          }
+          p.opentime-content {
+            display: flex;
+            line-height: 1;
+            margin: 1.8vh 0 0 2.9vw;
+            gap: 1.6vw;
+          }
+        }
+        .closedDay {
+          h3.closed-Day {
+            font-size: clamp(1rem, 1.25vw, 1.5rem);
+            gap: 1.6vw;
+          }
+          p.close {
+            margin: 1.8vh 0 0 2.9vw;
+            gap: 1.6vw;
+          }
+          p.offSeason {
+            margin: 1.8vh 0 0 2.9vw;
+            gap: 1.6vw;
+          }
+        }
+      }
+      .priceSection {
+        table.priceTable {
+          width: 20vw;
+          th {
+            padding: 0 0 0 1vw;
+            font-size: clamp(1rem, 1.25vw, 1.5rem);
+          }
+          tr {
+            td {
+              padding: 0 0 0 1vw;
+              font-size: clamp(1rem, 1.25vw, 1.5rem);
+            }
+            td.adultPrice,
+            .childPrice,
+            .siniorPrice {
+              text-align: right;
+              padding: 0 1vw 0 0;
+            }
+          }
+        }
+        table.parkingTable {
+          width: 20vw;
+          th {
+            padding: 0 0 0 1vw;
+            font-size: clamp(1rem, 1.25vw, 1.5rem);
+          }
+          tr {
+            td {
+              padding: 0 0 0 1vw;
+              font-size: clamp(1rem, 1.25vw, 1.5rem);
+            }
+            td.ordinaryPrice,
+            .largePrice,
+            .bikePrice {
+              text-align: right;
+              padding: 0 1vw 0 0;
+            }
+          }
+        }
+      }
+      .passportSection {
+        img.pass {
+          width: 20vw;
+        }
+      }
+      .accessSection {
+        dl {
+          font-size: clamp(1rem, 1.25vw, 1.5rem);
+        }
+      }
+
+      .announceSection {
+        width: 30vw;
+        ul {
+          width: fit-content;
+          li {
+            font-size: clamp(1rem, 1.25vw, 1.5rem);
+            margin: 2.5vh 0 0 0vw;
+            gap: 1vw;
+          }
+        }
+      }
+      .mapSection {
+        & img {
+          width: 31vw;
+        }
+      }
+    }
+  }
+  // 共通
+  .Info {
+    width: 50vw;
+    border: clamp(6px, 0.5vw, 10px) solid #4a9b60;
+    border-radius: clamp(20px, 1.6vw, 30px);
+    margin: 9.2vh auto 0 auto;
+    h1 {
+      font-size: 1.12rem;
+      color: #1e4f2b;
+      margin: 2.5vh 0 0 8vw;
+    }
+  }
+  li.box {
+    width: 20vw;
+    a {
+      margin: 0 0 0 1.6vw;
+      font-size: clamp(1rem, 1.25vw, 1.5rem);
+    }
+  }
+
+  .Triangle {
+    margin: 0 0 0 1vw;
+  }
+  .detailBox {
+    width: 31vw;
+    h2 {
+      color: white;
+      font-size: clamp(1.5rem, 1.7vw, 2rem);
+      margin: 0 0 0 3.1vw;
+    }
+  }
+
+  .circle {
+    width: clamp(1rem, 1.25vw, 1.5rem);
+    height: clamp(1rem, 1.25vw, 1.5rem);
+  }
+
+  p {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+
+  .Wcircle {
+    width: clamp(1rem, 1.25vw, 1.5rem);
+    height: clamp(1rem, 1.25vw, 1.5rem);
+  }
+}
+
+/* ----------------------
+   タブレット横向き（900px）以上
+----------------------- */
+@media (min-width: 900px) {
+}
+
+/* ----------------------
+   タブレット縦向き（600px）以上
+----------------------- */
+@media (min-width: 600px) {
+}

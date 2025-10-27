@@ -1,0 +1,69 @@
+.hamburger {
+  position: absolute;
+  width: clamp(60px, 13.6vw, 150px);
+  height: clamp(60px, 13.6vw, 150px);
+  aspect-ratio: 1/1;
+  top: 0;
+  right: clamp(25px, 6.65vw, 300px);
+  .icon {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin: 0;
+  }
+
+  .nav {
+    display: none;
+    position: relative;
+    top: 0;
+    left: clamp(25px, 6.6vw, 125px);
+    // left: 125px;
+    // left: 25px;
+
+    z-index: 150;
+    width: 100%;
+    height: 150px;
+
+    &.active {
+      display: block;
+    }
+
+    .triangle {
+      position: absolute;
+      top: 0;
+      right: clamp(35px, 9.2vw, 175px);
+      // right: 35px;
+      // right: 175px;
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-bottom: 20px solid #4a9b60;
+    }
+
+    .navImg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: clamp(5px, 1.2vw, 10px);
+      background-color: #4a9b60;
+      border-radius: 10px;
+      width: clamp(350px, 93vw, 1050px);
+      height: clamp(53px, 13vw, 159px);
+      position: absolute;
+      top: clamp(10px, 1.5vw, 20px);
+      right: clamp(25px, 6.65vw, 127.68px);
+
+      img {
+        cursor: pointer;
+        height: auto;
+        width: clamp(64px, 16vw, 192px);
+        aspect-ratio: 192/129;
+        margin: 0;
+        z-index: 250;
+        position: static;
+      }
+    }
+  }
+}

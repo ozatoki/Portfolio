@@ -1,0 +1,2801 @@
+@charset "UTF-8";
+/* Document
+ * ========================================================================== */
+/**
+ * Add border box sizing in all browsers (opinionated).
+ */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/**
+ * 1. Add text decoration inheritance in all browsers (opinionated).
+ * 2. Add vertical alignment inheritance in all browsers (opinionated).
+ */
+::before,
+::after {
+  text-decoration: inherit; /* 1 */
+  vertical-align: inherit; /* 2 */
+}
+
+/**
+ * 1. Use the default cursor in all browsers (opinionated).
+ * 2. Change the line height in all browsers (opinionated).
+ * 3. Use a 4-space tab width in all browsers (opinionated).
+ * 4. Remove the grey highlight on links in iOS (opinionated).
+ * 5. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ * 6. Breaks words to prevent overflow in all browsers (opinionated).
+ */
+html {
+  cursor: default; /* 1 */
+  -moz-tab-size: 4; /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4; /* 3 */
+  -webkit-tap-highlight-color: transparent;
+  -ms-text-size-adjust: 100%; /* 5 */
+  -webkit-text-size-adjust: 100%; /* 5 */
+  word-break: break-word; /* 6 */
+}
+
+/* Sections
+ * ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Edge, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.13em;
+}
+
+/* Grouping content
+ * ========================================================================== */
+/**
+ * Remove the margin on nested lists in Chrome, Edge, IE, and Safari.
+ */
+dl dl,
+dl ol,
+dl ul,
+ol dl,
+ul dl {
+  margin: 0;
+}
+
+/**
+ * Remove the margin on nested lists in Edge 18- and IE.
+ */
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  margin: 0;
+}
+
+/**
+ * 1. Add the correct sizing in Firefox.
+ * 2. Show the overflow in Edge 18- and IE.
+ */
+hr {
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * Add the correct display in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Remove the list style on navigation lists in all browsers (opinionated).
+ */
+nav ol,
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+ * ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Add the correct text decoration in Edge 18-, IE, and Safari.
+ */
+abbr[title] {
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/* Embedded content
+ * ========================================================================== */
+/*
+ * Change the alignment on media elements in all browsers (opinionated).
+ */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on iframes in all browsers (opinionated).
+ */
+iframe {
+  border-style: none;
+}
+
+/**
+ * Remove the border on images within links in IE 10-.
+ */
+img {
+  border-style: none;
+}
+
+/**
+ * Change the fill color to match the text color in all browsers (opinionated).
+ */
+svg:not([fill]) {
+  fill: currentColor;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Tabular data
+ * ========================================================================== */
+/**
+ * Collapse border spacing in all browsers (opinionated).
+ */
+table {
+  border-collapse: collapse;
+}
+
+/* Forms
+ * ========================================================================== */
+/**
+ * Remove the margin on controls in Safari.
+ */
+button,
+input,
+select {
+  margin: 0;
+}
+
+/**
+ * 1. Show the overflow in IE.
+ * 2. Remove the inheritance of text transform in Edge 18-, Firefox, and IE.
+ */
+button {
+  overflow: visible; /* 1 */
+  text-transform: none; /* 2 */
+}
+
+/**
+ * Correct the inability to style buttons in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * 1. Change the inconsistent appearance in all browsers (opinionated).
+ * 2. Correct the padding in Firefox.
+ */
+fieldset {
+  border: 1px solid #a0a0a0; /* 1 */
+  padding: 0.35em 0.75em 0.625em; /* 2 */
+}
+
+/**
+ * Show the overflow in Edge 18- and IE.
+ */
+input {
+  overflow: visible;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge 18- and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ */
+legend {
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * 1. Add the correct display in Edge 18- and IE.
+ * 2. Add the correct vertical alignment in Chrome, Edge, and Firefox.
+ */
+progress {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Remove the inheritance of text transform in Firefox.
+ */
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Remove the margin in Firefox and Safari.
+ * 2. Remove the default vertical scrollbar in IE.
+ * 3. Change the resize direction in all browsers (opinionated).
+ */
+textarea {
+  margin: 0; /* 1 */
+  overflow: auto; /* 2 */
+  resize: vertical; /* 3 */
+}
+
+/**
+ * Remove the padding in IE 10-.
+ */
+[type=checkbox],
+[type=radio] {
+  padding: 0;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome, Edge, and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Safari.
+ */
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+/**
+ * Remove the inner padding in Chrome, Edge, and Safari on macOS.
+ */
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style upload buttons in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding of focus outlines in Firefox.
+ */
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus outline styles unset by the previous rule in Firefox.
+ */
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Remove the additional :invalid styles in Firefox.
+ */
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/* Interactive
+ * ========================================================================== */
+/*
+ * Add the correct display in Edge 18- and IE.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct styles in Edge 18-, IE, and Safari.
+ */
+dialog {
+  background-color: white;
+  border: solid;
+  color: black;
+  display: block;
+  height: -moz-fit-content;
+  height: fit-content;
+  left: 0;
+  margin: auto;
+  padding: 1em;
+  position: absolute;
+  right: 0;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+dialog:not([open]) {
+  display: none;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Scripting
+ * ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none;
+}
+
+/* User interaction
+ * ========================================================================== */
+/*
+ * 1. Remove the tapping delay in IE 10.
+ * 2. Remove the tapping delay on clickable elements
+      in all browsers (opinionated).
+ */
+a,
+area,
+button,
+input,
+label,
+select,
+summary,
+textarea,
+[tabindex] { /* 1 */
+  touch-action: manipulation; /* 2 */
+}
+
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none;
+}
+
+/* Accessibility
+ * ========================================================================== */
+/**
+ * Change the cursor on busy elements in all browsers (opinionated).
+ */
+[aria-busy=true] {
+  cursor: progress;
+}
+
+/*
+ * Change the cursor on control elements in all browsers (opinionated).
+ */
+[aria-controls] {
+  cursor: pointer;
+}
+
+/*
+ * Change the cursor on disabled, not-editable, or otherwise
+ * inoperable elements in all browsers (opinionated).
+ */
+[aria-disabled=true],
+[disabled] {
+  cursor: not-allowed;
+}
+
+/*
+ * Change the display on visually hidden accessible elements
+ * in all browsers (opinionated).
+ */
+[aria-hidden=false][hidden] {
+  display: initial;
+}
+
+[aria-hidden=false][hidden]:not(:focus) {
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header.background {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 111;
+  display: flex;
+  align-items: center;
+  background-color: #4a9b60;
+  width: 100%;
+  height: clamp(60px, 13.6vw, 150px);
+}
+header.background img.logo {
+  width: clamp(94px, 20vw, 259px);
+  height: clamp(60px, 13.6vw, 150px);
+  margin: 0 0 0 5.2vw;
+  aspect-ratio: 259/150;
+  display: block;
+}
+
+.top {
+  position: relative;
+  z-index: 0;
+}
+.top .container {
+  width: 100vw;
+  height: 25vh;
+  background-image: url(../img/top/top.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: block;
+}
+
+.menu {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 375/309;
+  background-image: url(../img/menu/zigzag-lines-7957807_1280.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.menu .menu-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: absolute;
+  gap: 5.5vw;
+  top: 8vw;
+}
+.menu .menu-content a img {
+  width: 40vw;
+  aspect-ratio: 150/115;
+  box-shadow: 4px 4px 5px black;
+  margin: 0;
+}
+
+.infomationcontent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 375/477;
+  background-image: url(../img/background/background-dot.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 110;
+}
+.infomationcontent .infomation {
+  position: absolute;
+  width: 80vw;
+  height: auto;
+}
+.infomationcontent .infomation .infoWrapper {
+  background-image: url(../img/infomation/plate.png);
+  width: 40vw;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  aspect-ratio: 150/50;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 4px 4px 4px black;
+  position: relative;
+  z-index: 120;
+}
+.infomationcontent .infomation .infoWrapper .info {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+.infomationcontent .infomation .infocomment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.8vh;
+  width: 80vw;
+  height: auto;
+  aspect-ratio: 300/366;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  z-index: 115;
+}
+.infomationcontent .infomation .infocomment hr {
+  width: 80vw;
+  height: 1px;
+  border-color: #777373;
+}
+.infomationcontent .infomation .infocomment h2 {
+  margin: 0 0 0 5.3vw;
+}
+.infomationcontent .infomation .infocomment a {
+  color: black;
+}
+.infomationcontent .infomation .infocomment p {
+  margin: 0 0 0 5.3vw;
+  cursor: pointer;
+  width: 85%;
+}
+.infomationcontent .infomation .infocomment .infolist {
+  width: 80vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.infomationcontent .animalinfomation {
+  position: relative;
+  width: 80vw;
+  height: auto;
+}
+.infomationcontent .animalinfomation .animalWrapper {
+  background-image: url(../img/infomation/plate.png);
+  width: 40vw;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  aspect-ratio: 150/50;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40vw;
+  box-shadow: 4px 4px 4px black;
+  position: relative;
+  z-index: 95;
+}
+.infomationcontent .animalinfomation .animalWrapper .animal {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+.infomationcontent .animalinfomation .animalcomment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.8vh;
+  width: 80vw;
+  height: auto;
+  aspect-ratio: 300/366;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  z-index: 10;
+}
+.infomationcontent .animalinfomation .animalcomment hr {
+  width: 80vw;
+  height: 1px;
+  border-color: #777373;
+}
+.infomationcontent .animalinfomation .animalcomment h2 {
+  margin: 0 0 0 5.3vw;
+}
+.infomationcontent .animalinfomation .animalcomment a {
+  color: black;
+}
+.infomationcontent .animalinfomation .animalcomment p {
+  margin: 0 0 0 5.3vw;
+  cursor: pointer;
+  width: 85%;
+}
+.infomationcontent .animalinfomation .animalcomment .animallist {
+  width: 80vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.zooattempt {
+  background-image: url(../img/zooattempt/background/strype.png);
+  width: 100%;
+  aspect-ratio: 375/150;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.zooattempt a img {
+  width: 80%;
+  height: auto;
+  box-shadow: 4px 4px 4px black;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.infotriangle {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 16px solid #4a9b60;
+}
+
+body {
+  font-family: "Noto Sans JP", "Arial", sans-serif;
+}
+
+footer {
+  text-align: center;
+}
+
+a.returnTop {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 1000;
+}
+a.returnTop img.return-top {
+  width: 60px;
+  height: 60px;
+}
+
+@media (min-width: 768px) {
+  .top .container {
+    width: 100%;
+    height: 79vh;
+  }
+  .menu {
+    width: 100%;
+    background-image: url(../img/menu/background-zigzag.png);
+    aspect-ratio: 1920/429;
+  }
+  .menu .menu-content {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.9vw;
+  }
+  .menu .menu-content a img {
+    width: clamp(75px, 15.5vw, 300px);
+    height: auto;
+    cursor: pointer;
+    box-shadow: 8px 8px 8px black;
+  }
+  .infomationcontent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    background-image: url(../img/background/background-dot.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+  }
+  .infomationcontent * {
+    all: unset;
+  }
+  .infomationcontent .infomation {
+    position: relative;
+    width: 40vw;
+  }
+  .infomationcontent .infomation .infoWrapper {
+    width: 20vw;
+    height: auto;
+    border-radius: 1.3vw;
+    box-shadow: 8px 8px 8px black;
+    aspect-ratio: 384/128;
+  }
+  .infomationcontent .infomation .infoWrapper .info {
+    font-size: clamp(24px, 2.4vw, 50px);
+  }
+  .infomationcontent .infomation .infocomment {
+    width: 40vw;
+    height: 70vh;
+    border-radius: 30px;
+    background-color: #9bdff0;
+    font-size: clamp(18px, 1.7vw, 32px);
+  }
+  .infomationcontent .infomation .infocomment h2 {
+    font-weight: bold;
+    margin-left: 8%;
+  }
+  .infomationcontent .infomation .infocomment p {
+    display: block;
+    width: 80%;
+    margin-left: 8%;
+  }
+  .infomationcontent .infomation .infocomment hr {
+    width: 100%;
+    height: 1px;
+    background-color: #777373;
+  }
+  .infomationcontent .infomation .infocomment .infolist {
+    width: -moz-fit-content;
+    width: fit-content;
+    position: relative;
+    top: 5%;
+    left: 30%;
+  }
+  .infomationcontent .animalinfomation {
+    position: relative;
+    width: 40vw;
+  }
+  .infomationcontent .animalinfomation .animalWrapper {
+    width: 20vw;
+    height: auto;
+    border-radius: 1.3vw;
+    box-shadow: 8px 8px 8px black;
+    aspect-ratio: 384/128;
+    margin: 0;
+  }
+  .infomationcontent .animalinfomation .animalWrapper .animal {
+    font-size: clamp(20px, 1.9vw, 50px);
+  }
+  .infomationcontent .animalinfomation .animalcomment {
+    width: 40vw;
+    height: 70vh;
+    border-radius: 30px;
+    background-color: #c8dd9b;
+    font-size: clamp(18px, 1.7vw, 32px);
+  }
+  .infomationcontent .animalinfomation .animalcomment h2 {
+    font-weight: bold;
+    margin-left: 8%;
+  }
+  .infomationcontent .animalinfomation .animalcomment p {
+    display: block;
+    width: 80%;
+    margin-left: 8%;
+  }
+  .infomationcontent .animalinfomation .animalcomment hr {
+    width: 100%;
+    height: 1px;
+    background-color: #777373;
+  }
+  .infomationcontent .animalinfomation .animalcomment .animallist {
+    width: -moz-fit-content;
+    width: fit-content;
+    position: relative;
+    top: 5%;
+    left: 30%;
+  }
+  .infotriangle {
+    width: 0;
+    height: 0;
+    border-left: clamp(9px, 0.8vw, 15px) solid transparent;
+    border-right: clamp(9px, 0.8vw, 15px) solid transparent;
+    border-top: clamp(18px, 1.6vw, 30px) solid #4a9b60;
+  }
+  .zooattempt {
+    background-image: url(../img/zooattempt/background/strype.png);
+    width: 100%;
+    aspect-ratio: 375/150;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .zooattempt a img {
+    width: 80%;
+    height: auto;
+    box-shadow: 8px 8px 8px black;
+    cursor: pointer;
+  }
+  a.returnTop img.return-top {
+    width: 150px;
+    height: 150px;
+  }
+}
+.hamburger {
+  position: absolute;
+  width: clamp(60px, 13.6vw, 150px);
+  height: clamp(60px, 13.6vw, 150px);
+  aspect-ratio: 1/1;
+  top: 0;
+  right: clamp(25px, 6.65vw, 300px);
+}
+.hamburger .icon {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0;
+}
+.hamburger .nav {
+  display: none;
+  position: relative;
+  top: 0;
+  left: clamp(25px, 6.6vw, 125px);
+  z-index: 150;
+  width: 100%;
+  height: 150px;
+}
+.hamburger .nav.active {
+  display: block;
+}
+.hamburger .nav .triangle {
+  position: absolute;
+  top: 0;
+  right: clamp(35px, 9.2vw, 175px);
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #4a9b60;
+}
+.hamburger .nav .navImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(5px, 1.2vw, 10px);
+  background-color: #4a9b60;
+  border-radius: 10px;
+  width: clamp(350px, 93vw, 1050px);
+  height: clamp(53px, 13vw, 159px);
+  position: absolute;
+  top: clamp(10px, 1.5vw, 20px);
+  right: clamp(25px, 6.65vw, 127.68px);
+}
+.hamburger .nav .navImg img {
+  cursor: pointer;
+  height: auto;
+  width: clamp(64px, 16vw, 192px);
+  aspect-ratio: 192/129;
+  margin: 0;
+  z-index: 250;
+  position: static;
+}
+
+.swiper {
+  width: clamp(200px, 52.1vw, 52.5%); /*最大値は今後他コンテンツに合わせ柔軟に変更する*/
+}
+.swiper img {
+  width: clamp(200px, 52.1vw, 100%); /*最大値は今後他コンテンツに合わせ柔軟に変更する*/
+  height: auto;
+  aspect-ratio: 80/53;
+  margin: 3vh auto 0 auto;
+}
+
+.infoMation {
+  display: flex;
+  flex-direction: column;
+  background-color: #ade4f5;
+}
+.infoMation .useinfo {
+  background-color: #d9d9d9;
+  width: 90vw;
+  aspect-ratio: 338/50;
+  border: 3px solid #4a9b60;
+  border-radius: 10px;
+  margin: 4.5vh auto 0 auto;
+  background-image: url(../img/infocontent/infocontent.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.infoMation .useinfo h1 {
+  font-size: 1.12rem;
+  color: #1e4f2b;
+  margin: 1.5vh 0 0 8vw;
+}
+.infoMation .infomationContent {
+  background-color: white;
+  width: 90vw;
+  margin: 1.5vh auto 1.5vh auto;
+  padding: 0 0 2vh 0;
+  border-radius: 10px;
+}
+.infoMation .infocontent {
+  align-items: center;
+  margin: 2vh 0 0 0;
+}
+.infoMation .infocontent .infocontent-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5vh;
+}
+.infoMation .infocontent .infocontent-left li.time a {
+  display: inline-block;
+}
+.infoMation .infocontent .infocontent-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5vh;
+  margin: 1.5vh 0 0 0;
+}
+.infoMation .infomationSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.5vh;
+  margin: 7.5vh 0 0 0;
+}
+.infoMation .infomationSection .timeSection .openTime h3.opentime {
+  color: #5c7e4b;
+  font-size: 0.875rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  line-height: 1;
+  margin: 3vh 0 0 0;
+  gap: 2.6vw;
+}
+.infoMation .infomationSection .timeSection .openTime h3.opentime::before {
+  content: "";
+  display: inline-block;
+}
+.infoMation .infomationSection .timeSection .openTime p.opentime-content {
+  display: flex;
+  line-height: 1;
+  margin: 1vh 0 0 6vw;
+  gap: 2.6vw;
+}
+.infoMation .infomationSection .timeSection .openTime p.opentime-content::before {
+  content: "";
+  display: inline-block;
+}
+.infoMation .infomationSection .timeSection .closedDay h3.closed-Day {
+  color: #5c7e4b;
+  font-size: 0.875rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  line-height: 1;
+  margin: 3vh 0 0 0;
+  gap: 2.6vw;
+}
+.infoMation .infomationSection .timeSection .closedDay h3.closed-Day::before {
+  content: "";
+  display: inline-block;
+}
+.infoMation .infomationSection .timeSection .closedDay p.close {
+  display: flex;
+  line-height: 1;
+  margin: 1vh 0 0 6vw;
+  gap: 2.6vw;
+}
+.infoMation .infomationSection .timeSection .closedDay p.close::before {
+  content: "";
+  display: inline-block;
+}
+.infoMation .infomationSection .timeSection .closedDay p.offSeason {
+  display: flex;
+  line-height: 1;
+  margin: 1vh 0 0 6vw;
+  gap: 2.6vw;
+}
+.infoMation .infomationSection .timeSection .closedDay p.offSeason::before {
+  content: "";
+  display: inline-block;
+}
+.infoMation .infomationSection .priceSection table.priceTable {
+  border: 1px solid #918e8e;
+  width: 54vw;
+  height: 17.5vh;
+  text-align: left;
+  margin: 3vh 0 0 0;
+}
+.infoMation .infomationSection .priceSection table.priceTable th {
+  padding: 0 0 0 2.6vw;
+  background-color: #b8d8c1;
+  font-size: 0.875rem;
+}
+.infoMation .infomationSection .priceSection table.priceTable tr {
+  border: 1px solid #918e8e;
+  font-size: 0.875rem;
+}
+.infoMation .infomationSection .priceSection table.priceTable tr td {
+  border: 1px solid #918e8e;
+  padding: 0 0 0 2.6vw;
+}
+.infoMation .infomationSection .priceSection table.priceTable tr td.childPrice {
+  padding-left: 5vw;
+}
+.infoMation .infomationSection .priceSection table.parkingTable {
+  border: 1px solid #918e8e;
+  width: 54vw;
+  height: 17.5vh;
+  text-align: left;
+  margin: 3vh 0 0 0;
+}
+.infoMation .infomationSection .priceSection table.parkingTable th {
+  padding: 0 0 0 2.6vw;
+  background-color: #b8d8c1;
+  font-size: 0.875rem;
+}
+.infoMation .infomationSection .priceSection table.parkingTable tr {
+  border: 1px solid #918e8e;
+  font-size: 0.875rem;
+}
+.infoMation .infomationSection .priceSection table.parkingTable tr td {
+  border: 1px solid #918e8e;
+  padding: 0 0 0 2.6vw;
+}
+.infoMation .infomationSection .priceSection table.parkingTable tr td.ordinaryPrice,
+.infoMation .infomationSection .priceSection table.parkingTable tr .largePrice,
+.infoMation .infomationSection .priceSection table.parkingTable tr .bikePrice {
+  text-align: right;
+  padding: 0 2.6vw 0 0;
+}
+.infoMation .infomationSection .passportSection img.pass {
+  width: 150px;
+  aspect-ratio: 100/63;
+  display: block;
+  margin: 3vh auto 0 auto;
+}
+.infoMation .infomationSection .passportSection p.passPrice {
+  display: flex;
+  line-height: 1;
+  margin: 2.5vh 0 0 6vw;
+  gap: 2.6vw;
+}
+.infoMation .infomationSection .passportSection p.passPrice::before {
+  content: "";
+  display: inline-block;
+}
+.infoMation .infomationSection .passportSection p.passExpiry {
+  display: flex;
+  line-height: 1;
+  margin: 1vh 0 0 6vw;
+  gap: 2.6vw;
+}
+.infoMation .infomationSection .passportSection p.passExpiry::before {
+  content: "";
+  display: inline-block;
+}
+.infoMation .infomationSection .accessSection dl {
+  display: grid;
+  grid-template-columns: 6em 1fr;
+  margin: 3vh 0 0 0;
+  color: #5c7e4b;
+  font-size: 0.875rem;
+}
+.infoMation .infomationSection .accessSection dl dt {
+  font-weight: bold;
+}
+.infoMation .infomationSection .accessSection dl.tell dd {
+  line-height: 2;
+}
+.infoMation .infomationSection .accessSection .tips p {
+  display: flex;
+  line-height: 1;
+  margin: 1vh 0 0 6vw;
+  gap: 2.6vw;
+}
+.infoMation .infomationSection .accessSection .tips p::before {
+  content: "";
+  display: inline-block;
+}
+.infoMation .infomationSection .announceSection ul {
+  list-style: none;
+  width: 80vw;
+  padding: 1vh 0 0 0;
+}
+.infoMation .infomationSection .announceSection ul li {
+  font-size: 0.875rem;
+  display: flex;
+  align-items: flex-start;
+  margin: 2.5vh 0 0 6vw;
+  gap: 2.6vw;
+  line-height: 1;
+}
+.infoMation .infomationSection .announceSection ul li .Wcircle, .infoMation .infomationSection .announceSection ul li main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.actionContent dt.Action h4::before, main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.actionContent dt.Action .infoMation .infomationSection .announceSection ul li h4::before, .infoMation .infomationSection .announceSection ul li main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.intentionContent dt.Intention h4::before, main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.intentionContent dt.Intention .infoMation .infomationSection .announceSection ul li h4::before, .infoMation .infomationSection .announceSection ul li dl.a dd.c::before, dl.a .infoMation .infomationSection .announceSection ul li dd.c::before, .infoMation .infomationSection .announceSection ul li .timeSection .openTime p.opentime-content::before, .infoMation .infomationSection .timeSection .openTime .announceSection ul li p.opentime-content::before, .infoMation .infomationSection .announceSection ul li .timeSection .closedDay p.close::before, .infoMation .infomationSection .timeSection .closedDay .announceSection ul li p.close::before, .infoMation .infomationSection .announceSection ul li .timeSection .closedDay p.offSeason::before, .infoMation .infomationSection .timeSection .closedDay .announceSection ul li p.offSeason::before, .infoMation .infomationSection .announceSection ul li .passportSection p.passPrice::before, .infoMation .infomationSection .passportSection .announceSection ul li p.passPrice::before, .infoMation .infomationSection .announceSection ul li .passportSection p.passExpiry::before, .infoMation .infomationSection .passportSection .announceSection ul li p.passExpiry::before, .infoMation .infomationSection .announceSection ul li .accessSection .tips p::before, .infoMation .infomationSection .accessSection .tips .announceSection ul li p::before {
+  flex-shrink: 0;
+}
+.infoMation .infomationSection .mapSection img {
+  width: 80vw;
+  height: auto;
+  margin: 1.5vh 0 0 0;
+}
+
+.Info {
+  background-color: #d9d9d9;
+  width: 90vw;
+  aspect-ratio: 338/50;
+  border: 3px solid #4a9b60;
+  border-radius: 10px;
+  margin: 4.5vh auto 0 auto;
+  background-image: url(../img/infocontent/infocontent.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.Info h1 {
+  font-size: 1.12rem;
+  color: #1e4f2b;
+  margin: 1.5vh 0 0 8vw;
+}
+
+.content {
+  background-color: white;
+  width: 90vw;
+  margin: 1.5vh auto 1.5vh auto;
+  padding: 0 0 2vh 0;
+  border-radius: 10px;
+}
+
+li.box {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  background-image: url(../img/infocontent/contentbox/contentbox.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 80vw;
+  aspect-ratio: 300/50;
+  cursor: pointer;
+}
+li.box a {
+  text-decoration: none;
+  color: #1e4f2b;
+  margin: 0 0 0 4vw;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.Triangle {
+  width: 0.875rem;
+  height: 0.875rem;
+  background: #1e4f2b;
+  clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+  margin: 0 0 0 4vw;
+}
+
+.detailBox {
+  background-image: url(../img/infocontent/contentbox/detailcontent.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 80vw;
+  aspect-ratio: 300/50;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  scroll-margin-top: clamp(60px, 13.6vw, 150px);
+}
+.detailBox h2 {
+  color: white;
+  font-size: 1.12rem;
+  margin: 0 0 0 8vw;
+}
+
+.circle, main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .parkingFee dl.Parking dt.parking h3::before, main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .admissionFee dl.Fee dt.fee h3::before, main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeMap h3::before, main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.ed-reContent dt.Ed-Re h3::before, main .attempt .attemptContent .attemptSection article.welfareSection .welfare dl.welfareContent dt.Welfare h3::before, main .attempt .attemptContent .attemptSection article.enrichmentSection .enrichment dl.enrichmentContent dt.Enrichment h3::before, dl.a dt.b::before, .infoMation .infomationSection .timeSection .openTime h3.opentime::before, .infoMation .infomationSection .timeSection .closedDay h3.closed-Day::before {
+  background-color: #5c7e4b;
+  border-radius: 50%;
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+p {
+  font-size: 0.875rem;
+}
+
+.Wcircle, main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.actionContent dt.Action h4::before, main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.intentionContent dt.Intention h4::before, dl.a dd.c::before, .infoMation .infomationSection .timeSection .openTime p.opentime-content::before, .infoMation .infomationSection .timeSection .closedDay p.close::before, .infoMation .infomationSection .timeSection .closedDay p.offSeason::before, .infoMation .infomationSection .passportSection p.passPrice::before, .infoMation .infomationSection .passportSection p.passExpiry::before, .infoMation .infomationSection .accessSection .tips p::before {
+  background-image: url(../icon/icon.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+/* ----------------------
+   PC（1200px）以上
+----------------------- */
+@media (min-width: 1200px) {
+  .infoMation .useinfo {
+    width: 50vw;
+    border: clamp(6px, 0.5vw, 10px) solid #4a9b60;
+    border-radius: clamp(20px, 1.6vw, 30px);
+    margin: 9.2vh auto 0 auto;
+  }
+  .infoMation .useinfo h1 {
+    margin: 2.5vh 0 0 8vw;
+    font-size: clamp(2rem, 2.5vw, 3rem);
+  }
+  .infoMation .infomationContent {
+    width: 50vw;
+    margin: 5.5vh auto 5.5vh auto;
+    border-radius: clamp(20px, 1.6vw, 30px);
+  }
+  .infoMation .infomationContent .infocontent {
+    display: flex;
+    justify-content: center;
+    margin: 5.5vh 0 0 0;
+    gap: 2vw;
+  }
+  .infoMation .infomationContent .infocontent .infocontent-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.7vh;
+  }
+  .infoMation .infomationContent .infocontent .infocontent-left li.time a {
+    display: inline-block;
+  }
+  .infoMation .infomationContent .infocontent .infocontent-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.7vh;
+    margin: 0;
+  }
+  .infoMation .infomationSection {
+    gap: 9.2vh;
+  }
+  .infoMation .infomationSection .timeSection .openTime h3.opentime {
+    gap: 1.6vw;
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+  .infoMation .infomationSection .timeSection .openTime p.opentime-content {
+    display: flex;
+    line-height: 1;
+    margin: 1.8vh 0 0 2.9vw;
+    gap: 1.6vw;
+  }
+  .infoMation .infomationSection .timeSection .closedDay h3.closed-Day {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    gap: 1.6vw;
+  }
+  .infoMation .infomationSection .timeSection .closedDay p.close {
+    margin: 1.8vh 0 0 2.9vw;
+    gap: 1.6vw;
+  }
+  .infoMation .infomationSection .timeSection .closedDay p.offSeason {
+    margin: 1.8vh 0 0 2.9vw;
+    gap: 1.6vw;
+  }
+  .infoMation .infomationSection .priceSection table.priceTable {
+    width: 20vw;
+  }
+  .infoMation .infomationSection .priceSection table.priceTable th {
+    padding: 0 0 0 1vw;
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+  .infoMation .infomationSection .priceSection table.priceTable tr td {
+    padding: 0 0 0 1vw;
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+  .infoMation .infomationSection .priceSection table.priceTable tr td.adultPrice,
+  .infoMation .infomationSection .priceSection table.priceTable tr .childPrice,
+  .infoMation .infomationSection .priceSection table.priceTable tr .siniorPrice {
+    text-align: right;
+    padding: 0 1vw 0 0;
+  }
+  .infoMation .infomationSection .priceSection table.parkingTable {
+    width: 20vw;
+  }
+  .infoMation .infomationSection .priceSection table.parkingTable th {
+    padding: 0 0 0 1vw;
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+  .infoMation .infomationSection .priceSection table.parkingTable tr td {
+    padding: 0 0 0 1vw;
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+  .infoMation .infomationSection .priceSection table.parkingTable tr td.ordinaryPrice,
+  .infoMation .infomationSection .priceSection table.parkingTable tr .largePrice,
+  .infoMation .infomationSection .priceSection table.parkingTable tr .bikePrice {
+    text-align: right;
+    padding: 0 1vw 0 0;
+  }
+  .infoMation .infomationSection .passportSection img.pass {
+    width: 20vw;
+  }
+  .infoMation .infomationSection .accessSection dl {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+  .infoMation .infomationSection .announceSection {
+    width: 30vw;
+  }
+  .infoMation .infomationSection .announceSection ul {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .infoMation .infomationSection .announceSection ul li {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    margin: 2.5vh 0 0 0vw;
+    gap: 1vw;
+  }
+  .infoMation .infomationSection .mapSection img {
+    width: 31vw;
+  }
+  .Info {
+    width: 50vw;
+    border: clamp(6px, 0.5vw, 10px) solid #4a9b60;
+    border-radius: clamp(20px, 1.6vw, 30px);
+    margin: 9.2vh auto 0 auto;
+  }
+  .Info h1 {
+    font-size: 1.12rem;
+    color: #1e4f2b;
+    margin: 2.5vh 0 0 8vw;
+  }
+  li.box {
+    width: 20vw;
+  }
+  li.box a {
+    margin: 0 0 0 1.6vw;
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+  .Triangle {
+    margin: 0 0 0 1vw;
+  }
+  .detailBox {
+    width: 31vw;
+  }
+  .detailBox h2 {
+    color: white;
+    font-size: clamp(1.5rem, 1.7vw, 2rem);
+    margin: 0 0 0 3.1vw;
+  }
+  .circle, main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .parkingFee dl.Parking dt.parking h3::before, main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .admissionFee dl.Fee dt.fee h3::before, main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeMap h3::before, main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.ed-reContent dt.Ed-Re h3::before, main .attempt .attemptContent .attemptSection article.welfareSection .welfare dl.welfareContent dt.Welfare h3::before, main .attempt .attemptContent .attemptSection article.enrichmentSection .enrichment dl.enrichmentContent dt.Enrichment h3::before, dl.a dt.b::before, .infoMation .infomationSection .timeSection .openTime h3.opentime::before, .infoMation .infomationSection .timeSection .closedDay h3.closed-Day::before {
+    width: clamp(1rem, 1.25vw, 1.5rem);
+    height: clamp(1rem, 1.25vw, 1.5rem);
+  }
+  p {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+  .Wcircle, main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.actionContent dt.Action h4::before, main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.intentionContent dt.Intention h4::before, dl.a dd.c::before, .infoMation .infomationSection .timeSection .openTime p.opentime-content::before, .infoMation .infomationSection .timeSection .closedDay p.close::before, .infoMation .infomationSection .timeSection .closedDay p.offSeason::before, .infoMation .infomationSection .passportSection p.passPrice::before, .infoMation .infomationSection .passportSection p.passExpiry::before, .infoMation .infomationSection .accessSection .tips p::before {
+    width: clamp(1rem, 1.25vw, 1.5rem);
+    height: clamp(1rem, 1.25vw, 1.5rem);
+  }
+}
+/* ----------------------
+   タブレット横向き（900px）以上
+----------------------- */
+/* ----------------------
+   タブレット縦向き（600px）以上
+----------------------- */
+.event {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffc4f3;
+}
+.event .eventContent .eventcontent {
+  align-items: center;
+  margin: 2vh 0 0 0;
+}
+.event .eventContent .eventcontent .event-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5vh;
+}
+.event .eventContent .eventcontent .event-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5vh;
+  margin: 1.5vh 0 0 0;
+}
+.event .eventSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.5vh;
+  margin: 7.5vh 0 0 0;
+}
+.event .eventSection .ridingSection img.ridingImg {
+  width: 45vw;
+  display: block;
+  margin: 3vh auto 0 auto;
+}
+.event .eventSection .ridingSection dl.ridingTime {
+  margin: 1.5vh 0 0 0;
+}
+.event .eventSection .feedingSection .feedingImg {
+  display: flex;
+  justify-content: center;
+  gap: 2.6vw;
+  margin: 3vh auto 0 auto;
+}
+.event .eventSection .feedingSection .feedingImg img {
+  width: 36vw;
+}
+.event .eventSection .feedingSection dl.feedingTime {
+  margin: 1.5vh 0 0 0;
+}
+.event .eventSection .interactingSection .interactingImg {
+  display: flex;
+  justify-content: center;
+  gap: 2.6vw;
+  margin: 3vh auto 0 auto;
+}
+.event .eventSection .interactingSection .interactingImg img {
+  width: 36vw;
+}
+.event .eventSection .interactingSection dl.interactingTime {
+  margin: 1.5vh 0 0 0;
+}
+.event .eventSection .explanationSection .explanationImg {
+  display: flex;
+  justify-content: center;
+  gap: 2.6vw;
+  margin: 3vh auto 0 auto;
+}
+.event .eventSection .explanationSection .explanationImg img {
+  width: 36vw;
+}
+.event .eventSection .explanationSection dl.ExplanationTime {
+  margin: 1.5vh 0 0 0;
+}
+
+dl.a {
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+}
+dl.a dt.b {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #5c7e4b;
+  display: flex;
+  gap: 2.7vw;
+  margin: 1.5vh 0 0 0;
+}
+dl.a dt.b::before {
+  content: "";
+  display: inline-block;
+}
+dl.a dd.c {
+  font-size: 0.875rem;
+  display: flex;
+  gap: 2.7vw;
+  margin: 1.5vh 0 0 7vw;
+}
+dl.a dd.c::before {
+  content: "";
+  display: inline-block;
+}
+
+a {
+  cursor: pointer;
+  font-weight: normal;
+}
+
+/* ----------------------
+   PC（1200px）以上
+----------------------- */
+@media (min-width: 1200px) {
+  .event .eventInfo h1 {
+    margin: 2.5vh 0 0 8vw;
+    font-size: clamp(2rem, 2.5vw, 3rem);
+  }
+  .event .eventContent {
+    width: 50vw;
+    margin: 5.5vh auto 5.5vh auto;
+    border-radius: clamp(20px, 1.6vw, 30px);
+  }
+  .event .eventContent .eventcontent {
+    display: flex;
+    justify-content: center;
+    margin: 5.5vh 0 0 0;
+    gap: 2vw;
+  }
+  .event .eventContent .eventcontent .event-right {
+    margin: 0;
+  }
+  .event .eventSection {
+    gap: 9.2vh;
+  }
+  .event .eventSection .ridingSection img.ridingImg {
+    width: 31vw;
+  }
+  .event .eventSection .feedingSection .feedingImg {
+    gap: 1vw;
+  }
+  .event .eventSection .feedingSection .feedingImg img {
+    width: 15vw;
+  }
+  .event .eventSection .interactingSection .interactingImg {
+    gap: 1vw;
+  }
+  .event .eventSection .interactingSection .interactingImg img {
+    width: 15vw;
+  }
+  .event .eventSection .explanationSection .explanationImg {
+    gap: 1vw;
+  }
+  .event .eventSection .explanationSection .explanationImg img {
+    width: 15vw;
+  }
+}
+dl.a dt.b {
+  font-size: clamp(1rem, 1.25vw, 1.5rem);
+  gap: 1.6vw;
+}
+dl.a dd.c {
+  font-size: clamp(1rem, 1.25vw, 1.5rem);
+  margin: 1.5vh 0 0 3vw;
+  gap: 1.5vw;
+}
+
+/* ----------------------
+   タブレット横向き（900px）以上
+----------------------- */
+/* ----------------------
+   タブレット縦向き（600px）以上
+----------------------- */
+main .intoroduction {
+  background-color: #caf0bb;
+  display: flex;
+  flex-direction: column;
+}
+main .intoroduction .intoroductionContent img.intoroductionMap {
+  width: 80vw;
+  margin: 2vh auto 0 auto;
+  display: block;
+}
+main .intoroduction .intoroductionContent nav.intoroductionNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  margin: 2vh 0 0 0;
+}
+main .intoroduction .intoroductionContent nav.intoroductionNav ul.intoroduction-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+main .intoroduction .intoroductionContent nav.intoroductionNav ul.intoroduction-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+main .intoroduction .intoroductionContent .intoroductionSection .mammalianSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.6vw;
+  margin: 7.5vh 0 0 0;
+}
+main .intoroduction .intoroductionContent .intoroductionSection .bridsSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.6vw;
+  margin: 7.5vw 0 0 0;
+}
+main .intoroduction .intoroductionContent .intoroductionSection .reptilesSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.6vw;
+  margin: 7.5vw 0 0 0;
+}
+main .intoroduction .intoroductionContent .intoroductionSection .interactSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.6vw;
+  margin: 7.5vw 0 0 0;
+}
+
+figure.introFigure img.introImg {
+  width: 38vw;
+  margin: 0;
+}
+figure.introFigure figcaption.introFigcaption h3.introH3 {
+  color: #5c7e4b;
+  font-size: 1rem;
+  text-align: center;
+}
+figure.introFigure figcaption.introFigcaption p.introP {
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+/* ----------------------
+   PC（1200px）以上
+----------------------- */
+@media (min-width: 1200px) {
+  main .intoroduction .intoroductionInfo h1 {
+    margin: 2.5vh 0 0 8vw;
+    font-size: clamp(2rem, 2.5vw, 3rem);
+  }
+  main .intoroduction .intoroductionContent {
+    width: 50vw;
+    margin: 5.5vh auto 5.5vh auto;
+    border-radius: clamp(20px, 1.6vw, 30px);
+  }
+  main .intoroduction .intoroductionContent img.intoroductionMap {
+    width: 40vw;
+    margin: 5.5vh auto 0 auto;
+  }
+  main .intoroduction .intoroductionContent nav.intoroductionNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5.5vh 0 0 0;
+  }
+  figure.introFigure img.introImg {
+    width: 31vw;
+  }
+  figure.introFigure figcaption.introFigcaption h3.introH3 {
+    color: #5c7e4b;
+    font-size: clamp(2rem, 2.5vw, 2.5rem);
+    text-align: center;
+  }
+  figure.introFigure figcaption.introFigcaption p.introP {
+    font-size: clamp(1.5rem, 1.875vw, 2rem);
+    text-align: center;
+  }
+}
+/* ----------------------
+   タブレット横向き（900px）以上
+----------------------- */
+/* ----------------------
+   タブレット縦向き（600px）以上
+----------------------- */
+header {
+  position: sticky;
+  width: 100%;
+  height: clamp(60px, 13.6vw, 150px);
+  top: 0;
+  left: 0;
+  z-index: 111;
+}
+
+.background {
+  background-color: #4a9b60;
+  width: 100%;
+  height: clamp(60px, 13.6vw, 150px);
+}
+.background img {
+  width: clamp(94px, 20vw, 259px);
+  height: clamp(60px, 13.6vw, 150px);
+  margin-left: 5.2vw;
+  aspect-ratio: 259/150;
+}
+
+main .service {
+  background-color: #f3ec8b;
+  display: flex;
+  flex-direction: column;
+}
+main .service .serviceContent img.serviceMap {
+  width: 80vw;
+  margin: 2vh auto 0 auto;
+  display: block;
+}
+main .service .serviceContent nav.serviceNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  margin: 2vh 0 0 0;
+}
+main .service .serviceContent nav.serviceNav ul.service-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+main .service .serviceContent nav.serviceNav ul.service-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+main .service .serviceContent .serviceSection .facilitySection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 7.5vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .facilitySection .facilityImg .Fountain .fountainComment {
+  display: flex;
+  margin: 2.25vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .facilitySection .facilityImg .Fountain .fountainComment p {
+  color: #5c7e4b;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin: 0 0 2.25vh 0;
+  gap: 2.7vw;
+}
+main .service .serviceContent .serviceSection .facilitySection .facilityImg .Fountain .fountainComment p::before {
+  content: "";
+  display: inline-block;
+}
+main .service .serviceContent .serviceSection .facilitySection .facilityImg .Fountain img.fountain {
+  width: 80vw;
+}
+main .service .serviceContent .serviceSection .facilitySection .facilityImg .Playing {
+  margin: 7.5vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .facilitySection .facilityImg .Playing .playingComment {
+  display: flex;
+}
+main .service .serviceContent .serviceSection .facilitySection .facilityImg .Playing .playingComment p {
+  color: #5c7e4b;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin: 0 0 2.25vh 0;
+  gap: 2.7vw;
+}
+main .service .serviceContent .serviceSection .facilitySection .facilityImg .Playing .playingComment p::before {
+  content: "";
+  display: inline-block;
+}
+main .service .serviceContent .serviceSection .facilitySection .facilityImg .Playing img.playing {
+  width: 80vw;
+}
+main .service .serviceContent .serviceSection .foodSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 7.5vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .foodSection .foodImg .Restaurant .restaurantComment {
+  display: flex;
+  margin: 2.25vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .foodSection .foodImg .Restaurant .restaurantComment p {
+  color: #5c7e4b;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin: 0 0 2.25vh 0;
+  gap: 2.7vw;
+}
+main .service .serviceContent .serviceSection .foodSection .foodImg .Restaurant .restaurantComment p::before {
+  content: "";
+  display: inline-block;
+}
+main .service .serviceContent .serviceSection .foodSection .foodImg .Restaurant img.restaurant {
+  width: 80vw;
+}
+main .service .serviceContent .serviceSection .foodSection .foodImg .Restaurant .restaurantRefer {
+  display: flex;
+  justify-content: center;
+  gap: 2.8vw;
+  margin: 1.6vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .foodSection .foodImg .Restaurant .restaurantRefer img.internal {
+  width: 38.6vw;
+}
+main .service .serviceContent .serviceSection .foodSection .foodImg .Restaurant .restaurantRefer img.food {
+  width: 38.6vw;
+}
+main .service .serviceContent .serviceSection .foodSection .foodImg .Kitchencar {
+  margin: 7.5vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .foodSection .foodImg .Kitchencar .kitchencarComment {
+  display: flex;
+  margin: 2.25vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .foodSection .foodImg .Kitchencar .kitchencarComment p {
+  color: #5c7e4b;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin: 0 0 2.25vh 0;
+  gap: 2.7vw;
+}
+main .service .serviceContent .serviceSection .foodSection .foodImg .Kitchencar .kitchencarComment p::before {
+  content: "";
+  display: inline-block;
+}
+main .service .serviceContent .serviceSection .foodSection .foodImg .Kitchencar img.stall {
+  width: 80vw;
+}
+main .service .serviceContent .serviceSection .souvenirShopSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 7.5vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirShopComment {
+  display: flex;
+  margin: 2.25vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirShopComment p {
+  color: #5c7e4b;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin: 0 0 2.25vh 0;
+  gap: 2.7vw;
+}
+main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirShopComment p::before {
+  content: "";
+  display: inline-block;
+}
+main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop img.shop {
+  width: 80vw;
+}
+main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirA {
+  display: flex;
+  justify-content: center;
+  gap: 2.8vw;
+  margin: 1.6vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirA img.souvenir1,
+main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirA .souvenir2 {
+  width: 38.6vw;
+}
+main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirB {
+  display: flex;
+  justify-content: center;
+  gap: 2.8vw;
+  margin: 1.6vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirB img.souvenir3,
+main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirB .souvenir4 {
+  width: 38.6vw;
+}
+main .service .serviceContent .serviceSection .rentalSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 7.5vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .rentalSection .rentalImg .Wheelchair .wheelchairComment {
+  display: flex;
+  margin: 2.25vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .rentalSection .rentalImg .Wheelchair .wheelchairComment p {
+  color: #5c7e4b;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin: 0 0 2.25vh 0;
+  gap: 2.7vw;
+}
+main .service .serviceContent .serviceSection .rentalSection .rentalImg .Wheelchair .wheelchairComment p::before {
+  content: "";
+  display: inline-block;
+}
+main .service .serviceContent .serviceSection .rentalSection .rentalImg .Wheelchair figure.wheelchair {
+  display: flex;
+  flex-direction: column;
+}
+main .service .serviceContent .serviceSection .rentalSection .rentalImg .Wheelchair figure.wheelchair img.wheelchairImg {
+  width: 80vw;
+}
+main .service .serviceContent .serviceSection .rentalSection .rentalImg .Wheelchair figure.wheelchair figcaption.wheelchairRent {
+  font-weight: bold;
+  text-align: center;
+  margin: 1.5vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .rentalSection .rentalImg .Stroller {
+  margin: 7.5vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .rentalSection .rentalImg .Stroller .strollerComment {
+  display: flex;
+  margin: 2.25vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .rentalSection .rentalImg .Stroller .strollerComment p {
+  color: #5c7e4b;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin: 0 0 2.25vh 0;
+  gap: 2.7vw;
+}
+main .service .serviceContent .serviceSection .rentalSection .rentalImg .Stroller .strollerComment p::before {
+  content: "";
+  display: inline-block;
+}
+main .service .serviceContent .serviceSection .rentalSection .rentalImg .Stroller figure.stroller {
+  display: flex;
+  flex-direction: column;
+}
+main .service .serviceContent .serviceSection .rentalSection .rentalImg .Stroller figure.stroller img.strollerImg {
+  width: 80vw;
+}
+main .service .serviceContent .serviceSection .rentalSection .rentalImg .Stroller figure.stroller figcaption.strollerRent {
+  font-weight: bold;
+  text-align: center;
+  margin: 1.5vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .receptionSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 7.5vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .receptionSection .ReceptionImg .Reception .receptionComment {
+  display: flex;
+  margin: 2.25vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .receptionSection .ReceptionImg .Reception .receptionComment p {
+  color: #5c7e4b;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin: 0 0 2.25vh 0;
+  gap: 2.7vw;
+}
+main .service .serviceContent .serviceSection .receptionSection .ReceptionImg .Reception .receptionComment p::before {
+  content: "";
+  display: inline-block;
+}
+main .service .serviceContent .serviceSection .receptionSection .ReceptionImg .Reception figure.reception {
+  display: flex;
+  flex-direction: column;
+}
+main .service .serviceContent .serviceSection .receptionSection .ReceptionImg .Reception figure.reception img.receptionImg {
+  width: 80vw;
+}
+main .service .serviceContent .serviceSection .receptionSection .ReceptionImg .Reception figure.reception figcaption.receptionContent ul {
+  padding: 1.5vh 0 0 1.5rem;
+}
+main .service .serviceContent .serviceSection .receptionSection .ReceptionImg .Reception figure.reception figcaption.receptionContent ul li {
+  font-weight: bold;
+}
+main .service .serviceContent .serviceSection .medicalSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 7.5vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical .medicalComment {
+  display: flex;
+  margin: 2.25vh 0 0 0;
+}
+main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical .medicalComment p {
+  color: #5c7e4b;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin: 0 0 2.25vh 0;
+  gap: 2.7vw;
+}
+main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical .medicalComment p::before {
+  content: "";
+  display: inline-block;
+}
+main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical figure.medical .medicalofficeImg {
+  display: flex;
+  justify-content: center;
+  gap: 2.8vw;
+}
+main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical figure.medical .medicalofficeImg img.medicalOffice1 {
+  width: 38.6vw;
+}
+main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical figure.medical .medicalofficeImg img.medicalOffice2 {
+  width: 38.6vw;
+}
+main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical figure.medical figcaption.medicalImportant {
+  font-weight: bold;
+  text-align: center;
+  margin: 1.6vh 0 0 0;
+}
+
+.green, main .service .serviceContent .serviceSection .facilitySection .facilityImg .Fountain .fountainComment p::before, main .service .serviceContent .serviceSection .facilitySection .facilityImg .Playing .playingComment p::before {
+  border-radius: 50%;
+  background-color: #1be84b;
+  margin: 0;
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.blue, main .service .serviceContent .serviceSection .foodSection .foodImg .Restaurant .restaurantComment p::before, main .service .serviceContent .serviceSection .foodSection .foodImg .Kitchencar .kitchencarComment p::before {
+  border-radius: 50%;
+  background-color: #4c62f1;
+  margin: 0;
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.orange, main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirShopComment p::before {
+  border-radius: 50%;
+  background-color: #f28a14;
+  margin: 0;
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.pink, main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeWheelchair dl.b-FreeWheelchair dt.wheelchair h3::before, main .service .serviceContent .serviceSection .rentalSection .rentalImg .Wheelchair .wheelchairComment p::before, main .service .serviceContent .serviceSection .rentalSection .rentalImg .Stroller .strollerComment p::before, main .service .serviceContent .serviceSection .receptionSection .ReceptionImg .Reception .receptionComment p::before, main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical .medicalComment p::before {
+  border-radius: 50%;
+  background-color: #ef85e1;
+  margin: 0;
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+/* ----------------------
+   PC（1200px）以上
+----------------------- */
+@media (min-width: 1200px) {
+  main .service .serviceInfo h1 {
+    margin: 2.5vh 0 0 8vw;
+    font-size: clamp(2rem, 2.5vw, 3rem);
+  }
+  main .service .serviceContent {
+    width: 50vw;
+    margin: 5.5vh auto 5.5vh auto;
+    border-radius: clamp(20px, 1.6vw, 30px);
+  }
+  main .service .serviceContent img.serviceMap {
+    width: 40vw;
+    margin: 5.5vh auto 0 auto;
+  }
+  main .service .serviceContent nav.serviceNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5.5vh 0 0 0;
+  }
+  main .service .serviceContent .serviceSection .facilitySection .facilityImg {
+    margin: 0 auto;
+  }
+  main .service .serviceContent .serviceSection .facilitySection .facilityImg .Fountain .fountainComment p {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    font-weight: bold;
+  }
+  main .service .serviceContent .serviceSection .facilitySection .facilityImg .Fountain img.fountain {
+    width: 31vw;
+  }
+  main .service .serviceContent .serviceSection .facilitySection .facilityImg .Playing .playingComment p {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    font-weight: bold;
+  }
+  main .service .serviceContent .serviceSection .facilitySection .facilityImg .Playing img.playing {
+    width: 31vw;
+  }
+  main .service .serviceContent .serviceSection .foodSection .foodImg {
+    margin: 0 auto;
+  }
+  main .service .serviceContent .serviceSection .foodSection .foodImg .Restaurant .restaurantComment p {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    font-weight: bold;
+  }
+  main .service .serviceContent .serviceSection .foodSection .foodImg .Restaurant img.restaurant {
+    width: 31vw;
+  }
+  main .service .serviceContent .serviceSection .foodSection .foodImg .Restaurant .restaurantRefer {
+    gap: 1vw;
+  }
+  main .service .serviceContent .serviceSection .foodSection .foodImg .Restaurant .restaurantRefer img.internal {
+    width: 15vw;
+  }
+  main .service .serviceContent .serviceSection .foodSection .foodImg .Restaurant .restaurantRefer img.food {
+    width: 15vw;
+  }
+  main .service .serviceContent .serviceSection .foodSection .foodImg .Kitchencar .kitchencarComment p {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    font-weight: bold;
+  }
+  main .service .serviceContent .serviceSection .foodSection .foodImg .Kitchencar img.stall {
+    width: 31vw;
+  }
+  main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg {
+    margin: 0 auto;
+  }
+  main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirShopComment p {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    font-weight: bold;
+  }
+  main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop img.shop {
+    width: 31vw;
+  }
+  main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirA {
+    gap: 1vw;
+  }
+  main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirA img.souvenir1 {
+    width: 15vw;
+  }
+  main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirA img.souvenir2 {
+    width: 15vw;
+  }
+  main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirB {
+    gap: 1vw;
+  }
+  main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirB img.souvenir3 {
+    width: 15vw;
+  }
+  main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirB img.souvenir4 {
+    width: 15vw;
+  }
+  main .service .serviceContent .serviceSection .rentalSection .rentalImg .Wheelchair .wheelchairComment p {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    font-weight: bold;
+  }
+  main .service .serviceContent .serviceSection .rentalSection .rentalImg .Wheelchair figure.wheelchair img.wheelchairImg {
+    width: 31vw;
+  }
+  main .service .serviceContent .serviceSection .rentalSection .rentalImg .Wheelchair figure.wheelchair figcaption.wheelchairRent {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    font-weight: bold;
+  }
+  main .service .serviceContent .serviceSection .rentalSection .rentalImg .Stroller .strollerComment p {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    font-weight: bold;
+  }
+  main .service .serviceContent .serviceSection .rentalSection .rentalImg .Stroller figure.stroller img.strollerImg {
+    width: 31vw;
+  }
+  main .service .serviceContent .serviceSection .rentalSection .rentalImg .Stroller figure.stroller figcaption.strollerRent {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    font-weight: bold;
+  }
+  main .service .serviceContent .serviceSection .receptionSection .ReceptionImg .Reception .receptionComment p {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    font-weight: bold;
+  }
+  main .service .serviceContent .serviceSection .receptionSection .ReceptionImg .Reception figure.reception img.receptionImg {
+    width: 31vw;
+  }
+  main .service .serviceContent .serviceSection .receptionSection .ReceptionImg .Reception figure.reception figcaption.receptionContent ul {
+    margin: 0 0 0 1.5rem;
+  }
+  main .service .serviceContent .serviceSection .receptionSection .ReceptionImg .Reception figure.reception figcaption.receptionContent ul li {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    font-weight: bold;
+  }
+  main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical .medicalComment p {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    font-weight: bold;
+  }
+  main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical figure.medical .medicalofficeImg {
+    gap: 1vw;
+  }
+  main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical figure.medical .medicalofficeImg img.medicalOffice1 {
+    width: 15vw;
+  }
+  main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical figure.medical .medicalofficeImg img.medicalOffice2 {
+    width: 15vw;
+  }
+  main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical figure.medical figcaption.medicalImportant {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    font-weight: bold;
+  }
+}
+.green, main .service .serviceContent .serviceSection .facilitySection .facilityImg .Fountain .fountainComment p::before, main .service .serviceContent .serviceSection .facilitySection .facilityImg .Playing .playingComment p::before {
+  border-radius: 50%;
+  background-color: #1be84b;
+  margin: 0;
+  width: clamp(1rem, 1.25vw, 1.5rem);
+  height: clamp(1rem, 1.25vw, 1.5rem);
+}
+
+.blue, main .service .serviceContent .serviceSection .foodSection .foodImg .Restaurant .restaurantComment p::before, main .service .serviceContent .serviceSection .foodSection .foodImg .Kitchencar .kitchencarComment p::before {
+  border-radius: 50%;
+  background-color: #4c62f1;
+  margin: 0;
+  width: clamp(1rem, 1.25vw, 1.5rem);
+  height: clamp(1rem, 1.25vw, 1.5rem);
+}
+
+.orange, main .service .serviceContent .serviceSection .souvenirShopSection .souvenirShopImg .SouvenirShop .souvenirShopComment p::before {
+  border-radius: 50%;
+  background-color: #f28a14;
+  margin: 0;
+  width: clamp(1rem, 1.25vw, 1.5rem);
+  height: clamp(1rem, 1.25vw, 1.5rem);
+}
+
+.pink, main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeWheelchair dl.b-FreeWheelchair dt.wheelchair h3::before, main .service .serviceContent .serviceSection .rentalSection .rentalImg .Wheelchair .wheelchairComment p::before, main .service .serviceContent .serviceSection .rentalSection .rentalImg .Stroller .strollerComment p::before, main .service .serviceContent .serviceSection .receptionSection .ReceptionImg .Reception .receptionComment p::before, main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical .medicalComment p::before {
+  border-radius: 50%;
+  background-color: #ef85e1;
+  margin: 0;
+  width: clamp(1rem, 1.25vw, 1.5rem);
+  height: clamp(1rem, 1.25vw, 1.5rem);
+}
+
+/* ----------------------
+   タブレット横向き（900px）以上
+----------------------- */
+/* ----------------------
+   タブレット縦向き（600px）以上
+----------------------- */
+img {
+  width: 80vw;
+  margin: 10vh auto;
+  display: block;
+}
+
+/* ----------------------
+   PC（1200px）以上
+----------------------- */
+@media (min-width: 1200px) {
+  img {
+    width: 35vw;
+    margin: 5vh auto;
+  }
+}
+/* ----------------------
+   タブレット横向き（900px）以上
+----------------------- */
+/* ----------------------
+   タブレット縦向き（600px）以上
+----------------------- */
+main .attempt {
+  background-color: #e5a829;
+  display: flex;
+  flex-direction: column;
+}
+main .attempt .attemptContent nav.attemptNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  margin: 2vh 0 0 0;
+}
+main .attempt .attemptContent nav.attemptNav ul.attempt-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+main .attempt .attemptContent nav.attemptNav ul.attempt-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+main .attempt .attemptContent .attemptSection article.enrichmentSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vh;
+  margin: 7.5vh 0 0 0;
+}
+main .attempt .attemptContent .attemptSection article.enrichmentSection .enrichment dl.enrichmentContent dt.Enrichment {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75vh;
+}
+main .attempt .attemptContent .attemptSection article.enrichmentSection .enrichment dl.enrichmentContent dt.Enrichment h3 {
+  color: #5c7e4b;
+  font-size: 1rem;
+  line-height: 1;
+  display: flex;
+  gap: 2.7vh;
+}
+main .attempt .attemptContent .attemptSection article.enrichmentSection .enrichment dl.enrichmentContent dt.Enrichment h3::before {
+  content: "";
+  display: inline-block;
+}
+main .attempt .attemptContent .attemptSection article.enrichmentSection .enrichment dl.enrichmentContent dd.enrichmentComment {
+  margin: 1.2vh 0 0 0;
+}
+main .attempt .attemptContent .attemptSection article.enrichmentSection .enrichment dl.enrichmentContent dd.enrichmentComment p {
+  font-size: 0.875rem;
+}
+main .attempt .attemptContent .attemptSection article.enrichmentSection .enrichment dl.enrichmentContent dd.enrichmentComment p span {
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+main .attempt .attemptContent .attemptSection article.enrichmentSection .enrichment img {
+  margin: 2.25vh 0 0 0;
+}
+main .attempt .attemptContent .attemptSection article.welfareSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vh;
+  margin: 7.5vh 0 0 0;
+}
+main .attempt .attemptContent .attemptSection article.welfareSection .welfare dl.welfareContent dt.Welfare {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75vh;
+}
+main .attempt .attemptContent .attemptSection article.welfareSection .welfare dl.welfareContent dt.Welfare h3 {
+  color: #5c7e4b;
+  font-size: 1rem;
+  line-height: 1;
+  display: flex;
+  gap: 2.7vh;
+}
+main .attempt .attemptContent .attemptSection article.welfareSection .welfare dl.welfareContent dt.Welfare h3::before {
+  content: "";
+  display: inline-block;
+}
+main .attempt .attemptContent .attemptSection article.welfareSection .welfare dl.welfareContent dd.welfareComment {
+  margin: 1.2vh 0 0 0;
+}
+main .attempt .attemptContent .attemptSection article.welfareSection .welfare dl.welfareContent dd.welfareComment p {
+  font-size: 0.875rem;
+}
+main .attempt .attemptContent .attemptSection article.welfareSection .welfare dl.welfareContent dd.welfareComment p span {
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+main .attempt .attemptContent .attemptSection article.welfareSection .welfare img {
+  margin: 2.25vh 0 0 0;
+}
+main .attempt .attemptContent .attemptSection article.ed-reSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vh;
+  margin: 7.5vh 0 0 0;
+}
+main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.ed-reContent dt.Ed-Re {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75vh;
+}
+main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.ed-reContent dt.Ed-Re h3 {
+  color: #5c7e4b;
+  font-size: 1rem;
+  line-height: 1;
+  display: flex;
+  gap: 2.7vh;
+}
+main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.ed-reContent dt.Ed-Re h3::before {
+  content: "";
+  display: inline-block;
+}
+main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.ed-reContent dd.ed-reComment {
+  margin: 1.2vh 0 0 0;
+}
+main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.ed-reContent dd.ed-reComment p {
+  font-size: 0.875rem;
+}
+main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.intentionContent {
+  margin: 2.5vh 0 0 0;
+}
+main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.intentionContent dt.Intention {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75vh;
+}
+main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.intentionContent dt.Intention h4 {
+  color: #5c7e4b;
+  font-size: 0.875rem;
+  line-height: 1;
+  font-weight: bold;
+  display: flex;
+  gap: 2.7vh;
+}
+main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.intentionContent dt.Intention h4::before {
+  content: "";
+  display: inline-block;
+}
+main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.intentionContent dd.intentionComment {
+  font-size: 0.875rem;
+}
+main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.actionContent {
+  margin: 2.5vh 0 0 0;
+}
+main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.actionContent dt.Action {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75vh;
+}
+main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.actionContent dt.Action h4 {
+  color: #5c7e4b;
+  font-size: 0.875rem;
+  line-height: 1;
+  font-weight: bold;
+  display: flex;
+  gap: 2.7vh;
+}
+main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.actionContent dt.Action h4::before {
+  content: "";
+  display: inline-block;
+}
+main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re .ed-reImg img {
+  margin: 2.25vh 0 0 0;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vh;
+  margin: 7.5vh 0 0 0;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeMap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75vh;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeMap h3 {
+  color: #5c7e4b;
+  font-size: 1rem;
+  line-height: 1;
+  display: flex;
+  gap: 2.7vh;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeMap h3::before {
+  content: "";
+  display: inline-block;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeMap img.universalMap {
+  margin: 0.75vh 0 0 0;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeToilet {
+  margin: 3vh 0 0 0;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeToilet h3 {
+  color: #5c7e4b;
+  font-size: 1rem;
+  line-height: 1;
+  display: flex;
+  gap: 2.7vh;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeToilet h3::before {
+  content: "";
+  display: inline-block;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeToilet .border {
+  margin: 0.75vh 0;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeToilet img {
+  margin: 0.75vh 0 0 0;
+  display: inline-block;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeWheelchair {
+  margin: 3vh 0 0 0;
+  display: flex;
+  flex-direction: column;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeWheelchair dl.b-FreeWheelchair dt.wheelchair {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75vw;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeWheelchair dl.b-FreeWheelchair dt.wheelchair h3 {
+  font-size: 1rem;
+  color: #5c7e4b;
+  line-height: 1;
+  display: flex;
+  gap: 2.7vh;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeWheelchair dl.b-FreeWheelchair dt.wheelchair h3::before {
+  content: "";
+  display: inline-block;
+  margin: 0 0 0 0.35rem;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeWheelchair dl.b-FreeWheelchair dd.rentalComment {
+  font-size: 0.875rem;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeWheelchair .border {
+  margin: 0.75vh 0;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .admissionFee dl.Fee dt.fee h3 {
+  font-size: 1rem;
+  color: #5c7e4b;
+  line-height: 1;
+  display: flex;
+  gap: 2.7vh;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .admissionFee dl.Fee dt.fee h3::before {
+  content: "";
+  display: inline-block;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .admissionFee dl.Fee {
+  margin: 2.7vh 0 0 0;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .admissionFee dl.Fee dt.fee .border {
+  margin: 0.75vh 0;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .parkingFee dl.Parking {
+  margin: 2.7vh 0 0 0;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .parkingFee dl.Parking dt.parking h3 {
+  color: #5c7e4b;
+  font-size: 1rem;
+  line-height: 1;
+  display: flex;
+  gap: 2.7vh;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .parkingFee dl.Parking dt.parking h3::before {
+  content: "";
+  display: inline-block;
+}
+main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .parkingFee dl.Parking dt.parking .border {
+  margin: 0.75vh 0;
+}
+
+.border {
+  border-bottom: 3px solid #e5a829;
+}
+
+.red, main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeToilet h3::before {
+  border-radius: 50%;
+  background-color: red;
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+/* ----------------------
+   PC（1200px）以上
+----------------------- */
+@media (min-width: 1200px) {
+  main .attempt .attemptInfo h1 {
+    margin: 2.5vh 0 0 8vw;
+    font-size: clamp(2rem, 2.5vw, 3rem);
+  }
+  main .attempt .attemptContent {
+    width: 50vw;
+    margin: 5.5vh auto 5.5vh auto;
+    border-radius: clamp(20px, 1.6vw, 30px);
+  }
+  main .attempt .attemptContent nav.attemptNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5.5vh 0 0 0;
+  }
+  main .attempt .attemptContent .attemptSection article.enrichmentSection .enrichment dl.enrichmentContent dt.Enrichment h3 {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    line-height: 1.2;
+  }
+  main .attempt .attemptContent .attemptSection article.enrichmentSection .enrichment dl.enrichmentContent dd.enrichmentComment p {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+  main .attempt .attemptContent .attemptSection article.enrichmentSection .enrichment dl.enrichmentContent dd.enrichmentComment p span {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+  main .attempt .attemptContent .attemptSection article.enrichmentSection .enrichment img {
+    width: 31vw;
+  }
+  main .attempt .attemptContent .attemptSection article.welfareSection .welfare dl.welfareContent dt.Welfare h3 {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    line-height: 1.2;
+  }
+  main .attempt .attemptContent .attemptSection article.welfareSection .welfare dl.welfareContent dd.welfareComment {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+  main .attempt .attemptContent .attemptSection article.welfareSection .welfare dl.welfareContent dd.welfareComment p {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+  main .attempt .attemptContent .attemptSection article.welfareSection .welfare dl.welfareContent dd.welfareComment p span {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+  main .attempt .attemptContent .attemptSection article.welfareSection .welfare dl.welfareContent img {
+    width: 55vh;
+  }
+  main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.ed-reContent dt.Ed-Re h3 {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    line-height: 1.2;
+  }
+  main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.ed-reContent dd.ed-reComment p {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+  main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.intentionContent dt.Intention h4 {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+  main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.intentionContent dd.intentionComment p {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+  main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.actionContent dt.Action h4 {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+  main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re dl.actionContent dd.actionComment {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+  main .attempt .attemptContent .attemptSection article.ed-reSection .ed-re .ed-reImg img {
+    width: 31vw;
+  }
+  main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeMap h3 {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    line-height: 1.2;
+  }
+  main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeMap img.universalMap {
+    width: 31vw;
+  }
+  main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeToilet h3 {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    line-height: 1.2;
+  }
+  main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeToilet img {
+    width: 31vw;
+  }
+  main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeWheelchair dl.b-FreeWheelchair dt.wheelchair h3 {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+  main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeWheelchair dl.b-FreeWheelchair dd.rentalComment {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+  main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .admissionFee dl.Fee dt.fee h3 {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+  main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .admissionFee dl.Fee dd.feeComment p {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+  main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .parkingFee dl.Parking dt.parking h3 {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+    line-height: 1.2;
+  }
+  main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .parkingFee dl.Parking dd.parkingComment p {
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
+  }
+}
+.red, main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeToilet h3::before {
+  width: clamp(1rem, 1.25vw, 1.5rem);
+  height: clamp(1rem, 1.25vw, 1.5rem);
+}
+
+.pink, main .service .serviceContent .serviceSection .rentalSection .rentalImg .Wheelchair .wheelchairComment p::before, main .service .serviceContent .serviceSection .rentalSection .rentalImg .Stroller .strollerComment p::before, main .service .serviceContent .serviceSection .receptionSection .ReceptionImg .Reception .receptionComment p::before, main .service .serviceContent .serviceSection .medicalSection .medicalImg .Medical .medicalComment p::before, main .attempt .attemptContent .attemptSection article.b-freeSection .b-free .b-freeWheelchair dl.b-FreeWheelchair dt.wheelchair h3::before {
+  width: clamp(1rem, 1.25vw, 1.5rem);
+  height: clamp(1rem, 1.25vw, 1.5rem);
+}
+
+/* ----------------------
+   タブレット横向き（900px）以上
+----------------------- */
+/* ----------------------
+   タブレット縦向き（600px）以上
+----------------------- */
+main .save {
+  background-color: #ecdab3;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ----------------------
+   PC（1200px）以上
+----------------------- */
+@media (min-width: 1200px) {
+  main .save .saveInfo h1 {
+    margin: 2.5vh 0 0 8vw;
+    font-size: clamp(2rem, 2.5vw, 3rem);
+  }
+  main .save .saveContent {
+    width: 50vw;
+    margin: 5.5vh auto 5.5vh auto;
+    border-radius: clamp(20px, 1.6vw, 30px);
+  }
+  main .save .saveContent img {
+    width: 20vw;
+  }
+}
+/* ----------------------
+   タブレット横向き（900px）以上
+----------------------- */
+/* ----------------------
+   タブレット縦向き（600px）以上
+----------------------- *//*# sourceMappingURL=main.css.map */
