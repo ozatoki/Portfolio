@@ -1,0 +1,16 @@
+@charset "UTF-8";
+main.about {
+  padding: 120px 40px 160px 40px;
+  article.about-content {
+    h1 {
+      font-size: 0.875rem;
+      font-weight: normal;
+      margin: 0 0 30px 0;
+    }
+    p.about-text {
+      line-height: 1.9;
+      font-size: 0.875rem;
+      font-weight: normal;
+    }
+  }
+}
