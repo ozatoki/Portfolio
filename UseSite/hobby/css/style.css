@@ -121,7 +121,9 @@ main article.music figure.western figcaption dl dt {
 }
 
 footer {
+  width: 90vw;
   font-size: 0.5rem;
+  margin: 0 auto;
   text-align: center;
 }
 
