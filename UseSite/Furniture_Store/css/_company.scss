@@ -120,3 +120,329 @@ main.company {
     }
   }
 }
+
+/* ----------------------
+   タブレット縦向き（600px）以上
+----------------------- */
+@media (min-width: 600px) {
+}
+
+/* ----------------------
+   タブレット横向き（900px）以上
+----------------------- */
+@media (min-width: 900px) {
+  main.company {
+    padding: 120px 40px 160px 40px;
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+    h1 {
+      font-size: 0.875rem;
+      font-weight: normal;
+      margin: 0 0 30px 0;
+    }
+    article.company-detail {
+      max-width: 600px;
+      font-weight: normal;
+      .name {
+        dl {
+          margin: 0;
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid #dcdbdb;
+          dt {
+            width: 180px;
+            padding: 20px 10px;
+            font-size: 0.875rem;
+          }
+          dd {
+            flex: 1;
+            width: 100%;
+            font-size: 0.875rem;
+            padding: 20px 10px;
+            margin: 0;
+            border-bottom: none;
+          }
+        }
+      }
+      .address {
+        dl {
+          margin: 0;
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid #dcdbdb;
+          margin: 0;
+          dt {
+            width: 180px;
+            padding: 20px 10px;
+            font-size: 0.875rem;
+          }
+          dd {
+            flex: 1;
+            width: 100%;
+            font-size: 0.875rem;
+            padding: 20px 10px;
+            margin: 0;
+            border-bottom: none;
+          }
+        }
+      }
+      .establishment {
+        dl {
+          margin: 0;
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid #dcdbdb;
+          margin: 0;
+          dt {
+            width: 180px;
+            padding: 20px 10px;
+            font-size: 0.875rem;
+          }
+          dd {
+            flex: 1;
+            width: 100%;
+            font-size: 0.875rem;
+            padding: 20px 10px;
+            margin: 0;
+            border-bottom: none;
+          }
+        }
+      }
+      .capital {
+        dl {
+          margin: 0;
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid #dcdbdb;
+          margin: 0;
+          dt {
+            width: 180px;
+            padding: 20px 10px;
+            font-size: 0.875rem;
+          }
+          dd {
+            flex: 1;
+            width: 100%;
+            font-size: 0.875rem;
+            padding: 20px 10px;
+            margin: 0;
+            border-bottom: none;
+          }
+        }
+      }
+      .employee {
+        dl {
+          margin: 0;
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid #dcdbdb;
+          margin: 0;
+          dt {
+            width: 180px;
+            padding: 20px 10px;
+            font-size: 0.875rem;
+          }
+          dd {
+            flex: 1;
+            width: 100%;
+            font-size: 0.875rem;
+            padding: 20px 10px;
+            margin: 0;
+            border-bottom: none;
+          }
+        }
+      }
+      .business {
+        margin: 0 0 20px 0;
+        dl {
+          margin: 0;
+          display: flex;
+          align-items: center;
+
+          dt {
+            width: 180px;
+            padding: 20px 10px;
+            font-size: 0.875rem;
+          }
+          dd {
+            flex: 1;
+            width: 100%;
+            font-size: 0.875rem;
+            padding: 20px 10px;
+            margin: 0;
+            border-bottom: none;
+          }
+        }
+      }
+      .map {
+        filter: grayscale(1);
+        iframe {
+          width: 100%;
+          height: 300px;
+          border: 0;
+        }
+      }
+    }
+  }
+}
+
+/* ----------------------
+   PC（1200px）以上
+----------------------- */
+@media (min-width: 1200px) {
+  main.company {
+    padding: 120px 40px 160px 40px;
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+    h1 {
+      font-size: 0.875rem;
+      font-weight: normal;
+      margin: 0 0 30px 0;
+    }
+    article.company-detail {
+      max-width: 600px;
+      font-weight: normal;
+      .name {
+        dl {
+          margin: 0;
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid #dcdbdb;
+          dt {
+            width: 180px;
+            padding: 20px 10px;
+            font-size: 0.875rem;
+          }
+          dd {
+            flex: 1;
+            width: 100%;
+            font-size: 0.875rem;
+            padding: 20px 10px;
+            margin: 0;
+            border-bottom: none;
+          }
+        }
+      }
+      .address {
+        dl {
+          margin: 0;
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid #dcdbdb;
+          margin: 0;
+          dt {
+            width: 180px;
+            padding: 20px 10px;
+            font-size: 0.875rem;
+          }
+          dd {
+            flex: 1;
+            width: 100%;
+            font-size: 0.875rem;
+            padding: 20px 10px;
+            margin: 0;
+            border-bottom: none;
+          }
+        }
+      }
+      .establishment {
+        dl {
+          margin: 0;
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid #dcdbdb;
+          margin: 0;
+          dt {
+            width: 180px;
+            padding: 20px 10px;
+            font-size: 0.875rem;
+          }
+          dd {
+            flex: 1;
+            width: 100%;
+            font-size: 0.875rem;
+            padding: 20px 10px;
+            margin: 0;
+            border-bottom: none;
+          }
+        }
+      }
+      .capital {
+        dl {
+          margin: 0;
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid #dcdbdb;
+          margin: 0;
+          dt {
+            width: 180px;
+            padding: 20px 10px;
+            font-size: 0.875rem;
+          }
+          dd {
+            flex: 1;
+            width: 100%;
+            font-size: 0.875rem;
+            padding: 20px 10px;
+            margin: 0;
+            border-bottom: none;
+          }
+        }
+      }
+      .employee {
+        dl {
+          margin: 0;
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid #dcdbdb;
+          margin: 0;
+          dt {
+            width: 180px;
+            padding: 20px 10px;
+            font-size: 0.875rem;
+          }
+          dd {
+            flex: 1;
+            width: 100%;
+            font-size: 0.875rem;
+            padding: 20px 10px;
+            margin: 0;
+            border-bottom: none;
+          }
+        }
+      }
+      .business {
+        margin: 0 0 20px 0;
+        dl {
+          margin: 0;
+          display: flex;
+          align-items: center;
+
+          dt {
+            width: 180px;
+            padding: 20px 10px;
+            font-size: 0.875rem;
+          }
+          dd {
+            flex: 1;
+            width: 100%;
+            font-size: 0.875rem;
+            padding: 20px 10px;
+            margin: 0;
+            border-bottom: none;
+          }
+        }
+      }
+      .map {
+        filter: grayscale(1);
+        iframe {
+          width: 100%;
+          height: 300px;
+          border: 0;
+        }
+      }
+    }
+  }
+}

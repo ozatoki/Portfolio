@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Document
  * ========================================================================== */
 /**
@@ -647,6 +648,346 @@ footer p {
   text-align: center;
 }
 
+/* ----------------------
+   タブレット縦向き（600px）以上
+----------------------- */
+/* ----------------------
+   タブレット横向き（900px）以上
+----------------------- */
+@media (min-width: 900px) {
+  header {
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: white;
+  }
+  header h1.site-title {
+    margin: 0;
+  }
+  header h1.site-title a img {
+    width: 180px;
+  }
+  header .toggle-btn.add {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+  header .toggle-btn.add span.span1 {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    margin: 10px 0;
+    z-index: 20;
+  }
+  header .toggle-btn.add span.span1:nth-child(1) {
+    transform: translateY(4px) rotate(-45deg);
+    transition: all 0.5s;
+  }
+  header .toggle-btn.add span.span2 {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    margin-top: 10px;
+    z-index: 20;
+  }
+  header .toggle-btn.add span.span2:nth-child(2) {
+    transform: translateY(4px) rotate(45deg);
+    transition: all 0.5s;
+  }
+  header .toggle-btn span.span1 {
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    display: block;
+    margin: 10px 0;
+    transition: all 0.5s;
+  }
+  header .toggle-btn span.span2 {
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    display: block;
+    margin-top: 10px;
+    transition: all 0.5s;
+  }
+  header nav.nav.open {
+    display: block;
+    padding: 36px 50px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.8;
+  }
+  header nav.nav.open ul.nav-menu {
+    margin: 0;
+  }
+  header nav.nav.open ul.nav-menu li {
+    list-style: none;
+    font-size: 0.875rem;
+    margin-bottom: 14px;
+  }
+  header nav.nav.open ul.nav-menu li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  header nav.nav {
+    display: none;
+  }
+  main.top article.top {
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 80px 40px 160px 40px;
+  }
+  main.top article.top .products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+  }
+  main.top article.top .products figure {
+    margin: 0;
+  }
+  main.top article.top .products figure img {
+    max-width: 100%;
+  }
+  main.top article.top .products figure figcaption {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+  main.top article.top .products figure figcaption dl dt {
+    margin: 0;
+  }
+  main.top article.top .products figure figcaption dl dd {
+    margin: 0;
+  }
+  main.top article.top a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.875rem;
+    display: block;
+    text-align: center;
+    margin: 40px 0 0 0;
+  }
+  footer {
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 400px;
+  }
+  footer ul.sns {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+  footer ul.sns li {
+    list-style: none;
+    font-size: 0.75rem;
+  }
+  footer ul.sns li a {
+    text-decoration: none;
+    color: black;
+  }
+  footer p {
+    font-size: 0.625rem;
+    text-align: center;
+  }
+  footer {
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 300px;
+  }
+  footer ul.sns {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+  footer ul.sns li {
+    list-style: none;
+    font-size: 0.75rem;
+  }
+  footer ul.sns li a {
+    text-decoration: none;
+    color: black;
+  }
+  footer p {
+    font-size: 0.625rem;
+    text-align: center;
+  }
+}
+/* ----------------------
+   PC（1200px）以上
+----------------------- */
+@media (min-width: 1200px) {
+  header {
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: white;
+  }
+  header h1.site-title {
+    margin: 0;
+  }
+  header h1.site-title a img {
+    width: 180px;
+  }
+  header .toggle-btn.add {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+  header .toggle-btn.add span.span1 {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    margin: 10px 0;
+    z-index: 20;
+  }
+  header .toggle-btn.add span.span1:nth-child(1) {
+    transform: translateY(4px) rotate(-45deg);
+    transition: all 0.5s;
+  }
+  header .toggle-btn.add span.span2 {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    margin-top: 10px;
+    z-index: 20;
+  }
+  header .toggle-btn.add span.span2:nth-child(2) {
+    transform: translateY(4px) rotate(45deg);
+    transition: all 0.5s;
+  }
+  header .toggle-btn span.span1 {
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    display: block;
+    margin: 10px 0;
+    transition: all 0.5s;
+  }
+  header .toggle-btn span.span2 {
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    display: block;
+    margin-top: 10px;
+    transition: all 0.5s;
+  }
+  header nav.nav.open {
+    display: block;
+    padding: 36px 50px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.8;
+  }
+  header nav.nav.open ul.nav-menu {
+    margin: 0;
+  }
+  header nav.nav.open ul.nav-menu li {
+    list-style: none;
+    font-size: 0.875rem;
+    margin-bottom: 14px;
+  }
+  header nav.nav.open ul.nav-menu li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  header nav.nav {
+    display: none;
+  }
+  main.top article.top {
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 80px 40px 160px 40px;
+  }
+  main.top article.top .products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+  }
+  main.top article.top .products figure {
+    margin: 0;
+  }
+  main.top article.top .products figure img {
+    max-width: 100%;
+  }
+  main.top article.top .products figure figcaption {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+  main.top article.top .products figure figcaption dl dt {
+    margin: 0;
+  }
+  main.top article.top .products figure figcaption dl dd {
+    margin: 0;
+  }
+  main.top article.top a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.875rem;
+    display: block;
+    text-align: center;
+    margin: 40px 0 0 0;
+  }
+  footer {
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 400px;
+  }
+  footer ul.sns {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+  footer ul.sns li {
+    list-style: none;
+    font-size: 0.75rem;
+  }
+  footer ul.sns li a {
+    text-decoration: none;
+    color: black;
+  }
+  footer p {
+    font-size: 0.625rem;
+    text-align: center;
+  }
+}
 main.top article.top {
   padding: 80px 40px 110px 40px;
 }
@@ -699,6 +1040,127 @@ main.top article.top ul li a {
   margin: 0;
 }
 
+/* ----------------------
+    タブレット縦向き（600px）以上
+ ----------------------- */
+/* ----------------------
+    タブレット横向き（900px）以上
+ ----------------------- */
+@media (min-width: 900px) {
+  main.top article.top {
+    width: 100%;
+    max-width: 1360px;
+    padding: 80px 40px 110px 40px;
+    margin: 0 auto;
+  }
+  main.top article.top h1 {
+    font-size: 0.875rem;
+    margin: 40px 0 30px 0;
+    height: -moz-fit-content;
+    height: fit-content;
+    font-weight: normal;
+  }
+  main.top article.top .products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+  }
+  main.top article.top .products figure {
+    margin: 0;
+  }
+  main.top article.top .products figure img {
+    max-width: 100%;
+  }
+  main.top article.top .products figure figcaption {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+  main.top article.top .products figure figcaption dl dt {
+    margin: 0;
+  }
+  main.top article.top .products figure figcaption dl dd {
+    margin: 0;
+  }
+  main.top article.top ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 40px 0 0 0;
+  }
+  main.top article.top ul li {
+    font-size: 0.875rem;
+    list-style: none;
+    padding: 0 20px;
+  }
+  main.top article.top ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.875rem;
+    display: block;
+    text-align: center;
+    margin: 0;
+  }
+}
+/* ----------------------
+    PC（1200px）以上
+ ----------------------- */
+@media (min-width: 1200px) {
+  main.top article.top {
+    width: 100%;
+    max-width: 1360px;
+    padding: 80px 40px 110px 40px;
+    margin: 0 auto;
+  }
+  main.top article.top h1 {
+    font-size: 0.875rem;
+    margin: 40px 0 30px 0;
+    height: -moz-fit-content;
+    height: fit-content;
+    font-weight: normal;
+  }
+  main.top article.top .products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+  }
+  main.top article.top .products figure {
+    margin: 0;
+  }
+  main.top article.top .products figure img {
+    max-width: 100%;
+  }
+  main.top article.top .products figure figcaption {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+  main.top article.top .products figure figcaption dl dt {
+    margin: 0;
+  }
+  main.top article.top .products figure figcaption dl dd {
+    margin: 0;
+  }
+  main.top article.top ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 40px 0 0 0;
+  }
+  main.top article.top ul li {
+    font-size: 0.875rem;
+    list-style: none;
+    padding: 0 20px;
+  }
+  main.top article.top ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.875rem;
+    display: block;
+    text-align: center;
+    margin: 0;
+  }
+}
 main.top article.top {
   padding: 80px 40px 110px 40px;
 }
@@ -752,6 +1214,129 @@ main.top article.top ul li a {
   margin: 0;
 }
 
+/* ----------------------
+     タブレット縦向き（600px）以上
+  ----------------------- */
+/* ----------------------
+     タブレット横向き（900px）以上
+  ----------------------- */
+@media (min-width: 900px) {
+  main.top article.top {
+    width: 100%;
+    max-width: 1360px;
+    padding: 80px 40px 110px 40px;
+    margin: 0 auto;
+  }
+  main.top article.top h1 {
+    font-size: 0.875rem;
+    margin: 40px 0 30px 0;
+    height: -moz-fit-content;
+    height: fit-content;
+    font-weight: normal;
+  }
+  main.top article.top .products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+  }
+  main.top article.top .products figure {
+    margin: 0;
+  }
+  main.top article.top .products figure img {
+    max-width: 100%;
+  }
+  main.top article.top .products figure figcaption {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+  main.top article.top .products figure figcaption dl dt {
+    margin: 0;
+  }
+  main.top article.top .products figure figcaption dl dd {
+    margin: 0;
+  }
+  main.top article.top ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 40px 0 0 0;
+  }
+  main.top article.top ul li {
+    font-size: 0.875rem;
+    list-style: none;
+    padding: 0 20px;
+  }
+  main.top article.top ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.875rem;
+    display: block;
+    text-align: center;
+    margin: 40px 0 0 0;
+    margin: 0;
+  }
+}
+/* ----------------------
+     PC（1200px）以上
+  ----------------------- */
+@media (min-width: 1200px) {
+  main.top article.top {
+    width: 100%;
+    max-width: 1360px;
+    padding: 80px 40px 110px 40px;
+    margin: 0 auto;
+  }
+  main.top article.top h1 {
+    font-size: 0.875rem;
+    margin: 40px 0 30px 0;
+    height: -moz-fit-content;
+    height: fit-content;
+    font-weight: normal;
+  }
+  main.top article.top .products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+  }
+  main.top article.top .products figure {
+    margin: 0;
+  }
+  main.top article.top .products figure img {
+    max-width: 100%;
+  }
+  main.top article.top .products figure figcaption {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+  main.top article.top .products figure figcaption dl dt {
+    margin: 0;
+  }
+  main.top article.top .products figure figcaption dl dd {
+    margin: 0;
+  }
+  main.top article.top ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 40px 0 0 0;
+  }
+  main.top article.top ul li {
+    font-size: 0.875rem;
+    list-style: none;
+    padding: 0 20px;
+  }
+  main.top article.top ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.875rem;
+    display: block;
+    text-align: center;
+    margin: 40px 0 0 0;
+    margin: 0;
+  }
+}
 main.about {
   padding: 120px 40px 160px 40px;
 }
@@ -766,6 +1351,34 @@ main.about article.about-content p.about-text {
   font-weight: normal;
 }
 
+/* ----------------------
+   タブレット縦向き（600px）以上
+----------------------- */
+/* ----------------------
+   タブレット横向き（900px）以上
+----------------------- */
+/* ----------------------
+   PC（1200px）以上
+----------------------- */
+@media (min-width: 1200px) {
+  main.about {
+    padding: 120px 40px 160px 40px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1360px;
+  }
+  main.about article.about-content h1 {
+    font-size: 0.875rem;
+    font-weight: normal;
+    margin: 0 0 30px 0;
+  }
+  main.about article.about-content p.about-text {
+    line-height: 1.9;
+    font-size: 0.875rem;
+    font-weight: normal;
+    max-width: 600px;
+  }
+}
 main.company {
   padding: 120px 40px 160px 40px;
 }
@@ -875,4 +1488,304 @@ main.company article.company-detail .map iframe {
   width: 100%;
   height: 300px;
   border: 0;
+}
+
+/* ----------------------
+   タブレット縦向き（600px）以上
+----------------------- */
+/* ----------------------
+   タブレット横向き（900px）以上
+----------------------- */
+@media (min-width: 900px) {
+  main.company {
+    padding: 120px 40px 160px 40px;
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+  }
+  main.company h1 {
+    font-size: 0.875rem;
+    font-weight: normal;
+    margin: 0 0 30px 0;
+  }
+  main.company article.company-detail {
+    max-width: 600px;
+    font-weight: normal;
+  }
+  main.company article.company-detail .name dl {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #dcdbdb;
+  }
+  main.company article.company-detail .name dl dt {
+    width: 180px;
+    padding: 20px 10px;
+    font-size: 0.875rem;
+  }
+  main.company article.company-detail .name dl dd {
+    flex: 1;
+    width: 100%;
+    font-size: 0.875rem;
+    padding: 20px 10px;
+    margin: 0;
+    border-bottom: none;
+  }
+  main.company article.company-detail .address dl {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #dcdbdb;
+    margin: 0;
+  }
+  main.company article.company-detail .address dl dt {
+    width: 180px;
+    padding: 20px 10px;
+    font-size: 0.875rem;
+  }
+  main.company article.company-detail .address dl dd {
+    flex: 1;
+    width: 100%;
+    font-size: 0.875rem;
+    padding: 20px 10px;
+    margin: 0;
+    border-bottom: none;
+  }
+  main.company article.company-detail .establishment dl {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #dcdbdb;
+    margin: 0;
+  }
+  main.company article.company-detail .establishment dl dt {
+    width: 180px;
+    padding: 20px 10px;
+    font-size: 0.875rem;
+  }
+  main.company article.company-detail .establishment dl dd {
+    flex: 1;
+    width: 100%;
+    font-size: 0.875rem;
+    padding: 20px 10px;
+    margin: 0;
+    border-bottom: none;
+  }
+  main.company article.company-detail .capital dl {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #dcdbdb;
+    margin: 0;
+  }
+  main.company article.company-detail .capital dl dt {
+    width: 180px;
+    padding: 20px 10px;
+    font-size: 0.875rem;
+  }
+  main.company article.company-detail .capital dl dd {
+    flex: 1;
+    width: 100%;
+    font-size: 0.875rem;
+    padding: 20px 10px;
+    margin: 0;
+    border-bottom: none;
+  }
+  main.company article.company-detail .employee dl {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #dcdbdb;
+    margin: 0;
+  }
+  main.company article.company-detail .employee dl dt {
+    width: 180px;
+    padding: 20px 10px;
+    font-size: 0.875rem;
+  }
+  main.company article.company-detail .employee dl dd {
+    flex: 1;
+    width: 100%;
+    font-size: 0.875rem;
+    padding: 20px 10px;
+    margin: 0;
+    border-bottom: none;
+  }
+  main.company article.company-detail .business {
+    margin: 0 0 20px 0;
+  }
+  main.company article.company-detail .business dl {
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  main.company article.company-detail .business dl dt {
+    width: 180px;
+    padding: 20px 10px;
+    font-size: 0.875rem;
+  }
+  main.company article.company-detail .business dl dd {
+    flex: 1;
+    width: 100%;
+    font-size: 0.875rem;
+    padding: 20px 10px;
+    margin: 0;
+    border-bottom: none;
+  }
+  main.company article.company-detail .map {
+    filter: grayscale(1);
+  }
+  main.company article.company-detail .map iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+  }
+}
+/* ----------------------
+   PC（1200px）以上
+----------------------- */
+@media (min-width: 1200px) {
+  main.company {
+    padding: 120px 40px 160px 40px;
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+  }
+  main.company h1 {
+    font-size: 0.875rem;
+    font-weight: normal;
+    margin: 0 0 30px 0;
+  }
+  main.company article.company-detail {
+    max-width: 600px;
+    font-weight: normal;
+  }
+  main.company article.company-detail .name dl {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #dcdbdb;
+  }
+  main.company article.company-detail .name dl dt {
+    width: 180px;
+    padding: 20px 10px;
+    font-size: 0.875rem;
+  }
+  main.company article.company-detail .name dl dd {
+    flex: 1;
+    width: 100%;
+    font-size: 0.875rem;
+    padding: 20px 10px;
+    margin: 0;
+    border-bottom: none;
+  }
+  main.company article.company-detail .address dl {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #dcdbdb;
+    margin: 0;
+  }
+  main.company article.company-detail .address dl dt {
+    width: 180px;
+    padding: 20px 10px;
+    font-size: 0.875rem;
+  }
+  main.company article.company-detail .address dl dd {
+    flex: 1;
+    width: 100%;
+    font-size: 0.875rem;
+    padding: 20px 10px;
+    margin: 0;
+    border-bottom: none;
+  }
+  main.company article.company-detail .establishment dl {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #dcdbdb;
+    margin: 0;
+  }
+  main.company article.company-detail .establishment dl dt {
+    width: 180px;
+    padding: 20px 10px;
+    font-size: 0.875rem;
+  }
+  main.company article.company-detail .establishment dl dd {
+    flex: 1;
+    width: 100%;
+    font-size: 0.875rem;
+    padding: 20px 10px;
+    margin: 0;
+    border-bottom: none;
+  }
+  main.company article.company-detail .capital dl {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #dcdbdb;
+    margin: 0;
+  }
+  main.company article.company-detail .capital dl dt {
+    width: 180px;
+    padding: 20px 10px;
+    font-size: 0.875rem;
+  }
+  main.company article.company-detail .capital dl dd {
+    flex: 1;
+    width: 100%;
+    font-size: 0.875rem;
+    padding: 20px 10px;
+    margin: 0;
+    border-bottom: none;
+  }
+  main.company article.company-detail .employee dl {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #dcdbdb;
+    margin: 0;
+  }
+  main.company article.company-detail .employee dl dt {
+    width: 180px;
+    padding: 20px 10px;
+    font-size: 0.875rem;
+  }
+  main.company article.company-detail .employee dl dd {
+    flex: 1;
+    width: 100%;
+    font-size: 0.875rem;
+    padding: 20px 10px;
+    margin: 0;
+    border-bottom: none;
+  }
+  main.company article.company-detail .business {
+    margin: 0 0 20px 0;
+  }
+  main.company article.company-detail .business dl {
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  main.company article.company-detail .business dl dt {
+    width: 180px;
+    padding: 20px 10px;
+    font-size: 0.875rem;
+  }
+  main.company article.company-detail .business dl dd {
+    flex: 1;
+    width: 100%;
+    font-size: 0.875rem;
+    padding: 20px 10px;
+    margin: 0;
+    border-bottom: none;
+  }
+  main.company article.company-detail .map {
+    filter: grayscale(1);
+  }
+  main.company article.company-detail .map iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+  }
 }/*# sourceMappingURL=main.css.map */
