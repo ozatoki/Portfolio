@@ -50,48 +50,71 @@
           alt="menu-btn"
       /></a>
     </header>
-
-    <main class="commitment">
-      <section class="wrapper commitment-title-wrapper">
+    <main class="infomation">
+      <section class="wrapper infomation-title-wrapper">
         <img class="maple" src="img/maple/red.svg" alt="maple" />
-        <h2 class="title commitment-title">
-          VAN COUPER BURGERの<span>こだわり</span>
+        <h2 class="title infomation-title">
+          VAN COUPER BURGERの<span>お知らせ</span>
         </h2>
       </section>
-      <article class="training">
-        <section class="training-title-wrapper">
-          <img class="maple-mini" src="img/maple/red.svg" alt="maple" />
-          <h3 class="training-title">研修制度</h3>
+      <article class="infomation-content">
+        <section class="choose-switch">
+          <ul class="switch">
+            <li class="infomation-switch" id="infomation-switch">お知らせ</li>
+            <li class="pressrelease-switch" id="pressrelease-switch">
+              プレスリリース
+            </li>
+          </ul>
         </section>
-        <section class="training-image">
-          <img class="clerk-img" src="img/commitment/clerk.png" alt="clerk" />
-          <img
-            class="training-img"
-            src="img/commitment/training.png"
-            alt="training"
-          />
+        <section class="infomation-detail" id="infomation-detail">
+          <ul class="info-content">
+            <li class="list info-detail">
+              <dl class="info-detail-1st">
+                <dt>［9月15日］</dt>
+                <dd>バンクーパーバーガー公式アプリの更新について</dd>
+                <hr />
+              </dl>
+            </li>
+            <li class="list info-detail">
+              <dl class="info-detail-2nd">
+                <dt>［5月1日］</dt>
+                <dd>営業時間変更のお知らせ</dd>
+                <hr />
+              </dl>
+            </li>
+            <li class="list info-detail">
+              <dl class="info-detail-3rd">
+                <dt>［3月21日］</dt>
+                <dd>バンクーパーバーガー公式サイトのリニューアルについて</dd>
+                <hr />
+              </dl>
+            </li>
+          </ul>
         </section>
-        <section class="training-detail">
-          <p class="training-comment">
-            VANCUOPERBURGERの研修は、初めて働く方も安心して店頭に立てるように心がけて実施しています。
-            また、一人前になって店頭に立った後でも、初心を忘れずにお客様にご満足頂ける接客ができるように毎年7月、12月にエリア合同研修を行なっております。
-          </p>
-        </section>
-      </article>
-      <article class="ingredients">
-        <section class="ingredients-title-wrapper">
-          <img class="maple-mini" src="img/maple/red.svg" alt="maple" />
-          <h3 class="ingredients-title">食材</h3>
-        </section>
-        <section class="ingredients-image">
-          <img class="cow-img" src="img/commitment/cow.png" alt="cow" />
-          <img class="farm-img" src="img/commitment/farm.png" alt="form" />
-        </section>
-        <section class="ingredients-detail">
-          <p class="ingredients-comment">
-            VANCUOPERBURGERの食材は全て、自社農場、自社牧場を経て自社工場で加工しており、自社の配送システムで各店舗へ発送しております。
-            お客様の安心、安全に心がけご提供させていただいております。
-          </p>
+        <section class="pressrelease-detail" id="pressrelease-detail">
+          <ul class="pressrelease-content">
+            <li class="list pr-detail">
+              <dl class="pr-detail-1st">
+                <dt>［10月1日］</dt>
+                <dd>青森駅前平和通店OPEN!!</dd>
+                <hr />
+              </dl>
+            </li>
+            <li class="list pr-detail">
+              <dl class="pr-detail-2nd">
+                <dt>［7月1日</dt>
+                <dd>ドンキ・ホーテ松波店OPEN!!</dd>
+                <hr />
+              </dl>
+            </li>
+            <li class="list pr-detail">
+              <dl class="pr-detail-3rd">
+                <dt>［2月1日］</dt>
+                <dd>プレモ千葉店リニューアルOPEN!!</dd>
+                <hr />
+              </dl>
+            </li>
+          </ul>
         </section>
       </article>
     </main>
@@ -128,5 +151,6 @@
         purposes and is not intended for commercial use.
       </p>
     </footer>
+    <script src="js/infomation-switch.js"></script>
   </body>
 </html>

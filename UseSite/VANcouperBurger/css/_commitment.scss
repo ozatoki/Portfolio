@@ -1,0 +1,135 @@
+@charset "utf8";
+
+main.commitment {
+  padding: 60px 0 50px 0;
+  background-color: #f1f0b6;
+  span {
+    color: #d45500;
+  }
+  article.training {
+    section.training-title-wrapper {
+      background-color: white;
+      width: 90vw;
+      height: 30px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      gap: 2.7vw;
+      margin: 50px auto 0 auto;
+      img.maple-mini {
+        width: 24px;
+        height: 24px;
+        margin: 0 0 0 2.7vw;
+      }
+      h3.training-title {
+        font-size: 1rem;
+      }
+    }
+    section.training-image {
+      display: flex;
+      justify-content: center;
+      gap: 5.3vw;
+      margin: 15px 0;
+      img.clerk-img {
+        width: 31.68vw;
+        aspect-ratio: 1/1;
+        border-radius: 10px;
+      }
+      img.training-img {
+        width: 31.68vw;
+        aspect-ratio: 1/1;
+        border-radius: 10px;
+      }
+    }
+    section.training-detail {
+      width: 90vw;
+      background-color: white;
+      border-radius: 10px;
+      margin: 0 auto;
+      p.training-comment {
+        width: 82vw;
+        margin: 0 auto;
+        padding: 10px 0;
+        font-size: 0.875rem;
+        line-height: 1.5;
+        letter-spacing: 0.5px;
+        font-family: "Arial", sans-serif;
+        font-weight: bold;
+      }
+    }
+  }
+  article.ingredients {
+    section.ingredients-title-wrapper {
+      background-color: white;
+      width: 90vw;
+      height: 30px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      gap: 2.7vw;
+      margin: 50px auto 0 auto;
+      img.maple-mini {
+        width: 24px;
+        height: 24px;
+        margin: 0 0 0 2.7vw;
+      }
+      h3.ingredients-title {
+        font-size: 1rem;
+      }
+    }
+    section.ingredients-image {
+      display: flex;
+      justify-content: center;
+      gap: 5.3vw;
+      margin: 15px 0;
+      img.cow-img {
+        width: 31.68vw;
+        aspect-ratio: 1/1;
+        border-radius: 10px;
+      }
+      img.farm-img {
+        width: 31.68vw;
+        aspect-ratio: 1/1;
+        border-radius: 10px;
+      }
+    }
+    section.ingredients-detail {
+      width: 90vw;
+      background-color: white;
+      border-radius: 10px;
+      margin: 0 auto;
+      p.ingredients-comment {
+        width: 82vw;
+        margin: 0 auto;
+        padding: 10px 0;
+        font-size: 0.875rem;
+        line-height: 1.5;
+        letter-spacing: 0.5px;
+        font-family: "Arial", sans-serif;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+// 共通
+section.wrapper {
+  background-color: white;
+  width: 90vw;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 2.7vw;
+  margin: 20px auto 0 auto;
+  img.maple {
+    width: 32px;
+    height: 32px;
+    margin: 0 0 0 2.7vw;
+  }
+  h2.title {
+    font-size: 1rem;
+    margin: 0;
+    color: #d60000;
+  }
+}

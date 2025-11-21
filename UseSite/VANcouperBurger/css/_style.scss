@@ -12,6 +12,7 @@ body {
     justify-content: space-between;
     padding: 0 20px 0 20px;
     position: fixed;
+    z-index: 100;
     a.return-top {
       h1 {
         margin: 0;
@@ -41,6 +42,7 @@ body {
   }
 
   main.top {
+    margin-bottom: 50px;
     article.top-slider {
       padding: 90px 0 0 0;
       .swiper {
@@ -335,7 +337,6 @@ body {
   }
   footer {
     background-color: #dcf5f9;
-    margin-top: 50px;
     ul.footer {
       width: 90vw;
       list-style: none;

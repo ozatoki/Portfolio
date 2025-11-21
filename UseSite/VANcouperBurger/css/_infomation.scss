@@ -1,0 +1,122 @@
+@charset "utf8";
+
+main.infomation {
+  padding: 60px 0 50px 0;
+  background-color: #f1f0b6;
+  span {
+    color: black;
+  }
+  article.infomation-content {
+    position: relative;
+    margin-bottom: 378px;
+    section.choose-switch {
+      ul.switch {
+        list-style: none;
+        display: flex;
+        gap: 2.7vw;
+        margin: 50px 0 15px 0;
+        padding-left: 5vw;
+        li.infomation-switch {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #d9d9d9;
+          width: 22.4vw;
+          height: 33px;
+          border-radius: 50px;
+          font-size: 1rem;
+          font-weight: bold;
+          color: white;
+          cursor: pointer;
+          &.active {
+            background-color: #696969;
+          }
+        }
+        li.pressrelease-switch {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #d9d9d9;
+          width: 35.2vw;
+          height: 33px;
+          border-radius: 50px;
+          font-size: 1rem;
+          font-weight: bold;
+          color: white;
+          cursor: pointer;
+          &.active {
+            background-color: #696969;
+          }
+        }
+      }
+    }
+    section.infomation-detail {
+      position: absolute;
+      left: 5vw;
+      top: 48px;
+      z-index: 1;
+      background-color: white;
+      width: 90vw;
+      border-radius: 10px;
+      margin: 0 auto;
+      display: none;
+      ul.info-content {
+        list-style: none;
+        padding: 20px 0 20px 20px;
+        dl.info-detail-2nd {
+          margin-top: 30px;
+        }
+        dl.info-detail-3rd {
+          margin-top: 30px;
+        }
+      }
+    }
+    section.pressrelease-detail {
+      position: absolute;
+      left: 5vw;
+      top: 48px;
+      background-color: white;
+      width: 90vw;
+      border-radius: 10px;
+      margin: 0 auto;
+      z-index: 1;
+      display: none;
+      ul.pressrelease-content {
+        list-style: none;
+        padding: 20px 0 20px 20px;
+        dl.pr-detail-2nd {
+          margin-top: 30px;
+        }
+        dl.pr-detail-3rd {
+          margin-top: 30px;
+        }
+      }
+    }
+    section.infomation-detail.active-content,
+    section.pressrelease-detail.active-content {
+      display: block;
+      z-index: 2;
+    }
+  }
+}
+
+// 共通
+li.list,
+.info-detail {
+  dl {
+    font-size: 0.875rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    dt {
+    }
+    dd {
+      width: 60vw;
+      margin: 10px 0 0 0;
+    }
+    hr {
+      margin: 10px 0 0 0;
+      width: 60vw;
+    }
+  }
+}
