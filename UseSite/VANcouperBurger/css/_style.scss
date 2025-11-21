@@ -290,7 +290,7 @@ body {
       flex-direction: column;
       margin: 20px auto 0 auto;
       border-radius: 20px;
-      section.infomation-content {
+      section.infomation-content-mobile {
         margin-top: 20px;
         h2.infomation-title {
           text-align: center;
@@ -332,6 +332,9 @@ body {
             }
           }
         }
+      }
+      section.infomation-content-pc {
+        display: none;
       }
     }
   }
@@ -408,4 +411,8 @@ body {
       padding-bottom: 5px;
     }
   }
+}
+a.footer-link {
+  text-decoration: none;
+  color: black;
 }

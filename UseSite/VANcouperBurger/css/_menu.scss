@@ -1,0 +1,54 @@
+@charset "utf8";
+main.menu {
+  padding-top: 80px;
+  background-color: #f1f0b6;
+  section.menu-btn {
+    overflow-x: auto;
+    ul.food-menu {
+      list-style: none;
+      display: flex;
+      margin: 0 0 0 5vw;
+      padding: 0;
+      gap: 8vw;
+      a {
+        text-decoration: none;
+        li.set,
+        .kids,
+        .drink,
+        .side,
+        .desert {
+          flex: 0 0 auto;
+          width: 84px;
+          height: 33px;
+          background-color: #7e551f;
+          border-radius: 50px;
+          font-weight: bold;
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+// 共通
+section.title-ber {
+  background-color: white;
+  width: 90vw;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 2.7vw;
+  margin: 0 auto 50px auto;
+  img.maple {
+    width: 32px;
+    height: 32px;
+    margin-left: 2.7vw;
+  }
+  h2.title {
+    font-size: 1rem;
+  }
+}

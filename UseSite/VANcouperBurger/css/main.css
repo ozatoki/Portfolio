@@ -271,44 +271,47 @@ body main.top article.infomation {
   margin: 20px auto 0 auto;
   border-radius: 20px;
 }
-body main.top article.infomation section.infomation-content {
+body main.top article.infomation section.infomation-content-mobile {
   margin-top: 20px;
 }
-body main.top article.infomation section.infomation-content h2.infomation-title {
+body main.top article.infomation section.infomation-content-mobile h2.infomation-title {
   text-align: center;
   font-size: 1rem;
   font-weight: bold;
   color: #d60000;
   margin: 0;
 }
-body main.top article.infomation section.infomation-content h2.infomation-title span {
+body main.top article.infomation section.infomation-content-mobile h2.infomation-title span {
   font-size: 1rem;
   font-weight: bold;
   color: black;
 }
-body main.top article.infomation section.infomation-content section.infomation-wrapper {
+body main.top article.infomation section.infomation-content-mobile section.infomation-wrapper {
   width: 71.2vw;
   background-color: #f0e7e7;
   margin: 16.5px auto;
   border-radius: 20px;
 }
-body main.top article.infomation section.infomation-content section.infomation-wrapper dl.info dt.date {
+body main.top article.infomation section.infomation-content-mobile section.infomation-wrapper dl.info dt.date {
   font-family: "Arial", sans-serif;
   padding: 20px 0 0 10px;
 }
-body main.top article.infomation section.infomation-content section.infomation-wrapper dl.info dd.content {
+body main.top article.infomation section.infomation-content-mobile section.infomation-wrapper dl.info dd.content {
   width: 66.7vw;
   margin: 0;
   padding: 10px 0 0 10px;
   font-weight: bold;
 }
-body main.top article.infomation section.infomation-content section.infomation-wrapper a p.more-view {
+body main.top article.infomation section.infomation-content-mobile section.infomation-wrapper a p.more-view {
   font-size: 0.875rem;
   font-weight: bold;
   color: black;
   text-align: end;
   margin: 0;
   padding: 0 10px 10px 0;
+}
+body main.top article.infomation section.infomation-content-pc {
+  display: none;
 }
 body footer {
   background-color: #dcf5f9;
@@ -370,6 +373,11 @@ body footer p.copyright {
   text-align: center;
   margin: 0 auto;
   padding-bottom: 5px;
+}
+
+a.footer-link {
+  text-decoration: none;
+  color: black;
 }
 
 /* Document
@@ -1148,18 +1156,18 @@ main.infomation {
 main.infomation span {
   color: black;
 }
-main.infomation article.infomation-content {
+main.infomation article.infomation-section {
   position: relative;
   margin-bottom: 378px;
 }
-main.infomation article.infomation-content section.choose-switch ul.switch {
+main.infomation article.infomation-section section.choose-switch ul.switch {
   list-style: none;
   display: flex;
   gap: 2.7vw;
   margin: 50px 0 15px 0;
   padding-left: 5vw;
 }
-main.infomation article.infomation-content section.choose-switch ul.switch li.infomation-switch {
+main.infomation article.infomation-section section.choose-switch ul.switch li.infomation-switch {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1172,10 +1180,10 @@ main.infomation article.infomation-content section.choose-switch ul.switch li.in
   color: white;
   cursor: pointer;
 }
-main.infomation article.infomation-content section.choose-switch ul.switch li.infomation-switch.active {
+main.infomation article.infomation-section section.choose-switch ul.switch li.infomation-switch.active {
   background-color: #696969;
 }
-main.infomation article.infomation-content section.choose-switch ul.switch li.pressrelease-switch {
+main.infomation article.infomation-section section.choose-switch ul.switch li.pressrelease-switch {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1188,10 +1196,10 @@ main.infomation article.infomation-content section.choose-switch ul.switch li.pr
   color: white;
   cursor: pointer;
 }
-main.infomation article.infomation-content section.choose-switch ul.switch li.pressrelease-switch.active {
+main.infomation article.infomation-section section.choose-switch ul.switch li.pressrelease-switch.active {
   background-color: #696969;
 }
-main.infomation article.infomation-content section.infomation-detail {
+main.infomation article.infomation-section section.infomation-detail {
   position: absolute;
   left: 5vw;
   top: 48px;
@@ -1202,17 +1210,17 @@ main.infomation article.infomation-content section.infomation-detail {
   margin: 0 auto;
   display: none;
 }
-main.infomation article.infomation-content section.infomation-detail ul.info-content {
+main.infomation article.infomation-section section.infomation-detail ul.info-content {
   list-style: none;
   padding: 20px 0 20px 20px;
 }
-main.infomation article.infomation-content section.infomation-detail ul.info-content dl.info-detail-2nd {
+main.infomation article.infomation-section section.infomation-detail ul.info-content dl.info-detail-2nd {
   margin-top: 30px;
 }
-main.infomation article.infomation-content section.infomation-detail ul.info-content dl.info-detail-3rd {
+main.infomation article.infomation-section section.infomation-detail ul.info-content dl.info-detail-3rd {
   margin-top: 30px;
 }
-main.infomation article.infomation-content section.pressrelease-detail {
+main.infomation article.infomation-section section.pressrelease-detail {
   position: absolute;
   left: 5vw;
   top: 48px;
@@ -1223,18 +1231,18 @@ main.infomation article.infomation-content section.pressrelease-detail {
   z-index: 1;
   display: none;
 }
-main.infomation article.infomation-content section.pressrelease-detail ul.pressrelease-content {
+main.infomation article.infomation-section section.pressrelease-detail ul.pressrelease-content {
   list-style: none;
   padding: 20px 0 20px 20px;
 }
-main.infomation article.infomation-content section.pressrelease-detail ul.pressrelease-content dl.pr-detail-2nd {
+main.infomation article.infomation-section section.pressrelease-detail ul.pressrelease-content dl.pr-detail-2nd {
   margin-top: 30px;
 }
-main.infomation article.infomation-content section.pressrelease-detail ul.pressrelease-content dl.pr-detail-3rd {
+main.infomation article.infomation-section section.pressrelease-detail ul.pressrelease-content dl.pr-detail-3rd {
   margin-top: 30px;
 }
-main.infomation article.infomation-content section.infomation-detail.active-content,
-main.infomation article.infomation-content section.pressrelease-detail.active-content {
+main.infomation article.infomation-section section.infomation-detail.active-content,
+main.infomation article.infomation-section section.pressrelease-detail.active-content {
   display: block;
   z-index: 2;
 }
@@ -1255,4 +1263,57 @@ li.list dl hr,
 .info-detail dl hr {
   margin: 10px 0 0 0;
   width: 60vw;
+}
+
+main.menu {
+  padding-top: 80px;
+  background-color: #f1f0b6;
+}
+main.menu section.menu-btn {
+  overflow-x: auto;
+}
+main.menu section.menu-btn ul.food-menu {
+  list-style: none;
+  display: flex;
+  margin: 0 0 0 5vw;
+  padding: 0;
+  gap: 8vw;
+}
+main.menu section.menu-btn ul.food-menu a {
+  text-decoration: none;
+}
+main.menu section.menu-btn ul.food-menu a li.set,
+main.menu section.menu-btn ul.food-menu a .kids,
+main.menu section.menu-btn ul.food-menu a .drink,
+main.menu section.menu-btn ul.food-menu a .side,
+main.menu section.menu-btn ul.food-menu a .desert {
+  flex: 0 0 auto;
+  width: 84px;
+  height: 33px;
+  background-color: #7e551f;
+  border-radius: 50px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.title-ber {
+  background-color: white;
+  width: 90vw;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 2.7vw;
+  margin: 0 auto 50px auto;
+}
+section.title-ber img.maple {
+  width: 32px;
+  height: 32px;
+  margin-left: 2.7vw;
+}
+section.title-ber h2.title {
+  font-size: 1rem;
 }/*# sourceMappingURL=main.css.map */
