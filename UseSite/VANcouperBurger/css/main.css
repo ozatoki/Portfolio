@@ -927,39 +927,39 @@ body nav.navi-menu {
   height: 100vh;
   position: relative;
 }
-body nav.navi-menu ul.menu-list {
+body nav.navi-menu ul.menu-navi {
   margin: 0;
 }
-body nav.navi-menu ul.menu-list li.menu-menu div.menu-content {
+body nav.navi-menu ul.menu-navi li.menu-menu div.menu-content {
   display: flex;
   gap: 10px;
   align-items: center;
   margin-left: 5.3vw;
 }
-body nav.navi-menu ul.menu-list li.menu-menu div.menu-content img {
+body nav.navi-menu ul.menu-navi li.menu-menu div.menu-content img {
   width: 32px;
   height: 32px;
 }
-body nav.navi-menu ul.menu-list li.menu-menu div.menu-content span {
+body nav.navi-menu ul.menu-navi li.menu-menu div.menu-content span {
   font-weight: bold;
 }
-body nav.navi-menu ul.menu-list li.menu-menu hr {
+body nav.navi-menu ul.menu-navi li.menu-menu hr {
   width: 90vw;
   height: 1px;
   margin: 25px auto 0 auto;
   border: none;
   background-color: black;
 }
-body nav.navi-menu ul.menu-list li.menu-shop {
+body nav.navi-menu ul.menu-navi li.menu-shop {
   margin-top: 30px;
 }
-body nav.navi-menu ul.menu-list li.menu-recruit {
+body nav.navi-menu ul.menu-navi li.menu-recruit {
   margin-top: 30px;
 }
-body nav.navi-menu ul.menu-list li.menu-inquiry {
+body nav.navi-menu ul.menu-navi li.menu-inquiry {
   margin-top: 30px;
 }
-body nav.navi-menu ul.menu-list li.menu-company {
+body nav.navi-menu ul.menu-navi li.menu-company {
   margin-top: 30px;
 }
 body nav.navi-menu ul.app-induction {
@@ -1298,6 +1298,50 @@ main.menu section.menu-btn ul.food-menu a .desert {
   align-items: center;
   justify-content: center;
 }
+main.menu ul.side-menu-detail {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+main.menu section#kids-menu {
+  scroll-margin-top: 60px;
+}
+main.menu section#drink-menu {
+  scroll-margin-top: 60px;
+}
+main.menu ul.drink-menu-detail {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+main.menu ul.drink-menu-detail li.drink-menu {
+  position: relative;
+}
+main.menu ul.drink-menu-detail li.drink-menu figure.set img.cold-hot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 0;
+}
+main.menu section#desert-menu {
+  scroll-margin-top: 60px;
+}
+main.menu ul.desert-menu-detail {
+  display: flex;
+  gap: 4vw;
+  padding-bottom: 50px;
+}
+main.menu ul.desert-menu-detail li.desert-menu {
+  position: relative;
+}
+main.menu ul.desert-menu-detail li.desert-menu figure.set img.cold-hot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 0;
+}
 
 section.title-ber {
   background-color: white;
@@ -1316,4 +1360,126 @@ section.title-ber img.maple {
 }
 section.title-ber h2.title {
   font-size: 1rem;
+}
+
+section.menu-title {
+  display: flex;
+  align-items: center;
+  gap: 2.7vw;
+}
+section.menu-title img.maple {
+  width: 32px;
+  height: 32px;
+  margin-left: 8vw;
+}
+section.menu-title h3.menu-title-text {
+  font-size: 1rem;
+}
+
+ul.menu-list {
+  list-style: none;
+  margin: 0 0 0 8vw;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-row-gap: 4vw;
+}
+ul.menu-list li.menu-detail {
+  width: 40vw;
+  height: 28.5vh;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.25);
+}
+ul.menu-list li.menu-detail figure.menu-img {
+  margin: 0;
+}
+ul.menu-list li.menu-detail figure.menu-img img {
+  width: 40vw;
+  height: 14.7vh;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl {
+  width: 40vw;
+  height: 17vh;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+}
+ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl dt {
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin: 10px auto 0 auto;
+  width: 33.6vw;
+  height: 5.4vh;
+}
+ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl dd {
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin: 15px 0 0 0;
+}
+
+li.menu-detail-size {
+  width: 40vw;
+  height: 28.5vh;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.25);
+}
+li.menu-detail-size figure.menu-img {
+  margin: 0;
+}
+li.menu-detail-size figure.menu-img img {
+  width: 40vw;
+  height: 14.7vh;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+li.menu-detail-size figure.menu-img figcaption.menu-text dl {
+  width: 40vw;
+  height: 17vh;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+}
+li.menu-detail-size figure.menu-img figcaption.menu-text dl dt {
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin: 10px auto 0 auto;
+  width: 33.6vw;
+}
+li.menu-detail-size figure.menu-img figcaption.menu-text dl section.size {
+  display: flex;
+  justify-content: center;
+  gap: 9.6vw;
+}
+li.menu-detail-size figure.menu-img figcaption.menu-text dl section.size dd.size-s,
+li.menu-detail-size figure.menu-img figcaption.menu-text dl section.size .size-m,
+li.menu-detail-size figure.menu-img figcaption.menu-text dl section.size .size-l {
+  font-size: 0.875rem;
+  margin: 0;
+  line-height: 2;
+  font-weight: bold;
+}
+li.menu-detail-size figure.menu-img figcaption.menu-text dl section.size-value {
+  display: flex;
+  justify-content: center;
+  gap: 3.2vw;
+}
+li.menu-detail-size figure.menu-img figcaption.menu-text dl section.size-value dd.value-s,
+li.menu-detail-size figure.menu-img figcaption.menu-text dl section.size-value .value-m,
+li.menu-detail-size figure.menu-img figcaption.menu-text dl section.size-value .value-l {
+  font-size: 0.875rem;
+  margin: 0;
+  line-height: 1.7;
+  font-weight: bold;
+}
+
+div.border-bottom {
+  width: 100vw;
+  height: 5px;
+  background-color: white;
+  margin: 20px 0;
 }/*# sourceMappingURL=main.css.map */

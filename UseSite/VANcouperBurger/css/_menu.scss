@@ -31,6 +31,55 @@ main.menu {
       }
     }
   }
+  ul.side-menu-detail {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  section#kids-menu {
+    scroll-margin-top: 60px;
+  }
+  section#drink-menu {
+    scroll-margin-top: 60px;
+  }
+  ul.drink-menu-detail {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    li.drink-menu {
+      position: relative;
+      figure.set {
+        img.cold-hot {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 32px;
+          height: 32px;
+          border-radius: 0;
+        }
+      }
+    }
+  }
+
+  section#desert-menu {
+    scroll-margin-top: 60px;
+  }
+  ul.desert-menu-detail {
+    display: flex;
+    gap: 4vw;
+    padding-bottom: 50px;
+    li.desert-menu {
+      position: relative;
+      figure.set {
+        img.cold-hot {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 32px;
+          height: 32px;
+          border-radius: 0;
+        }
+      }
+    }
+  }
 }
 
 // 共通
@@ -51,4 +100,130 @@ section.title-ber {
   h2.title {
     font-size: 1rem;
   }
+}
+
+section.menu-title {
+  display: flex;
+  align-items: center;
+  gap: 2.7vw;
+  img.maple {
+    width: 32px;
+    height: 32px;
+    margin-left: 8vw;
+  }
+  h3.menu-title-text {
+    font-size: 1rem;
+  }
+}
+
+ul.menu-list {
+  list-style: none;
+  margin: 0 0 0 8vw;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-row-gap: 4vw;
+  li.menu-detail {
+    width: 40vw;
+    height: 28.5vh;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.25);
+    figure.menu-img {
+      margin: 0;
+      img {
+        width: 40vw;
+        height: 14.7vh;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      figcaption.menu-text {
+        dl {
+          width: 40vw;
+          height: 17vh;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          text-align: center;
+          dt {
+            font-size: 0.875rem;
+            font-weight: bold;
+            margin: 10px auto 0 auto;
+            width: 33.6vw;
+            height: 5.4vh;
+          }
+          dd {
+            font-size: 0.875rem;
+            font-weight: bold;
+            margin: 15px 0 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+li.menu-detail-size {
+  width: 40vw;
+  height: 28.5vh;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.25);
+  figure.menu-img {
+    margin: 0;
+    img {
+      width: 40vw;
+      height: 14.7vh;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    figcaption.menu-text {
+      dl {
+        width: 40vw;
+        height: 17vh;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        text-align: center;
+        dt {
+          font-size: 0.875rem;
+          font-weight: bold;
+          margin: 10px auto 0 auto;
+          width: 33.6vw;
+        }
+        section.size {
+          display: flex;
+          justify-content: center;
+          gap: 9.6vw;
+          dd.size-s,
+          .size-m,
+          .size-l {
+            font-size: 0.875rem;
+            margin: 0;
+            line-height: 2;
+            font-weight: bold;
+          }
+        }
+        section.size-value {
+          display: flex;
+          justify-content: center;
+          gap: 3.2vw;
+          dd.value-s,
+          .value-m,
+          .value-l {
+            font-size: 0.875rem;
+            margin: 0;
+            line-height: 1.7;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+
+div.border-bottom {
+  width: 100vw;
+  height: 5px;
+  background-color: white;
+  margin: 20px 0;
 }
