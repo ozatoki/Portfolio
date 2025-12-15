@@ -1,0 +1,165 @@
+@charset "agreement";
+
+main.agreement {
+  padding-top: 80px;
+  background-color: #f1f0b6;
+  margin-bottom: 0;
+  section.agreement-title {
+    margin: 0 auto 20px auto;
+  }
+  article.agreement-content {
+    ul.agreement-detail {
+      list-style: none;
+      margin: 0 auto;
+      padding: 0;
+      width: 90vw;
+      li.website-agreement-content {
+        dl.website-agreement-detail {
+          dt.website-agreement-term {
+            h3.website-agreement-title {
+              font-size: 1.5rem;
+              margin: 20px 0 5px 0;
+            }
+          }
+          dd.website-agreement-definition {
+            font-size: 0.875rem;
+            font-weight: bold;
+            margin: 10px 0 0 0;
+          }
+        }
+      }
+    }
+    section.agreement-update {
+      p.agreement-date {
+        font-size: 0.875rem;
+        font-weight: bold;
+        text-align: end;
+        margin: 20px 5.3vh 0 0;
+        padding-bottom: 50px;
+      }
+    }
+  }
+}
+
+// 共通
+li.agreement-list {
+  margin-top: 20px;
+  dl.list {
+    dt.term {
+      h4.title {
+        font-size: 1rem;
+        margin: 0;
+      }
+    }
+    dd.definition {
+      font-size: 0.875rem;
+      font-weight: bold;
+      margin: 5px 0 0 0;
+    }
+  }
+}
+
+li.agreement-list {
+  section.section {
+    h4.title {
+      margin: 0 0 10px 0;
+    }
+    dl.list {
+      dt.term {
+        font-size: 0.875rem;
+        font-weight: bold;
+      }
+      dd.definition {
+        font-size: 0.875rem;
+        font-weight: bold;
+        margin: 5px 0 0 2.7vw;
+      }
+    }
+  }
+  section.section-second {
+    h5.subject {
+      margin: 10px 0 0 0;
+    }
+  }
+}
+
+li.agreement-list {
+  section.section {
+    h4.title {
+      margin: 0 0 10px 0;
+    }
+    dl.list {
+      dt.term {
+        h5.subject {
+          font-size: 0.875rem;
+          font-weight: bold;
+          margin: 10px 0 0 0;
+        }
+      }
+      dd.definition {
+        font-size: 0.875rem;
+        font-weight: bold;
+        margin: 5px 0 0 2.7vw;
+      }
+    }
+  }
+  section.section-second {
+    h5.subject {
+      margin: 10px 0 0 0;
+    }
+  }
+}
+/* ----------------------
+   タブレット縦向き（600px）以上
+----------------------- */
+@media (min-width: 600px) {
+}
+
+/* ----------------------
+   タブレット横向き（900px）以上
+----------------------- */
+@media (min-width: 900px) {
+}
+
+/* ----------------------
+   PC（1200px）以上
+----------------------- */
+@media (min-width: 1200px) {
+  main.agreement {
+    section.title-ber {
+      width: 50vw;
+      height: 6vh;
+      margin: 55px auto 40px auto;
+      gap: 0.52vw;
+      img.maple {
+        width: 2.5vw;
+        height: 4.4vh;
+        margin: 0 0 0 0.52vw;
+      }
+      h2.title {
+        font-size: clamp(12px, 1.04vw, 20px);
+      }
+    }
+    article.agreement-content {
+      ul.agreement-detail {
+        width: 50vw;
+        li.website-agreement-content {
+          dl.website-agreement-detail {
+            dt.website-agreement-term {
+              h3.website-agreement-title {
+                font-size: 24px;
+                margin: 40px 0 10px 0;
+                text-align: center;
+              }
+            }
+            dd.website-agreement-definition {
+              font-size: 0.875rem;
+              font-weight: bold;
+              margin: 10px 0 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

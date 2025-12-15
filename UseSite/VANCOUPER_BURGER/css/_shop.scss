@@ -1,0 +1,291 @@
+@charset "utf8";
+
+main.shop {
+  padding-top: 80px;
+  background-color: #f1f0b6;
+  section.search {
+    width: 90vw;
+    margin: 50px auto 0 auto;
+    position: relative;
+    input {
+      width: 90vw;
+      height: 6.7vh;
+      border-radius: 10px;
+      border: 1px solid black;
+      padding: 0 0 0 5.3vw;
+    }
+    button.search-btn {
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      top: 1.05vh;
+      right: 5.3vw;
+      padding: 0;
+      border: none;
+      background: none;
+      img.search-icon {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+  article.shop-induction {
+    ul.shop-content {
+      margin: 20px 0 0 0;
+      padding-bottom: 30px;
+      li.shop-list {
+        width: 90vw;
+        background-color: white;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.25);
+        section.shop-content-img {
+          display: flex;
+          dl.shop-detail {
+            dt.shop-name {
+              font-size: 1rem;
+              font-weight: bold;
+              margin: 20px 0 10px 5.3vw;
+            }
+            dd.shop-address,
+            .shop-tel,
+            .shop-time {
+              width: 56vw;
+              font-size: 0.75rem;
+              margin-left: 5.3vw;
+            }
+          }
+          img.shop-img {
+            width: 21.3vw;
+            border-radius: 10px;
+            margin: 20px 5.3vw 0 0;
+          }
+        }
+        ul.service {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          list-style: none;
+          margin: 0.93vh 0 0 5.3vw;
+          padding: 0;
+          section.service-1st {
+            display: flex;
+            gap: 5px;
+            li.mobile-order {
+              font-size: 0.75rem;
+              background-color: #fdebdd;
+              border-radius: 5px;
+              width: fit-content;
+              padding: 1px 5px;
+            }
+            li.drive-thru {
+              font-size: 0.75rem;
+              background-color: #fdebdd;
+              border-radius: 5px;
+              width: fit-content;
+              padding: 1px 5px;
+            }
+          }
+          section.service-2nd {
+            display: flex;
+            gap: 5px;
+            li.cashless {
+              font-size: 0.75rem;
+              background-color: #fdebdd;
+              border-radius: 5px;
+              width: fit-content;
+              padding: 1px 5px;
+            }
+            li.wi-fi {
+              font-size: 0.75rem;
+              background-color: #fdebdd;
+              border-radius: 5px;
+              width: fit-content;
+              padding: 1px 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+ul.shop-content {
+  list-style: none;
+  font-family: "Arial", sans-serif;
+  padding: 0;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  li.shop-list {
+    width: 90vw;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    section.shop-content-img {
+      display: flex;
+      dl.shop-detail {
+        dt.shop-name {
+          font-size: 1rem;
+          font-weight: bold;
+          margin: 20px 0 10px 5.3vw;
+        }
+        dd.shop-address,
+        .shop-tel,
+        .shop-time {
+          width: 56vw;
+          font-size: 0.75rem;
+          margin-left: 5.3vw;
+        }
+      }
+      img.shop-img {
+        width: 21.3vw;
+        border-radius: 10px;
+        margin: 20px 5.3vw 0 0;
+      }
+    }
+    ul.service {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      list-style: none;
+      margin: 10px 0 20px 5.3vw;
+      padding: 0;
+      section.service-1st {
+        display: flex;
+        gap: 5px;
+        li.mobile-order {
+          font-size: 0.75rem;
+          background-color: #fdebdd;
+          border-radius: 5px;
+          width: fit-content;
+          padding: 1px 5px;
+        }
+        li.drive-thru {
+          font-size: 0.75rem;
+          background-color: #fdebdd;
+          border-radius: 5px;
+          width: fit-content;
+          padding: 1px 5px;
+        }
+      }
+      section.service-2nd {
+        display: flex;
+        gap: 5px;
+        li.cashless {
+          font-size: 0.75rem;
+          background-color: #fdebdd;
+          border-radius: 5px;
+          width: fit-content;
+          padding: 1px 5px;
+        }
+        li.wi-fi {
+          font-size: 0.75rem;
+          background-color: #fdebdd;
+          border-radius: 5px;
+          width: fit-content;
+          padding: 1px 5px;
+        }
+      }
+    }
+  }
+}
+/* ----------------------
+   タブレット縦向き（600px）以上
+----------------------- */
+@media (min-width: 600px) {
+}
+
+/* ----------------------
+   タブレット横向き（900px）以上
+----------------------- */
+@media (min-width: 900px) {
+}
+
+/* ----------------------
+   PC（1200px）以上
+----------------------- */
+@media (min-width: 1200px) {
+  main.shop {
+    section.title-ber {
+      width: 50vw;
+      height: 6vh;
+      margin: 55px auto 20px auto;
+      gap: 0.52vw;
+      img.maple {
+        width: 2.5vw;
+        height: 4.4vh;
+        margin: 0 0 0 0.52vw;
+      }
+      h2.title {
+        font-size: clamp(12px, 1.04vw, 20px);
+      }
+    }
+    section.search {
+      width: 50vw;
+      input {
+        font-size: clamp(12px, 1.04vw, 20px);
+        margin: 0 auto;
+        padding: auto 0 auto 1.5625vw;
+        width: 50vw;
+      }
+      button.search-btn {
+        img.search-icon {
+          width: 2.5vw;
+          height: 4.44vh;
+          padding: auto 1.5625vw auto 0;
+        }
+      }
+    }
+    article.shop-induction {
+      width: 50vw;
+      margin: 0 auto;
+      ul.shop-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 50px 0 0 0;
+        padding: 0 0 100px 0;
+        li.shop-list {
+          width: 22.5vw;
+          height: 21.8vh;
+          section.shop-content-img {
+            gap: 5.5vw;
+            dl.shop-detail {
+              width: 10.9375vw;
+              dt.shop-name {
+                font-size: clamp(10px, 0.84vw, 16px);
+                margin: 30px 0 5px 1.04vw;
+              }
+              dd.shop-address,
+              dd.shop-tel,
+              dd.shop-time {
+                margin: 5px 0 0 1.04vw;
+                font-size: clamp(7.5px, 0.625vw, 12px);
+              }
+            }
+            img.shop-img {
+              width: 4.6875vw;
+              height: 8.33vh;
+            }
+          }
+          ul.service {
+            margin: 10px 0 0 1.04vw;
+            section.service-1st {
+              li.mobile-order,
+              li.drive-thru {
+                font-size: clamp(7.5px, 0.625vw, 12px);
+              }
+            }
+            section.service-2nd {
+              li.cashless,
+              li.wi-fi {
+                font-size: clamp(7.5px, 0.625vw, 12px);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

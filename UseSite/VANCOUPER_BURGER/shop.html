@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="バンクーパーバーガの公式ウェブサイトです。バーガーやデザート、キッズメニューまでご用意し、皆様をお待ちしております。"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/favicon/favicon2.ico" />
+    <link rel="icon" href="img/favicon/favicon2.svg" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>バンクーパーバーガの公式ウェブサイトです。</title>
+  </head>
+  <body>
+    <header class="mobile">
+      <a class="return-top" href="index.html"
+        ><h1 class="top-title">
+          <img
+            class="top-logo"
+            src="img/logo/logo_big.png"
+            alt="vancouperburger|バンクーパーバーガー"
+          />
+        </h1>
+      </a>
+      <section class="header-pc">
+        <ul class="header-list">
+          <a class="pc-menu" href="menu.html"><li>メニュー</li></a>
+          <a class="pc-shop" href="shop.html"><li>店舗紹介</li></a>
+          <a class="pc-recruit" href="recruit.html"><li>採用情報</li></a>
+          <a
+            class="pc-inquiry"
+            href="mailto:vancouperburger.support@vcb.com?subject=お問い合わせ"
+            ><li>お問い合わせ</li></a
+          >
+          <a class="pc-company" href="company.html"><li>会社情報</li></a>
+        </ul>
+      </section>
+      <img
+        class="menu-btn"
+        id="menuBtn"
+        src="img/menu-btn/menu-btn2.svg"
+        alt="menu-btn"
+      />
+      <nav class="navi-menu" id="naviMenu">
+        <ul class="menu-navi">
+          <li class="menu-menu">
+            <div class="menu-content">
+              <a class="footer-link" href="menu.html"
+                ><img src="img/maple/red.svg" alt="maple" /><span
+                  >メニュー</span
+                ></a
+              >
+            </div>
+            <hr />
+          </li>
+          <li class="menu-shop">
+            <div class="menu-content">
+              <a class="footer-link" href="shop.html"
+                ><img src="img/maple/red.svg" alt="maple" /><span
+                  >店舗紹介</span
+                ></a
+              >
+            </div>
+            <hr />
+          </li>
+          <li class="menu-recruit">
+            <div class="menu-content">
+              <a class="footer-link" href="recruit.html"
+                ><img src="img/maple/red.svg" alt="maple" /><span
+                  >採用情報</span
+                ></a
+              >
+            </div>
+            <hr />
+          </li>
+          <li class="menu-inquiry">
+            <div class="menu-content">
+              <a class="footer-link" href="#"
+                ><img src="img/maple/red.svg" alt="maple" /><span
+                  >お問い合わせ</span
+                ></a
+              >
+            </div>
+            <hr />
+          </li>
+          <li class="menu-company">
+            <div class="menu-content">
+              <a class="footer-link" href="company.html"
+                ><img src="img/maple/red.svg" alt="maple" /><span
+                  >会社情報</span
+                ></a
+              >
+            </div>
+            <hr />
+          </li>
+        </ul>
+        <ul class="app-induction">
+          <li class="navi-app-store">
+            <a href="https://apps.apple.com/jp/" target="_blank"
+              ><img src="img/app/App Store.svg" alt="app-store"
+            /></a>
+          </li>
+          <li class="navi-google-play">
+            <a href="https://play.google.com/store" target="_blank"
+              ><img src="img/app/Google Play.svg" alt="google-play"
+            /></a>
+          </li>
+        </ul>
+        <ul class="navi-sns-icon">
+          <li class="sns">
+            <a href="https://www.facebook.com/?locale=ja_JP" target="_blank"
+              ><img src="img/sns/Facebook_Logo.svg" alt="facebook"
+            /></a>
+          </li>
+          <li class="sns">
+            <a href="https://x.com/" target="_blank"
+              ><img src="img/sns/x_Logo.svg" alt="x"
+            /></a>
+          </li>
+          <li class="sns">
+            <a href="https://www.youtube.com" target="_blank"
+              ><img src="img/sns/youtube_Logo.svg" alt="youtube"
+            /></a>
+          </li>
+          <li class="sns">
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img src="img/sns/Instagram_Logo.png" alt="instagram"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="shop">
+      <section class="title-ber shop-title">
+        <img class="maple" src="img/maple/red.svg" alt="maple" />
+        <h2 class="title title-shop">店舗紹介</h2>
+      </section>
+      <section class="search">
+        <input
+          type="text"
+          id="search"
+          placeholder="地域/店名を入力してください"
+        />
+        <button class="search-btn" id="searchBtn">
+          <img
+            class="search-icon"
+            id="searchIcon"
+            src="img/shop/search.svg"
+            alt="search"
+          />
+        </button>
+      </section>
+      <article class="shop-induction">
+        <ul class="shop-content">
+          <li class="shop-list">
+            <section class="shop-content-img">
+              <dl class="shop-detail">
+                <dt class="shop-name">札幌駅前店</dt>
+                <dd class="shop-address">北海道札幌市中央区北1条西1-1</dd>
+                <dd class="shop-tel">TEL:011-123-1234</dd>
+                <dd class="shop-time">9:00~22:00</dd>
+              </dl>
+              <img class="shop-img" src="img/shop/shop.png" alt="shop" />
+            </section>
+            <ul class="service">
+              <section class="service-1st">
+                <li class="mobile-order">モバイルオーダー</li>
+                <li class="drive-thru">ドライブスルー</li>
+              </section>
+              <section class="service-2nd">
+                <li class="cashless">キャッシュレス</li>
+                <li class="wi-fi">Wi-Fi</li>
+              </section>
+            </ul>
+          </li>
+          <li class="shop-list">
+            <section class="shop-content-img">
+              <dl class="shop-detail">
+                <dt class="shop-name">国道15号盛岡店</dt>
+                <dd class="shop-address">岩手県盛岡市内丸15-3</dd>
+                <dd class="shop-tel">TEL:019-123-1234</dd>
+                <dd class="shop-time">9:00~22:00</dd>
+              </dl>
+              <img class="shop-img" src="img/shop/shop.png" alt="shop" />
+            </section>
+            <ul class="service">
+              <section class="service-1st">
+                <li class="mobile-order">モバイルオーダー</li>
+                <li class="drive-thru">ドライブスルー</li>
+              </section>
+              <section class="service-2nd">
+                <li class="cashless">キャッシュレス</li>
+                <li class="wi-fi">Wi-Fi</li>
+              </section>
+            </ul>
+          </li>
+          <li class="shop-list">
+            <section class="shop-content-img">
+              <dl class="shop-detail">
+                <dt class="shop-name">仙台杜の都店</dt>
+                <dd class="shop-address">宮城県仙台市青葉区本町3-1-1</dd>
+                <dd class="shop-tel">TEL:022-123-1234</dd>
+                <dd class="shop-time">9:00~22:00</dd>
+              </dl>
+              <img class="shop-img" src="img/shop/shop.png" alt="shop" />
+            </section>
+            <ul class="service">
+              <section class="service-1st">
+                <li class="mobile-order">モバイルオーダー</li>
+                <li class="drive-thru">ドライブスルー</li>
+              </section>
+              <section class="service-2nd">
+                <li class="cashless">キャッシュレス</li>
+                <li class="wi-fi">Wi-Fi</li>
+              </section>
+            </ul>
+          </li>
+          <li class="shop-list">
+            <section class="shop-content-img">
+              <dl class="shop-detail">
+                <dt class="shop-name">秋田県庁前店</dt>
+                <dd class="shop-address">秋田県秋田市山王1-5-3</dd>
+                <dd class="shop-tel">TEL:018-123-1234</dd>
+                <dd class="shop-time">9:00~22:00</dd>
+              </dl>
+              <img class="shop-img" src="img/shop/shop.png" alt="shop" />
+            </section>
+            <ul class="service">
+              <section class="service-1st">
+                <li class="mobile-order">モバイルオーダー</li>
+                <li class="drive-thru">ドライブスルー</li>
+              </section>
+              <section class="service-2nd">
+                <li class="cashless">キャッシュレス</li>
+                <li class="wi-fi">Wi-Fi</li>
+              </section>
+            </ul>
+          </li>
+          <li class="shop-list">
+            <section class="shop-content-img">
+              <dl class="shop-detail">
+                <dt class="shop-name">ドンキ・ホーテ一松波店</dt>
+                <dd class="shop-address">山形県山形市松浪2-10-5</dd>
+                <dd class="shop-tel">TEL:023-123-1234</dd>
+                <dd class="shop-time">9:00~22:00</dd>
+              </dl>
+              <img class="shop-img" src="img/shop/shop.png" alt="shop" />
+            </section>
+            <ul class="service">
+              <section class="service-1st">
+                <li class="mobile-order">モバイルオーダー</li>
+                <li class="drive-thru">ドライブスルー</li>
+              </section>
+              <section class="service-2nd">
+                <li class="cashless">キャッシュレス</li>
+                <li class="wi-fi">Wi-Fi</li>
+              </section>
+            </ul>
+          </li>
+          <li class="shop-list">
+            <section class="shop-content-img">
+              <dl class="shop-detail">
+                <dt class="shop-name">福島駅前店</dt>
+                <dd class="shop-address">福島県福島市杉妻町3-21</dd>
+                <dd class="shop-tel">TEL:024-123-1234</dd>
+                <dd class="shop-time">9:00~22:00</dd>
+              </dl>
+              <img class="shop-img" src="img/shop/shop.png" alt="shop" />
+            </section>
+            <ul class="service">
+              <section class="service-1st">
+                <li class="mobile-order">モバイルオーダー</li>
+                <li class="drive-thru">ドライブスルー</li>
+              </section>
+              <section class="service-2nd">
+                <li class="cashless">キャッシュレス</li>
+                <li class="wi-fi">Wi-Fi</li>
+              </section>
+            </ul>
+          </li>
+          <li class="shop-list">
+            <section class="shop-content-img">
+              <dl class="shop-detail">
+                <dt class="shop-name">O'z水戸店</dt>
+                <dd class="shop-address">茨城県水戸市笠原町185-31</dd>
+                <dd class="shop-tel">TEL:029-123-1234</dd>
+                <dd class="shop-time">9:00~22:00</dd>
+              </dl>
+              <img class="shop-img" src="img/shop/shop.png" alt="shop" />
+            </section>
+            <ul class="service">
+              <section class="service-1st">
+                <li class="mobile-order">モバイルオーダー</li>
+                <li class="drive-thru">ドライブスルー</li>
+              </section>
+              <section class="service-2nd">
+                <li class="cashless">キャッシュレス</li>
+                <li class="wi-fi">Wi-Fi</li>
+              </section>
+            </ul>
+          </li>
+          <li class="shop-list">
+            <section class="shop-content-img">
+              <dl class="shop-detail">
+                <dt class="shop-name">大曽通り店</dt>
+                <dd class="shop-address">栃木県宇都宮市塙田2-5-23</dd>
+                <dd class="shop-tel">TEL:320-123-1234</dd>
+                <dd class="shop-time">9:00~22:00</dd>
+              </dl>
+              <img class="shop-img" src="img/shop/shop.png" alt="shop" />
+            </section>
+            <ul class="service">
+              <section class="service-1st">
+                <li class="mobile-order">モバイルオーダー</li>
+                <li class="drive-thru">ドライブスルー</li>
+              </section>
+              <section class="service-2nd">
+                <li class="cashless">キャッシュレス</li>
+                <li class="wi-fi">Wi-Fi</li>
+              </section>
+            </ul>
+          </li>
+          <li class="shop-list">
+            <section class="shop-content-img">
+              <dl class="shop-detail">
+                <dt class="shop-name">前橋駅前店</dt>
+                <dd class="shop-address">群馬県前橋市大手町2-1-3</dd>
+                <dd class="shop-tel">TEL:027-123-1234</dd>
+                <dd class="shop-time">9:00~22:00</dd>
+              </dl>
+              <img class="shop-img" src="img/shop/shop.png" alt="shop" />
+            </section>
+            <ul class="service">
+              <section class="service-1st">
+                <li class="mobile-order">モバイルオーダー</li>
+                <li class="drive-thru">ドライブスルー</li>
+              </section>
+              <section class="service-2nd">
+                <li class="cashless">キャッシュレス</li>
+                <li class="wi-fi">Wi-Fi</li>
+              </section>
+            </ul>
+          </li>
+          <li class="shop-list">
+            <section class="shop-content-img">
+              <dl class="shop-detail">
+                <dt class="shop-name">O'z浦和店</dt>
+                <dd class="shop-address">埼玉県さいたま市浦和区高砂3-1-1</dd>
+                <dd class="shop-tel">TEL:048-123-1234</dd>
+                <dd class="shop-time">9:00~22:00</dd>
+              </dl>
+              <img class="shop-img" src="img/shop/shop.png" alt="shop" />
+            </section>
+            <ul class="service">
+              <section class="service-1st">
+                <li class="mobile-order">モバイルオーダー</li>
+                <li class="drive-thru">ドライブスルー</li>
+              </section>
+              <section class="service-2nd">
+                <li class="cashless">キャッシュレス</li>
+                <li class="wi-fi">Wi-Fi</li>
+              </section>
+            </ul>
+          </li>
+          <li class="shop-list">
+            <section class="shop-content-img">
+              <dl class="shop-detail">
+                <dt class="shop-name">プレモ千葉店</dt>
+                <dd class="shop-address">千葉県千葉市中央区市場町12-12</dd>
+                <dd class="shop-tel">TEL:043-123-1234</dd>
+                <dd class="shop-time">9:00~22:00</dd>
+              </dl>
+              <img class="shop-img" src="img/shop/shop.png" alt="shop" />
+            </section>
+            <ul class="service">
+              <section class="service-1st">
+                <li class="mobile-order">モバイルオーダー</li>
+                <li class="drive-thru">ドライブスルー</li>
+              </section>
+              <section class="service-2nd">
+                <li class="cashless">キャッシュレス</li>
+                <li class="wi-fi">Wi-Fi</li>
+              </section>
+            </ul>
+          </li>
+          <li class="shop-list">
+            <section class="shop-content-img">
+              <dl class="shop-detail">
+                <dt class="shop-name">新宿中央公園前店</dt>
+                <dd class="shop-address">東京都新宿区西新宿3-10-10</dd>
+                <dd class="shop-tel">TEL:03-123-1234</dd>
+                <dd class="shop-time">9:00~22:00</dd>
+              </dl>
+              <img class="shop-img" src="img/shop/shop.png" alt="shop" />
+            </section>
+            <ul class="service">
+              <section class="service-1st">
+                <li class="mobile-order">モバイルオーダー</li>
+                <li class="drive-thru">ドライブスルー</li>
+              </section>
+              <section class="service-2nd">
+                <li class="cashless">キャッシュレス</li>
+                <li class="wi-fi">Wi-Fi</li>
+              </section>
+            </ul>
+          </li>
+          <li class="shop-list">
+            <section class="shop-content-img">
+              <dl class="shop-detail">
+                <dt class="shop-name">日本大通り店</dt>
+                <dd class="shop-address">神奈川県横浜市中く日本大通13</dd>
+                <dd class="shop-tel">TEL:045-123-1234</dd>
+                <dd class="shop-time">9:00~22:00</dd>
+              </dl>
+              <img class="shop-img" src="img/shop/shop.png" alt="shop" />
+            </section>
+            <ul class="service">
+              <section class="service-1st">
+                <li class="mobile-order">モバイルオーダー</li>
+                <li class="drive-thru">ドライブスルー</li>
+              </section>
+              <section class="service-2nd">
+                <li class="cashless">キャッシュレス</li>
+                <li class="wi-fi">Wi-Fi</li>
+              </section>
+            </ul>
+          </li>
+          <li class="shop-list">
+            <section class="shop-content-img">
+              <dl class="shop-detail">
+                <dt class="shop-name">ファイン新総曲輪店</dt>
+                <dd class="shop-address">富山県富山市新総曲輪5-1</dd>
+                <dd class="shop-tel">TEL:076-123-1234</dd>
+                <dd class="shop-time">9:00~22:00</dd>
+              </dl>
+              <img class="shop-img" src="img/shop/shop.png" alt="shop" />
+            </section>
+            <ul class="service">
+              <section class="service-1st">
+                <li class="mobile-order">モバイルオーダー</li>
+                <li class="drive-thru">ドライブスルー</li>
+              </section>
+              <section class="service-2nd">
+                <li class="cashless">キャッシュレス</li>
+                <li class="wi-fi">Wi-Fi</li>
+              </section>
+            </ul>
+          </li>
+          <li class="shop-list">
+            <section class="shop-content-img">
+              <dl class="shop-detail">
+                <dt class="shop-name">名古屋城前店</dt>
+                <dd class="shop-address">愛知県名古屋市中区三の丸5-6-1</dd>
+                <dd class="shop-tel">TEL:052-123-1234</dd>
+                <dd class="shop-time">9:00~22:00</dd>
+              </dl>
+              <img class="shop-img" src="img/shop/shop.png" alt="shop" />
+            </section>
+            <ul class="service">
+              <section class="service-1st">
+                <li class="mobile-order">モバイルオーダー</li>
+                <li class="drive-thru">ドライブスルー</li>
+              </section>
+              <section class="service-2nd">
+                <li class="cashless">キャッシュレス</li>
+                <li class="wi-fi">Wi-Fi</li>
+              </section>
+            </ul>
+          </li>
+          <li class="shop-list">
+            <section class="shop-content-img">
+              <dl class="shop-detail">
+                <dt class="shop-name">大手東店</dt>
+                <dd class="shop-address">大阪府大阪市中央区大手前1</dd>
+                <dd class="shop-tel">TEL:06-123-1234</dd>
+                <dd class="shop-time">9:00~22:00</dd>
+              </dl>
+              <img class="shop-img" src="img/shop/shop.png" alt="shop" />
+            </section>
+            <ul class="service">
+              <section class="service-1st">
+                <li class="mobile-order">モバイルオーダー</li>
+                <li class="drive-thru">ドライブスルー</li>
+              </section>
+              <section class="service-2nd">
+                <li class="cashless">キャッシュレス</li>
+                <li class="wi-fi">Wi-Fi</li>
+              </section>
+            </ul>
+          </li>
+          <li class="shop-list">
+            <section class="shop-content-img">
+              <dl class="shop-detail">
+                <dt class="shop-name">室町通り店</dt>
+                <dd class="shop-address">京都府京都市上京区下立売通新町1-5</dd>
+                <dd class="shop-tel">TEL:075-123-1234</dd>
+                <dd class="shop-time">9:00~22:00</dd>
+              </dl>
+              <img class="shop-img" src="img/shop/shop.png" alt="shop" />
+            </section>
+            <ul class="service">
+              <section class="service-1st">
+                <li class="mobile-order">モバイルオーダー</li>
+                <li class="drive-thru">ドライブスルー</li>
+              </section>
+              <section class="service-2nd">
+                <li class="cashless">キャッシュレス</li>
+                <li class="wi-fi">Wi-Fi</li>
+              </section>
+            </ul>
+          </li>
+          <li class="shop-list">
+            <section class="shop-content-img">
+              <dl class="shop-detail">
+                <dt class="shop-name">広島駅前店</dt>
+                <dd class="shop-address">広島県広島市中区基町12-35</dd>
+                <dd class="shop-tel">TEL:082-123-1234</dd>
+                <dd class="shop-time">9:00~22:00</dd>
+              </dl>
+              <img class="shop-img" src="img/shop/shop.png" alt="shop" />
+            </section>
+            <ul class="service">
+              <section class="service-1st">
+                <li class="mobile-order">モバイルオーダー</li>
+                <li class="drive-thru">ドライブスルー</li>
+              </section>
+              <section class="service-2nd">
+                <li class="cashless">キャッシュレス</li>
+                <li class="wi-fi">Wi-Fi</li>
+              </section>
+            </ul>
+          </li>
+          <li class="shop-list">
+            <section class="shop-content-img">
+              <dl class="shop-detail">
+                <dt class="shop-name">福岡空港店</dt>
+                <dd class="shop-address">福岡県福岡市博多区東公園11-1</dd>
+                <dd class="shop-tel">TEL:092-123-1234</dd>
+                <dd class="shop-time">9:00~22:00</dd>
+              </dl>
+              <img class="shop-img" src="img/shop/shop.png" alt="shop" />
+            </section>
+            <ul class="service">
+              <section class="service-1st">
+                <li class="mobile-order">モバイルオーダー</li>
+                <li class="drive-thru">ドライブスルー</li>
+              </section>
+              <section class="service-2nd">
+                <li class="cashless">キャッシュレス</li>
+                <li class="wi-fi">Wi-Fi</li>
+              </section>
+            </ul>
+          </li>
+          <li class="shop-list">
+            <section class="shop-content-img">
+              <dl class="shop-detail">
+                <dt class="shop-name">尾上町店</dt>
+                <dd class="shop-address">長崎県長崎市尾上町5-3</dd>
+                <dd class="shop-tel">TEL:095-123-1234</dd>
+                <dd class="shop-time">9:00~22:00</dd>
+              </dl>
+              <img class="shop-img" src="img/shop/shop.png" alt="shop" />
+            </section>
+            <ul class="service">
+              <section class="service-1st">
+                <li class="mobile-order">モバイルオーダー</li>
+                <li class="drive-thru">ドライブスルー</li>
+              </section>
+              <section class="service-2nd">
+                <li class="cashless">キャッシュレス</li>
+                <li class="wi-fi">Wi-Fi</li>
+              </section>
+            </ul>
+          </li>
+        </ul>
+      </article>
+    </main>
+    <footer>
+      <ul class="footer">
+        <section class="footer-menu">
+          <a class="footer-link" href="menu.html"
+            ><li class="menu">メニュー</li></a
+          >
+          <hr />
+        </section>
+        <section class="footer-shop">
+          <a class="footer-link" href="shop.html"
+            ><li class="shop">店舗紹介</li></a
+          >
+          <hr />
+        </section>
+        <section class="footer-recruit">
+          <a class="footer-link" href="recruit.html"
+            ><li class="recruit">採用情報</li></a
+          >
+          <hr />
+        </section>
+        <section class="footer-inquiry">
+          <a
+            class="footer-link"
+            href="mailto:vancouperburger.support@vcb.com?subject=お問い合わせ"
+            ><li class="inquiry">お問い合わせ</li></a
+          >
+          <hr />
+        </section>
+        <section class="footer-company">
+          <a class="footer-link" href="company.html"
+            ><li class="company">会社情報</li></a
+          >
+          <hr />
+        </section>
+        <section class="footer-am-pp">
+          <a class="footer-link" href="agreement.html"
+            ><li class="agreement">利用規約</li></a
+          >
+          <a class="footer-link" href="privacy-policy.html"
+            ><li class="p-p">プライバシーポリシー</li></a
+          >
+        </section>
+      </ul>
+      <img class="logo" src="img/favicon/favicon2.svg" alt="企業ロゴ" />
+      <p class="copyright">
+        &copy;2025 Tokihito Ozawa. This site was created for job-hunting
+        purposes and is not intended for commercial use.
+      </p>
+    </footer>
+    <script src="js/navi-menu.js"></script>
+    <script src="js/shop-search.js"></script>
+  </body>
+</html>

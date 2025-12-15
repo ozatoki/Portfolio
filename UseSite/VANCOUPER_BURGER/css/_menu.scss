@@ -227,3 +227,475 @@ div.border-bottom {
   background-color: white;
   margin: 20px 0;
 }
+/* ----------------------
+   タブレット縦向き（600px）以上
+----------------------- */
+@media (min-width: 600px) {
+}
+
+/* ----------------------
+   タブレット横向き（900px）以上
+----------------------- */
+@media (min-width: 900px) {
+}
+
+/* ----------------------
+   PC（1200px）以上
+----------------------- */
+@media (min-width: 1200px) {
+  main.menu {
+    section.title-ber {
+      width: 50vw;
+      height: 6vh;
+      margin: 55px auto 20px auto;
+      gap: 0.52vw;
+      img.maple {
+        width: 2.5vw;
+        height: 4.4vh;
+        margin: 0 0 0 0.52vw;
+      }
+      h2.title {
+        font-size: clamp(12px, 1.04vw, 20px);
+      }
+    }
+    section.menu-btn {
+      ul.food-menu {
+        width: 50vw;
+        margin: 0 auto;
+        gap: 1.5625vw;
+      }
+    }
+    article.set-menu-content {
+      width: 50vw;
+      margin: 0 auto;
+      section.menu-title {
+        gap: 0.52vw;
+        justify-content: start;
+        margin-top: 50px;
+        img.maple {
+          width: 1.7vw;
+          height: 3vh;
+          margin: 0;
+        }
+        h3.menu-title-text {
+          font-size: clamp(10px, 0.84vw, 16px);
+        }
+      }
+      ul.menu-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 1.5vw;
+        grid-row-gap: 40px;
+        li.menu-detail {
+          width: 15.625vw;
+          height: 32.2vh;
+          background-color: white;
+          border-radius: 20px;
+          box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.25);
+          figure.menu-img {
+            margin: 0;
+            img {
+              width: 15.625vw;
+              height: 18.1vh;
+              border-top-left-radius: 20px;
+              border-top-right-radius: 20px;
+            }
+            figcaption.menu-text {
+              dl {
+                width: 15.625vw;
+                height: 14.1vh;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                text-align: center;
+                dt {
+                  font-size: clamp(12px, 1.04vw, 20px);
+                  font-weight: bold;
+                  margin: 10px auto 0 auto;
+                  width: 13.125vw;
+                  height: 6.7vh;
+                }
+                dd {
+                  font-size: clamp(12px, 1.04vw, 20px);
+                  font-weight: bold;
+                  margin: 15px 0 0 0;
+                }
+              }
+            }
+          }
+        }
+      }
+      div.border-bottom {
+        margin: 50px auto;
+        width: 50vw;
+      }
+    }
+    article.kids-menu-content {
+      width: 50vw;
+      margin: 0 auto;
+      section.menu-title {
+        gap: 0.52vw;
+        justify-content: start;
+        margin-top: 50px;
+        img.maple {
+          width: 1.7vw;
+          height: 3vh;
+          margin: 0;
+        }
+        h3.menu-title-text {
+          font-size: clamp(10px, 0.84vw, 16px);
+        }
+      }
+      ul.menu-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 1.5vw;
+        grid-row-gap: 40px;
+        li.menu-detail {
+          width: 15.625vw;
+          height: 32.2vh;
+          background-color: white;
+          border-radius: 20px;
+          box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.25);
+          figure.menu-img {
+            margin: 0;
+            img {
+              width: 15.625vw;
+              height: 18.1vh;
+              border-top-left-radius: 20px;
+              border-top-right-radius: 20px;
+            }
+            figcaption.menu-text {
+              dl {
+                width: 15.625vw;
+                height: 14.1vh;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                text-align: center;
+                dt {
+                  font-size: clamp(12px, 1.04vw, 20px);
+                  font-weight: bold;
+                  margin: 10px auto 0 auto;
+                  width: 13.125vw;
+                  height: 6.7vh;
+                }
+                dd {
+                  font-size: clamp(12px, 1.04vw, 20px);
+                  font-weight: bold;
+                  margin: 15px 0 0 0;
+                }
+              }
+            }
+          }
+        }
+      }
+      div.border-bottom {
+        margin: 50px auto;
+        width: 50vw;
+      }
+    }
+    article.side-menu-content {
+      width: 50vw;
+      margin: 0 auto;
+      section.menu-title {
+        gap: 0.52vw;
+        justify-content: start;
+        margin-top: 50px;
+        img.maple {
+          width: 1.7vw;
+          height: 3vh;
+          margin: 0;
+        }
+        h3.menu-title-text {
+          font-size: clamp(10px, 0.84vw, 16px);
+        }
+      }
+      ul.menu-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 1.5vw;
+        grid-row-gap: 40px;
+        li.menu-detail,
+        li.menu-detail-size {
+          width: 15.625vw;
+          height: 32.2vh;
+          background-color: white;
+          border-radius: 20px;
+          box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.25);
+          figure.menu-img {
+            margin: 0;
+            img {
+              width: 15.625vw;
+              height: 18.1vh;
+              border-top-left-radius: 20px;
+              border-top-right-radius: 20px;
+            }
+            figcaption.menu-text {
+              dl {
+                width: 15.625vw;
+                height: 14.1vh;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                text-align: center;
+                dt {
+                  font-size: clamp(12px, 1.04vw, 20px);
+                  font-weight: bold;
+                  margin: 10px auto 0 auto;
+                  width: 13.125vw;
+                  height: 6.7vh;
+                }
+                dt.size {
+                  font-size: clamp(12px, 1.04vw, 20px);
+                  font-weight: bold;
+                  margin: 10px auto 0 auto;
+                  width: 13.125vw;
+                  height: 2.5vh;
+                }
+                section.size {
+                  gap: 72px;
+                  margin: 0 2.7vw;
+                  dd.size-s,
+                  dd.size-m,
+                  dd.size-l {
+                    font-size: clamp(12px, 1.04vw, 20px);
+                    width: 15.625vw;
+                    margin: 0;
+                  }
+                }
+                section.size-value {
+                  gap: 1.7vw;
+                  dd.value-s,
+                  dd.value-m,
+                  dd.value-l {
+                    font-size: clamp(12px, 1.04vw, 20px);
+                  }
+                }
+                dd {
+                  font-size: clamp(12px, 1.04vw, 20px);
+                  font-weight: bold;
+                  margin: 15px 0 0 0;
+                }
+              }
+            }
+          }
+        }
+      }
+      div.border-bottom {
+        margin: 50px auto;
+        width: 50vw;
+      }
+    }
+    article.drink-menu-content {
+      width: 50vw;
+      margin: 0 auto;
+      section.menu-title {
+        gap: 0.52vw;
+        justify-content: start;
+        margin-top: 50px;
+        img.maple {
+          width: 1.7vw;
+          height: 3vh;
+          margin: 0;
+        }
+        h3.menu-title-text {
+          font-size: clamp(10px, 0.84vw, 16px);
+        }
+      }
+      ul.menu-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 1.5vw;
+        grid-row-gap: 40px;
+        li.menu-detail,
+        li.menu-detail-size {
+          width: 15.625vw;
+          height: 32.2vh;
+          background-color: white;
+          border-radius: 20px;
+          box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.25);
+          figure.menu-img {
+            margin: 0;
+            position: relative;
+            img.cold-hot {
+              width: 3.3vw;
+              height: 6vh;
+              position: absolute;
+              top: 0;
+              left: 0;
+              border-radius: 0px;
+            }
+            img {
+              width: 15.625vw;
+              height: 18.1vh;
+              border-top-left-radius: 20px;
+              border-top-right-radius: 20px;
+            }
+            figcaption.menu-text {
+              dl {
+                width: 15.625vw;
+                height: 14.1vh;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                text-align: center;
+                dt {
+                  font-size: clamp(12px, 1.04vw, 20px);
+                  font-weight: bold;
+                  margin: 10px auto 0 auto;
+                  width: 13.125vw;
+                  height: 6.7vh;
+                }
+                dt.size {
+                  font-size: clamp(12px, 1.04vw, 20px);
+                  font-weight: bold;
+                  margin: 10px auto 0 auto;
+                  width: 13.125vw;
+                  height: 2.5vh;
+                }
+                section.size {
+                  gap: 72px;
+                  margin: 0 2.7vw;
+                  dd.size-s,
+                  dd.size-m,
+                  dd.size-l {
+                    font-size: clamp(12px, 1.04vw, 20px);
+                    width: 15.625vw;
+                    margin: 0;
+                  }
+                }
+                section.size-value {
+                  gap: 1.7vw;
+                  dd.value-s,
+                  dd.value-m,
+                  dd.value-l {
+                    font-size: clamp(12px, 1.04vw, 20px);
+                  }
+                }
+                dd {
+                  font-size: clamp(12px, 1.04vw, 20px);
+                  font-weight: bold;
+                  margin: 15px 0 0 0;
+                }
+              }
+            }
+          }
+        }
+      }
+      div.border-bottom {
+        margin: 50px auto;
+        width: 50vw;
+      }
+    }
+    article.desert-menu-content {
+      width: 50vw;
+      margin: 0 auto;
+      section.menu-title {
+        gap: 0.52vw;
+        justify-content: start;
+        margin-top: 50px;
+        img.maple {
+          width: 1.7vw;
+          height: 3vh;
+          margin: 0;
+        }
+        h3.menu-title-text {
+          font-size: clamp(10px, 0.84vw, 16px);
+        }
+      }
+      ul.menu-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 40px;
+        li.menu-detail {
+          width: 15.625vw;
+          height: 32.2vh;
+          background-color: white;
+          border-radius: 20px;
+          box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.25);
+          margin-bottom: 100px;
+          figure.menu-img {
+            margin: 0;
+            position: relative;
+            img.cold-hot {
+              width: 3.3vw;
+              height: 6vh;
+              position: absolute;
+              top: 0;
+              left: 0;
+              border-radius: 0px;
+            }
+            img {
+              width: 15.625vw;
+              height: 18.1vh;
+              border-top-left-radius: 20px;
+              border-top-right-radius: 20px;
+            }
+            figcaption.menu-text {
+              dl {
+                width: 15.625vw;
+                height: 14.1vh;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                text-align: center;
+                dt {
+                  font-size: clamp(12px, 1.04vw, 20px);
+                  font-weight: bold;
+                  margin: 10px auto 0 auto;
+                  width: 13.125vw;
+                  height: 6.7vh;
+                }
+                dt.size {
+                  font-size: clamp(12px, 1.04vw, 20px);
+                  font-weight: bold;
+                  margin: 10px auto 0 auto;
+                  width: 13.125vw;
+                  height: 2.5vh;
+                }
+                section.size {
+                  gap: 72px;
+                  margin: 0 2.7vw;
+                  dd.size-s,
+                  dd.size-m,
+                  dd.size-l {
+                    font-size: clamp(12px, 1.04vw, 20px);
+                    width: 15.625vw;
+                    margin: 0;
+                  }
+                }
+                section.size-value {
+                  gap: 1.7vw;
+                  dd.value-s,
+                  dd.value-m,
+                  dd.value-l {
+                    font-size: clamp(12px, 1.04vw, 20px);
+                  }
+                }
+                dd {
+                  font-size: clamp(12px, 1.04vw, 20px);
+                  font-weight: bold;
+                  margin: 15px 0 0 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

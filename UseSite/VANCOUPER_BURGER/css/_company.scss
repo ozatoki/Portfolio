@@ -1,0 +1,112 @@
+@charset "utf8";
+
+main.company {
+  padding-top: 80px;
+  background-color: #f1f0b6;
+  section.company-title {
+    margin: 0 auto 20px auto;
+  }
+  article.company-induction {
+    img.company-img {
+      width: 90vw;
+      border-radius: 20px;
+      margin: 20px auto 0 auto;
+      display: block;
+    }
+  }
+  li.company-address {
+    dd.company-dd {
+      text-align: end;
+    }
+  }
+  iframe {
+    width: 100vw;
+    margin-top: 20px;
+  }
+}
+
+// 共通
+ul.company-ul {
+  list-style: none;
+  background-color: white;
+  border-radius: 20px;
+  width: 90vw;
+  margin: 20px auto 0 auto;
+  padding: 0 10px 20px 10px;
+  li.company-list {
+    padding: 20px 0 0 0;
+    dl.company-dl {
+      width: 100%;
+      font-size: 0.875rem;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      dt.company-dt {
+        margin: 0;
+      }
+      dd.company-dd {
+        margin: 0;
+      }
+    }
+  }
+}
+/* ----------------------
+   タブレット縦向き（600px）以上
+----------------------- */
+@media (min-width: 600px) {
+}
+
+/* ----------------------
+   タブレット横向き（900px）以上
+----------------------- */
+@media (min-width: 900px) {
+}
+
+/* ----------------------
+   PC（1200px）以上
+----------------------- */
+@media (min-width: 1200px) {
+  main.company {
+    section.title-ber {
+      width: 50vw;
+      height: 6vh;
+      margin: 55px auto 40px auto;
+      gap: 0.52vw;
+      img.maple {
+        width: 2.5vw;
+        height: 4.4vh;
+        margin: 0 0 0 0.52vw;
+      }
+      h2.title {
+        font-size: clamp(12px, 1.04vw, 20px);
+      }
+    }
+    article.company-induction {
+      img.company-img {
+        width: 50vw;
+        height: 59.3vh;
+      }
+      section.company-content {
+        ul.company-ul {
+          width: 50vw;
+          margin: 40px auto 0 auto;
+          li.company-list {
+            dl.company-dl {
+              width: 100%;
+              font-size: 0.875rem;
+              font-weight: bold;
+              display: flex;
+              justify-content: space-between;
+              dt.company-dt {
+                margin: 0 0 0 10vw;
+              }
+              dd.company-dd {
+                margin: 0 10vw 0 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

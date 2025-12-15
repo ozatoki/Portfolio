@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Arial Black", "Helvetica Neue", Arial, sans-serif;
   font-weight: normal;
@@ -135,7 +136,7 @@ body main.top article.top-slider {
   padding: 90px 0 0 0;
 }
 body main.top article.top-slider .swiper {
-  width: 88vw;
+  width: 90vw;
   height: 26vh;
   border-radius: 20px;
 }
@@ -371,14 +372,14 @@ body main.top article.infomation {
 body main.top article.infomation section.infomation-content-mobile {
   margin-top: 20px;
 }
-body main.top article.infomation section.infomation-content-mobile h2.infomation-title {
+body main.top article.infomation section.infomation-content-mobile h2.infomation-title-mobile {
   text-align: center;
   font-size: 1rem;
   font-weight: bold;
   color: #d60000;
   margin: 0;
 }
-body main.top article.infomation section.infomation-content-mobile h2.infomation-title span {
+body main.top article.infomation section.infomation-content-mobile h2.infomation-title-mobile span {
   font-size: 1rem;
   font-weight: bold;
   color: black;
@@ -477,6 +478,444 @@ a.footer-link {
   color: black;
 }
 
+/* ----------------------
+   タブレット縦向き（600px）以上
+----------------------- */
+/* ----------------------
+   タブレット横向き（900px）以上
+----------------------- */
+/* ----------------------
+   PC（1200px）以上
+----------------------- */
+@media (min-width: 1200px) {
+  body header.mobile {
+    width: 100%;
+    height: 96px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2.6vw;
+  }
+  body header.mobile a.return-top {
+    cursor: pointer;
+  }
+  body header.mobile a.return-top h1 {
+    margin: 0;
+  }
+  body header.mobile a.return-top h1 img.top-logo {
+    width: 16.5vw;
+    margin-left: 6vw;
+  }
+  body header.mobile section.header-pc {
+    display: block;
+  }
+  body header.mobile section.header-pc ul.header-list {
+    list-style: none;
+    display: flex;
+    gap: 2.6vw;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0;
+    cursor: pointer;
+  }
+  body header.mobile section.header-pc ul.header-list a {
+    text-decoration: none;
+    color: black;
+  }
+  body header.mobile section.header-pc ul.header-list a li {
+    font-size: 1rem;
+  }
+  body header.mobile img.menu-btn {
+    display: none;
+  }
+  body main.top {
+    margin-bottom: 100px;
+  }
+  body main.top article.top-slider {
+    padding: 146px 0 0 0;
+  }
+  body main.top article.top-slider .swiper {
+    height: 84.4vh;
+    border-radius: 50px;
+  }
+  body main.top article.commitment {
+    width: 90vw;
+    border-radius: 50px;
+  }
+  body main.top article.commitment section.commitment-content {
+    margin: 40px 0;
+  }
+  body main.top article.commitment section.commitment-content h2.commitment-title {
+    font-size: clamp(20px, 1.7vw, 32px);
+    margin: 0 0 40px 0;
+  }
+  body main.top article.commitment section.commitment-content h2.commitment-title span {
+    font-size: clamp(20px, 1.7vw, 32px);
+  }
+  body main.top article.commitment section.commitment-content a section.commitment-detail {
+    width: 71.2vw;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  body main.top article.commitment section.commitment-content a section.commitment-detail ul.commitment-img {
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    padding: 50px 0;
+  }
+  body main.top article.commitment section.commitment-content a section.commitment-detail ul.commitment-img li.clerk img,
+  body main.top article.commitment section.commitment-content a section.commitment-detail ul.commitment-img li.training img,
+  body main.top article.commitment section.commitment-content a section.commitment-detail ul.commitment-img li.cow img,
+  body main.top article.commitment section.commitment-content a section.commitment-detail ul.commitment-img li.farm img {
+    width: 15.625vw;
+  }
+  body main.top section.app-sns {
+    display: flex;
+    gap: 2.6vw;
+  }
+  body main.top section.app-sns article.app {
+    width: 32vw;
+    margin: 50px 0 50px 5vw;
+    border-radius: 50px;
+  }
+  body main.top section.app-sns article.app section.app-content {
+    margin: 40px 0;
+  }
+  body main.top section.app-sns article.app section.app-content h2.app-title {
+    font-size: clamp(20px, 1.7vw, 32px);
+  }
+  body main.top section.app-sns article.app section.app-content h2.app-title span {
+    font-size: clamp(20px, 1.7vw, 32px);
+  }
+  body main.top section.app-sns article.app section.app-content section.app-wrapper {
+    width: 27vw;
+    height: 15.4vh;
+    display: flex;
+    position: relative;
+  }
+  body main.top section.app-sns article.app section.app-content section.app-wrapper ul.app-infomation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 0 0 1vw;
+  }
+  body main.top section.app-sns article.app section.app-content section.app-wrapper ul.app-infomation li.coupon {
+    width: 5.2vw;
+    height: 4.8vh;
+  }
+  body main.top section.app-sns article.app section.app-content section.app-wrapper ul.app-infomation li.coupon p {
+    font-size: clamp(12px, 1vw, 20px);
+  }
+  body main.top section.app-sns article.app section.app-content section.app-wrapper ul.app-infomation li.mobile-order {
+    width: 5.2vw;
+    height: 4.8vh;
+  }
+  body main.top section.app-sns article.app section.app-content section.app-wrapper ul.app-infomation li.mobile-order p.mobile,
+  body main.top section.app-sns article.app section.app-content section.app-wrapper ul.app-infomation li.mobile-order p.order {
+    font-size: clamp(12px, 1vw, 20px);
+  }
+  body main.top section.app-sns article.app section.app-content section.app-wrapper section.use-value {
+    margin: 20px 0 0 2.1vw;
+  }
+  body main.top section.app-sns article.app section.app-content section.app-wrapper section.use-value p.value,
+  body main.top section.app-sns article.app section.app-content section.app-wrapper section.use-value p.use {
+    font-size: clamp(12px, 1vw, 20px);
+  }
+  body main.top section.app-sns article.app section.app-content section.app-wrapper ul.app-introduction {
+    position: absolute;
+    top: 8vh;
+    right: 1.6vw;
+    gap: 0.52vw;
+  }
+  body main.top section.app-sns article.app section.app-content section.app-wrapper ul.app-introduction li.app-app-store img,
+  body main.top section.app-sns article.app section.app-content section.app-wrapper ul.app-introduction li.app-google-play img {
+    width: 8.3vw;
+    height: 4.4vh;
+  }
+  body main.top section.app-sns article.sns {
+    width: 40vw;
+    border-radius: 50px;
+    margin: 50px 0;
+  }
+  body main.top section.app-sns article.sns section.sns-content {
+    margin: 40px 0;
+  }
+  body main.top section.app-sns article.sns section.sns-content h2.sns-title {
+    font-size: clamp(20px, 1.7vw, 32px);
+  }
+  body main.top section.app-sns article.sns section.sns-content h2.sns-title span {
+    font-size: clamp(20px, 1.7vw, 32px);
+  }
+  body main.top section.app-sns article.sns section.sns-content section.sns-wrapper {
+    width: 36vw;
+  }
+  body main.top section.app-sns article.sns section.sns-content section.sns-wrapper section.follow-check {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  body main.top section.app-sns article.sns section.sns-content section.sns-wrapper section.follow-check p.follow,
+  body main.top section.app-sns article.sns section.sns-content section.sns-wrapper section.follow-check p.check {
+    padding: 0;
+    font-size: clamp(15px, 1.25vw, 24px);
+  }
+  body main.top section.app-sns article.sns section.sns-content section.sns-wrapper ul.sns-list {
+    margin-top: 30px;
+  }
+  body main.top section.app-sns article.sns section.sns-content section.sns-wrapper ul.sns-list a li.sns img {
+    width: 64px;
+    height: 64px;
+  }
+  body main.top article.infomation {
+    width: 90vw;
+    border-radius: 50px;
+  }
+  body main.top article.infomation section.infomation-content-mobile {
+    display: none;
+  }
+  body main.top article.infomation section.infomation-content-pc {
+    display: block;
+  }
+  body main.top article.infomation section.infomation-content-pc h2.infomation-title-pc {
+    text-align: center;
+    font-size: clamp(20px, 1.7vw, 32px);
+    color: #d60000;
+    margin: 40px 0;
+  }
+  body main.top article.infomation section.infomation-content-pc h2.infomation-title-pc span {
+    font-size: clamp(20px, 1.7vw, 32px);
+    color: black;
+  }
+  body main.top article.infomation section.infomation-content-pc section.infomation-list ul.info-pr {
+    list-style: none;
+    display: flex;
+    gap: 39.5vw;
+    margin: 40px 0 20px 3.125vw;
+    padding: 0;
+  }
+  body main.top article.infomation section.infomation-content-pc section.infomation-list ul.info-pr li.list-info {
+    background-color: #696969;
+    border-radius: 50px;
+    font-weight: bold;
+    color: white;
+    width: 5.2vw;
+    font-size: clamp(12px, 1vw, 20px);
+    text-align: center;
+  }
+  body main.top article.infomation section.infomation-content-pc section.infomation-list ul.info-pr li.list-pr {
+    background-color: #696969;
+    border-radius: 50px;
+    font-weight: bold;
+    color: white;
+    width: 8.9vw;
+    font-size: clamp(12px, 1vw, 20px);
+    text-align: center;
+  }
+  body main.top article.infomation section.infomation-content-pc section.info-pr-wrapper-pc {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 40px 0;
+  }
+  body main.top article.infomation section.infomation-content-pc section.info-pr-wrapper-pc section.infomation-wrapper-pc ul.info-list {
+    list-style: none;
+    background-color: #f0e7e7;
+    width: 39vw;
+    border-radius: 20px;
+    margin: 0 0 0 3.125vw;
+    padding: 0 0 30px 0;
+  }
+  body main.top article.infomation section.infomation-content-pc section.info-pr-wrapper-pc section.infomation-wrapper-pc ul.info-list li.info-1st {
+    margin: 0 0 0 1.6vw;
+    padding: 30px 0 0 0;
+  }
+  body main.top article.infomation section.infomation-content-pc section.info-pr-wrapper-pc section.infomation-wrapper-pc ul.info-list li.info-1st dl.info dt.date {
+    font-size: clamp(12px, 1vw, 20px);
+    font-family: "Arial", sans-serif;
+  }
+  body main.top article.infomation section.infomation-content-pc section.info-pr-wrapper-pc section.infomation-wrapper-pc ul.info-list li.info-1st dl.info dd.content {
+    font-size: clamp(12px, 1vw, 20px);
+    font-weight: bold;
+    margin: 0;
+  }
+  body main.top article.infomation section.infomation-content-pc section.info-pr-wrapper-pc section.infomation-wrapper-pc ul.info-list li.info-1st dl.info hr {
+    width: 23vw;
+    margin: 8px 0;
+    border-color: black;
+  }
+  body main.top article.infomation section.infomation-content-pc section.info-pr-wrapper-pc section.infomation-wrapper-pc ul.info-list li.info-2nd {
+    margin: 0 0 0 1.6vw;
+    padding: 30px 0 0 0;
+  }
+  body main.top article.infomation section.infomation-content-pc section.info-pr-wrapper-pc section.infomation-wrapper-pc ul.info-list li.info-2nd dl.info dt.date {
+    font-size: clamp(12px, 1vw, 20px);
+    font-family: "Arial", sans-serif;
+  }
+  body main.top article.infomation section.infomation-content-pc section.info-pr-wrapper-pc section.infomation-wrapper-pc ul.info-list li.info-2nd dl.info dd.content {
+    font-size: clamp(12px, 1vw, 20px);
+    font-weight: bold;
+    margin: 0;
+  }
+  body main.top article.infomation section.infomation-content-pc section.info-pr-wrapper-pc section.infomation-wrapper-pc ul.info-list li.info-2nd dl.info hr {
+    width: 23vw;
+    margin: 8px 0;
+    border-color: black;
+  }
+  body main.top article.infomation section.infomation-content-pc section.info-pr-wrapper-pc section.infomation-wrapper-pc ul.info-list li.info-3rd {
+    margin: 0 0 0 1.6vw;
+    padding: 30px 0 0 0;
+  }
+  body main.top article.infomation section.infomation-content-pc section.info-pr-wrapper-pc section.infomation-wrapper-pc ul.info-list li.info-3rd dl.info dt.date {
+    font-size: clamp(12px, 1vw, 20px);
+    font-family: "Arial", sans-serif;
+  }
+  body main.top article.infomation section.infomation-content-pc section.info-pr-wrapper-pc section.infomation-wrapper-pc ul.info-list li.info-3rd dl.info dd.content {
+    font-size: clamp(12px, 1vw, 20px);
+    font-weight: bold;
+    margin: 0;
+    width: 23vw;
+  }
+  body main.top article.infomation section.infomation-content-pc section.info-pr-wrapper-pc section.infomation-wrapper-pc ul.info-list li.info-3rd dl.info hr {
+    width: 23vw;
+    margin: 8px 0;
+    border-color: black;
+  }
+  body main.top article.infomation section.infomation-content-pc section.info-pr-wrapper-pc section.pressrelease-wrapper-pc ul.pr-list {
+    list-style: none;
+    background-color: #f0e7e7;
+    width: 39vw;
+    border-radius: 20px;
+    margin: 0 3.125vw 0 0;
+    padding: 0 0 30px 0;
+  }
+  body main.top article.infomation section.infomation-content-pc section.info-pr-wrapper-pc section.pressrelease-wrapper-pc ul.pr-list li.pr-1st {
+    margin: 0 0 0 1.6vw;
+    padding: 30px 0 0 0;
+  }
+  body main.top article.infomation section.infomation-content-pc section.info-pr-wrapper-pc section.pressrelease-wrapper-pc ul.pr-list li.pr-1st dl.pr dt.pr-date {
+    font-size: clamp(12px, 1vw, 20px);
+    font-family: "Arial", sans-serif;
+  }
+  body main.top article.infomation section.infomation-content-pc section.info-pr-wrapper-pc section.pressrelease-wrapper-pc ul.pr-list li.pr-1st dl.pr dd.pr-content {
+    font-size: clamp(12px, 1vw, 20px);
+    font-weight: bold;
+    margin: 0;
+  }
+  body main.top article.infomation section.infomation-content-pc section.info-pr-wrapper-pc section.pressrelease-wrapper-pc ul.pr-list li.pr-1st dl.pr hr {
+    width: 23vw;
+    margin: 8px 0;
+    border-color: black;
+  }
+  body main.top article.infomation section.infomation-content-pc section.info-pr-wrapper-pc section.pressrelease-wrapper-pc ul.pr-list li.pr-2nd {
+    margin: 0 0 0 1.6vw;
+    padding: 30px 0 0 0;
+  }
+  body main.top article.infomation section.infomation-content-pc section.info-pr-wrapper-pc section.pressrelease-wrapper-pc ul.pr-list li.pr-2nd dl.pr dt.pr-date {
+    font-size: clamp(12px, 1vw, 20px);
+    font-family: "Arial", sans-serif;
+  }
+  body main.top article.infomation section.infomation-content-pc section.info-pr-wrapper-pc section.pressrelease-wrapper-pc ul.pr-list li.pr-2nd dl.pr dd.pr-content {
+    font-size: clamp(12px, 1vw, 20px);
+    font-weight: bold;
+    margin: 0;
+  }
+  body main.top article.infomation section.infomation-content-pc section.info-pr-wrapper-pc section.pressrelease-wrapper-pc ul.pr-list li.pr-2nd dl.pr hr {
+    width: 23vw;
+    margin: 8px 0;
+    border-color: black;
+  }
+  body main.top article.infomation section.infomation-content-pc section.info-pr-wrapper-pc section.pressrelease-wrapper-pc ul.pr-list li.pr-3rd {
+    margin: 0 0 0 1.6vw;
+    padding: 30px 0 0 0;
+  }
+  body main.top article.infomation section.infomation-content-pc section.info-pr-wrapper-pc section.pressrelease-wrapper-pc ul.pr-list li.pr-3rd dl.pr dt.pr-date {
+    font-size: clamp(12px, 1vw, 20px);
+    font-family: "Arial", sans-serif;
+  }
+  body main.top article.infomation section.infomation-content-pc section.info-pr-wrapper-pc section.pressrelease-wrapper-pc ul.pr-list li.pr-3rd dl.pr dd.pr-content {
+    font-size: clamp(12px, 1vw, 20px);
+    font-weight: bold;
+    margin: 0;
+  }
+  body main.top article.infomation section.infomation-content-pc section.info-pr-wrapper-pc section.pressrelease-wrapper-pc ul.pr-list li.pr-3rd dl.pr hr {
+    width: 23vw;
+    margin: 8px 0;
+    border-color: black;
+  }
+  body footer ul.footer section.footer-menu,
+  body footer ul.footer section.footer-shop,
+  body footer ul.footer section.footer-recruit,
+  body footer ul.footer section.footer-inquiry,
+  body footer ul.footer section.footer-company,
+  body footer ul.footer section.footer-am-pp {
+    width: 17.4vw;
+  }
+  body footer ul.footer section.footer-menu a.footer-link,
+  body footer ul.footer section.footer-shop a.footer-link,
+  body footer ul.footer section.footer-recruit a.footer-link,
+  body footer ul.footer section.footer-inquiry a.footer-link,
+  body footer ul.footer section.footer-company a.footer-link,
+  body footer ul.footer section.footer-am-pp a.footer-link {
+    width: 100%;
+  }
+  body footer ul.footer section.footer-menu a.footer-link li.menu,
+  body footer ul.footer section.footer-menu a.footer-link li.shop,
+  body footer ul.footer section.footer-menu a.footer-link li.recruit,
+  body footer ul.footer section.footer-menu a.footer-link li.inquiry,
+  body footer ul.footer section.footer-menu a.footer-link li.company,
+  body footer ul.footer section.footer-menu a.footer-link li.agreement,
+  body footer ul.footer section.footer-menu a.footer-link li.p-p,
+  body footer ul.footer section.footer-shop a.footer-link li.menu,
+  body footer ul.footer section.footer-shop a.footer-link li.shop,
+  body footer ul.footer section.footer-shop a.footer-link li.recruit,
+  body footer ul.footer section.footer-shop a.footer-link li.inquiry,
+  body footer ul.footer section.footer-shop a.footer-link li.company,
+  body footer ul.footer section.footer-shop a.footer-link li.agreement,
+  body footer ul.footer section.footer-shop a.footer-link li.p-p,
+  body footer ul.footer section.footer-recruit a.footer-link li.menu,
+  body footer ul.footer section.footer-recruit a.footer-link li.shop,
+  body footer ul.footer section.footer-recruit a.footer-link li.recruit,
+  body footer ul.footer section.footer-recruit a.footer-link li.inquiry,
+  body footer ul.footer section.footer-recruit a.footer-link li.company,
+  body footer ul.footer section.footer-recruit a.footer-link li.agreement,
+  body footer ul.footer section.footer-recruit a.footer-link li.p-p,
+  body footer ul.footer section.footer-inquiry a.footer-link li.menu,
+  body footer ul.footer section.footer-inquiry a.footer-link li.shop,
+  body footer ul.footer section.footer-inquiry a.footer-link li.recruit,
+  body footer ul.footer section.footer-inquiry a.footer-link li.inquiry,
+  body footer ul.footer section.footer-inquiry a.footer-link li.company,
+  body footer ul.footer section.footer-inquiry a.footer-link li.agreement,
+  body footer ul.footer section.footer-inquiry a.footer-link li.p-p,
+  body footer ul.footer section.footer-company a.footer-link li.menu,
+  body footer ul.footer section.footer-company a.footer-link li.shop,
+  body footer ul.footer section.footer-company a.footer-link li.recruit,
+  body footer ul.footer section.footer-company a.footer-link li.inquiry,
+  body footer ul.footer section.footer-company a.footer-link li.company,
+  body footer ul.footer section.footer-company a.footer-link li.agreement,
+  body footer ul.footer section.footer-company a.footer-link li.p-p,
+  body footer ul.footer section.footer-am-pp a.footer-link li.menu,
+  body footer ul.footer section.footer-am-pp a.footer-link li.shop,
+  body footer ul.footer section.footer-am-pp a.footer-link li.recruit,
+  body footer ul.footer section.footer-am-pp a.footer-link li.inquiry,
+  body footer ul.footer section.footer-am-pp a.footer-link li.company,
+  body footer ul.footer section.footer-am-pp a.footer-link li.agreement,
+  body footer ul.footer section.footer-am-pp a.footer-link li.p-p {
+    font-size: clamp(15px, 1.25vw, 24px);
+    width: 100%;
+  }
+  body footer ul.footer section.footer-menu hr,
+  body footer ul.footer section.footer-shop hr,
+  body footer ul.footer section.footer-recruit hr,
+  body footer ul.footer section.footer-inquiry hr,
+  body footer ul.footer section.footer-company hr,
+  body footer ul.footer section.footer-am-pp hr {
+    width: 17.4vw;
+    border-color: black;
+    margin: 0;
+  }
+}
 /* Document
  * ========================================================================== */
 /**
@@ -1108,6 +1547,112 @@ section.wrapper h2.title {
   color: #d60000;
 }
 
+/* ----------------------
+   タブレット縦向き（600px）以上
+----------------------- */
+/* ----------------------
+   タブレット横向き（900px）以上
+----------------------- */
+/* ----------------------
+   PC（1200px）以上
+----------------------- */
+@media (min-width: 1200px) {
+  body main.commitment {
+    padding: 60px 0 100px 0;
+  }
+  body main.commitment section.wrapper {
+    width: 50vw;
+    height: 6vh;
+    margin: 77px auto 0 auto;
+    gap: 1vw;
+    justify-content: center;
+    border-radius: 20px;
+  }
+  body main.commitment section.wrapper img.maple {
+    width: 2.5vw;
+    height: 4.4vh;
+  }
+  body main.commitment section.wrapper h2.title {
+    font-size: clamp(12px, 1.04vw, 20px);
+  }
+  body main.commitment section.wrapper h2.title span {
+    font-size: clamp(12px, 1.04vw, 20px);
+  }
+  body main.commitment article.training section.training-title-wrapper {
+    width: 25vw;
+    height: 4.63vh;
+    border-radius: 15px;
+    gap: 0.52vw;
+    margin: 30px 0 0 25vw;
+  }
+  body main.commitment article.training section.training-title-wrapper img.maple-mini {
+    width: 1.7vw;
+    height: 3vh;
+    margin: 0 0 0 0.52vw;
+  }
+  body main.commitment article.training section.training-title-wrapper h3.training-title {
+    font-size: clamp(12px, 1.04vw, 20px);
+  }
+  body main.commitment article.training section.training-image {
+    width: 50vw;
+    margin: 0 auto;
+    justify-content: space-between;
+    gap: 0;
+    margin: 20px auto 0 auto;
+  }
+  body main.commitment article.training section.training-image img.clerk-img,
+  body main.commitment article.training section.training-image img.training-img {
+    width: 23.4375vw;
+    border-radius: 15px;
+  }
+  body main.commitment article.training section.training-detail {
+    width: 50vw;
+    border-radius: 15px;
+  }
+  body main.commitment article.training section.training-detail p.training-comment {
+    font-size: clamp(12px, 1.04vw, 20px);
+    width: 100%;
+    padding: 20px 20px;
+    margin: 20px 0 0 0;
+  }
+  body main.commitment article.ingredients section.ingredients-title-wrapper {
+    width: 25vw;
+    height: 4.63vh;
+    border-radius: 15px;
+    gap: 0.52vw;
+    margin: 30px 0 0 25vw;
+  }
+  body main.commitment article.ingredients section.ingredients-title-wrapper img.maple-mini {
+    width: 1.7vw;
+    height: 3vh;
+    margin: 0 0 0 0.52vw;
+  }
+  body main.commitment article.ingredients section.ingredients-title-wrapper h3.ingredients-title {
+    font-size: clamp(12px, 1.04vw, 20px);
+  }
+  body main.commitment article.ingredients section.ingredients-image {
+    width: 50vw;
+    margin: 0 auto;
+    justify-content: space-between;
+    gap: 0;
+    margin: 20px auto 0 auto;
+  }
+  body main.commitment article.ingredients section.ingredients-image img.cow-img,
+  body main.commitment article.ingredients section.ingredients-image img.farm-img {
+    width: 23.4375vw;
+    border-radius: 15px;
+  }
+  body main.commitment article.ingredients section.ingredients-detail {
+    width: 50vw;
+    border-radius: 15px;
+  }
+  body main.commitment article.ingredients section.ingredients-detail p.ingredients-comment {
+    font-size: clamp(12px, 1.04vw, 20px);
+    width: 100%;
+    padding: 20px 20px;
+    margin: 20px 0 0 0;
+  }
+}
 main.infomation {
   padding: 60px 0 50px 0;
   background-color: #f1f0b6;
@@ -1441,4 +1986,1428 @@ div.border-bottom {
   height: 5px;
   background-color: white;
   margin: 20px 0;
+}
+
+/* ----------------------
+   タブレット縦向き（600px）以上
+----------------------- */
+/* ----------------------
+   タブレット横向き（900px）以上
+----------------------- */
+/* ----------------------
+   PC（1200px）以上
+----------------------- */
+@media (min-width: 1200px) {
+  main.menu section.title-ber {
+    width: 50vw;
+    height: 6vh;
+    margin: 55px auto 20px auto;
+    gap: 0.52vw;
+  }
+  main.menu section.title-ber img.maple {
+    width: 2.5vw;
+    height: 4.4vh;
+    margin: 0 0 0 0.52vw;
+  }
+  main.menu section.title-ber h2.title {
+    font-size: clamp(12px, 1.04vw, 20px);
+  }
+  main.menu section.menu-btn ul.food-menu {
+    width: 50vw;
+    margin: 0 auto;
+    gap: 1.5625vw;
+  }
+  main.menu article.set-menu-content {
+    width: 50vw;
+    margin: 0 auto;
+  }
+  main.menu article.set-menu-content section.menu-title {
+    gap: 0.52vw;
+    justify-content: start;
+    margin-top: 50px;
+  }
+  main.menu article.set-menu-content section.menu-title img.maple {
+    width: 1.7vw;
+    height: 3vh;
+    margin: 0;
+  }
+  main.menu article.set-menu-content section.menu-title h3.menu-title-text {
+    font-size: clamp(10px, 0.84vw, 16px);
+  }
+  main.menu article.set-menu-content ul.menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 1.5vw;
+    grid-row-gap: 40px;
+  }
+  main.menu article.set-menu-content ul.menu-list li.menu-detail {
+    width: 15.625vw;
+    height: 32.2vh;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.25);
+  }
+  main.menu article.set-menu-content ul.menu-list li.menu-detail figure.menu-img {
+    margin: 0;
+  }
+  main.menu article.set-menu-content ul.menu-list li.menu-detail figure.menu-img img {
+    width: 15.625vw;
+    height: 18.1vh;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  main.menu article.set-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl {
+    width: 15.625vw;
+    height: 14.1vh;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+  }
+  main.menu article.set-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl dt {
+    font-size: clamp(12px, 1.04vw, 20px);
+    font-weight: bold;
+    margin: 10px auto 0 auto;
+    width: 13.125vw;
+    height: 6.7vh;
+  }
+  main.menu article.set-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl dd {
+    font-size: clamp(12px, 1.04vw, 20px);
+    font-weight: bold;
+    margin: 15px 0 0 0;
+  }
+  main.menu article.set-menu-content div.border-bottom {
+    margin: 50px auto;
+    width: 50vw;
+  }
+  main.menu article.kids-menu-content {
+    width: 50vw;
+    margin: 0 auto;
+  }
+  main.menu article.kids-menu-content section.menu-title {
+    gap: 0.52vw;
+    justify-content: start;
+    margin-top: 50px;
+  }
+  main.menu article.kids-menu-content section.menu-title img.maple {
+    width: 1.7vw;
+    height: 3vh;
+    margin: 0;
+  }
+  main.menu article.kids-menu-content section.menu-title h3.menu-title-text {
+    font-size: clamp(10px, 0.84vw, 16px);
+  }
+  main.menu article.kids-menu-content ul.menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 1.5vw;
+    grid-row-gap: 40px;
+  }
+  main.menu article.kids-menu-content ul.menu-list li.menu-detail {
+    width: 15.625vw;
+    height: 32.2vh;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.25);
+  }
+  main.menu article.kids-menu-content ul.menu-list li.menu-detail figure.menu-img {
+    margin: 0;
+  }
+  main.menu article.kids-menu-content ul.menu-list li.menu-detail figure.menu-img img {
+    width: 15.625vw;
+    height: 18.1vh;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  main.menu article.kids-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl {
+    width: 15.625vw;
+    height: 14.1vh;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+  }
+  main.menu article.kids-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl dt {
+    font-size: clamp(12px, 1.04vw, 20px);
+    font-weight: bold;
+    margin: 10px auto 0 auto;
+    width: 13.125vw;
+    height: 6.7vh;
+  }
+  main.menu article.kids-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl dd {
+    font-size: clamp(12px, 1.04vw, 20px);
+    font-weight: bold;
+    margin: 15px 0 0 0;
+  }
+  main.menu article.kids-menu-content div.border-bottom {
+    margin: 50px auto;
+    width: 50vw;
+  }
+  main.menu article.side-menu-content {
+    width: 50vw;
+    margin: 0 auto;
+  }
+  main.menu article.side-menu-content section.menu-title {
+    gap: 0.52vw;
+    justify-content: start;
+    margin-top: 50px;
+  }
+  main.menu article.side-menu-content section.menu-title img.maple {
+    width: 1.7vw;
+    height: 3vh;
+    margin: 0;
+  }
+  main.menu article.side-menu-content section.menu-title h3.menu-title-text {
+    font-size: clamp(10px, 0.84vw, 16px);
+  }
+  main.menu article.side-menu-content ul.menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 1.5vw;
+    grid-row-gap: 40px;
+  }
+  main.menu article.side-menu-content ul.menu-list li.menu-detail,
+  main.menu article.side-menu-content ul.menu-list li.menu-detail-size {
+    width: 15.625vw;
+    height: 32.2vh;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.25);
+  }
+  main.menu article.side-menu-content ul.menu-list li.menu-detail figure.menu-img,
+  main.menu article.side-menu-content ul.menu-list li.menu-detail-size figure.menu-img {
+    margin: 0;
+  }
+  main.menu article.side-menu-content ul.menu-list li.menu-detail figure.menu-img img,
+  main.menu article.side-menu-content ul.menu-list li.menu-detail-size figure.menu-img img {
+    width: 15.625vw;
+    height: 18.1vh;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  main.menu article.side-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl,
+  main.menu article.side-menu-content ul.menu-list li.menu-detail-size figure.menu-img figcaption.menu-text dl {
+    width: 15.625vw;
+    height: 14.1vh;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+  }
+  main.menu article.side-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl dt,
+  main.menu article.side-menu-content ul.menu-list li.menu-detail-size figure.menu-img figcaption.menu-text dl dt {
+    font-size: clamp(12px, 1.04vw, 20px);
+    font-weight: bold;
+    margin: 10px auto 0 auto;
+    width: 13.125vw;
+    height: 6.7vh;
+  }
+  main.menu article.side-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl dt.size,
+  main.menu article.side-menu-content ul.menu-list li.menu-detail-size figure.menu-img figcaption.menu-text dl dt.size {
+    font-size: clamp(12px, 1.04vw, 20px);
+    font-weight: bold;
+    margin: 10px auto 0 auto;
+    width: 13.125vw;
+    height: 2.5vh;
+  }
+  main.menu article.side-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl section.size,
+  main.menu article.side-menu-content ul.menu-list li.menu-detail-size figure.menu-img figcaption.menu-text dl section.size {
+    gap: 72px;
+    margin: 0 2.7vw;
+  }
+  main.menu article.side-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl section.size dd.size-s,
+  main.menu article.side-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl section.size dd.size-m,
+  main.menu article.side-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl section.size dd.size-l,
+  main.menu article.side-menu-content ul.menu-list li.menu-detail-size figure.menu-img figcaption.menu-text dl section.size dd.size-s,
+  main.menu article.side-menu-content ul.menu-list li.menu-detail-size figure.menu-img figcaption.menu-text dl section.size dd.size-m,
+  main.menu article.side-menu-content ul.menu-list li.menu-detail-size figure.menu-img figcaption.menu-text dl section.size dd.size-l {
+    font-size: clamp(12px, 1.04vw, 20px);
+    width: 15.625vw;
+    margin: 0;
+  }
+  main.menu article.side-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl section.size-value,
+  main.menu article.side-menu-content ul.menu-list li.menu-detail-size figure.menu-img figcaption.menu-text dl section.size-value {
+    gap: 1.7vw;
+  }
+  main.menu article.side-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl section.size-value dd.value-s,
+  main.menu article.side-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl section.size-value dd.value-m,
+  main.menu article.side-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl section.size-value dd.value-l,
+  main.menu article.side-menu-content ul.menu-list li.menu-detail-size figure.menu-img figcaption.menu-text dl section.size-value dd.value-s,
+  main.menu article.side-menu-content ul.menu-list li.menu-detail-size figure.menu-img figcaption.menu-text dl section.size-value dd.value-m,
+  main.menu article.side-menu-content ul.menu-list li.menu-detail-size figure.menu-img figcaption.menu-text dl section.size-value dd.value-l {
+    font-size: clamp(12px, 1.04vw, 20px);
+  }
+  main.menu article.side-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl dd,
+  main.menu article.side-menu-content ul.menu-list li.menu-detail-size figure.menu-img figcaption.menu-text dl dd {
+    font-size: clamp(12px, 1.04vw, 20px);
+    font-weight: bold;
+    margin: 15px 0 0 0;
+  }
+  main.menu article.side-menu-content div.border-bottom {
+    margin: 50px auto;
+    width: 50vw;
+  }
+  main.menu article.drink-menu-content {
+    width: 50vw;
+    margin: 0 auto;
+  }
+  main.menu article.drink-menu-content section.menu-title {
+    gap: 0.52vw;
+    justify-content: start;
+    margin-top: 50px;
+  }
+  main.menu article.drink-menu-content section.menu-title img.maple {
+    width: 1.7vw;
+    height: 3vh;
+    margin: 0;
+  }
+  main.menu article.drink-menu-content section.menu-title h3.menu-title-text {
+    font-size: clamp(10px, 0.84vw, 16px);
+  }
+  main.menu article.drink-menu-content ul.menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 1.5vw;
+    grid-row-gap: 40px;
+  }
+  main.menu article.drink-menu-content ul.menu-list li.menu-detail,
+  main.menu article.drink-menu-content ul.menu-list li.menu-detail-size {
+    width: 15.625vw;
+    height: 32.2vh;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.25);
+  }
+  main.menu article.drink-menu-content ul.menu-list li.menu-detail figure.menu-img,
+  main.menu article.drink-menu-content ul.menu-list li.menu-detail-size figure.menu-img {
+    margin: 0;
+    position: relative;
+  }
+  main.menu article.drink-menu-content ul.menu-list li.menu-detail figure.menu-img img.cold-hot,
+  main.menu article.drink-menu-content ul.menu-list li.menu-detail-size figure.menu-img img.cold-hot {
+    width: 3.3vw;
+    height: 6vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0px;
+  }
+  main.menu article.drink-menu-content ul.menu-list li.menu-detail figure.menu-img img,
+  main.menu article.drink-menu-content ul.menu-list li.menu-detail-size figure.menu-img img {
+    width: 15.625vw;
+    height: 18.1vh;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  main.menu article.drink-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl,
+  main.menu article.drink-menu-content ul.menu-list li.menu-detail-size figure.menu-img figcaption.menu-text dl {
+    width: 15.625vw;
+    height: 14.1vh;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+  }
+  main.menu article.drink-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl dt,
+  main.menu article.drink-menu-content ul.menu-list li.menu-detail-size figure.menu-img figcaption.menu-text dl dt {
+    font-size: clamp(12px, 1.04vw, 20px);
+    font-weight: bold;
+    margin: 10px auto 0 auto;
+    width: 13.125vw;
+    height: 6.7vh;
+  }
+  main.menu article.drink-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl dt.size,
+  main.menu article.drink-menu-content ul.menu-list li.menu-detail-size figure.menu-img figcaption.menu-text dl dt.size {
+    font-size: clamp(12px, 1.04vw, 20px);
+    font-weight: bold;
+    margin: 10px auto 0 auto;
+    width: 13.125vw;
+    height: 2.5vh;
+  }
+  main.menu article.drink-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl section.size,
+  main.menu article.drink-menu-content ul.menu-list li.menu-detail-size figure.menu-img figcaption.menu-text dl section.size {
+    gap: 72px;
+    margin: 0 2.7vw;
+  }
+  main.menu article.drink-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl section.size dd.size-s,
+  main.menu article.drink-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl section.size dd.size-m,
+  main.menu article.drink-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl section.size dd.size-l,
+  main.menu article.drink-menu-content ul.menu-list li.menu-detail-size figure.menu-img figcaption.menu-text dl section.size dd.size-s,
+  main.menu article.drink-menu-content ul.menu-list li.menu-detail-size figure.menu-img figcaption.menu-text dl section.size dd.size-m,
+  main.menu article.drink-menu-content ul.menu-list li.menu-detail-size figure.menu-img figcaption.menu-text dl section.size dd.size-l {
+    font-size: clamp(12px, 1.04vw, 20px);
+    width: 15.625vw;
+    margin: 0;
+  }
+  main.menu article.drink-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl section.size-value,
+  main.menu article.drink-menu-content ul.menu-list li.menu-detail-size figure.menu-img figcaption.menu-text dl section.size-value {
+    gap: 1.7vw;
+  }
+  main.menu article.drink-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl section.size-value dd.value-s,
+  main.menu article.drink-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl section.size-value dd.value-m,
+  main.menu article.drink-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl section.size-value dd.value-l,
+  main.menu article.drink-menu-content ul.menu-list li.menu-detail-size figure.menu-img figcaption.menu-text dl section.size-value dd.value-s,
+  main.menu article.drink-menu-content ul.menu-list li.menu-detail-size figure.menu-img figcaption.menu-text dl section.size-value dd.value-m,
+  main.menu article.drink-menu-content ul.menu-list li.menu-detail-size figure.menu-img figcaption.menu-text dl section.size-value dd.value-l {
+    font-size: clamp(12px, 1.04vw, 20px);
+  }
+  main.menu article.drink-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl dd,
+  main.menu article.drink-menu-content ul.menu-list li.menu-detail-size figure.menu-img figcaption.menu-text dl dd {
+    font-size: clamp(12px, 1.04vw, 20px);
+    font-weight: bold;
+    margin: 15px 0 0 0;
+  }
+  main.menu article.drink-menu-content div.border-bottom {
+    margin: 50px auto;
+    width: 50vw;
+  }
+  main.menu article.desert-menu-content {
+    width: 50vw;
+    margin: 0 auto;
+  }
+  main.menu article.desert-menu-content section.menu-title {
+    gap: 0.52vw;
+    justify-content: start;
+    margin-top: 50px;
+  }
+  main.menu article.desert-menu-content section.menu-title img.maple {
+    width: 1.7vw;
+    height: 3vh;
+    margin: 0;
+  }
+  main.menu article.desert-menu-content section.menu-title h3.menu-title-text {
+    font-size: clamp(10px, 0.84vw, 16px);
+  }
+  main.menu article.desert-menu-content ul.menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+  }
+  main.menu article.desert-menu-content ul.menu-list li.menu-detail {
+    width: 15.625vw;
+    height: 32.2vh;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.25);
+    margin-bottom: 100px;
+  }
+  main.menu article.desert-menu-content ul.menu-list li.menu-detail figure.menu-img {
+    margin: 0;
+    position: relative;
+  }
+  main.menu article.desert-menu-content ul.menu-list li.menu-detail figure.menu-img img.cold-hot {
+    width: 3.3vw;
+    height: 6vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0px;
+  }
+  main.menu article.desert-menu-content ul.menu-list li.menu-detail figure.menu-img img {
+    width: 15.625vw;
+    height: 18.1vh;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  main.menu article.desert-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl {
+    width: 15.625vw;
+    height: 14.1vh;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+  }
+  main.menu article.desert-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl dt {
+    font-size: clamp(12px, 1.04vw, 20px);
+    font-weight: bold;
+    margin: 10px auto 0 auto;
+    width: 13.125vw;
+    height: 6.7vh;
+  }
+  main.menu article.desert-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl dt.size {
+    font-size: clamp(12px, 1.04vw, 20px);
+    font-weight: bold;
+    margin: 10px auto 0 auto;
+    width: 13.125vw;
+    height: 2.5vh;
+  }
+  main.menu article.desert-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl section.size {
+    gap: 72px;
+    margin: 0 2.7vw;
+  }
+  main.menu article.desert-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl section.size dd.size-s,
+  main.menu article.desert-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl section.size dd.size-m,
+  main.menu article.desert-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl section.size dd.size-l {
+    font-size: clamp(12px, 1.04vw, 20px);
+    width: 15.625vw;
+    margin: 0;
+  }
+  main.menu article.desert-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl section.size-value {
+    gap: 1.7vw;
+  }
+  main.menu article.desert-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl section.size-value dd.value-s,
+  main.menu article.desert-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl section.size-value dd.value-m,
+  main.menu article.desert-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl section.size-value dd.value-l {
+    font-size: clamp(12px, 1.04vw, 20px);
+  }
+  main.menu article.desert-menu-content ul.menu-list li.menu-detail figure.menu-img figcaption.menu-text dl dd {
+    font-size: clamp(12px, 1.04vw, 20px);
+    font-weight: bold;
+    margin: 15px 0 0 0;
+  }
+}
+main.shop {
+  padding-top: 80px;
+  background-color: #f1f0b6;
+}
+main.shop section.search {
+  width: 90vw;
+  margin: 50px auto 0 auto;
+  position: relative;
+}
+main.shop section.search input {
+  width: 90vw;
+  height: 6.7vh;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 0 0 0 5.3vw;
+}
+main.shop section.search button.search-btn {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 1.05vh;
+  right: 5.3vw;
+  padding: 0;
+  border: none;
+  background: none;
+}
+main.shop section.search button.search-btn img.search-icon {
+  width: 32px;
+  height: 32px;
+}
+main.shop article.shop-induction ul.shop-content {
+  margin: 20px 0 0 0;
+  padding-bottom: 30px;
+}
+main.shop article.shop-induction ul.shop-content li.shop-list {
+  width: 90vw;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.25);
+}
+main.shop article.shop-induction ul.shop-content li.shop-list section.shop-content-img {
+  display: flex;
+}
+main.shop article.shop-induction ul.shop-content li.shop-list section.shop-content-img dl.shop-detail dt.shop-name {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 20px 0 10px 5.3vw;
+}
+main.shop article.shop-induction ul.shop-content li.shop-list section.shop-content-img dl.shop-detail dd.shop-address,
+main.shop article.shop-induction ul.shop-content li.shop-list section.shop-content-img dl.shop-detail .shop-tel,
+main.shop article.shop-induction ul.shop-content li.shop-list section.shop-content-img dl.shop-detail .shop-time {
+  width: 56vw;
+  font-size: 0.75rem;
+  margin-left: 5.3vw;
+}
+main.shop article.shop-induction ul.shop-content li.shop-list section.shop-content-img img.shop-img {
+  width: 21.3vw;
+  border-radius: 10px;
+  margin: 20px 5.3vw 0 0;
+}
+main.shop article.shop-induction ul.shop-content li.shop-list ul.service {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style: none;
+  margin: 0.93vh 0 0 5.3vw;
+  padding: 0;
+}
+main.shop article.shop-induction ul.shop-content li.shop-list ul.service section.service-1st {
+  display: flex;
+  gap: 5px;
+}
+main.shop article.shop-induction ul.shop-content li.shop-list ul.service section.service-1st li.mobile-order {
+  font-size: 0.75rem;
+  background-color: #fdebdd;
+  border-radius: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1px 5px;
+}
+main.shop article.shop-induction ul.shop-content li.shop-list ul.service section.service-1st li.drive-thru {
+  font-size: 0.75rem;
+  background-color: #fdebdd;
+  border-radius: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1px 5px;
+}
+main.shop article.shop-induction ul.shop-content li.shop-list ul.service section.service-2nd {
+  display: flex;
+  gap: 5px;
+}
+main.shop article.shop-induction ul.shop-content li.shop-list ul.service section.service-2nd li.cashless {
+  font-size: 0.75rem;
+  background-color: #fdebdd;
+  border-radius: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1px 5px;
+}
+main.shop article.shop-induction ul.shop-content li.shop-list ul.service section.service-2nd li.wi-fi {
+  font-size: 0.75rem;
+  background-color: #fdebdd;
+  border-radius: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1px 5px;
+}
+
+ul.shop-content {
+  list-style: none;
+  font-family: "Arial", sans-serif;
+  padding: 0;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ul.shop-content li.shop-list {
+  width: 90vw;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+ul.shop-content li.shop-list section.shop-content-img {
+  display: flex;
+}
+ul.shop-content li.shop-list section.shop-content-img dl.shop-detail dt.shop-name {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 20px 0 10px 5.3vw;
+}
+ul.shop-content li.shop-list section.shop-content-img dl.shop-detail dd.shop-address,
+ul.shop-content li.shop-list section.shop-content-img dl.shop-detail .shop-tel,
+ul.shop-content li.shop-list section.shop-content-img dl.shop-detail .shop-time {
+  width: 56vw;
+  font-size: 0.75rem;
+  margin-left: 5.3vw;
+}
+ul.shop-content li.shop-list section.shop-content-img img.shop-img {
+  width: 21.3vw;
+  border-radius: 10px;
+  margin: 20px 5.3vw 0 0;
+}
+ul.shop-content li.shop-list ul.service {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style: none;
+  margin: 10px 0 20px 5.3vw;
+  padding: 0;
+}
+ul.shop-content li.shop-list ul.service section.service-1st {
+  display: flex;
+  gap: 5px;
+}
+ul.shop-content li.shop-list ul.service section.service-1st li.mobile-order {
+  font-size: 0.75rem;
+  background-color: #fdebdd;
+  border-radius: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1px 5px;
+}
+ul.shop-content li.shop-list ul.service section.service-1st li.drive-thru {
+  font-size: 0.75rem;
+  background-color: #fdebdd;
+  border-radius: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1px 5px;
+}
+ul.shop-content li.shop-list ul.service section.service-2nd {
+  display: flex;
+  gap: 5px;
+}
+ul.shop-content li.shop-list ul.service section.service-2nd li.cashless {
+  font-size: 0.75rem;
+  background-color: #fdebdd;
+  border-radius: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1px 5px;
+}
+ul.shop-content li.shop-list ul.service section.service-2nd li.wi-fi {
+  font-size: 0.75rem;
+  background-color: #fdebdd;
+  border-radius: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1px 5px;
+}
+
+/* ----------------------
+   タブレット縦向き（600px）以上
+----------------------- */
+/* ----------------------
+   タブレット横向き（900px）以上
+----------------------- */
+/* ----------------------
+   PC（1200px）以上
+----------------------- */
+@media (min-width: 1200px) {
+  main.shop section.title-ber {
+    width: 50vw;
+    height: 6vh;
+    margin: 55px auto 20px auto;
+    gap: 0.52vw;
+  }
+  main.shop section.title-ber img.maple {
+    width: 2.5vw;
+    height: 4.4vh;
+    margin: 0 0 0 0.52vw;
+  }
+  main.shop section.title-ber h2.title {
+    font-size: clamp(12px, 1.04vw, 20px);
+  }
+  main.shop section.search {
+    width: 50vw;
+  }
+  main.shop section.search input {
+    font-size: clamp(12px, 1.04vw, 20px);
+    margin: 0 auto;
+    padding: auto 0 auto 1.5625vw;
+    width: 50vw;
+  }
+  main.shop section.search button.search-btn img.search-icon {
+    width: 2.5vw;
+    height: 4.44vh;
+    padding: auto 1.5625vw auto 0;
+  }
+  main.shop article.shop-induction {
+    width: 50vw;
+    margin: 0 auto;
+  }
+  main.shop article.shop-induction ul.shop-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 50px 0 0 0;
+    padding: 0 0 100px 0;
+  }
+  main.shop article.shop-induction ul.shop-content li.shop-list {
+    width: 22.5vw;
+    height: 21.8vh;
+  }
+  main.shop article.shop-induction ul.shop-content li.shop-list section.shop-content-img {
+    gap: 5.5vw;
+  }
+  main.shop article.shop-induction ul.shop-content li.shop-list section.shop-content-img dl.shop-detail {
+    width: 10.9375vw;
+  }
+  main.shop article.shop-induction ul.shop-content li.shop-list section.shop-content-img dl.shop-detail dt.shop-name {
+    font-size: clamp(10px, 0.84vw, 16px);
+    margin: 30px 0 5px 1.04vw;
+  }
+  main.shop article.shop-induction ul.shop-content li.shop-list section.shop-content-img dl.shop-detail dd.shop-address,
+  main.shop article.shop-induction ul.shop-content li.shop-list section.shop-content-img dl.shop-detail dd.shop-tel,
+  main.shop article.shop-induction ul.shop-content li.shop-list section.shop-content-img dl.shop-detail dd.shop-time {
+    margin: 5px 0 0 1.04vw;
+    font-size: clamp(7.5px, 0.625vw, 12px);
+  }
+  main.shop article.shop-induction ul.shop-content li.shop-list section.shop-content-img img.shop-img {
+    width: 4.6875vw;
+    height: 8.33vh;
+  }
+  main.shop article.shop-induction ul.shop-content li.shop-list ul.service {
+    margin: 10px 0 0 1.04vw;
+  }
+  main.shop article.shop-induction ul.shop-content li.shop-list ul.service section.service-1st li.mobile-order,
+  main.shop article.shop-induction ul.shop-content li.shop-list ul.service section.service-1st li.drive-thru {
+    font-size: clamp(7.5px, 0.625vw, 12px);
+  }
+  main.shop article.shop-induction ul.shop-content li.shop-list ul.service section.service-2nd li.cashless,
+  main.shop article.shop-induction ul.shop-content li.shop-list ul.service section.service-2nd li.wi-fi {
+    font-size: clamp(7.5px, 0.625vw, 12px);
+  }
+}
+main.recruit {
+  padding-top: 80px;
+  background-color: #f1f0b6;
+}
+main.recruit section.recruit-title {
+  margin: 0 auto 20px auto;
+}
+main.recruit article.recruitment div.swiper-recruit {
+  width: 90vw;
+  height: 26vh;
+  border-radius: 20px;
+}
+main.recruit article.recruitment div.swiper-recruit div.swiper-wrapper-recruit div.swiper-slide-recruit {
+  width: 100%;
+  height: 100%;
+}
+main.recruit article.recruitment div.swiper-recruit div.swiper-wrapper-recruit div.swiper-slide-recruit img.recruit-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main.recruit article.recruitment section.recruit-banner img.recruit-banner-img {
+  width: 90vw;
+  border-radius: 20px;
+  margin: 20px auto;
+  display: block;
+}
+main.recruit article.benefits {
+  background-color: #ee7457;
+  padding-bottom: 50px;
+}
+main.recruit article.benefits section.benefits-induction figure.benefits-content {
+  margin: 0;
+}
+main.recruit article.benefits section.benefits-induction figure.benefits-content img.benefits-image {
+  width: 48vw;
+  margin: 0 auto;
+  padding: 20px 0 10px 0;
+  display: block;
+}
+main.recruit article.benefits section.benefits-induction figure.benefits-content figcaption.benefits-comment {
+  width: 90vw;
+  margin: 0 auto;
+  font-weight: bold;
+  color: white;
+}
+main.recruit article.benefits ul.benefits-detail li.apply {
+  margin-top: 20px;
+}
+main.recruit article.benefits ul.benefits-detail li.apply figure.apply-content {
+  margin: 0;
+}
+main.recruit article.benefits ul.benefits-detail li.apply figure.apply-content img.hamburger-clerk-img {
+  width: 90vw;
+  margin: 0 auto;
+  display: block;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+main.recruit article.benefits ul.benefits-detail li.apply figure.apply-content figcaption.apply-detail {
+  width: 90vw;
+  height: 25vh;
+  margin: 0 auto;
+  background-color: #ffefa1;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+main.recruit article.benefits ul.benefits-detail li.apply figure.apply-content figcaption.apply-detail a.apply-link h3.apply-text {
+  color: #5754af;
+  font-size: 1.5rem;
+  margin: 0;
+  padding-top: 50px;
+  text-align: center;
+}
+
+ul.benefits-detail {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul.benefits-detail li.benefits-list {
+  margin-top: 20px;
+}
+ul.benefits-detail li.benefits-list figure.benefits-figure {
+  margin: 0;
+}
+ul.benefits-detail li.benefits-list figure.benefits-figure img.benefits-img {
+  width: 90vw;
+  margin: 0 auto;
+  display: block;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+ul.benefits-detail li.benefits-list figure.benefits-figure figcaption.benefits-figcaption {
+  width: 90vw;
+  height: 25vh;
+  margin: 0 auto;
+  background-color: #ffefa1;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+ul.benefits-detail li.benefits-list figure.benefits-figure figcaption.benefits-figcaption dl.benefits-dl {
+  font-weight: bold;
+}
+ul.benefits-detail li.benefits-list figure.benefits-figure figcaption.benefits-figcaption dl.benefits-dl dt.benefits-dt {
+  text-align: center;
+  padding: 10px 0;
+}
+ul.benefits-detail li.benefits-list figure.benefits-figure figcaption.benefits-figcaption dl.benefits-dl dd.benefits-dd {
+  width: 79.2vw;
+  font-size: 0.875rem;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+/* ----------------------
+   タブレット縦向き（600px）以上
+----------------------- */
+/* ----------------------
+   タブレット横向き（900px）以上
+----------------------- */
+/* ----------------------
+   PC（1200px）以上
+----------------------- */
+@media (min-width: 1200px) {
+  main.recruit section.title-ber {
+    width: 50vw;
+    height: 6vh;
+    margin: 55px auto 40px auto;
+    gap: 0.52vw;
+  }
+  main.recruit section.title-ber img.maple {
+    width: 2.5vw;
+    height: 4.4vh;
+    margin: 0 0 0 0.52vw;
+  }
+  main.recruit section.title-ber h2.title {
+    font-size: clamp(12px, 1.04vw, 20px);
+  }
+  main.recruit article.recruitment div.swiper-recruit {
+    width: 50vw;
+    height: 43.6vh;
+  }
+  main.recruit article.recruitment section.recruit-banner img.recruit-banner-img {
+    width: 50vw;
+    height: 59.3vh;
+    margin: 40px auto;
+  }
+  main.recruit article.benefits section.benefits-induction figure.benefits-content img.benefits-image {
+    width: 18.75vw;
+    padding: 50px 0 20px 0;
+  }
+  main.recruit article.benefits section.benefits-induction figure.benefits-content figcaption.benefits-comment {
+    width: 50vw;
+    font-size: clamp(15px, 1.25vw, 24px);
+  }
+  main.recruit article.benefits ul.benefits-detail {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 7.3vw;
+    width: 50vw;
+    margin: 0 auto;
+  }
+  main.recruit article.benefits ul.benefits-detail li.benefits-list,
+  main.recruit article.benefits ul.benefits-detail li.apply {
+    margin-top: 50px;
+  }
+  main.recruit article.benefits ul.benefits-detail li.benefits-list figure.benefits-figure,
+  main.recruit article.benefits ul.benefits-detail li.benefits-list figure.apply-content,
+  main.recruit article.benefits ul.benefits-detail li.apply figure.benefits-figure,
+  main.recruit article.benefits ul.benefits-detail li.apply figure.apply-content {
+    margin: 0;
+  }
+  main.recruit article.benefits ul.benefits-detail li.benefits-list figure.benefits-figure img.benefits-img,
+  main.recruit article.benefits ul.benefits-detail li.benefits-list figure.benefits-figure img.hamburger-clerk-img,
+  main.recruit article.benefits ul.benefits-detail li.benefits-list figure.apply-content img.benefits-img,
+  main.recruit article.benefits ul.benefits-detail li.benefits-list figure.apply-content img.hamburger-clerk-img,
+  main.recruit article.benefits ul.benefits-detail li.apply figure.benefits-figure img.benefits-img,
+  main.recruit article.benefits ul.benefits-detail li.apply figure.benefits-figure img.hamburger-clerk-img,
+  main.recruit article.benefits ul.benefits-detail li.apply figure.apply-content img.benefits-img,
+  main.recruit article.benefits ul.benefits-detail li.apply figure.apply-content img.hamburger-clerk-img {
+    width: 21.5vw;
+    margin: 0;
+    display: block;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  main.recruit article.benefits ul.benefits-detail li.benefits-list figure.benefits-figure figcaption.benefits-figcaption,
+  main.recruit article.benefits ul.benefits-detail li.benefits-list figure.benefits-figure figcaption.apply-detail,
+  main.recruit article.benefits ul.benefits-detail li.benefits-list figure.apply-content figcaption.benefits-figcaption,
+  main.recruit article.benefits ul.benefits-detail li.benefits-list figure.apply-content figcaption.apply-detail,
+  main.recruit article.benefits ul.benefits-detail li.apply figure.benefits-figure figcaption.benefits-figcaption,
+  main.recruit article.benefits ul.benefits-detail li.apply figure.benefits-figure figcaption.apply-detail,
+  main.recruit article.benefits ul.benefits-detail li.apply figure.apply-content figcaption.benefits-figcaption,
+  main.recruit article.benefits ul.benefits-detail li.apply figure.apply-content figcaption.apply-detail {
+    width: 21.5vw;
+    height: 15vh;
+    margin: 0;
+    background-color: #ffefa1;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  main.recruit article.benefits ul.benefits-detail li.benefits-list figure.benefits-figure figcaption.benefits-figcaption dl.benefits-dl,
+  main.recruit article.benefits ul.benefits-detail li.benefits-list figure.benefits-figure figcaption.apply-detail dl.benefits-dl,
+  main.recruit article.benefits ul.benefits-detail li.benefits-list figure.apply-content figcaption.benefits-figcaption dl.benefits-dl,
+  main.recruit article.benefits ul.benefits-detail li.benefits-list figure.apply-content figcaption.apply-detail dl.benefits-dl,
+  main.recruit article.benefits ul.benefits-detail li.apply figure.benefits-figure figcaption.benefits-figcaption dl.benefits-dl,
+  main.recruit article.benefits ul.benefits-detail li.apply figure.benefits-figure figcaption.apply-detail dl.benefits-dl,
+  main.recruit article.benefits ul.benefits-detail li.apply figure.apply-content figcaption.benefits-figcaption dl.benefits-dl,
+  main.recruit article.benefits ul.benefits-detail li.apply figure.apply-content figcaption.apply-detail dl.benefits-dl {
+    font-weight: bold;
+  }
+  main.recruit article.benefits ul.benefits-detail li.benefits-list figure.benefits-figure figcaption.benefits-figcaption dl.benefits-dl dt.benefits-dt,
+  main.recruit article.benefits ul.benefits-detail li.benefits-list figure.benefits-figure figcaption.apply-detail dl.benefits-dl dt.benefits-dt,
+  main.recruit article.benefits ul.benefits-detail li.benefits-list figure.apply-content figcaption.benefits-figcaption dl.benefits-dl dt.benefits-dt,
+  main.recruit article.benefits ul.benefits-detail li.benefits-list figure.apply-content figcaption.apply-detail dl.benefits-dl dt.benefits-dt,
+  main.recruit article.benefits ul.benefits-detail li.apply figure.benefits-figure figcaption.benefits-figcaption dl.benefits-dl dt.benefits-dt,
+  main.recruit article.benefits ul.benefits-detail li.apply figure.benefits-figure figcaption.apply-detail dl.benefits-dl dt.benefits-dt,
+  main.recruit article.benefits ul.benefits-detail li.apply figure.apply-content figcaption.benefits-figcaption dl.benefits-dl dt.benefits-dt,
+  main.recruit article.benefits ul.benefits-detail li.apply figure.apply-content figcaption.apply-detail dl.benefits-dl dt.benefits-dt {
+    text-align: center;
+    padding: 10px 0;
+  }
+  main.recruit article.benefits ul.benefits-detail li.benefits-list figure.benefits-figure figcaption.benefits-figcaption dl.benefits-dl dd.benefits-dd,
+  main.recruit article.benefits ul.benefits-detail li.benefits-list figure.benefits-figure figcaption.apply-detail dl.benefits-dl dd.benefits-dd,
+  main.recruit article.benefits ul.benefits-detail li.benefits-list figure.apply-content figcaption.benefits-figcaption dl.benefits-dl dd.benefits-dd,
+  main.recruit article.benefits ul.benefits-detail li.benefits-list figure.apply-content figcaption.apply-detail dl.benefits-dl dd.benefits-dd,
+  main.recruit article.benefits ul.benefits-detail li.apply figure.benefits-figure figcaption.benefits-figcaption dl.benefits-dl dd.benefits-dd,
+  main.recruit article.benefits ul.benefits-detail li.apply figure.benefits-figure figcaption.apply-detail dl.benefits-dl dd.benefits-dd,
+  main.recruit article.benefits ul.benefits-detail li.apply figure.apply-content figcaption.benefits-figcaption dl.benefits-dl dd.benefits-dd,
+  main.recruit article.benefits ul.benefits-detail li.apply figure.apply-content figcaption.apply-detail dl.benefits-dl dd.benefits-dd {
+    width: 19.3vw;
+    font-size: 0.875rem;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+}
+main.company {
+  padding-top: 80px;
+  background-color: #f1f0b6;
+}
+main.company section.company-title {
+  margin: 0 auto 20px auto;
+}
+main.company article.company-induction img.company-img {
+  width: 90vw;
+  border-radius: 20px;
+  margin: 20px auto 0 auto;
+  display: block;
+}
+main.company li.company-address dd.company-dd {
+  text-align: end;
+}
+main.company iframe {
+  width: 100vw;
+  margin-top: 20px;
+}
+
+ul.company-ul {
+  list-style: none;
+  background-color: white;
+  border-radius: 20px;
+  width: 90vw;
+  margin: 20px auto 0 auto;
+  padding: 0 10px 20px 10px;
+}
+ul.company-ul li.company-list {
+  padding: 20px 0 0 0;
+}
+ul.company-ul li.company-list dl.company-dl {
+  width: 100%;
+  font-size: 0.875rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+ul.company-ul li.company-list dl.company-dl dt.company-dt {
+  margin: 0;
+}
+ul.company-ul li.company-list dl.company-dl dd.company-dd {
+  margin: 0;
+}
+
+/* ----------------------
+   タブレット縦向き（600px）以上
+----------------------- */
+/* ----------------------
+   タブレット横向き（900px）以上
+----------------------- */
+/* ----------------------
+   PC（1200px）以上
+----------------------- */
+@media (min-width: 1200px) {
+  main.company section.title-ber {
+    width: 50vw;
+    height: 6vh;
+    margin: 55px auto 40px auto;
+    gap: 0.52vw;
+  }
+  main.company section.title-ber img.maple {
+    width: 2.5vw;
+    height: 4.4vh;
+    margin: 0 0 0 0.52vw;
+  }
+  main.company section.title-ber h2.title {
+    font-size: clamp(12px, 1.04vw, 20px);
+  }
+  main.company article.company-induction img.company-img {
+    width: 50vw;
+    height: 59.3vh;
+  }
+  main.company article.company-induction section.company-content ul.company-ul {
+    width: 50vw;
+    margin: 40px auto 0 auto;
+  }
+  main.company article.company-induction section.company-content ul.company-ul li.company-list dl.company-dl {
+    width: 100%;
+    font-size: 0.875rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+  }
+  main.company article.company-induction section.company-content ul.company-ul li.company-list dl.company-dl dt.company-dt {
+    margin: 0 0 0 10vw;
+  }
+  main.company article.company-induction section.company-content ul.company-ul li.company-list dl.company-dl dd.company-dd {
+    margin: 0 10vw 0 0;
+  }
+}
+main.agreement {
+  padding-top: 80px;
+  background-color: #f1f0b6;
+  margin-bottom: 0;
+}
+main.agreement section.agreement-title {
+  margin: 0 auto 20px auto;
+}
+main.agreement article.agreement-content ul.agreement-detail {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 90vw;
+}
+main.agreement article.agreement-content ul.agreement-detail li.website-agreement-content dl.website-agreement-detail dt.website-agreement-term h3.website-agreement-title {
+  font-size: 1.5rem;
+  margin: 20px 0 5px 0;
+}
+main.agreement article.agreement-content ul.agreement-detail li.website-agreement-content dl.website-agreement-detail dd.website-agreement-definition {
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin: 10px 0 0 0;
+}
+main.agreement article.agreement-content section.agreement-update p.agreement-date {
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-align: end;
+  margin: 20px 5.3vh 0 0;
+  padding-bottom: 50px;
+}
+
+li.agreement-list {
+  margin-top: 20px;
+}
+li.agreement-list dl.list dt.term h4.title {
+  font-size: 1rem;
+  margin: 0;
+}
+li.agreement-list dl.list dd.definition {
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin: 5px 0 0 0;
+}
+
+li.agreement-list section.section h4.title {
+  margin: 0 0 10px 0;
+}
+li.agreement-list section.section dl.list dt.term {
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+li.agreement-list section.section dl.list dd.definition {
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin: 5px 0 0 2.7vw;
+}
+li.agreement-list section.section-second h5.subject {
+  margin: 10px 0 0 0;
+}
+
+li.agreement-list section.section h4.title {
+  margin: 0 0 10px 0;
+}
+li.agreement-list section.section dl.list dt.term h5.subject {
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin: 10px 0 0 0;
+}
+li.agreement-list section.section dl.list dd.definition {
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin: 5px 0 0 2.7vw;
+}
+li.agreement-list section.section-second h5.subject {
+  margin: 10px 0 0 0;
+}
+
+/* ----------------------
+   タブレット縦向き（600px）以上
+----------------------- */
+/* ----------------------
+   タブレット横向き（900px）以上
+----------------------- */
+/* ----------------------
+   PC（1200px）以上
+----------------------- */
+@media (min-width: 1200px) {
+  main.agreement section.title-ber {
+    width: 50vw;
+    height: 6vh;
+    margin: 55px auto 40px auto;
+    gap: 0.52vw;
+  }
+  main.agreement section.title-ber img.maple {
+    width: 2.5vw;
+    height: 4.4vh;
+    margin: 0 0 0 0.52vw;
+  }
+  main.agreement section.title-ber h2.title {
+    font-size: clamp(12px, 1.04vw, 20px);
+  }
+  main.agreement article.agreement-content ul.agreement-detail {
+    width: 50vw;
+  }
+  main.agreement article.agreement-content ul.agreement-detail li.website-agreement-content dl.website-agreement-detail dt.website-agreement-term h3.website-agreement-title {
+    font-size: 24px;
+    margin: 40px 0 10px 0;
+    text-align: center;
+  }
+  main.agreement article.agreement-content ul.agreement-detail li.website-agreement-content dl.website-agreement-detail dd.website-agreement-definition {
+    font-size: 0.875rem;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+  }
+}
+main.privacy-policy {
+  padding-top: 80px;
+  background-color: #f1f0b6;
+  margin-bottom: 0;
+}
+main.privacy-policy section.privacy-policy-title {
+  margin: 0 auto 20px auto;
+}
+main.privacy-policy article.privacy-policy-content ul.privacy-policy-detail {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 90vw;
+}
+main.privacy-policy article.privacy-policy-content ul.privacy-policy-detail li.website-pp-content dl.website-pp-detail dt.website-pp-term h3.website-pp-title {
+  font-size: 1.5rem;
+  margin: 20px 0 5px 0;
+}
+main.privacy-policy article.privacy-policy-content ul.privacy-policy-detail li.website-pp-content dl.website-pp-detail dd.website-pp-definition {
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin: 10px 0 0 0;
+}
+main.privacy-policy article.privacy-policy-content ul.privacy-policy-detail li.purpose-offer-content section.purpose-offer-detail section.purpose-offer-heading h5.purpose-offer-subject {
+  margin: 10px 0 0 0;
+}
+main.privacy-policy article.privacy-policy-content ul.privacy-policy-detail li.purpose-offer-content section.purpose-offer-detail section.purpose-offer-heading section.purpose-offer-subheading h6.purpose-offer-text {
+  font-size: 0.875rem;
+  margin: 5px 0 0 2.7vw;
+}
+main.privacy-policy article.privacy-policy-content ul.privacy-policy-detail li.purpose-offer-content section.purpose-offer-detail section.purpose-offer-heading section.purpose-offer-subheading section.purpose-offer-maintext p.purpose-offer-comment {
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin: 5px 0 0 5.4vw;
+}
+main.privacy-policy article.privacy-policy-content ul.privacy-policy-detail li.purpose-offer-content section.purpose-offer-detail section.purpose-offer-heading-second h5.purpose-offer-heading-subject {
+  font-size: 0.875rem;
+  margin: 10px 0 0 0;
+}
+main.privacy-policy article.privacy-policy-content ul.privacy-policy-detail li.purpose-offer-content section.purpose-offer-detail section.purpose-offer-heading-second section.purpose-offer-subheading-detail p.purpose-offer-subheading-comment {
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin: 5px 0 0 5.4vw;
+}
+main.privacy-policy article.privacy-policy-content ul.privacy-policy-detail li.purpose-disclosure-content h4.purpose-disclosure-title {
+  margin: 20px 0 10px 0;
+}
+main.privacy-policy article.privacy-policy-content ul.privacy-policy-detail li.purpose-disclosure-content section.purpose-disclosure-heading h5.purpose-disclosure-subject {
+  margin: 0;
+}
+main.privacy-policy article.privacy-policy-content ul.privacy-policy-detail li.purpose-disclosure-content section.purpose-disclosure-heading section.purpose-disclosure-subheading h6.purpose-disclosure-text {
+  font-size: 0.875rem;
+  margin: 5px 0 0 5.4vw;
+}
+main.privacy-policy article.privacy-policy-content ul.privacy-policy-detail li.purpose-disclosure-content section.purpose-disclosure-heading section.purpose-disclosure-heading-second h5.purpose-disclosure-heading-subject {
+  margin: 10px 0 0 0;
+}
+main.privacy-policy article.privacy-policy-content ul.privacy-policy-detail li.inquiry-content dl.inquiry-detail dt.inquiry-term h4.inquiry-title {
+  margin: 20px 0 0 0;
+}
+main.privacy-policy article.privacy-policy-content ul.privacy-policy-detail li.inquiry-content dl.inquiry-detail dd.inquiry-definition {
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+main.privacy-policy article.privacy-policy-content ul.privacy-policy-detail li.inquiry-content ul.pp-inquiry-detail {
+  list-style: none;
+  padding: 0;
+}
+main.privacy-policy article.privacy-policy-content ul.privacy-policy-detail li.inquiry-content ul.pp-inquiry-detail li.pp-address-detail dl.pp-address dt.address {
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin: 10px 0 0 0;
+}
+main.privacy-policy article.privacy-policy-content ul.privacy-policy-detail li.inquiry-content ul.pp-inquiry-detail li.pp-address-detail dl.pp-address dd.address-number {
+  font-size: 0.75rem;
+  margin: 0;
+  font-weight: bold;
+}
+main.privacy-policy article.privacy-policy-content ul.privacy-policy-detail li.inquiry-content ul.pp-inquiry-detail li.pp-address-detail dl.pp-address dd.address-detail {
+  font-size: 0.75rem;
+  margin: 0;
+  font-weight: bold;
+}
+main.privacy-policy article.privacy-policy-content ul.privacy-policy-detail li.inquiry-content ul.pp-inquiry-detail li.company-name-detail dl.pp-company-detail {
+  display: flex;
+}
+main.privacy-policy article.privacy-policy-content ul.privacy-policy-detail li.inquiry-content ul.pp-inquiry-detail li.company-name-detail dl.pp-company-detail dt.company-name {
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin: 10px 0 0 0;
+}
+main.privacy-policy article.privacy-policy-content ul.privacy-policy-detail li.inquiry-content ul.pp-inquiry-detail li.company-name-detail dl.pp-company-detail dd.company-name-detail {
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin: 12px 0 0 0;
+}
+main.privacy-policy article.privacy-policy-content ul.privacy-policy-detail li.inquiry-content ul.pp-inquiry-detail li.president-name-detail dl.pp-president-detail {
+  display: flex;
+}
+main.privacy-policy article.privacy-policy-content ul.privacy-policy-detail li.inquiry-content ul.pp-inquiry-detail li.president-name-detail dl.pp-president-detail dt.president-name {
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin: 10px 0 0 0;
+}
+main.privacy-policy article.privacy-policy-content ul.privacy-policy-detail li.inquiry-content ul.pp-inquiry-detail li.president-name-detail dl.pp-president-detail dd.president-detail {
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin: 12px 0 0 0;
+}
+main.privacy-policy article.privacy-policy-content ul.privacy-policy-detail li.inquiry-content ul.pp-inquiry-detail li.in-charge-detail dl.pp-in-charge-detail {
+  display: flex;
+}
+main.privacy-policy article.privacy-policy-content ul.privacy-policy-detail li.inquiry-content ul.pp-inquiry-detail li.in-charge-detail dl.pp-in-charge-detail dt.in-charge {
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin: 10px 0 0 0;
+}
+main.privacy-policy article.privacy-policy-content ul.privacy-policy-detail li.inquiry-content ul.pp-inquiry-detail li.in-charge-detail dl.pp-in-charge-detail dd.charge-detail {
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin: 12px 0 0 0;
+}
+main.privacy-policy article.privacy-policy-content ul.privacy-policy-detail li.inquiry-content ul.pp-inquiry-detail li.email-detail dl.pp-email-detail {
+  display: flex;
+}
+main.privacy-policy article.privacy-policy-content ul.privacy-policy-detail li.inquiry-content ul.pp-inquiry-detail li.email-detail dl.pp-email-detail dt.email {
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin: 10px 0 0 0;
+  width: 127px;
+}
+main.privacy-policy article.privacy-policy-content ul.privacy-policy-detail li.inquiry-content ul.pp-inquiry-detail li.email-detail dl.pp-email-detail dd.email-text {
+  font-size: 0.68rem;
+  font-weight: bold;
+  margin: 12px 0 0 0;
+}
+main.privacy-policy article.privacy-policy-content section.privacy-policy-update p.privacy-policy-date {
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-align: end;
+  margin: 20px 5.3vh 0 0;
+  padding-bottom: 50px;
+}
+
+li.pp-list {
+  margin-top: 20px;
+}
+li.pp-list dl.list dt.term h4.title {
+  font-size: 1rem;
+  margin: 0;
+}
+li.pp-list dl.list dd.definition {
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin: 5px 0 0 0;
+}
+
+li.pp-list section.section h4.title {
+  margin: 0 0 10px 0;
+}
+li.pp-list section.section dl.list dt.term {
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+li.pp-list section.section dl.list dd.definition {
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin: 5px 0 0 2.7vw;
+}
+li.pp-list section.section-second h5.subject {
+  margin: 10px 0 0 0;
+}
+
+li.pp-list section.section h4.title {
+  margin: 0 0 10px 0;
+}
+li.pp-list section.section dl.list dt.term h5.subject {
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin: 10px 0 0 0;
+}
+li.pp-list section.section dl.list dd.definition {
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin: 5px 0 0 2.7vw;
+}
+li.pp-list section.section-second h5.subject {
+  margin: 10px 0 0 0;
+}
+
+/* ----------------------
+   タブレット縦向き（600px）以上
+----------------------- */
+/* ----------------------
+   タブレット横向き（900px）以上
+----------------------- */
+/* ----------------------
+   PC（1200px）以上
+----------------------- */
+@media (min-width: 1200px) {
+  main.privacy-policy section.title-ber {
+    width: 50vw;
+    height: 6vh;
+    margin: 55px auto 40px auto;
+    gap: 0.52vw;
+  }
+  main.privacy-policy section.title-ber img.maple {
+    width: 2.5vw;
+    height: 4.4vh;
+    margin: 0 0 0 0.52vw;
+  }
+  main.privacy-policy section.title-ber h2.title {
+    font-size: clamp(12px, 1.04vw, 20px);
+  }
+  main.privacy-policy article.privacy-policy-content ul.privacy-policy-detail {
+    width: 50vw;
+  }
 }/*# sourceMappingURL=main.css.map */

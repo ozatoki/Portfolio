@@ -1,0 +1,304 @@
+@charset "utf8";
+
+main.privacy-policy {
+  padding-top: 80px;
+  background-color: #f1f0b6;
+  margin-bottom: 0;
+  section.privacy-policy-title {
+    margin: 0 auto 20px auto;
+  }
+  article.privacy-policy-content {
+    ul.privacy-policy-detail {
+      list-style: none;
+      margin: 0 auto;
+      padding: 0;
+      width: 90vw;
+      li.website-pp-content {
+        dl.website-pp-detail {
+          dt.website-pp-term {
+            h3.website-pp-title {
+              font-size: 1.5rem;
+              margin: 20px 0 5px 0;
+            }
+          }
+          dd.website-pp-definition {
+            font-size: 0.875rem;
+            font-weight: bold;
+            margin: 10px 0 0 0;
+          }
+        }
+      }
+      li.purpose-offer-content {
+        section.purpose-offer-detail {
+          section.purpose-offer-heading {
+            h5.purpose-offer-subject {
+              margin: 10px 0 0 0;
+            }
+            section.purpose-offer-subheading {
+              h6.purpose-offer-text {
+                font-size: 0.875rem;
+                margin: 5px 0 0 2.7vw;
+              }
+              section.purpose-offer-maintext {
+                p.purpose-offer-comment {
+                  font-size: 0.875rem;
+                  font-weight: bold;
+                  margin: 5px 0 0 5.4vw;
+                }
+              }
+            }
+          }
+          section.purpose-offer-heading-second {
+            h5.purpose-offer-heading-subject {
+              font-size: 0.875rem;
+              margin: 10px 0 0 0;
+            }
+            section.purpose-offer-subheading-detail {
+              p.purpose-offer-subheading-comment {
+                font-size: 0.875rem;
+                font-weight: bold;
+                margin: 5px 0 0 5.4vw;
+              }
+            }
+          }
+        }
+      }
+      li.purpose-disclosure-content {
+        h4.purpose-disclosure-title {
+          margin: 20px 0 10px 0;
+        }
+        section.purpose-disclosure-heading {
+          h5.purpose-disclosure-subject {
+            margin: 0;
+          }
+          section.purpose-disclosure-subheading {
+            h6.purpose-disclosure-text {
+              font-size: 0.875rem;
+              margin: 5px 0 0 5.4vw;
+            }
+          }
+          section.purpose-disclosure-heading-second {
+            h5.purpose-disclosure-heading-subject {
+              margin: 10px 0 0 0;
+            }
+          }
+        }
+      }
+      li.inquiry-content {
+        dl.inquiry-detail {
+          dt.inquiry-term {
+            h4.inquiry-title {
+              margin: 20px 0 0 0;
+            }
+          }
+          dd.inquiry-definition {
+            font-size: 0.875rem;
+            font-weight: bold;
+            margin: 10px 0;
+          }
+        }
+        ul.pp-inquiry-detail {
+          list-style: none;
+          padding: 0;
+          li.pp-address-detail {
+            dl.pp-address {
+              dt.address {
+                font-size: 0.875rem;
+                font-weight: bold;
+                margin: 10px 0 0 0;
+              }
+              dd.address-number {
+                font-size: 0.75rem;
+                margin: 0;
+                font-weight: bold;
+              }
+              dd.address-detail {
+                font-size: 0.75rem;
+                margin: 0;
+                font-weight: bold;
+              }
+            }
+          }
+          li.company-name-detail {
+            dl.pp-company-detail {
+              display: flex;
+              dt.company-name {
+                font-size: 0.875rem;
+                font-weight: bold;
+                margin: 10px 0 0 0;
+              }
+              dd.company-name-detail {
+                font-size: 0.75rem;
+                font-weight: bold;
+                margin: 12px 0 0 0;
+              }
+            }
+          }
+          li.president-name-detail {
+            dl.pp-president-detail {
+              display: flex;
+              dt.president-name {
+                font-size: 0.875rem;
+                font-weight: bold;
+                margin: 10px 0 0 0;
+              }
+              dd.president-detail {
+                font-size: 0.75rem;
+                font-weight: bold;
+                margin: 12px 0 0 0;
+              }
+            }
+          }
+          li.in-charge-detail {
+            dl.pp-in-charge-detail {
+              display: flex;
+              dt.in-charge {
+                font-size: 0.875rem;
+                font-weight: bold;
+                margin: 10px 0 0 0;
+              }
+              dd.charge-detail {
+                font-size: 0.75rem;
+                font-weight: bold;
+                margin: 12px 0 0 0;
+              }
+            }
+          }
+          li.email-detail {
+            dl.pp-email-detail {
+              display: flex;
+              dt.email {
+                font-size: 0.875rem;
+                font-weight: bold;
+                margin: 10px 0 0 0;
+                width: 127px;
+              }
+              dd.email-text {
+                font-size: 0.68rem;
+                font-weight: bold;
+                margin: 12px 0 0 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    section.privacy-policy-update {
+      p.privacy-policy-date {
+        font-size: 0.875rem;
+        font-weight: bold;
+        text-align: end;
+        margin: 20px 5.3vh 0 0;
+        padding-bottom: 50px;
+      }
+    }
+  }
+}
+
+// 共通
+li.pp-list {
+  margin-top: 20px;
+  dl.list {
+    dt.term {
+      h4.title {
+        font-size: 1rem;
+        margin: 0;
+      }
+    }
+    dd.definition {
+      font-size: 0.875rem;
+      font-weight: bold;
+      margin: 5px 0 0 0;
+    }
+  }
+}
+
+li.pp-list {
+  section.section {
+    h4.title {
+      margin: 0 0 10px 0;
+    }
+    dl.list {
+      dt.term {
+        font-size: 0.875rem;
+        font-weight: bold;
+      }
+      dd.definition {
+        font-size: 0.875rem;
+        font-weight: bold;
+        margin: 5px 0 0 2.7vw;
+      }
+    }
+  }
+  section.section-second {
+    h5.subject {
+      margin: 10px 0 0 0;
+    }
+  }
+}
+
+li.pp-list {
+  section.section {
+    h4.title {
+      margin: 0 0 10px 0;
+    }
+    dl.list {
+      dt.term {
+        h5.subject {
+          font-size: 0.875rem;
+          font-weight: bold;
+          margin: 10px 0 0 0;
+        }
+      }
+      dd.definition {
+        font-size: 0.875rem;
+        font-weight: bold;
+        margin: 5px 0 0 2.7vw;
+      }
+    }
+  }
+  section.section-second {
+    h5.subject {
+      margin: 10px 0 0 0;
+    }
+  }
+}
+
+/* ----------------------
+   タブレット縦向き（600px）以上
+----------------------- */
+@media (min-width: 600px) {
+}
+
+/* ----------------------
+   タブレット横向き（900px）以上
+----------------------- */
+@media (min-width: 900px) {
+}
+
+/* ----------------------
+   PC（1200px）以上
+----------------------- */
+@media (min-width: 1200px) {
+  main.privacy-policy {
+    section.title-ber {
+      width: 50vw;
+      height: 6vh;
+      margin: 55px auto 40px auto;
+      gap: 0.52vw;
+      img.maple {
+        width: 2.5vw;
+        height: 4.4vh;
+        margin: 0 0 0 0.52vw;
+      }
+      h2.title {
+        font-size: clamp(12px, 1.04vw, 20px);
+      }
+    }
+    article.privacy-policy-content {
+      ul.privacy-policy-detail {
+        width: 50vw;
+      }
+    }
+  }
+}

@@ -133,3 +133,122 @@ section.wrapper {
     color: #d60000;
   }
 }
+
+/* ----------------------
+   タブレット縦向き（600px）以上
+----------------------- */
+@media (min-width: 600px) {
+}
+
+/* ----------------------
+   タブレット横向き（900px）以上
+----------------------- */
+@media (min-width: 900px) {
+}
+
+/* ----------------------
+   PC（1200px）以上
+----------------------- */
+@media (min-width: 1200px) {
+  body {
+    main.commitment {
+      padding: 60px 0 100px 0;
+      section.wrapper {
+        width: 50vw;
+        height: 6vh;
+        margin: 77px auto 0 auto;
+        gap: 1vw;
+        justify-content: center;
+        border-radius: 20px;
+        img.maple {
+          width: 2.5vw;
+          height: 4.4vh;
+        }
+        h2.title {
+          font-size: clamp(12px, 1.04vw, 20px);
+          span {
+            font-size: clamp(12px, 1.04vw, 20px);
+          }
+        }
+      }
+      article.training {
+        section.training-title-wrapper {
+          width: 25vw;
+          height: 4.63vh;
+          border-radius: 15px;
+          gap: 0.52vw;
+          margin: 30px 0 0 25vw;
+          img.maple-mini {
+            width: 1.7vw;
+            height: 3vh;
+            margin: 0 0 0 0.52vw;
+          }
+          h3.training-title {
+            font-size: clamp(12px, 1.04vw, 20px);
+          }
+        }
+        section.training-image {
+          width: 50vw;
+          margin: 0 auto;
+          justify-content: space-between;
+          gap: 0;
+          margin: 20px auto 0 auto;
+          img.clerk-img,
+          img.training-img {
+            width: 23.4375vw;
+            border-radius: 15px;
+          }
+        }
+        section.training-detail {
+          width: 50vw;
+          border-radius: 15px;
+          p.training-comment {
+            font-size: clamp(12px, 1.04vw, 20px);
+            width: 100%;
+            padding: 20px 20px;
+            margin: 20px 0 0 0;
+          }
+        }
+      }
+      article.ingredients {
+        section.ingredients-title-wrapper {
+          width: 25vw;
+          height: 4.63vh;
+          border-radius: 15px;
+          gap: 0.52vw;
+          margin: 30px 0 0 25vw;
+          img.maple-mini {
+            width: 1.7vw;
+            height: 3vh;
+            margin: 0 0 0 0.52vw;
+          }
+          h3.ingredients-title {
+            font-size: clamp(12px, 1.04vw, 20px);
+          }
+        }
+        section.ingredients-image {
+          width: 50vw;
+          margin: 0 auto;
+          justify-content: space-between;
+          gap: 0;
+          margin: 20px auto 0 auto;
+          img.cow-img,
+          img.farm-img {
+            width: 23.4375vw;
+            border-radius: 15px;
+          }
+        }
+        section.ingredients-detail {
+          width: 50vw;
+          border-radius: 15px;
+          p.ingredients-comment {
+            font-size: clamp(12px, 1.04vw, 20px);
+            width: 100%;
+            padding: 20px 20px;
+            margin: 20px 0 0 0;
+          }
+        }
+      }
+    }
+  }
+}
