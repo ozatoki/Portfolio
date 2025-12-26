@@ -53,7 +53,7 @@ body div.content main article.top-content h1 span.design {
   text-align: end;
 }
 body div.content main article.about-content {
-  margin-top: 100vh;
+  margin-top: 100%;
 }
 body div.content main article.about-content img.about-img {
   width: 100vw;
@@ -109,7 +109,7 @@ body div.content main article.skill-content {
   margin-top: 50vh;
 }
 body div.content main article.skill-content img.skill-img {
-  width: 100vw;
+  width: 100%;
   aspect-ratio: 375/422;
 }
 body div.content main article.skill-content h2.skill {
@@ -184,7 +184,7 @@ body div.content main article.works-content {
 }
 body div.content main article.works-content h2.works {
   font-size: 1rem;
-  width: 100vw;
+  width: 100%;
   margin: 1.5vh 0 0 0;
   text-align: center;
 }
@@ -290,7 +290,7 @@ body div.content main article.contact-content {
   margin-top: 50vh;
 }
 body div.content main article.contact-content img.contact-img {
-  width: 100vw;
+  width: 100%;
   aspect-ratio: 375/422;
 }
 body div.content main article.contact-content h2.contact {
@@ -445,7 +445,7 @@ h2 {
     display: flex;
   }
   body div.content main article.about-content img.about-img {
-    width: 50vw;
+    width: 50%;
     height: 100vh;
     aspect-ratio: 960/1080;
   }
@@ -500,7 +500,7 @@ h2 {
     margin: 0;
   }
   body div.content main article.skill-content img.skill-img {
-    width: 50vw;
+    width: 50%;
     height: 100vh;
     aspect-ratio: 960/1080;
   }
@@ -515,9 +515,6 @@ h2 {
   }
   body div.content main article.skill-content div.skill-wrapper section.skill-detail {
     width: 50vw;
-  }
-  body div.content main article.skill-content div.skill-wrapper section.skill-detail dl.html-css {
-    margin-top: 1.85vh;
   }
   body div.content main article.skill-content div.skill-wrapper section.skill-detail dl.html-css dt.html-css-title {
     font-size: clamp(0.9375rem, 1.25vw, 1.5rem);
@@ -573,23 +570,95 @@ h2 {
     display: flex;
   }
   body div.content main article.works-content ul.site-list li.site-content {
+    flex: 0 0 25%;
     margin: 1.85vh 0 0 0;
   }
   body div.content main article.works-content ul.site-list li.site-content figure.site-detail {
-    width: 25vw;
+    width: 100%;
   }
   body div.content main article.works-content ul.site-list li.site-content figure.site-detail img.site-img {
-    width: 25vw;
+    width: 100%;
   }
   body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary {
-    width: 25vw;
+    width: 25%;
+    margin: 0;
+  }
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-url {
+    margin: 0 0 0 1.04vw;
+  }
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-url dt.url {
+    font-size: clamp(0.9375rem, 1.25vw, 1.5rem);
+  }
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-url dd.url-detail {
+    font-size: clamp(0.625rem, 0.84vw, 1rem);
+  }
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-name,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-target,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-point,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-design-period,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-coding-period {
+    margin: 1.85vh 0 0 1.04vw;
+  }
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-name dt.name,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-name dt.target,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-name dt.point,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-name dt.design-period,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-name dt.coding-period,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-target dt.name,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-target dt.target,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-target dt.point,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-target dt.design-period,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-target dt.coding-period,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-point dt.name,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-point dt.target,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-point dt.point,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-point dt.design-period,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-point dt.coding-period,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-design-period dt.name,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-design-period dt.target,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-design-period dt.point,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-design-period dt.design-period,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-design-period dt.coding-period,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-coding-period dt.name,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-coding-period dt.target,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-coding-period dt.point,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-coding-period dt.design-period,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-coding-period dt.coding-period {
+    font-size: clamp(0.9375rem, 1.25vw, 1.5rem);
+  }
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-name dd.name-detail,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-name dd.target-detail,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-name dd.point-detail,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-name dd.design-period-detail,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-name dd.coding-period-detail,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-target dd.name-detail,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-target dd.target-detail,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-target dd.point-detail,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-target dd.design-period-detail,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-target dd.coding-period-detail,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-point dd.name-detail,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-point dd.target-detail,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-point dd.point-detail,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-point dd.design-period-detail,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-point dd.coding-period-detail,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-design-period dd.name-detail,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-design-period dd.target-detail,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-design-period dd.point-detail,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-design-period dd.design-period-detail,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-design-period dd.coding-period-detail,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-coding-period dd.name-detail,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-coding-period dd.target-detail,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-coding-period dd.point-detail,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-coding-period dd.design-period-detail,
+  body div.content main article.works-content ul.site-list li.site-content figure.site-detail figcaption.site-summary dl.site-coding-period dd.coding-period-detail {
+    font-size: clamp(0.625rem, 0.84vw, 1rem);
   }
   body div.content main article.contact-content {
     margin: 31.4vh 0 0 0;
     display: flex;
   }
   body div.content main article.contact-content img.contact-img {
-    width: 50vw;
+    width: 50%;
     height: 100vh;
   }
   body div.content main article.contact-content div.contact-wrapper {
@@ -610,7 +679,7 @@ h2 {
   body div.content footer {
     font-size: 1rem;
     margin: 1vh 0;
-    width: 100vw;
+    width: 100%;
   }
   body::before {
     content: "";
@@ -623,7 +692,7 @@ h2 {
     opacity: 1;
     transition: opacity 3s ease;
     z-index: 0;
-    width: 100vw;
+    width: 100%;
   }
   body::after {
     content: "";
@@ -636,7 +705,7 @@ h2 {
     opacity: 0;
     transition: opacity 3s ease;
     z-index: 0;
-    width: 100vw;
+    width: 100%;
   }
   body div.bg-black {
     position: fixed;
@@ -646,6 +715,6 @@ h2 {
     transition: opacity 0.5s ease;
     z-index: 2;
     pointer-events: none;
-    width: 100vw;
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

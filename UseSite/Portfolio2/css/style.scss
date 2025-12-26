@@ -51,7 +51,7 @@ body {
         }
       }
       article.about-content {
-        margin-top: 100vh;
+        margin-top: 100%;
         img.about-img {
           width: 100vw;
           aspect-ratio: 375/422;
@@ -108,7 +108,7 @@ body {
       article.skill-content {
         margin-top: 50vh;
         img.skill-img {
-          width: 100vw;
+          width: 100%;
           aspect-ratio: 375/422;
         }
         h2.skill {
@@ -183,7 +183,7 @@ body {
         margin-top: 50vh;
         h2.works {
           font-size: 1rem;
-          width: 100vw;
+          width: 100%;
           margin: 1.5vh 0 0 0;
           text-align: center;
         }
@@ -289,7 +289,7 @@ body {
       article.contact-content {
         margin-top: 50vh;
         img.contact-img {
-          width: 100vw;
+          width: 100%;
           aspect-ratio: 375/422;
         }
         h2.contact {
@@ -460,7 +460,7 @@ h2 {
         article.about-content {
           display: flex;
           img.about-img {
-            width: 50vw;
+            width: 50%;
             height: 100vh;
             aspect-ratio: 960/1080;
           }
@@ -514,7 +514,7 @@ h2 {
           flex-direction: row-reverse;
           margin: 0;
           img.skill-img {
-            width: 50vw;
+            width: 50%;
             height: 100vh;
             aspect-ratio: 960/1080;
           }
@@ -529,7 +529,6 @@ h2 {
             section.skill-detail {
               width: 50vw;
               dl.html-css {
-                margin-top: 1.85vh;
                 dt.html-css-title {
                   font-size: clamp(0.9375rem, 1.25vw, 1.5rem);
                 }
@@ -585,16 +584,47 @@ h2 {
           }
           ul.site-list {
             display: flex;
-
             li.site-content {
+              flex: 0 0 25%;
               margin: 1.85vh 0 0 0;
               figure.site-detail {
-                width: 25vw;
+                width: 100%;
                 img.site-img {
-                  width: 25vw;
+                  width: 100%;
                 }
                 figcaption.site-summary {
-                  width: 25vw;
+                  width: 25%;
+                  margin: 0;
+                  dl.site-url {
+                    margin: 0 0 0 1.04vw;
+                    dt.url {
+                      font-size: clamp(0.9375rem, 1.25vw, 1.5rem);
+                    }
+                    dd.url-detail {
+                      font-size: clamp(0.625rem, 0.84vw, 1rem);
+                    }
+                  }
+                  dl.site-name,
+                  dl.site-target,
+                  dl.site-point,
+                  dl.site-design-period,
+                  dl.site-coding-period {
+                    margin: 1.85vh 0 0 1.04vw;
+                    dt.name,
+                    dt.target,
+                    dt.point,
+                    dt.design-period,
+                    dt.coding-period {
+                      font-size: clamp(0.9375rem, 1.25vw, 1.5rem);
+                    }
+                    dd.name-detail,
+                    dd.target-detail,
+                    dd.point-detail,
+                    dd.design-period-detail,
+                    dd.coding-period-detail {
+                      font-size: clamp(0.625rem, 0.84vw, 1rem);
+                    }
+                  }
                 }
               }
             }
@@ -604,7 +634,7 @@ h2 {
           margin: 31.4vh 0 0 0;
           display: flex;
           img.contact-img {
-            width: 50vw;
+            width: 50%;
             height: 100vh;
           }
           div.contact-wrapper {
@@ -627,7 +657,7 @@ h2 {
       footer {
         font-size: 1rem;
         margin: 1vh 0;
-        width: 100vw;
+        width: 100%;
       }
     }
   }
@@ -642,7 +672,7 @@ h2 {
     opacity: 1;
     transition: opacity 3s ease;
     z-index: 0;
-    width: 100vw;
+    width: 100%;
   }
   body::after {
     content: "";
@@ -655,7 +685,7 @@ h2 {
     opacity: 0;
     transition: opacity 3s ease;
     z-index: 0;
-    width: 100vw;
+    width: 100%;
   }
   body div.bg-black {
     position: fixed;
@@ -665,6 +695,6 @@ h2 {
     transition: opacity 0.5s ease;
     z-index: 2;
     pointer-events: none;
-    width: 100vw;
+    width: 100%;
   }
 }
